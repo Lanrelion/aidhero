@@ -34,17 +34,15 @@ export function SearchResults({ results, onSelect }: SearchResultsProps) {
   return (
     <div className="flex flex-col gap-3 w-full">
       {results.slice(0, 5).map((res) => {
-        const sc = res.item;
-        const Icon = CATEGORY_ICONS[sc.category] || AlertTriangle;
-        const title = sc.title_translations[locale as keyof typeof sc.title_translations] || sc.title;
-        const categoryLabel = t(`incidents.${sc.category}`) || sc.category;
+        const Icon = CATEGORY_ICONS[res.category] || AlertTriangle;
+        const categoryLabel = t(`incidents.${res.category}`) || res.category;
 
         return (
           <button
-            key={sc.id}
+            key={res.scenarioId}
             onClick={() => {
-              onSelect(sc.id);
-              router.push(`/${locale}/incidents/${sc.id}`);
+              onSelect(res.scenarioId);
+              router.push(`/${locale}/incidents/${res.scenarioId}`);
             }}
             className="flex items-start gap-4 p-4 min-h-[56px] bg-surface border border-border rounded-xl active:bg-card-active transition-colors text-left"
           >
@@ -55,9 +53,9 @@ export function SearchResults({ results, onSelect }: SearchResultsProps) {
             <div className="flex-1 flex flex-col">
               <div className="flex items-center justify-between mb-1">
                 <h3 className="text-body-lg font-bold text-text-primary leading-tight">
-                  {title}
+                  {res.title}
                 </h3>
-                <SeverityBadge severity={sc.severity} />
+                <SeverityBadge severity={res.severity as any} />
               </div>
               
               <span className="text-sm text-text-secondary capitalize mb-1">
