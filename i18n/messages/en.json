@@ -29,6 +29,12 @@
                    "voiceMode":  "Voice Mode",
                    "startVoice":  "Voice Mode",
                    "skipToSteps":  "Skip to steps",
+                   "exitVoiceMode":  "Exit Voice Mode",
+                   "exit":  "Exit",
+                   "pause":  "Pause",
+                   "resume":  "Resume",
+                   "voiceHint":  "Say \"next\", \"back\", or \"repeat\"",
+                   "voiceUnavailable":  "Voice commands unavailable",
                    "severity":  {
                                     "critical":  "CRITICAL",
                                     "moderate":  "MODERATE",

@@ -29,6 +29,12 @@
                    "voiceMode":  "[HA] Voice Mode",
                    "startVoice":  "[HA] Voice Mode",
                    "skipToSteps":  "[HA] Skip to steps",
+                   "exitVoiceMode":  "[HA] Exit Voice Mode",
+                   "exit":  "[HA] Exit",
+                   "pause":  "[HA] Pause",
+                   "resume":  "[HA] Resume",
+                   "voiceHint":  "[HA] Say next, back, or repeat",
+                   "voiceUnavailable":  "[HA] Voice commands unavailable",
                    "severity":  {
                                     "critical":  "[HA] CRITICAL",
                                     "moderate":  "[HA] MODERATE",

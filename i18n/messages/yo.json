@@ -29,6 +29,12 @@
                    "voiceMode":  "[YO] Voice Mode",
                    "startVoice":  "[YO] Voice Mode",
                    "skipToSteps":  "[YO] Skip to steps",
+                   "exitVoiceMode":  "[YO] Exit Voice Mode",
+                   "exit":  "[YO] Exit",
+                   "pause":  "[YO] Pause",
+                   "resume":  "[YO] Resume",
+                   "voiceHint":  "[YO] Say next, back, or repeat",
+                   "voiceUnavailable":  "[YO] Voice commands unavailable",
                    "severity":  {
                                     "critical":  "[YO] CRITICAL",
                                     "moderate":  "[YO] MODERATE",

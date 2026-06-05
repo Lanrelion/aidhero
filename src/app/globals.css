@@ -368,3 +368,12 @@ h3 {
     @apply font-sans;
   }
 }
+@keyframes voiceBar {
+  0%, 100% { transform: scaleY(0.3); }
+  50% { transform: scaleY(1); }
+}
+
+@keyframes wave {
+  0%, 100% { transform: scaleY(0.4); }
+  50% { transform: scaleY(1); }
+}

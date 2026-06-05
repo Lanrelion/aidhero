@@ -29,6 +29,12 @@
                    "voiceMode":  "[PCM] Voice Mode",
                    "startVoice":  "[PCM] Voice Mode",
                    "skipToSteps":  "[PCM] Skip to steps",
+                   "exitVoiceMode":  "[PCM] Exit Voice Mode",
+                   "exit":  "[PCM] Exit",
+                   "pause":  "[PCM] Pause",
+                   "resume":  "[PCM] Resume",
+                   "voiceHint":  "[PCM] Say next, back, or repeat",
+                   "voiceUnavailable":  "[PCM] Voice commands unavailable",
                    "severity":  {
                                     "critical":  "[PCM] CRITICAL",
                                     "moderate":  "[PCM] MODERATE",

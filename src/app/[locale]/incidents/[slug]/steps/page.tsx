@@ -12,6 +12,7 @@ import { getPrimaryEmergencyNumber } from '@/lib/data/emergencyNumbers';
 import { StepCard } from '@/components/rescue/StepCard';
 import { TTSProvider } from '@/components/tts/TTSProvider';
 import { ReadAllButton } from '@/components/tts/ReadAllButton';
+import { VoiceMode } from '@/components/rescue/VoiceMode';
 import { Locale } from '@/types';
 
 interface StepsPageProps {
@@ -30,6 +31,7 @@ export default function StepsPage({ params }: StepsPageProps) {
   const { currentStepIndex, advanceStep, setVoiceMode } = useRescueStore();
   const { detectedState } = useOfflineStore();
   const [mounted, setMounted] = useState(false);
+  const [voiceModeOpen, setVoiceModeOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -80,8 +82,7 @@ export default function StepsPage({ params }: StepsPageProps) {
 
   const handleVoiceMode = () => {
     setVoiceMode(true);
-    // Voice mode triggers STEP 19 implementation
-    console.log("Activating voice mode");
+    setVoiceModeOpen(true);
   };
 
   // Don't render until mounted to avoid hydration mismatch with useSearchParams
@@ -89,6 +90,17 @@ export default function StepsPage({ params }: StepsPageProps) {
 
   return (
     <TTSProvider>
+      {/* VoiceMode full-screen overlay */}
+      {voiceModeOpen && (
+        <VoiceMode
+          scenarioId={scenario.id}
+          steps={stepsToRender}
+          onClose={() => {
+            setVoiceModeOpen(false);
+            setVoiceMode(false);
+          }}
+        />
+      )}
       <div className="flex flex-col min-h-screen bg-background overflow-hidden pb-28">
       {/* Header */}
       <header className="sticky top-0 z-30 bg-surface/95 backdrop-blur supports-[backdrop-filter]:bg-surface/80">

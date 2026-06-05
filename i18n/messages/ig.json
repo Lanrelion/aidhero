@@ -29,6 +29,12 @@
                    "voiceMode":  "[IG] Voice Mode",
                    "startVoice":  "[IG] Voice Mode",
                    "skipToSteps":  "[IG] Skip to steps",
+                   "exitVoiceMode":  "[IG] Exit Voice Mode",
+                   "exit":  "[IG] Exit",
+                   "pause":  "[IG] Pause",
+                   "resume":  "[IG] Resume",
+                   "voiceHint":  "[IG] Say next, back, or repeat",
+                   "voiceUnavailable":  "[IG] Voice commands unavailable",
                    "severity":  {
                                     "critical":  "[IG] CRITICAL",
                                     "moderate":  "[IG] MODERATE",
