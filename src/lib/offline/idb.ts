@@ -8,9 +8,9 @@ interface AidHeroDB extends DBSchema {
   };
 }
 
-let dbPromise: Promise<IDBPDatabase<AidHeroDB>> | null = null;
+let dbPromise: Promise<IDBPDatabase<AidHeroDB> | null> | null = null;
 
-function getDB() {
+export async function getDB(): Promise<IDBPDatabase<AidHeroDB> | null> {
   if (typeof window === 'undefined') return null;
   if (!dbPromise) {
     dbPromise = openDB<AidHeroDB>('aidhero-db', 1, {

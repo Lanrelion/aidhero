@@ -10,7 +10,7 @@ import { useOfflineStore } from '@/store/useOfflineStore';
 import { getScenario } from '@/lib/data/scenarios';
 import { getPrimaryEmergencyNumber } from '@/lib/data/emergencyNumbers';
 import { StepCard } from '@/components/rescue/StepCard';
-import { Locale } from '@/i18n/config';
+import { Locale } from '@/types';
 
 interface StepsPageProps {
   params: Promise<{ locale: Locale; slug: string }>;
@@ -120,6 +120,7 @@ export default function StepsPage({ params }: StepsPageProps) {
           className="motion-safe:animate-in motion-safe:slide-in-from-right duration-300 ease-out fill-mode-both w-full"
         >
           <StepCard 
+            scenarioId={scenario.id}
             step={currentStep} 
             stepNumber={safeStepIndex + 1} 
             locale={locale} 

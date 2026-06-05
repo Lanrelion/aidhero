@@ -1,34 +1,29 @@
-import { Play, AlertTriangle } from 'lucide-react';
+import { Play, Square, AlertTriangle } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { cn } from '@/lib/utils';
+import { useTTS } from '@/hooks/useTTS';
 import type { Step } from '@/types/scenario';
-import type { Locale } from '@/i18n/config';
+import type { Locale } from '@/types';
 
 interface StepCardProps {
+  scenarioId: string;
   step: Step;
   stepNumber: number;
   locale: Locale;
   className?: string;
 }
 
-export function StepCard({ step, stepNumber, locale, className }: StepCardProps) {
+export function StepCard({ scenarioId, step, stepNumber, locale, className }: StepCardProps) {
   const t = useTranslations();
+  const { toggle, isSpeaking } = useTTS();
   
   const instruction = step.instruction_translations[locale] || step.instruction;
   const detail = step.detail_translations?.[locale] || step.detail;
   const doNot = step.do_not_translations?.[locale] || step.do_not;
 
   const handlePlayTTS = () => {
-    // Basic Web Speech API fallback until TTSManager is built in STEP 17
-    if ('speechSynthesis' in window) {
-      window.speechSynthesis.cancel(); // Stop any ongoing speech
-      const utterance = new SpeechSynthesisUtterance(instruction);
-      // Rough language mapping for fallback
-      utterance.lang = locale === 'en' ? 'en-NG' : 'en-US'; 
-      window.speechSynthesis.speak(utterance);
-    } else {
-      console.log('TTS requested for step:', stepNumber, { audio_path: step.audio_path });
-    }
+    // Pass the scenario ID, step ID, instruction string, and locale to the TTS manager
+    toggle(scenarioId, step.id, instruction, locale);
   };
 
   return (
@@ -67,11 +62,26 @@ export function StepCard({ step, stepNumber, locale, className }: StepCardProps)
 
       <button 
         onClick={handlePlayTTS}
-        className="mt-4 flex items-center justify-center gap-3 w-full min-h-[64px] rounded-2xl bg-card border-2 border-border font-bold text-body-lg text-text-primary hover:bg-card-active active:scale-[0.98] transition-transform"
-        aria-label="Play audio instruction"
+        className={cn(
+          "mt-4 flex items-center justify-center gap-3 w-full min-h-[64px] rounded-2xl border-2 font-bold text-body-lg transition-transform active:scale-[0.98]",
+          isSpeaking 
+            ? "bg-emergency/10 border-emergency text-emergency" 
+            : "bg-card border-border text-text-primary hover:bg-card-active"
+        )}
+        aria-label={isSpeaking ? "Stop audio" : "Play audio instruction"}
+        aria-pressed={isSpeaking}
       >
-        <Play className="w-6 h-6 text-action fill-action" />
-        {t('rescue.playAudio') || "Play Instruction"}
+        {isSpeaking ? (
+          <>
+            <Square className="w-6 h-6 fill-current" />
+            {t('rescue.stopAudio') || "Stop Audio"}
+          </>
+        ) : (
+          <>
+            <Play className="w-6 h-6 text-action fill-action" />
+            {t('rescue.playAudio') || "Play Instruction"}
+          </>
+        )}
       </button>
     </div>
   );

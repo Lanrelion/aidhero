@@ -1,5 +1,6 @@
 import { useRouter } from 'next/navigation';
 import { useTranslations, useLocale } from 'next-intl';
+import { AlertTriangle } from 'lucide-react';
 import { SearchResult } from '@/lib/search/index';
 import { SeverityBadge } from '@/components/ui/severity-badge';
 import { CATEGORY_ICONS } from '@/lib/utils/icons';
