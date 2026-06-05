@@ -1,4 +1,4 @@
-﻿import type { DecisionTree } from '@/types/decision-tree';
+import type { DecisionTree } from '@/types/decision-tree';
 
 import heartAttackFlow from '../../../data/decision-trees/heart-attack-flow.json';
 import chokingAdultFlow from '../../../data/decision-trees/choking-adult-flow.json';

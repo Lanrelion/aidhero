@@ -1,4 +1,4 @@
-﻿import { decisionTrees } from './decisionTrees';
+import { decisionTrees } from './decisionTrees';
 import type { DecisionTree, QuestionNode } from '@/types/decision-tree';
 
 export function validateTreeDepth(tree: DecisionTree) {

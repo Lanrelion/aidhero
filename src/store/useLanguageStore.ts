@@ -1,4 +1,4 @@
-﻿import { create } from 'zustand';
+import { create } from 'zustand';
 import type { Locale } from '../../i18n/config';
 import { defaultLocale } from '../../i18n/config';
 import { idb } from '@/lib/offline/idb';

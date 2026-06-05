@@ -1,4 +1,4 @@
-﻿import emergencyData from '../../../data/emergency-numbers.json';
+import emergencyData from '../../../data/emergency-numbers.json';
 import type { EmergencyContact, EmergencyNumbersSchema } from '@/types/emergency';
 
 const data = emergencyData as EmergencyNumbersSchema;

@@ -1,4 +1,4 @@
-﻿import { ScenarioSearch } from './src/lib/search/index';
+import { ScenarioSearch } from './src/lib/search/index';
 import { scenarios } from './src/lib/data/scenarios';
 import { synonyms } from './src/lib/search/synonyms';
 

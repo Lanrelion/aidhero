@@ -1,4 +1,4 @@
-﻿import type { Scenario, Category } from '@/types/scenario';
+import type { Scenario, Category } from '@/types/scenario';
 
 import heartAttack from '../../../data/scenarios/heart-attack.json';
 import chokingAdult from '../../../data/scenarios/choking-adult.json';

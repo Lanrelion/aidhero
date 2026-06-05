@@ -1,4 +1,4 @@
-﻿import synonymsJson from '../../../data/synonyms.json';
+import synonymsJson from '../../../data/synonyms.json';
 import type { Scenario } from '@/types/scenario';
 
 export type SynonymMap = Record<string, string[]>;

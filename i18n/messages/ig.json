@@ -10,7 +10,7 @@
                  "subtitle":  "[NEEDS_REVIEW] First Aid Guide",
                  "searchPlaceholder":  "[NEEDS_REVIEW] Search for symptoms or injuries...",
                  "sectionHeaders":  "[NEEDS_REVIEW] Categories",
-                 "emergencyCall":  "KpÃ¡Â»ÂÃ¡Â»Â Mberede"
+                 "emergencyCall":  "KpÃƒÂ¡Ã‚Â»Ã‚ÂÃƒÂ¡Ã‚Â»Ã‚Â Mberede"
              },
     "rescue":  {
                    "startGuided":  "[NEEDS_REVIEW] Start Guided Rescue",
@@ -30,16 +30,16 @@
                    "clearRecent":  "Clear"
                },
     "incidents":  {
-                      "Cardiac":  "[NEEDS_REVIEW] Cardiac",
-                      "Respiratory":  "[NEEDS_REVIEW] Respiratory",
-                      "Trauma":  "[NEEDS_REVIEW] Trauma",
-                      "Burns":  "[NEEDS_REVIEW] Burns",
-                      "Environmental":  "[NEEDS_REVIEW] Environmental",
-                      "Neurological":  "[NEEDS_REVIEW] Neurological",
-                      "Poisoning":  "[NEEDS_REVIEW] Poisoning",
-                      "Obstetric":  "[NEEDS_REVIEW] Obstetric",
-                      "Paediatric":  "[NEEDS_REVIEW] Paediatric",
-                      "Allergic":  "[NEEDS_REVIEW] Allergic"
+                      "paediatric":  "[NEEDS_REVIEW] Paediatric",
+                      "trauma":  "[NEEDS_REVIEW] Trauma",
+                      "environmental":  "[NEEDS_REVIEW] Environmental",
+                      "respiratory":  "[NEEDS_REVIEW] Respiratory",
+                      "burns":  "[NEEDS_REVIEW] Burns",
+                      "allergic":  "[NEEDS_REVIEW] Allergic",
+                      "obstetric":  "[NEEDS_REVIEW] Obstetric",
+                      "cardiac":  "[NEEDS_REVIEW] Cardiac",
+                      "poisoning":  "[NEEDS_REVIEW] Poisoning",
+                      "neurological":  "[NEEDS_REVIEW] Neurological"
                   },
     "emergency":  {
                       "callButton":  "[NEEDS_REVIEW] Call",
@@ -55,7 +55,7 @@
                  },
     "accessibility":  {
                           "ariaLabels":  "[NEEDS_REVIEW] Accessibility Strings",
-                          "emergencyCallStrip":  "KpÃ¡Â»ÂÃ¡Â»Â NÃ¡Â»Âmba Mberede",
+                          "emergencyCallStrip":  "KpÃƒÂ¡Ã‚Â»Ã‚ÂÃƒÂ¡Ã‚Â»Ã‚Â NÃƒÂ¡Ã‚Â»Ã‚Âmba Mberede",
                           "changeLanguage":  "Change Language"
                       },
     "offline":  {

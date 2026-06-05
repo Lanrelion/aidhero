@@ -1,4 +1,4 @@
-﻿import Fuse from 'fuse.js';
+import Fuse from 'fuse.js';
 import type { Scenario } from '@/types/scenario';
 import type { Locale } from '@/i18n/config';
 import { expandAliases, SynonymMap } from './synonyms';

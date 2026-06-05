@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { SeverityBadge } from "./severity-badge";
 import { cn } from "@/lib/utils";

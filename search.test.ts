@@ -1,4 +1,4 @@
-﻿import { describe, it, expect } from 'vitest';
+import { describe, it, expect } from 'vitest';
 import { ScenarioSearch } from './src/lib/search/index';
 import { scenarios } from './src/lib/data/scenarios';
 import { synonyms } from './src/lib/search/synonyms';

@@ -1,4 +1,4 @@
-﻿import { openDB, DBSchema, IDBPDatabase } from 'idb';
+import { openDB, DBSchema, IDBPDatabase } from 'idb';
 import type { Locale } from '../../../i18n/config';
 
 interface AidHeroDB extends DBSchema {

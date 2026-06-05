@@ -1,4 +1,4 @@
-﻿import type { Metadata, Viewport } from "next";
+import type { Metadata, Viewport } from "next";
 import { Syne, DM_Sans, Syne_Mono, Geist } from "next/font/google";
 import "../globals.css";
 import { cn } from "@/lib/utils";

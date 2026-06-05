@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useEffect, Suspense } from 'react';
 import { useTranslations, useLocale } from 'next-intl';

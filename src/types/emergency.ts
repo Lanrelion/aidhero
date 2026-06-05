@@ -1,4 +1,4 @@
-﻿import type { LanguageMap } from './scenario';
+import type { LanguageMap } from './scenario';
 
 export type EmergencyType = 'medical' | 'police' | 'fire' | 'general';
 

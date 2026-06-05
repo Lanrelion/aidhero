@@ -1,4 +1,4 @@
-﻿export type LanguageMap = {
+export type LanguageMap = {
   en: string;
   ha: string;
   ig: string;

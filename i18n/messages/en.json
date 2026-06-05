@@ -30,16 +30,16 @@
                    "clearRecent":  "Clear"
                },
     "incidents":  {
-                      "Cardiac":  "Cardiac",
-                      "Respiratory":  "Respiratory",
-                      "Trauma":  "Trauma",
-                      "Burns":  "Burns",
-                      "Environmental":  "Environmental",
-                      "Neurological":  "Neurological",
-                      "Poisoning":  "Poisoning",
-                      "Obstetric":  "Obstetric",
-                      "Paediatric":  "Paediatric",
-                      "Allergic":  "Allergic"
+                      "paediatric":  "Paediatric",
+                      "trauma":  "Trauma",
+                      "environmental":  "Environmental",
+                      "respiratory":  "Respiratory",
+                      "burns":  "Burns",
+                      "allergic":  "Allergic",
+                      "obstetric":  "Obstetric",
+                      "cardiac":  "Cardiac",
+                      "poisoning":  "Poisoning",
+                      "neurological":  "Neurological"
                   },
     "emergency":  {
                       "callButton":  "Call",
