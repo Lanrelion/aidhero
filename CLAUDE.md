@@ -103,6 +103,17 @@ Do not create or modify tailwind.config.ts for token definitions.
 Utility classes (bg-emergency, text-authority, etc.) are auto-generated
 from the @theme block — no rebuild step needed.
 
+### 12. Windows / PowerShell JSON Safety
+This project runs on Windows. PowerShell injects BOM characters into
+files it creates or modifies. After any PowerShell file write operation
+on .json or .ts files, verify no BOM exists:
+
+// Preferred: always write files via Node.js scripts, not PowerShell echo/Out-File
+// If PowerShell must be used: pipe through Set-Content -Encoding UTF8NoBOM
+// Detection: if Next.js/Turbopack throws JSON parse errors on previously valid files → BOM
+
+Fix: npx tsx scripts/strip-bom.ts (keep the script the agent wrote — reuse it)
+
 ## gstack Skills
 
 gstack is installed at `.agent/skills/gstack`.
