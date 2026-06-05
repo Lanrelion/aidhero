@@ -55,8 +55,9 @@
                  },
     "accessibility":  {
                           "ariaLabels":  "[NEEDS_REVIEW] Accessibility Strings",
-                          "emergencyCallStrip":  "Pe NÃƒÂ¡Ã‚Â»Ã‚Âmba Pajawiri",
-                          "changeLanguage":  "Change Language"
+                          "emergencyCallStrip":  "Pe NÃƒÆ’Ã‚Â¡Ãƒâ€šÃ‚Â»Ãƒâ€šÃ‚Âmba Pajawiri",
+                          "changeLanguage":  "Change Language",
+                          "bottomNav":  "Bottom Navigation"
                       },
     "offline":  {
                     "ready":  "[NEEDS_REVIEW] Ready for offline use",

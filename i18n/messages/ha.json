@@ -56,7 +56,8 @@
     "accessibility":  {
                           "ariaLabels":  "[NEEDS_REVIEW] Accessibility Strings",
                           "emergencyCallStrip":  "Kira Lambobin Gaggawa",
-                          "changeLanguage":  "Change Language"
+                          "changeLanguage":  "Change Language",
+                          "bottomNav":  "Bottom Navigation"
                       },
     "offline":  {
                     "ready":  "[NEEDS_REVIEW] Ready for offline use",

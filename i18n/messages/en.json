@@ -57,7 +57,8 @@
     "accessibility":  {
                           "ariaLabels":  "Accessibility Strings",
                           "emergencyCallStrip":  "Call Emergency Numbers",
-                          "changeLanguage":  "Change Language"
+                          "changeLanguage":  "Change Language",
+                          "bottomNav":  "Bottom Navigation"
                       },
     "offline":  {
                     "ready":  "Ready for offline use",
