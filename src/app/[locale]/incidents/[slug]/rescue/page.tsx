@@ -66,7 +66,7 @@ export default function RescuePage({ params }: RescuePageProps) {
     }
   };
 
-  const animationClass = direction === 'forward' ? 'animate-in slide-in-from-right' : 'animate-in slide-in-from-left';
+  const animationClass = direction === 'forward' ? 'motion-safe:animate-in motion-safe:slide-in-from-right' : 'motion-safe:animate-in motion-safe:slide-in-from-left';
 
   return (
     <div className="flex flex-col min-h-screen bg-background pb-24 overflow-hidden">
