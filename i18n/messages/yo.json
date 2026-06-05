@@ -1,0 +1,79 @@
+{
+    "nav":  {
+                "home":  "[NEEDS_REVIEW] Home",
+                "search":  "[NEEDS_REVIEW] Search",
+                "emergency":  "[NEEDS_REVIEW] Emergency",
+                "settings":  "[NEEDS_REVIEW] Settings"
+            },
+    "home":  {
+                 "title":  "[NEEDS_REVIEW] AidHero",
+                 "subtitle":  "[NEEDS_REVIEW] First Aid Guide",
+                 "searchPlaceholder":  "[NEEDS_REVIEW] Search for symptoms or injuries...",
+                 "sectionHeaders":  "[NEEDS_REVIEW] Categories"
+             },
+    "rescue":  {
+                   "startGuided":  "[NEEDS_REVIEW] Start Guided Rescue",
+                   "quickSteps":  "[NEEDS_REVIEW] Quick Steps",
+                   "stepXOfY":  "[NEEDS_REVIEW] Step {step} of {total}",
+                   "next":  "[NEEDS_REVIEW] Next",
+                   "back":  "[NEEDS_REVIEW] Back",
+                   "repeat":  "[NEEDS_REVIEW] Repeat",
+                   "callEmergency":  "[NEEDS_REVIEW] Call Emergency"
+               },
+    "search":  {
+                   "placeholder":  "[NEEDS_REVIEW] Search...",
+                   "noResults":  "[NEEDS_REVIEW] No results found for \"{query}\".",
+                   "recentSearches":  "[NEEDS_REVIEW] Recent Searches"
+               },
+    "incidents":  {
+                      "Cardiac":  "[NEEDS_REVIEW] Cardiac",
+                      "Respiratory":  "[NEEDS_REVIEW] Respiratory",
+                      "Trauma":  "[NEEDS_REVIEW] Trauma",
+                      "Burns":  "[NEEDS_REVIEW] Burns",
+                      "Environmental":  "[NEEDS_REVIEW] Environmental",
+                      "Neurological":  "[NEEDS_REVIEW] Neurological",
+                      "Poisoning":  "[NEEDS_REVIEW] Poisoning",
+                      "Obstetric":  "[NEEDS_REVIEW] Obstetric",
+                      "Paediatric":  "[NEEDS_REVIEW] Paediatric",
+                      "Allergic":  "[NEEDS_REVIEW] Allergic"
+                  },
+    "emergency":  {
+                      "callButton":  "[NEEDS_REVIEW] Call",
+                      "stateNames":  "[NEEDS_REVIEW] State Numbers",
+                      "nationalNumbers":  "[NEEDS_REVIEW] National Emergency Numbers"
+                  },
+    "settings":  {
+                     "language":  "[NEEDS_REVIEW] Language",
+                     "textSize":  "[NEEDS_REVIEW] Text Size",
+                     "contrast":  "[NEEDS_REVIEW] Contrast",
+                     "offline":  "[NEEDS_REVIEW] Offline Mode",
+                     "about":  "[NEEDS_REVIEW] About AidHero"
+                 },
+    "accessibility":  {
+                          "ariaLabels":  "[NEEDS_REVIEW] Accessibility Strings"
+                      },
+    "offline":  {
+                    "ready":  "[NEEDS_REVIEW] Ready for offline use",
+                    "limited":  "[NEEDS_REVIEW] Limited offline functionality",
+                    "updated":  "[NEEDS_REVIEW] Content updated"
+                },
+    "errors":  {
+                   "notFound":  "[NEEDS_REVIEW] Page not found",
+                   "audioUnavailable":  "[NEEDS_REVIEW] Audio unavailable in offline mode",
+                   "offlineLimitation":  "[NEEDS_REVIEW] This feature requires an internet connection"
+               },
+    "onboarding":  {
+                       "slide1Title":  "[NEEDS_REVIEW] Welcome to AidHero",
+                       "slide1Desc":  "[NEEDS_REVIEW] Your offline-first emergency companion.",
+                       "slide2Title":  "[NEEDS_REVIEW] Always Available",
+                       "slide2Desc":  "[NEEDS_REVIEW] Access life-saving guides even without internet.",
+                       "slide3Title":  "[NEEDS_REVIEW] Voice Guided",
+                       "slide3Desc":  "[NEEDS_REVIEW] Hands-free audio instructions during emergencies."
+                   },
+    "metadata":  {
+                     "title":  "[NEEDS_REVIEW] AidHero - Emergency First Aid Nigeria",
+                     "description":  "[NEEDS_REVIEW] Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
+                     "ogTitle":  "[NEEDS_REVIEW] AidHero - Emergency First Aid Nigeria",
+                     "ogDescription":  "[NEEDS_REVIEW] You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
+                 }
+}

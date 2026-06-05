@@ -1,0 +1,175 @@
+{
+  "id": "choking-adult",
+  "slug": "choking-adult",
+  "content_version": 1,
+  "content_version_date": "2026-06-05T16:34:44.548Z",
+  "category": "respiratory",
+  "title": "Choking (Adult)",
+  "title_translations": {
+    "en": "Choking (Adult)",
+    "ha": "[NEEDS_REVIEW] Choking (Adult)",
+    "ig": "[NEEDS_REVIEW] Choking (Adult)",
+    "yo": "[NEEDS_REVIEW] Choking (Adult)",
+    "pcm": "[NEEDS_REVIEW] Choking (Adult)"
+  },
+  "aliases": [
+    "can't breathe",
+    "something in throat",
+    "stuck in throat",
+    "e dey choke am",
+    "no fit breathe",
+    "mo gba simi",
+    "yana shakewa"
+  ],
+  "severity": "critical",
+  "immediate_warning": "Act immediately. Do not wait.",
+  "immediate_warning_translations": {
+    "en": "Act immediately. Do not wait.",
+    "ha": "[NEEDS_REVIEW] Act immediately. Do not wait.",
+    "ig": "[NEEDS_REVIEW] Act immediately. Do not wait.",
+    "yo": "[NEEDS_REVIEW] Act immediately. Do not wait.",
+    "pcm": "[NEEDS_REVIEW] Act immediately. Do not wait."
+  },
+  "description": "Choking occurs when a foreign object lodges in the throat or windpipe, blocking the flow of air.",
+  "description_translations": {
+    "en": "Choking occurs when a foreign object lodges in the throat or windpipe, blocking the flow of air.",
+    "ha": "[NEEDS_REVIEW] Choking occurs when a foreign object lodges in the throat or windpipe, blocking the flow of air.",
+    "ig": "[NEEDS_REVIEW] Choking occurs when a foreign object lodges in the throat or windpipe, blocking the flow of air.",
+    "yo": "[NEEDS_REVIEW] Choking occurs when a foreign object lodges in the throat or windpipe, blocking the flow of air.",
+    "pcm": "[NEEDS_REVIEW] Choking occurs when a foreign object lodges in the throat or windpipe, blocking the flow of air."
+  },
+  "signs": [
+    "Inability to talk",
+    "Clutching the throat",
+    "Blue lips or skin",
+    "Wheezing or gagging"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Inability to talk",
+      "ha": "[NEEDS_REVIEW] Inability to talk",
+      "ig": "[NEEDS_REVIEW] Inability to talk",
+      "yo": "[NEEDS_REVIEW] Inability to talk",
+      "pcm": "[NEEDS_REVIEW] Inability to talk"
+    },
+    "1": {
+      "en": "Clutching the throat",
+      "ha": "[NEEDS_REVIEW] Clutching the throat",
+      "ig": "[NEEDS_REVIEW] Clutching the throat",
+      "yo": "[NEEDS_REVIEW] Clutching the throat",
+      "pcm": "[NEEDS_REVIEW] Clutching the throat"
+    },
+    "2": {
+      "en": "Blue lips or skin",
+      "ha": "[NEEDS_REVIEW] Blue lips or skin",
+      "ig": "[NEEDS_REVIEW] Blue lips or skin",
+      "yo": "[NEEDS_REVIEW] Blue lips or skin",
+      "pcm": "[NEEDS_REVIEW] Blue lips or skin"
+    },
+    "3": {
+      "en": "Wheezing or gagging",
+      "ha": "[NEEDS_REVIEW] Wheezing or gagging",
+      "ig": "[NEEDS_REVIEW] Wheezing or gagging",
+      "yo": "[NEEDS_REVIEW] Wheezing or gagging",
+      "pcm": "[NEEDS_REVIEW] Wheezing or gagging"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Ask the person 'Are you choking?' If they cannot answer or cough, act immediately.",
+      "instruction_translations": {
+        "en": "Ask the person 'Are you choking?' If they cannot answer or cough, act immediately.",
+        "ha": "[NEEDS_REVIEW] Ask the person 'Are you choking?' If they cannot answer or cough, act immediately.",
+        "ig": "[NEEDS_REVIEW] Ask the person 'Are you choking?' If they cannot answer or cough, act immediately.",
+        "yo": "[NEEDS_REVIEW] Ask the person 'Are you choking?' If they cannot answer or cough, act immediately.",
+        "pcm": "[NEEDS_REVIEW] Ask the person 'Are you choking?' If they cannot answer or cough, act immediately."
+      },
+      "audio_path": "/audio/choking-adult/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Give 5 back blows. Stand behind them, bend them forward, and hit them firmly between the shoulder blades.",
+      "instruction_translations": {
+        "en": "Give 5 back blows. Stand behind them, bend them forward, and hit them firmly between the shoulder blades.",
+        "ha": "[NEEDS_REVIEW] Give 5 back blows. Stand behind them, bend them forward, and hit them firmly between the shoulder blades.",
+        "ig": "[NEEDS_REVIEW] Give 5 back blows. Stand behind them, bend them forward, and hit them firmly between the shoulder blades.",
+        "yo": "[NEEDS_REVIEW] Give 5 back blows. Stand behind them, bend them forward, and hit them firmly between the shoulder blades.",
+        "pcm": "[NEEDS_REVIEW] Give 5 back blows. Stand behind them, bend them forward, and hit them firmly between the shoulder blades."
+      },
+      "audio_path": "/audio/choking-adult/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "If the blockage doesn't clear, give 5 abdominal thrusts (Heimlich maneuver).",
+      "instruction_translations": {
+        "en": "If the blockage doesn't clear, give 5 abdominal thrusts (Heimlich maneuver).",
+        "ha": "[NEEDS_REVIEW] If the blockage doesn't clear, give 5 abdominal thrusts (Heimlich maneuver).",
+        "ig": "[NEEDS_REVIEW] If the blockage doesn't clear, give 5 abdominal thrusts (Heimlich maneuver).",
+        "yo": "[NEEDS_REVIEW] If the blockage doesn't clear, give 5 abdominal thrusts (Heimlich maneuver).",
+        "pcm": "[NEEDS_REVIEW] If the blockage doesn't clear, give 5 abdominal thrusts (Heimlich maneuver)."
+      },
+      "audio_path": "/audio/choking-adult/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Alternate between 5 back blows and 5 abdominal thrusts until the blockage is dislodged.",
+      "instruction_translations": {
+        "en": "Alternate between 5 back blows and 5 abdominal thrusts until the blockage is dislodged.",
+        "ha": "[NEEDS_REVIEW] Alternate between 5 back blows and 5 abdominal thrusts until the blockage is dislodged.",
+        "ig": "[NEEDS_REVIEW] Alternate between 5 back blows and 5 abdominal thrusts until the blockage is dislodged.",
+        "yo": "[NEEDS_REVIEW] Alternate between 5 back blows and 5 abdominal thrusts until the blockage is dislodged.",
+        "pcm": "[NEEDS_REVIEW] Alternate between 5 back blows and 5 abdominal thrusts until the blockage is dislodged."
+      },
+      "audio_path": "/audio/choking-adult/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "If the person becomes unconscious, lower them to the ground and begin CPR.",
+      "instruction_translations": {
+        "en": "If the person becomes unconscious, lower them to the ground and begin CPR.",
+        "ha": "[NEEDS_REVIEW] If the person becomes unconscious, lower them to the ground and begin CPR.",
+        "ig": "[NEEDS_REVIEW] If the person becomes unconscious, lower them to the ground and begin CPR.",
+        "yo": "[NEEDS_REVIEW] If the person becomes unconscious, lower them to the ground and begin CPR.",
+        "pcm": "[NEEDS_REVIEW] If the person becomes unconscious, lower them to the ground and begin CPR."
+      },
+      "audio_path": "/audio/choking-adult/{lang}/step-5.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not put your fingers into their mouth unless you can see the object.",
+    "Do not give them water to drink."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not put your fingers into their mouth unless you can see the object.",
+      "ha": "[NEEDS_REVIEW] Do not put your fingers into their mouth unless you can see the object.",
+      "ig": "[NEEDS_REVIEW] Do not put your fingers into their mouth unless you can see the object.",
+      "yo": "[NEEDS_REVIEW] Do not put your fingers into their mouth unless you can see the object.",
+      "pcm": "[NEEDS_REVIEW] Do not put your fingers into their mouth unless you can see the object."
+    },
+    "1": {
+      "en": "Do not give them water to drink.",
+      "ha": "[NEEDS_REVIEW] Do not give them water to drink.",
+      "ig": "[NEEDS_REVIEW] Do not give them water to drink.",
+      "yo": "[NEEDS_REVIEW] Do not give them water to drink.",
+      "pcm": "[NEEDS_REVIEW] Do not give them water to drink."
+    }
+  },
+  "hospital_threshold": "Seek medical help if the object remains stuck, or if abdominal thrusts were used.",
+  "hospital_threshold_translations": {
+    "en": "Seek medical help if the object remains stuck, or if abdominal thrusts were used.",
+    "ha": "[NEEDS_REVIEW] Seek medical help if the object remains stuck, or if abdominal thrusts were used.",
+    "ig": "[NEEDS_REVIEW] Seek medical help if the object remains stuck, or if abdominal thrusts were used.",
+    "yo": "[NEEDS_REVIEW] Seek medical help if the object remains stuck, or if abdominal thrusts were used.",
+    "pcm": "[NEEDS_REVIEW] Seek medical help if the object remains stuck, or if abdominal thrusts were used."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-06-05T16:34:44.548Z",
+    "medical_references": [
+      "WHO First Aid"
+    ]
+  }
+}

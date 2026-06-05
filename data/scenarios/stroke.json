@@ -1,0 +1,174 @@
+{
+  "id": "stroke",
+  "slug": "stroke",
+  "content_version": 1,
+  "content_version_date": "2026-06-05T16:34:44.548Z",
+  "category": "neurological",
+  "title": "Stroke",
+  "title_translations": {
+    "en": "Stroke",
+    "ha": "[NEEDS_REVIEW] Stroke",
+    "ig": "[NEEDS_REVIEW] Stroke",
+    "yo": "[NEEDS_REVIEW] Stroke",
+    "pcm": "[NEEDS_REVIEW] Stroke"
+  },
+  "aliases": [
+    "face drooping",
+    "arm weakness",
+    "speech problem",
+    "one side weak",
+    "brain attack",
+    "face don fall"
+  ],
+  "severity": "critical",
+  "immediate_warning": "Time is critical. Get to a hospital immediately.",
+  "immediate_warning_translations": {
+    "en": "Time is critical. Get to a hospital immediately.",
+    "ha": "[NEEDS_REVIEW] Time is critical. Get to a hospital immediately.",
+    "ig": "[NEEDS_REVIEW] Time is critical. Get to a hospital immediately.",
+    "yo": "[NEEDS_REVIEW] Time is critical. Get to a hospital immediately.",
+    "pcm": "[NEEDS_REVIEW] Time is critical. Get to a hospital immediately."
+  },
+  "description": "A stroke occurs when the blood supply to part of the brain is interrupted.",
+  "description_translations": {
+    "en": "A stroke occurs when the blood supply to part of the brain is interrupted.",
+    "ha": "[NEEDS_REVIEW] A stroke occurs when the blood supply to part of the brain is interrupted.",
+    "ig": "[NEEDS_REVIEW] A stroke occurs when the blood supply to part of the brain is interrupted.",
+    "yo": "[NEEDS_REVIEW] A stroke occurs when the blood supply to part of the brain is interrupted.",
+    "pcm": "[NEEDS_REVIEW] A stroke occurs when the blood supply to part of the brain is interrupted."
+  },
+  "signs": [
+    "Face drooping on one side",
+    "Arm weakness or numbness",
+    "Slurred or strange speech"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Face drooping on one side",
+      "ha": "[NEEDS_REVIEW] Face drooping on one side",
+      "ig": "[NEEDS_REVIEW] Face drooping on one side",
+      "yo": "[NEEDS_REVIEW] Face drooping on one side",
+      "pcm": "[NEEDS_REVIEW] Face drooping on one side"
+    },
+    "1": {
+      "en": "Arm weakness or numbness",
+      "ha": "[NEEDS_REVIEW] Arm weakness or numbness",
+      "ig": "[NEEDS_REVIEW] Arm weakness or numbness",
+      "yo": "[NEEDS_REVIEW] Arm weakness or numbness",
+      "pcm": "[NEEDS_REVIEW] Arm weakness or numbness"
+    },
+    "2": {
+      "en": "Slurred or strange speech",
+      "ha": "[NEEDS_REVIEW] Slurred or strange speech",
+      "ig": "[NEEDS_REVIEW] Slurred or strange speech",
+      "yo": "[NEEDS_REVIEW] Slurred or strange speech",
+      "pcm": "[NEEDS_REVIEW] Slurred or strange speech"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Use the FAST test: Face (ask them to smile), Arms (ask them to raise both arms), Speech (ask them to repeat a simple phrase), Time (call emergency services).",
+      "instruction_translations": {
+        "en": "Use the FAST test: Face (ask them to smile), Arms (ask them to raise both arms), Speech (ask them to repeat a simple phrase), Time (call emergency services).",
+        "ha": "[NEEDS_REVIEW] Use the FAST test: Face (ask them to smile), Arms (ask them to raise both arms), Speech (ask them to repeat a simple phrase), Time (call emergency services).",
+        "ig": "[NEEDS_REVIEW] Use the FAST test: Face (ask them to smile), Arms (ask them to raise both arms), Speech (ask them to repeat a simple phrase), Time (call emergency services).",
+        "yo": "[NEEDS_REVIEW] Use the FAST test: Face (ask them to smile), Arms (ask them to raise both arms), Speech (ask them to repeat a simple phrase), Time (call emergency services).",
+        "pcm": "[NEEDS_REVIEW] Use the FAST test: Face (ask them to smile), Arms (ask them to raise both arms), Speech (ask them to repeat a simple phrase), Time (call emergency services)."
+      },
+      "audio_path": "/audio/stroke/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Call emergency services immediately or take them to the nearest major hospital.",
+      "instruction_translations": {
+        "en": "Call emergency services immediately or take them to the nearest major hospital.",
+        "ha": "[NEEDS_REVIEW] Call emergency services immediately or take them to the nearest major hospital.",
+        "ig": "[NEEDS_REVIEW] Call emergency services immediately or take them to the nearest major hospital.",
+        "yo": "[NEEDS_REVIEW] Call emergency services immediately or take them to the nearest major hospital.",
+        "pcm": "[NEEDS_REVIEW] Call emergency services immediately or take them to the nearest major hospital."
+      },
+      "audio_path": "/audio/stroke/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "Note the exact time when symptoms first started.",
+      "instruction_translations": {
+        "en": "Note the exact time when symptoms first started.",
+        "ha": "[NEEDS_REVIEW] Note the exact time when symptoms first started.",
+        "ig": "[NEEDS_REVIEW] Note the exact time when symptoms first started.",
+        "yo": "[NEEDS_REVIEW] Note the exact time when symptoms first started.",
+        "pcm": "[NEEDS_REVIEW] Note the exact time when symptoms first started."
+      },
+      "audio_path": "/audio/stroke/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Keep the person calm and comfortable. Do not give them anything to eat or drink.",
+      "instruction_translations": {
+        "en": "Keep the person calm and comfortable. Do not give them anything to eat or drink.",
+        "ha": "[NEEDS_REVIEW] Keep the person calm and comfortable. Do not give them anything to eat or drink.",
+        "ig": "[NEEDS_REVIEW] Keep the person calm and comfortable. Do not give them anything to eat or drink.",
+        "yo": "[NEEDS_REVIEW] Keep the person calm and comfortable. Do not give them anything to eat or drink.",
+        "pcm": "[NEEDS_REVIEW] Keep the person calm and comfortable. Do not give them anything to eat or drink."
+      },
+      "audio_path": "/audio/stroke/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "If they become unconscious, place them in the recovery position.",
+      "instruction_translations": {
+        "en": "If they become unconscious, place them in the recovery position.",
+        "ha": "[NEEDS_REVIEW] If they become unconscious, place them in the recovery position.",
+        "ig": "[NEEDS_REVIEW] If they become unconscious, place them in the recovery position.",
+        "yo": "[NEEDS_REVIEW] If they become unconscious, place them in the recovery position.",
+        "pcm": "[NEEDS_REVIEW] If they become unconscious, place them in the recovery position."
+      },
+      "audio_path": "/audio/stroke/{lang}/step-5.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not give them aspirin or any other medication.",
+    "Do not give them anything to eat or drink.",
+    "Do not let them sleep it off."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not give them aspirin or any other medication.",
+      "ha": "[NEEDS_REVIEW] Do not give them aspirin or any other medication.",
+      "ig": "[NEEDS_REVIEW] Do not give them aspirin or any other medication.",
+      "yo": "[NEEDS_REVIEW] Do not give them aspirin or any other medication.",
+      "pcm": "[NEEDS_REVIEW] Do not give them aspirin or any other medication."
+    },
+    "1": {
+      "en": "Do not give them anything to eat or drink.",
+      "ha": "[NEEDS_REVIEW] Do not give them anything to eat or drink.",
+      "ig": "[NEEDS_REVIEW] Do not give them anything to eat or drink.",
+      "yo": "[NEEDS_REVIEW] Do not give them anything to eat or drink.",
+      "pcm": "[NEEDS_REVIEW] Do not give them anything to eat or drink."
+    },
+    "2": {
+      "en": "Do not let them sleep it off.",
+      "ha": "[NEEDS_REVIEW] Do not let them sleep it off.",
+      "ig": "[NEEDS_REVIEW] Do not let them sleep it off.",
+      "yo": "[NEEDS_REVIEW] Do not let them sleep it off.",
+      "pcm": "[NEEDS_REVIEW] Do not let them sleep it off."
+    }
+  },
+  "hospital_threshold": "Always required immediately.",
+  "hospital_threshold_translations": {
+    "en": "Always required immediately.",
+    "ha": "[NEEDS_REVIEW] Always required immediately.",
+    "ig": "[NEEDS_REVIEW] Always required immediately.",
+    "yo": "[NEEDS_REVIEW] Always required immediately.",
+    "pcm": "[NEEDS_REVIEW] Always required immediately."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-06-05T16:34:44.548Z",
+    "medical_references": [
+      "WHO First Aid"
+    ]
+  }
+}

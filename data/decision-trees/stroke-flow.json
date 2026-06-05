@@ -1,0 +1,52 @@
+{
+  "id": "stroke-flow",
+  "incident_id": "stroke",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Is the person conscious?",
+      "translations": {
+        "en": "Is the person conscious?",
+        "ha": "[NEEDS_REVIEW] Is the person conscious?",
+        "ig": "[NEEDS_REVIEW] Is the person conscious?",
+        "yo": "[NEEDS_REVIEW] Is the person conscious?",
+        "pcm": "[NEEDS_REVIEW] Is the person conscious?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "conscious-stroke"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "unconscious-stroke"
+        }
+      ]
+    },
+    "conscious-stroke": {
+      "type": "instruction",
+      "steps_reference": "stroke",
+      "variant": "conscious"
+    },
+    "unconscious-stroke": {
+      "type": "instruction",
+      "steps_reference": "stroke",
+      "variant": "unconscious"
+    }
+  }
+}

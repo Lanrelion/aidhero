@@ -1,0 +1,134 @@
+[
+  {
+    "id": "cardiac",
+    "name": "Cardiac",
+    "name_translations": {
+      "en": "Cardiac",
+      "ha": "[NEEDS_REVIEW] Cardiac",
+      "ig": "[NEEDS_REVIEW] Cardiac",
+      "yo": "[NEEDS_REVIEW] Cardiac",
+      "pcm": "[NEEDS_REVIEW] Cardiac"
+    }
+  },
+  {
+    "id": "respiratory",
+    "name": "Respiratory",
+    "name_translations": {
+      "en": "Respiratory",
+      "ha": "[NEEDS_REVIEW] Respiratory",
+      "ig": "[NEEDS_REVIEW] Respiratory",
+      "yo": "[NEEDS_REVIEW] Respiratory",
+      "pcm": "[NEEDS_REVIEW] Respiratory"
+    }
+  },
+  {
+    "id": "trauma",
+    "name": "Trauma",
+    "name_translations": {
+      "en": "Trauma",
+      "ha": "[NEEDS_REVIEW] Trauma",
+      "ig": "[NEEDS_REVIEW] Trauma",
+      "yo": "[NEEDS_REVIEW] Trauma",
+      "pcm": "[NEEDS_REVIEW] Trauma"
+    }
+  },
+  {
+    "id": "burns",
+    "name": "Burns",
+    "name_translations": {
+      "en": "Burns",
+      "ha": "[NEEDS_REVIEW] Burns",
+      "ig": "[NEEDS_REVIEW] Burns",
+      "yo": "[NEEDS_REVIEW] Burns",
+      "pcm": "[NEEDS_REVIEW] Burns"
+    }
+  },
+  {
+    "id": "environmental",
+    "name": "Environmental",
+    "name_translations": {
+      "en": "Environmental",
+      "ha": "[NEEDS_REVIEW] Environmental",
+      "ig": "[NEEDS_REVIEW] Environmental",
+      "yo": "[NEEDS_REVIEW] Environmental",
+      "pcm": "[NEEDS_REVIEW] Environmental"
+    }
+  },
+  {
+    "id": "neurological",
+    "name": "Neurological",
+    "name_translations": {
+      "en": "Neurological",
+      "ha": "[NEEDS_REVIEW] Neurological",
+      "ig": "[NEEDS_REVIEW] Neurological",
+      "yo": "[NEEDS_REVIEW] Neurological",
+      "pcm": "[NEEDS_REVIEW] Neurological"
+    }
+  },
+  {
+    "id": "poisoning",
+    "name": "Poisoning",
+    "name_translations": {
+      "en": "Poisoning",
+      "ha": "[NEEDS_REVIEW] Poisoning",
+      "ig": "[NEEDS_REVIEW] Poisoning",
+      "yo": "[NEEDS_REVIEW] Poisoning",
+      "pcm": "[NEEDS_REVIEW] Poisoning"
+    }
+  },
+  {
+    "id": "obstetric",
+    "name": "Obstetric",
+    "name_translations": {
+      "en": "Obstetric",
+      "ha": "[NEEDS_REVIEW] Obstetric",
+      "ig": "[NEEDS_REVIEW] Obstetric",
+      "yo": "[NEEDS_REVIEW] Obstetric",
+      "pcm": "[NEEDS_REVIEW] Obstetric"
+    }
+  },
+  {
+    "id": "paediatric",
+    "name": "Paediatric",
+    "name_translations": {
+      "en": "Paediatric",
+      "ha": "[NEEDS_REVIEW] Paediatric",
+      "ig": "[NEEDS_REVIEW] Paediatric",
+      "yo": "[NEEDS_REVIEW] Paediatric",
+      "pcm": "[NEEDS_REVIEW] Paediatric"
+    }
+  },
+  {
+    "id": "allergic",
+    "name": "Allergic",
+    "name_translations": {
+      "en": "Allergic",
+      "ha": "[NEEDS_REVIEW] Allergic",
+      "ig": "[NEEDS_REVIEW] Allergic",
+      "yo": "[NEEDS_REVIEW] Allergic",
+      "pcm": "[NEEDS_REVIEW] Allergic"
+    }
+  },
+  {
+    "id": "gastrointestinal",
+    "name": "Gastrointestinal",
+    "name_translations": {
+      "en": "Gastrointestinal",
+      "ha": "[NEEDS_REVIEW] Gastrointestinal",
+      "ig": "[NEEDS_REVIEW] Gastrointestinal",
+      "yo": "[NEEDS_REVIEW] Gastrointestinal",
+      "pcm": "[NEEDS_REVIEW] Gastrointestinal"
+    }
+  },
+  {
+    "id": "other",
+    "name": "Other",
+    "name_translations": {
+      "en": "Other",
+      "ha": "[NEEDS_REVIEW] Other",
+      "ig": "[NEEDS_REVIEW] Other",
+      "yo": "[NEEDS_REVIEW] Other",
+      "pcm": "[NEEDS_REVIEW] Other"
+    }
+  }
+]

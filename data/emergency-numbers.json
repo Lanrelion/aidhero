@@ -1,0 +1,192 @@
+{
+  "national": [
+    {
+      "id": "national-112",
+      "name": "National Emergency Number",
+      "name_translations": {
+        "en": "National Emergency Number",
+        "ha": "[NEEDS_REVIEW] National Emergency Number",
+        "ig": "[NEEDS_REVIEW] National Emergency Number",
+        "yo": "[NEEDS_REVIEW] National Emergency Number",
+        "pcm": "[NEEDS_REVIEW] National Emergency Number"
+      },
+      "number": "112",
+      "type": "general"
+    },
+    {
+      "id": "national-199",
+      "name": "Police Emergency",
+      "name_translations": {
+        "en": "Police Emergency",
+        "ha": "[NEEDS_REVIEW] Police Emergency",
+        "ig": "[NEEDS_REVIEW] Police Emergency",
+        "yo": "[NEEDS_REVIEW] Police Emergency",
+        "pcm": "[NEEDS_REVIEW] Police Emergency"
+      },
+      "number": "199",
+      "type": "police"
+    },
+    {
+      "id": "nema",
+      "name": "NEMA (National Emergency Management Agency)",
+      "name_translations": {
+        "en": "NEMA (National Emergency Management Agency)",
+        "ha": "[NEEDS_REVIEW] NEMA (National Emergency Management Agency)",
+        "ig": "[NEEDS_REVIEW] NEMA (National Emergency Management Agency)",
+        "yo": "[NEEDS_REVIEW] NEMA (National Emergency Management Agency)",
+        "pcm": "[NEEDS_REVIEW] NEMA (National Emergency Management Agency)"
+      },
+      "number": "0800 CALL NEMA",
+      "type": "general"
+    }
+  ],
+  "states": {
+    "Lagos": {
+      "state": "Lagos",
+      "contacts": [
+        {
+          "id": "lagos-lasema",
+          "name": "LASEMA",
+          "name_translations": {
+            "en": "LASEMA",
+            "ha": "[NEEDS_REVIEW] LASEMA",
+            "ig": "[NEEDS_REVIEW] LASEMA",
+            "yo": "[NEEDS_REVIEW] LASEMA",
+            "pcm": "[NEEDS_REVIEW] LASEMA"
+          },
+          "number": "767",
+          "type": "general"
+        },
+        {
+          "id": "lagos-lasambus",
+          "name": "LASAMBUS",
+          "name_translations": {
+            "en": "LASAMBUS",
+            "ha": "[NEEDS_REVIEW] LASAMBUS",
+            "ig": "[NEEDS_REVIEW] LASAMBUS",
+            "yo": "[NEEDS_REVIEW] LASAMBUS",
+            "pcm": "[NEEDS_REVIEW] LASAMBUS"
+          },
+          "number": "112",
+          "type": "medical"
+        },
+        {
+          "id": "lagos-police",
+          "name": "Lagos State Police Command",
+          "name_translations": {
+            "en": "Lagos State Police Command",
+            "ha": "[NEEDS_REVIEW] Lagos State Police Command",
+            "ig": "[NEEDS_REVIEW] Lagos State Police Command",
+            "yo": "[NEEDS_REVIEW] Lagos State Police Command",
+            "pcm": "[NEEDS_REVIEW] Lagos State Police Command"
+          },
+          "number": "07055462708",
+          "type": "police"
+        }
+      ]
+    },
+    "Abuja (FCT)": {
+      "state": "Abuja (FCT)",
+      "contacts": [
+        {
+          "id": "fct-fema",
+          "name": "FEMA",
+          "name_translations": {
+            "en": "FEMA",
+            "ha": "[NEEDS_REVIEW] FEMA",
+            "ig": "[NEEDS_REVIEW] FEMA",
+            "yo": "[NEEDS_REVIEW] FEMA",
+            "pcm": "[NEEDS_REVIEW] FEMA"
+          },
+          "number": "112",
+          "type": "general"
+        },
+        {
+          "id": "fct-police",
+          "name": "FCT Police Command",
+          "name_translations": {
+            "en": "FCT Police Command",
+            "ha": "[NEEDS_REVIEW] FCT Police Command",
+            "ig": "[NEEDS_REVIEW] FCT Police Command",
+            "yo": "[NEEDS_REVIEW] FCT Police Command",
+            "pcm": "[NEEDS_REVIEW] FCT Police Command"
+          },
+          "number": "08032003913",
+          "type": "police"
+        }
+      ]
+    },
+    "Rivers": {
+      "state": "Rivers",
+      "contacts": [
+        {
+          "id": "rivers-police",
+          "name": "Rivers State Police",
+          "name_translations": {
+            "en": "Rivers State Police",
+            "ha": "[NEEDS_REVIEW] Rivers State Police",
+            "ig": "[NEEDS_REVIEW] Rivers State Police",
+            "yo": "[NEEDS_REVIEW] Rivers State Police",
+            "pcm": "[NEEDS_REVIEW] Rivers State Police"
+          },
+          "number": "08032003514",
+          "type": "police"
+        }
+      ]
+    },
+    "Kano": {
+      "state": "Kano",
+      "contacts": [
+        {
+          "id": "kano-police",
+          "name": "Kano State Police",
+          "name_translations": {
+            "en": "Kano State Police",
+            "ha": "[NEEDS_REVIEW] Kano State Police",
+            "ig": "[NEEDS_REVIEW] Kano State Police",
+            "yo": "[NEEDS_REVIEW] Kano State Police",
+            "pcm": "[NEEDS_REVIEW] Kano State Police"
+          },
+          "number": "08032419754",
+          "type": "police"
+        }
+      ]
+    },
+    "Oyo": {
+      "state": "Oyo",
+      "contacts": [
+        {
+          "id": "oyo-police",
+          "name": "Oyo State Police",
+          "name_translations": {
+            "en": "Oyo State Police",
+            "ha": "[NEEDS_REVIEW] Oyo State Police",
+            "ig": "[NEEDS_REVIEW] Oyo State Police",
+            "yo": "[NEEDS_REVIEW] Oyo State Police",
+            "pcm": "[NEEDS_REVIEW] Oyo State Police"
+          },
+          "number": "08081768614",
+          "type": "police"
+        }
+      ]
+    },
+    "Kaduna": {
+      "state": "Kaduna",
+      "contacts": [
+        {
+          "id": "kaduna-police",
+          "name": "Kaduna State Police",
+          "name_translations": {
+            "en": "Kaduna State Police",
+            "ha": "[NEEDS_REVIEW] Kaduna State Police",
+            "ig": "[NEEDS_REVIEW] Kaduna State Police",
+            "yo": "[NEEDS_REVIEW] Kaduna State Police",
+            "pcm": "[NEEDS_REVIEW] Kaduna State Police"
+          },
+          "number": "08075391105",
+          "type": "police"
+        }
+      ]
+    }
+  }
+}

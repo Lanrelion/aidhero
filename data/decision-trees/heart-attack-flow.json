@@ -1,0 +1,87 @@
+{
+  "id": "heart-attack-flow",
+  "incident_id": "heart-attack",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Is the person conscious?",
+      "translations": {
+        "en": "Is the person conscious?",
+        "ha": "[NEEDS_REVIEW] Is the person conscious?",
+        "ig": "[NEEDS_REVIEW] Is the person conscious?",
+        "yo": "[NEEDS_REVIEW] Is the person conscious?",
+        "pcm": "[NEEDS_REVIEW] Is the person conscious?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "q2"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "cpr-protocol"
+        }
+      ]
+    },
+    "q2": {
+      "type": "question",
+      "text": "Are they breathing normally?",
+      "translations": {
+        "en": "Are they breathing normally?",
+        "ha": "[NEEDS_REVIEW] Are they breathing normally?",
+        "ig": "[NEEDS_REVIEW] Are they breathing normally?",
+        "yo": "[NEEDS_REVIEW] Are they breathing normally?",
+        "pcm": "[NEEDS_REVIEW] Are they breathing normally?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "angina-steps"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "cpr-protocol"
+        }
+      ]
+    },
+    "cpr-protocol": {
+      "type": "instruction",
+      "steps_reference": "cpr",
+      "variant": "unconscious"
+    },
+    "angina-steps": {
+      "type": "instruction",
+      "steps_reference": "heart-attack",
+      "variant": "conscious"
+    }
+  }
+}

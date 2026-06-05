@@ -1,0 +1,92 @@
+{
+  "id": "choking-adult-flow",
+  "incident_id": "choking-adult",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Can the person cough or speak?",
+      "translations": {
+        "en": "Can the person cough or speak?",
+        "ha": "[NEEDS_REVIEW] Can the person cough or speak?",
+        "ig": "[NEEDS_REVIEW] Can the person cough or speak?",
+        "yo": "[NEEDS_REVIEW] Can the person cough or speak?",
+        "pcm": "[NEEDS_REVIEW] Can the person cough or speak?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "mild-choking"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "q2"
+        }
+      ]
+    },
+    "q2": {
+      "type": "question",
+      "text": "Is the person pregnant or obese?",
+      "translations": {
+        "en": "Is the person pregnant or obese?",
+        "ha": "[NEEDS_REVIEW] Is the person pregnant or obese?",
+        "ig": "[NEEDS_REVIEW] Is the person pregnant or obese?",
+        "yo": "[NEEDS_REVIEW] Is the person pregnant or obese?",
+        "pcm": "[NEEDS_REVIEW] Is the person pregnant or obese?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "chest-thrusts"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "abdominal-thrusts"
+        }
+      ]
+    },
+    "mild-choking": {
+      "type": "instruction",
+      "steps_reference": "choking-adult",
+      "variant": "mild"
+    },
+    "chest-thrusts": {
+      "type": "instruction",
+      "steps_reference": "choking-adult",
+      "variant": "chest"
+    },
+    "abdominal-thrusts": {
+      "type": "instruction",
+      "steps_reference": "choking-adult",
+      "variant": "abdominal"
+    }
+  }
+}

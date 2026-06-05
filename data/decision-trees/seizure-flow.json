@@ -1,0 +1,92 @@
+{
+  "id": "seizure-flow",
+  "incident_id": "seizure",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Is this their first seizure?",
+      "translations": {
+        "en": "Is this their first seizure?",
+        "ha": "[NEEDS_REVIEW] Is this their first seizure?",
+        "ig": "[NEEDS_REVIEW] Is this their first seizure?",
+        "yo": "[NEEDS_REVIEW] Is this their first seizure?",
+        "pcm": "[NEEDS_REVIEW] Is this their first seizure?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "first-seizure"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "q2"
+        }
+      ]
+    },
+    "q2": {
+      "type": "question",
+      "text": "Has it lasted more than 5 minutes?",
+      "translations": {
+        "en": "Has it lasted more than 5 minutes?",
+        "ha": "[NEEDS_REVIEW] Has it lasted more than 5 minutes?",
+        "ig": "[NEEDS_REVIEW] Has it lasted more than 5 minutes?",
+        "yo": "[NEEDS_REVIEW] Has it lasted more than 5 minutes?",
+        "pcm": "[NEEDS_REVIEW] Has it lasted more than 5 minutes?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "prolonged-seizure"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "known-seizure"
+        }
+      ]
+    },
+    "first-seizure": {
+      "type": "instruction",
+      "steps_reference": "seizure",
+      "variant": "first"
+    },
+    "prolonged-seizure": {
+      "type": "instruction",
+      "steps_reference": "seizure",
+      "variant": "prolonged"
+    },
+    "known-seizure": {
+      "type": "instruction",
+      "steps_reference": "seizure",
+      "variant": "known"
+    }
+  }
+}

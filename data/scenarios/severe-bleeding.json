@@ -1,0 +1,165 @@
+{
+  "id": "severe-bleeding",
+  "slug": "severe-bleeding",
+  "content_version": 1,
+  "content_version_date": "2026-06-05T16:34:44.548Z",
+  "category": "trauma",
+  "title": "Severe Bleeding",
+  "title_translations": {
+    "en": "Severe Bleeding",
+    "ha": "[NEEDS_REVIEW] Severe Bleeding",
+    "ig": "[NEEDS_REVIEW] Severe Bleeding",
+    "yo": "[NEEDS_REVIEW] Severe Bleeding",
+    "pcm": "[NEEDS_REVIEW] Severe Bleeding"
+  },
+  "aliases": [
+    "heavy bleeding",
+    "deep cut",
+    "blood gushing",
+    "e dey bleed well well",
+    "blood too much"
+  ],
+  "severity": "critical",
+  "immediate_warning": "Act fast. Severe bleeding can be fatal within minutes.",
+  "immediate_warning_translations": {
+    "en": "Act fast. Severe bleeding can be fatal within minutes.",
+    "ha": "[NEEDS_REVIEW] Act fast. Severe bleeding can be fatal within minutes.",
+    "ig": "[NEEDS_REVIEW] Act fast. Severe bleeding can be fatal within minutes.",
+    "yo": "[NEEDS_REVIEW] Act fast. Severe bleeding can be fatal within minutes.",
+    "pcm": "[NEEDS_REVIEW] Act fast. Severe bleeding can be fatal within minutes."
+  },
+  "description": "Severe bleeding happens when a major blood vessel is cut or torn.",
+  "description_translations": {
+    "en": "Severe bleeding happens when a major blood vessel is cut or torn.",
+    "ha": "[NEEDS_REVIEW] Severe bleeding happens when a major blood vessel is cut or torn.",
+    "ig": "[NEEDS_REVIEW] Severe bleeding happens when a major blood vessel is cut or torn.",
+    "yo": "[NEEDS_REVIEW] Severe bleeding happens when a major blood vessel is cut or torn.",
+    "pcm": "[NEEDS_REVIEW] Severe bleeding happens when a major blood vessel is cut or torn."
+  },
+  "signs": [
+    "Blood spurting from a wound",
+    "Blood pooling on the ground",
+    "Clothing soaked with blood"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Blood spurting from a wound",
+      "ha": "[NEEDS_REVIEW] Blood spurting from a wound",
+      "ig": "[NEEDS_REVIEW] Blood spurting from a wound",
+      "yo": "[NEEDS_REVIEW] Blood spurting from a wound",
+      "pcm": "[NEEDS_REVIEW] Blood spurting from a wound"
+    },
+    "1": {
+      "en": "Blood pooling on the ground",
+      "ha": "[NEEDS_REVIEW] Blood pooling on the ground",
+      "ig": "[NEEDS_REVIEW] Blood pooling on the ground",
+      "yo": "[NEEDS_REVIEW] Blood pooling on the ground",
+      "pcm": "[NEEDS_REVIEW] Blood pooling on the ground"
+    },
+    "2": {
+      "en": "Clothing soaked with blood",
+      "ha": "[NEEDS_REVIEW] Clothing soaked with blood",
+      "ig": "[NEEDS_REVIEW] Clothing soaked with blood",
+      "yo": "[NEEDS_REVIEW] Clothing soaked with blood",
+      "pcm": "[NEEDS_REVIEW] Clothing soaked with blood"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Find the source of the bleeding and apply direct, firm pressure to the wound with a clean cloth or your hands.",
+      "instruction_translations": {
+        "en": "Find the source of the bleeding and apply direct, firm pressure to the wound with a clean cloth or your hands.",
+        "ha": "[NEEDS_REVIEW] Find the source of the bleeding and apply direct, firm pressure to the wound with a clean cloth or your hands.",
+        "ig": "[NEEDS_REVIEW] Find the source of the bleeding and apply direct, firm pressure to the wound with a clean cloth or your hands.",
+        "yo": "[NEEDS_REVIEW] Find the source of the bleeding and apply direct, firm pressure to the wound with a clean cloth or your hands.",
+        "pcm": "[NEEDS_REVIEW] Find the source of the bleeding and apply direct, firm pressure to the wound with a clean cloth or your hands."
+      },
+      "audio_path": "/audio/severe-bleeding/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "If the bleeding is on an arm or leg, elevate the limb above the heart if possible.",
+      "instruction_translations": {
+        "en": "If the bleeding is on an arm or leg, elevate the limb above the heart if possible.",
+        "ha": "[NEEDS_REVIEW] If the bleeding is on an arm or leg, elevate the limb above the heart if possible.",
+        "ig": "[NEEDS_REVIEW] If the bleeding is on an arm or leg, elevate the limb above the heart if possible.",
+        "yo": "[NEEDS_REVIEW] If the bleeding is on an arm or leg, elevate the limb above the heart if possible.",
+        "pcm": "[NEEDS_REVIEW] If the bleeding is on an arm or leg, elevate the limb above the heart if possible."
+      },
+      "audio_path": "/audio/severe-bleeding/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "Do not remove the cloth. If blood soaks through, put another cloth on top and keep pressing.",
+      "instruction_translations": {
+        "en": "Do not remove the cloth. If blood soaks through, put another cloth on top and keep pressing.",
+        "ha": "[NEEDS_REVIEW] Do not remove the cloth. If blood soaks through, put another cloth on top and keep pressing.",
+        "ig": "[NEEDS_REVIEW] Do not remove the cloth. If blood soaks through, put another cloth on top and keep pressing.",
+        "yo": "[NEEDS_REVIEW] Do not remove the cloth. If blood soaks through, put another cloth on top and keep pressing.",
+        "pcm": "[NEEDS_REVIEW] Do not remove the cloth. If blood soaks through, put another cloth on top and keep pressing."
+      },
+      "audio_path": "/audio/severe-bleeding/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Keep pressure continuous for at least 10 minutes without checking the wound.",
+      "instruction_translations": {
+        "en": "Keep pressure continuous for at least 10 minutes without checking the wound.",
+        "ha": "[NEEDS_REVIEW] Keep pressure continuous for at least 10 minutes without checking the wound.",
+        "ig": "[NEEDS_REVIEW] Keep pressure continuous for at least 10 minutes without checking the wound.",
+        "yo": "[NEEDS_REVIEW] Keep pressure continuous for at least 10 minutes without checking the wound.",
+        "pcm": "[NEEDS_REVIEW] Keep pressure continuous for at least 10 minutes without checking the wound."
+      },
+      "audio_path": "/audio/severe-bleeding/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "If the bleeding does not stop with direct pressure, apply a tourniquet 2 to 3 inches above the wound.",
+      "instruction_translations": {
+        "en": "If the bleeding does not stop with direct pressure, apply a tourniquet 2 to 3 inches above the wound.",
+        "ha": "[NEEDS_REVIEW] If the bleeding does not stop with direct pressure, apply a tourniquet 2 to 3 inches above the wound.",
+        "ig": "[NEEDS_REVIEW] If the bleeding does not stop with direct pressure, apply a tourniquet 2 to 3 inches above the wound.",
+        "yo": "[NEEDS_REVIEW] If the bleeding does not stop with direct pressure, apply a tourniquet 2 to 3 inches above the wound.",
+        "pcm": "[NEEDS_REVIEW] If the bleeding does not stop with direct pressure, apply a tourniquet 2 to 3 inches above the wound."
+      },
+      "audio_path": "/audio/severe-bleeding/{lang}/step-5.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not remove the original cloth or bandage.",
+    "Do not apply a tourniquet over a joint."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not remove the original cloth or bandage.",
+      "ha": "[NEEDS_REVIEW] Do not remove the original cloth or bandage.",
+      "ig": "[NEEDS_REVIEW] Do not remove the original cloth or bandage.",
+      "yo": "[NEEDS_REVIEW] Do not remove the original cloth or bandage.",
+      "pcm": "[NEEDS_REVIEW] Do not remove the original cloth or bandage."
+    },
+    "1": {
+      "en": "Do not apply a tourniquet over a joint.",
+      "ha": "[NEEDS_REVIEW] Do not apply a tourniquet over a joint.",
+      "ig": "[NEEDS_REVIEW] Do not apply a tourniquet over a joint.",
+      "yo": "[NEEDS_REVIEW] Do not apply a tourniquet over a joint.",
+      "pcm": "[NEEDS_REVIEW] Do not apply a tourniquet over a joint."
+    }
+  },
+  "hospital_threshold": "Always required for severe bleeding.",
+  "hospital_threshold_translations": {
+    "en": "Always required for severe bleeding.",
+    "ha": "[NEEDS_REVIEW] Always required for severe bleeding.",
+    "ig": "[NEEDS_REVIEW] Always required for severe bleeding.",
+    "yo": "[NEEDS_REVIEW] Always required for severe bleeding.",
+    "pcm": "[NEEDS_REVIEW] Always required for severe bleeding."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-06-05T16:34:44.548Z",
+    "medical_references": [
+      "WHO First Aid"
+    ]
+  }
+}

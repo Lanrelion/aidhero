@@ -96,6 +96,13 @@ Do not remove these exclusions — they prevent gstack's transitive @types
 from polluting the IDE type resolver.
 ---
 
+### 11. Tailwind Version
+This project uses Tailwind CSS v4.
+All custom tokens live in src/app/globals.css inside @theme inline {}.
+Do not create or modify tailwind.config.ts for token definitions.
+Utility classes (bg-emergency, text-authority, etc.) are auto-generated
+from the @theme block — no rebuild step needed.
+
 ## gstack Skills
 
 gstack is installed at `.agent/skills/gstack`.

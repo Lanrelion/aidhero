@@ -1,0 +1,176 @@
+{
+  "id": "heart-attack",
+  "slug": "heart-attack",
+  "content_version": 1,
+  "content_version_date": "2026-06-05T16:34:44.547Z",
+  "category": "cardiac",
+  "title": "Heart Attack",
+  "title_translations": {
+    "en": "Heart Attack",
+    "ha": "[NEEDS_REVIEW] Heart Attack",
+    "ig": "[NEEDS_REVIEW] Heart Attack",
+    "yo": "[NEEDS_REVIEW] Heart Attack",
+    "pcm": "[NEEDS_REVIEW] Heart Attack"
+  },
+  "aliases": [
+    "chest pain",
+    "cardiac arrest",
+    "heart pain",
+    "my heart dey pain",
+    "ọkan mi n dun",
+    "zuciya tana ciwo",
+    "obi m na awa",
+    "chest tightness"
+  ],
+  "severity": "critical",
+  "immediate_warning": "Call emergency services immediately if the person is unconscious or chest pain lasts more than 5 minutes.",
+  "immediate_warning_translations": {
+    "en": "Call emergency services immediately if the person is unconscious or chest pain lasts more than 5 minutes.",
+    "ha": "[NEEDS_REVIEW] Call emergency services immediately if the person is unconscious or chest pain lasts more than 5 minutes.",
+    "ig": "[NEEDS_REVIEW] Call emergency services immediately if the person is unconscious or chest pain lasts more than 5 minutes.",
+    "yo": "[NEEDS_REVIEW] Call emergency services immediately if the person is unconscious or chest pain lasts more than 5 minutes.",
+    "pcm": "[NEEDS_REVIEW] Call emergency services immediately if the person is unconscious or chest pain lasts more than 5 minutes."
+  },
+  "description": "A heart attack occurs when blood flow to the heart is blocked.",
+  "description_translations": {
+    "en": "A heart attack occurs when blood flow to the heart is blocked.",
+    "ha": "[NEEDS_REVIEW] A heart attack occurs when blood flow to the heart is blocked.",
+    "ig": "[NEEDS_REVIEW] A heart attack occurs when blood flow to the heart is blocked.",
+    "yo": "[NEEDS_REVIEW] A heart attack occurs when blood flow to the heart is blocked.",
+    "pcm": "[NEEDS_REVIEW] A heart attack occurs when blood flow to the heart is blocked."
+  },
+  "signs": [
+    "Chest pain or discomfort",
+    "Shortness of breath",
+    "Pain in arm or jaw",
+    "Cold sweat"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Chest pain or discomfort",
+      "ha": "[NEEDS_REVIEW] Chest pain or discomfort",
+      "ig": "[NEEDS_REVIEW] Chest pain or discomfort",
+      "yo": "[NEEDS_REVIEW] Chest pain or discomfort",
+      "pcm": "[NEEDS_REVIEW] Chest pain or discomfort"
+    },
+    "1": {
+      "en": "Shortness of breath",
+      "ha": "[NEEDS_REVIEW] Shortness of breath",
+      "ig": "[NEEDS_REVIEW] Shortness of breath",
+      "yo": "[NEEDS_REVIEW] Shortness of breath",
+      "pcm": "[NEEDS_REVIEW] Shortness of breath"
+    },
+    "2": {
+      "en": "Pain in arm or jaw",
+      "ha": "[NEEDS_REVIEW] Pain in arm or jaw",
+      "ig": "[NEEDS_REVIEW] Pain in arm or jaw",
+      "yo": "[NEEDS_REVIEW] Pain in arm or jaw",
+      "pcm": "[NEEDS_REVIEW] Pain in arm or jaw"
+    },
+    "3": {
+      "en": "Cold sweat",
+      "ha": "[NEEDS_REVIEW] Cold sweat",
+      "ig": "[NEEDS_REVIEW] Cold sweat",
+      "yo": "[NEEDS_REVIEW] Cold sweat",
+      "pcm": "[NEEDS_REVIEW] Cold sweat"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Call emergency services or take them to the nearest hospital immediately.",
+      "instruction_translations": {
+        "en": "Call emergency services or take them to the nearest hospital immediately.",
+        "ha": "[NEEDS_REVIEW] Call emergency services or take them to the nearest hospital immediately.",
+        "ig": "[NEEDS_REVIEW] Call emergency services or take them to the nearest hospital immediately.",
+        "yo": "[NEEDS_REVIEW] Call emergency services or take them to the nearest hospital immediately.",
+        "pcm": "[NEEDS_REVIEW] Call emergency services or take them to the nearest hospital immediately."
+      },
+      "audio_path": "/audio/heart-attack/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Have the person sit down, rest, and try to keep calm.",
+      "instruction_translations": {
+        "en": "Have the person sit down, rest, and try to keep calm.",
+        "ha": "[NEEDS_REVIEW] Have the person sit down, rest, and try to keep calm.",
+        "ig": "[NEEDS_REVIEW] Have the person sit down, rest, and try to keep calm.",
+        "yo": "[NEEDS_REVIEW] Have the person sit down, rest, and try to keep calm.",
+        "pcm": "[NEEDS_REVIEW] Have the person sit down, rest, and try to keep calm."
+      },
+      "audio_path": "/audio/heart-attack/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "Loosen any tight clothing.",
+      "instruction_translations": {
+        "en": "Loosen any tight clothing.",
+        "ha": "[NEEDS_REVIEW] Loosen any tight clothing.",
+        "ig": "[NEEDS_REVIEW] Loosen any tight clothing.",
+        "yo": "[NEEDS_REVIEW] Loosen any tight clothing.",
+        "pcm": "[NEEDS_REVIEW] Loosen any tight clothing."
+      },
+      "audio_path": "/audio/heart-attack/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Ask if they take any chest pain medication, such as nitroglycerin, and help them take it.",
+      "instruction_translations": {
+        "en": "Ask if they take any chest pain medication, such as nitroglycerin, and help them take it.",
+        "ha": "[NEEDS_REVIEW] Ask if they take any chest pain medication, such as nitroglycerin, and help them take it.",
+        "ig": "[NEEDS_REVIEW] Ask if they take any chest pain medication, such as nitroglycerin, and help them take it.",
+        "yo": "[NEEDS_REVIEW] Ask if they take any chest pain medication, such as nitroglycerin, and help them take it.",
+        "pcm": "[NEEDS_REVIEW] Ask if they take any chest pain medication, such as nitroglycerin, and help them take it."
+      },
+      "audio_path": "/audio/heart-attack/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "If the person becomes unconscious and unresponsive, begin CPR.",
+      "instruction_translations": {
+        "en": "If the person becomes unconscious and unresponsive, begin CPR.",
+        "ha": "[NEEDS_REVIEW] If the person becomes unconscious and unresponsive, begin CPR.",
+        "ig": "[NEEDS_REVIEW] If the person becomes unconscious and unresponsive, begin CPR.",
+        "yo": "[NEEDS_REVIEW] If the person becomes unconscious and unresponsive, begin CPR.",
+        "pcm": "[NEEDS_REVIEW] If the person becomes unconscious and unresponsive, begin CPR."
+      },
+      "audio_path": "/audio/heart-attack/{lang}/step-5.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not leave the person alone.",
+    "Do not wait to see if the symptoms go away."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not leave the person alone.",
+      "ha": "[NEEDS_REVIEW] Do not leave the person alone.",
+      "ig": "[NEEDS_REVIEW] Do not leave the person alone.",
+      "yo": "[NEEDS_REVIEW] Do not leave the person alone.",
+      "pcm": "[NEEDS_REVIEW] Do not leave the person alone."
+    },
+    "1": {
+      "en": "Do not wait to see if the symptoms go away.",
+      "ha": "[NEEDS_REVIEW] Do not wait to see if the symptoms go away.",
+      "ig": "[NEEDS_REVIEW] Do not wait to see if the symptoms go away.",
+      "yo": "[NEEDS_REVIEW] Do not wait to see if the symptoms go away.",
+      "pcm": "[NEEDS_REVIEW] Do not wait to see if the symptoms go away."
+    }
+  },
+  "hospital_threshold": "Always required for a heart attack.",
+  "hospital_threshold_translations": {
+    "en": "Always required for a heart attack.",
+    "ha": "[NEEDS_REVIEW] Always required for a heart attack.",
+    "ig": "[NEEDS_REVIEW] Always required for a heart attack.",
+    "yo": "[NEEDS_REVIEW] Always required for a heart attack.",
+    "pcm": "[NEEDS_REVIEW] Always required for a heart attack."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-06-05T16:34:44.548Z",
+    "medical_references": [
+      "WHO First Aid"
+    ]
+  }
+}

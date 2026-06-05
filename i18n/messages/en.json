@@ -1,0 +1,79 @@
+{
+  "nav": {
+    "home": "Home",
+    "search": "Search",
+    "emergency": "Emergency",
+    "settings": "Settings"
+  },
+  "home": {
+    "title": "AidHero",
+    "subtitle": "First Aid Guide",
+    "searchPlaceholder": "Search for symptoms or injuries...",
+    "sectionHeaders": "Categories"
+  },
+  "rescue": {
+    "startGuided": "Start Guided Rescue",
+    "quickSteps": "Quick Steps",
+    "stepXOfY": "Step {step} of {total}",
+    "next": "Next",
+    "back": "Back",
+    "repeat": "Repeat",
+    "callEmergency": "Call Emergency"
+  },
+  "search": {
+    "placeholder": "Search...",
+    "noResults": "No results found for \"{query}\".",
+    "recentSearches": "Recent Searches"
+  },
+  "incidents": {
+    "Cardiac": "Cardiac",
+    "Respiratory": "Respiratory",
+    "Trauma": "Trauma",
+    "Burns": "Burns",
+    "Environmental": "Environmental",
+    "Neurological": "Neurological",
+    "Poisoning": "Poisoning",
+    "Obstetric": "Obstetric",
+    "Paediatric": "Paediatric",
+    "Allergic": "Allergic"
+  },
+  "emergency": {
+    "callButton": "Call",
+    "stateNames": "State Numbers",
+    "nationalNumbers": "National Emergency Numbers"
+  },
+  "settings": {
+    "language": "Language",
+    "textSize": "Text Size",
+    "contrast": "Contrast",
+    "offline": "Offline Mode",
+    "about": "About AidHero"
+  },
+  "accessibility": {
+    "ariaLabels": "Accessibility Strings"
+  },
+  "offline": {
+    "ready": "Ready for offline use",
+    "limited": "Limited offline functionality",
+    "updated": "Content updated"
+  },
+  "errors": {
+    "notFound": "Page not found",
+    "audioUnavailable": "Audio unavailable in offline mode",
+    "offlineLimitation": "This feature requires an internet connection"
+  },
+  "onboarding": {
+    "slide1Title": "Welcome to AidHero",
+    "slide1Desc": "Your offline-first emergency companion.",
+    "slide2Title": "Always Available",
+    "slide2Desc": "Access life-saving guides even without internet.",
+    "slide3Title": "Voice Guided",
+    "slide3Desc": "Hands-free audio instructions during emergencies."
+  },
+  "metadata": {
+    "title": "AidHero - Emergency First Aid Nigeria",
+    "description": "Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
+    "ogTitle": "AidHero - Emergency First Aid Nigeria",
+    "ogDescription": "You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
+  }
+}

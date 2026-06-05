@@ -1,0 +1,182 @@
+{
+  "id": "seizure",
+  "slug": "seizure",
+  "content_version": 1,
+  "content_version_date": "2026-06-05T16:34:44.548Z",
+  "category": "neurological",
+  "title": "Seizure",
+  "title_translations": {
+    "en": "Seizure",
+    "ha": "[NEEDS_REVIEW] Seizure",
+    "ig": "[NEEDS_REVIEW] Seizure",
+    "yo": "[NEEDS_REVIEW] Seizure",
+    "pcm": "[NEEDS_REVIEW] Seizure"
+  },
+  "aliases": [
+    "convulsion",
+    "shaking",
+    "body shaking",
+    "e dey convulse",
+    "epilepsy fit",
+    "jerk"
+  ],
+  "severity": "urgent",
+  "immediate_warning": "Clear the area around the person to prevent injury.",
+  "immediate_warning_translations": {
+    "en": "Clear the area around the person to prevent injury.",
+    "ha": "[NEEDS_REVIEW] Clear the area around the person to prevent injury.",
+    "ig": "[NEEDS_REVIEW] Clear the area around the person to prevent injury.",
+    "yo": "[NEEDS_REVIEW] Clear the area around the person to prevent injury.",
+    "pcm": "[NEEDS_REVIEW] Clear the area around the person to prevent injury."
+  },
+  "description": "A seizure is a sudden, uncontrolled electrical disturbance in the brain.",
+  "description_translations": {
+    "en": "A seizure is a sudden, uncontrolled electrical disturbance in the brain.",
+    "ha": "[NEEDS_REVIEW] A seizure is a sudden, uncontrolled electrical disturbance in the brain.",
+    "ig": "[NEEDS_REVIEW] A seizure is a sudden, uncontrolled electrical disturbance in the brain.",
+    "yo": "[NEEDS_REVIEW] A seizure is a sudden, uncontrolled electrical disturbance in the brain.",
+    "pcm": "[NEEDS_REVIEW] A seizure is a sudden, uncontrolled electrical disturbance in the brain."
+  },
+  "signs": [
+    "Uncontrolled jerking movements",
+    "Loss of awareness or consciousness",
+    "Staring blankly",
+    "Frothing at the mouth"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Uncontrolled jerking movements",
+      "ha": "[NEEDS_REVIEW] Uncontrolled jerking movements",
+      "ig": "[NEEDS_REVIEW] Uncontrolled jerking movements",
+      "yo": "[NEEDS_REVIEW] Uncontrolled jerking movements",
+      "pcm": "[NEEDS_REVIEW] Uncontrolled jerking movements"
+    },
+    "1": {
+      "en": "Loss of awareness or consciousness",
+      "ha": "[NEEDS_REVIEW] Loss of awareness or consciousness",
+      "ig": "[NEEDS_REVIEW] Loss of awareness or consciousness",
+      "yo": "[NEEDS_REVIEW] Loss of awareness or consciousness",
+      "pcm": "[NEEDS_REVIEW] Loss of awareness or consciousness"
+    },
+    "2": {
+      "en": "Staring blankly",
+      "ha": "[NEEDS_REVIEW] Staring blankly",
+      "ig": "[NEEDS_REVIEW] Staring blankly",
+      "yo": "[NEEDS_REVIEW] Staring blankly",
+      "pcm": "[NEEDS_REVIEW] Staring blankly"
+    },
+    "3": {
+      "en": "Frothing at the mouth",
+      "ha": "[NEEDS_REVIEW] Frothing at the mouth",
+      "ig": "[NEEDS_REVIEW] Frothing at the mouth",
+      "yo": "[NEEDS_REVIEW] Frothing at the mouth",
+      "pcm": "[NEEDS_REVIEW] Frothing at the mouth"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Ease the person to the floor and clear the area of hard or sharp objects.",
+      "instruction_translations": {
+        "en": "Ease the person to the floor and clear the area of hard or sharp objects.",
+        "ha": "[NEEDS_REVIEW] Ease the person to the floor and clear the area of hard or sharp objects.",
+        "ig": "[NEEDS_REVIEW] Ease the person to the floor and clear the area of hard or sharp objects.",
+        "yo": "[NEEDS_REVIEW] Ease the person to the floor and clear the area of hard or sharp objects.",
+        "pcm": "[NEEDS_REVIEW] Ease the person to the floor and clear the area of hard or sharp objects."
+      },
+      "audio_path": "/audio/seizure/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Place something soft and flat, like a folded jacket, under their head.",
+      "instruction_translations": {
+        "en": "Place something soft and flat, like a folded jacket, under their head.",
+        "ha": "[NEEDS_REVIEW] Place something soft and flat, like a folded jacket, under their head.",
+        "ig": "[NEEDS_REVIEW] Place something soft and flat, like a folded jacket, under their head.",
+        "yo": "[NEEDS_REVIEW] Place something soft and flat, like a folded jacket, under their head.",
+        "pcm": "[NEEDS_REVIEW] Place something soft and flat, like a folded jacket, under their head."
+      },
+      "audio_path": "/audio/seizure/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "Turn them gently onto one side. This helps keep the airway clear.",
+      "instruction_translations": {
+        "en": "Turn them gently onto one side. This helps keep the airway clear.",
+        "ha": "[NEEDS_REVIEW] Turn them gently onto one side. This helps keep the airway clear.",
+        "ig": "[NEEDS_REVIEW] Turn them gently onto one side. This helps keep the airway clear.",
+        "yo": "[NEEDS_REVIEW] Turn them gently onto one side. This helps keep the airway clear.",
+        "pcm": "[NEEDS_REVIEW] Turn them gently onto one side. This helps keep the airway clear."
+      },
+      "audio_path": "/audio/seizure/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Time the seizure. If it lasts longer than 5 minutes, call emergency services.",
+      "instruction_translations": {
+        "en": "Time the seizure. If it lasts longer than 5 minutes, call emergency services.",
+        "ha": "[NEEDS_REVIEW] Time the seizure. If it lasts longer than 5 minutes, call emergency services.",
+        "ig": "[NEEDS_REVIEW] Time the seizure. If it lasts longer than 5 minutes, call emergency services.",
+        "yo": "[NEEDS_REVIEW] Time the seizure. If it lasts longer than 5 minutes, call emergency services.",
+        "pcm": "[NEEDS_REVIEW] Time the seizure. If it lasts longer than 5 minutes, call emergency services."
+      },
+      "audio_path": "/audio/seizure/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "Stay with them until the seizure ends and they are fully awake and aware.",
+      "instruction_translations": {
+        "en": "Stay with them until the seizure ends and they are fully awake and aware.",
+        "ha": "[NEEDS_REVIEW] Stay with them until the seizure ends and they are fully awake and aware.",
+        "ig": "[NEEDS_REVIEW] Stay with them until the seizure ends and they are fully awake and aware.",
+        "yo": "[NEEDS_REVIEW] Stay with them until the seizure ends and they are fully awake and aware.",
+        "pcm": "[NEEDS_REVIEW] Stay with them until the seizure ends and they are fully awake and aware."
+      },
+      "audio_path": "/audio/seizure/{lang}/step-5.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not hold the person down or try to stop their movements.",
+    "Do not put anything in their mouth.",
+    "Do not offer food or water until they are fully alert."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not hold the person down or try to stop their movements.",
+      "ha": "[NEEDS_REVIEW] Do not hold the person down or try to stop their movements.",
+      "ig": "[NEEDS_REVIEW] Do not hold the person down or try to stop their movements.",
+      "yo": "[NEEDS_REVIEW] Do not hold the person down or try to stop their movements.",
+      "pcm": "[NEEDS_REVIEW] Do not hold the person down or try to stop their movements."
+    },
+    "1": {
+      "en": "Do not put anything in their mouth.",
+      "ha": "[NEEDS_REVIEW] Do not put anything in their mouth.",
+      "ig": "[NEEDS_REVIEW] Do not put anything in their mouth.",
+      "yo": "[NEEDS_REVIEW] Do not put anything in their mouth.",
+      "pcm": "[NEEDS_REVIEW] Do not put anything in their mouth."
+    },
+    "2": {
+      "en": "Do not offer food or water until they are fully alert.",
+      "ha": "[NEEDS_REVIEW] Do not offer food or water until they are fully alert.",
+      "ig": "[NEEDS_REVIEW] Do not offer food or water until they are fully alert.",
+      "yo": "[NEEDS_REVIEW] Do not offer food or water until they are fully alert.",
+      "pcm": "[NEEDS_REVIEW] Do not offer food or water until they are fully alert."
+    }
+  },
+  "hospital_threshold": "Required if the seizure lasts > 5 minutes, they are injured, or it is their first seizure.",
+  "hospital_threshold_translations": {
+    "en": "Required if the seizure lasts > 5 minutes, they are injured, or it is their first seizure.",
+    "ha": "[NEEDS_REVIEW] Required if the seizure lasts > 5 minutes, they are injured, or it is their first seizure.",
+    "ig": "[NEEDS_REVIEW] Required if the seizure lasts > 5 minutes, they are injured, or it is their first seizure.",
+    "yo": "[NEEDS_REVIEW] Required if the seizure lasts > 5 minutes, they are injured, or it is their first seizure.",
+    "pcm": "[NEEDS_REVIEW] Required if the seizure lasts > 5 minutes, they are injured, or it is their first seizure."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-06-05T16:34:44.548Z",
+    "medical_references": [
+      "WHO First Aid"
+    ]
+  }
+}
