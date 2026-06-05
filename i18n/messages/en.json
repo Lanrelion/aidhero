@@ -63,7 +63,9 @@
     "offline":  {
                     "ready":  "Ready for offline use",
                     "limited":  "Limited offline functionality",
-                    "updated":  "Content updated"
+                    "updated":  "Content updated",
+                    "active":  "Offline Mode Active",
+                    "downloading":  "Downloading Content..."
                 },
     "errors":  {
                    "notFound":  "Page not found",

@@ -10,7 +10,7 @@
                  "subtitle":  "[NEEDS_REVIEW] First Aid Guide",
                  "searchPlaceholder":  "[NEEDS_REVIEW] Search for symptoms or injuries...",
                  "sectionHeaders":  "[NEEDS_REVIEW] Categories",
-                 "emergencyCall":  "KpÃƒÆ’Ã‚Â¡Ãƒâ€šÃ‚Â»Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¡Ãƒâ€šÃ‚Â»Ãƒâ€šÃ‚Â Mberede"
+                 "emergencyCall":  "KpÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Mberede"
              },
     "rescue":  {
                    "startGuided":  "[NEEDS_REVIEW] Start Guided Rescue",
@@ -55,14 +55,16 @@
                  },
     "accessibility":  {
                           "ariaLabels":  "[NEEDS_REVIEW] Accessibility Strings",
-                          "emergencyCallStrip":  "KpÃƒÆ’Ã‚Â¡Ãƒâ€šÃ‚Â»Ãƒâ€šÃ‚ÂÃƒÆ’Ã‚Â¡Ãƒâ€šÃ‚Â»Ãƒâ€šÃ‚Â NÃƒÆ’Ã‚Â¡Ãƒâ€šÃ‚Â»Ãƒâ€šÃ‚Âmba Mberede",
+                          "emergencyCallStrip":  "KpÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â NÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âmba Mberede",
                           "changeLanguage":  "Change Language",
                           "bottomNav":  "Bottom Navigation"
                       },
     "offline":  {
                     "ready":  "[NEEDS_REVIEW] Ready for offline use",
                     "limited":  "[NEEDS_REVIEW] Limited offline functionality",
-                    "updated":  "[NEEDS_REVIEW] Content updated"
+                    "updated":  "[NEEDS_REVIEW] Content updated",
+                    "active":  "Offline Mode Active",
+                    "downloading":  "Downloading Content..."
                 },
     "errors":  {
                    "notFound":  "[NEEDS_REVIEW] Page not found",
