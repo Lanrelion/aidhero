@@ -1,7 +1,9 @@
-﻿"use client";
+"use client";
 
 import { useTranslations, useLocale } from 'next-intl';
+import { useRouter, usePathname } from 'next/navigation';
 import { useLanguageStore } from '@/store/useLanguageStore';
+import { useRescueStore } from '@/store/useRescueStore';
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { Check } from 'lucide-react';
 import type { Locale } from '@/i18n/config';
@@ -23,12 +25,24 @@ export function LanguageSheet({ open, onOpenChange }: LanguageSheetProps) {
   const t = useTranslations();
   const currentLocale = useLocale() as Locale;
   const setLanguage = useLanguageStore((state) => state.setLanguage);
+  
+  const router = useRouter();
+  const pathname = usePathname();
+  const activeScenario = useRescueStore((state) => state.activeScenario);
 
-  const handleSelect = async (code: Locale) => {
-    await setLanguage(code);
+  const handleSelect = async (lang: Locale) => {
+    if (activeScenario) {
+      // Use settings.confirmDuringRescue to match our existing i18n structure
+      const confirmed = window.confirm(t('settings.confirmDuringRescue'));
+      if (!confirmed) return;
+    }
+
+    await setLanguage(lang);
     onOpenChange(false);
-    // Hard refresh to trigger next-intl middleware since layout might be fully static
-    window.location.href = `/${code}`;
+    
+    // Swap locale prefix in current path
+    const newPath = pathname.replace(`/${currentLocale}`, `/${lang}`);
+    router.push(newPath);
   };
 
   return (
