@@ -35,6 +35,8 @@ interface IDBHelper {
   set(key: 'content-versions', val: Record<string, number>): Promise<void>;
   set(key: 'recently-viewed', val: string[]): Promise<void>;
   set<T>(key: string, val: T): Promise<void>;
+
+  remove(key: string): Promise<void>;
 }
 
 export const idb: IDBHelper = {
@@ -56,6 +58,16 @@ export const idb: IDBHelper = {
       await db.put('aidhero-store', val, key);
     } catch (err) {
       console.warn(`Failed to write ${key} to IndexedDB:`, err);
+    }
+  },
+
+  async remove(key: string): Promise<void> {
+    try {
+      const db = await getDB();
+      if (!db) return;
+      await db.delete('aidhero-store', key);
+    } catch (err) {
+      console.warn(`Failed to remove ${key} from IndexedDB:`, err);
     }
   },
 };

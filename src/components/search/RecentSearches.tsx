@@ -29,7 +29,7 @@ export function RecentSearches() {
   };
 
   const handleClear = async () => {
-    await idb.delete('recently-viewed');
+    await idb.remove('recently-viewed');
     setRecent([]);
   };
 
