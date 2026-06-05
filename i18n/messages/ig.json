@@ -1,88 +1,88 @@
 {
     "nav":  {
-                "home":  "Home",
-                "search":  "Search",
-                "emergency":  "Emergency",
-                "settings":  "Settings"
+                "home":  "[IG] Home",
+                "search":  "[IG] Search",
+                "emergency":  "[IG] Emergency",
+                "settings":  "[IG] Settings"
             },
     "home":  {
-                 "title":  "AidHero",
-                 "subtitle":  "First Aid Guide",
-                 "searchPlaceholder":  "Search for symptoms or injuries...",
-                 "sectionHeaders":  "Categories",
-                 "emergencyCall":  "KpÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Mberede"
+                 "title":  "[IG] AidHero",
+                 "subtitle":  "[IG] First Aid Guide",
+                 "searchPlaceholder":  "[IG] Search for symptoms or injuries...",
+                 "sectionHeaders":  "[IG] Categories",
+                 "emergencyCall":  "[IG] KpÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Mberede"
              },
     "rescue":  {
-                   "startGuided":  "Start Guided Rescue",
-                   "quickSteps":  "Quick Steps",
-                   "stepXOfY":  "Step {step} of {total}",
-                   "next":  "Next",
-                   "back":  "Back",
-                   "repeat":  "Repeat",
-                   "callEmergency":  "Call Emergency"
+                   "startGuided":  "[IG] Start Guided Rescue",
+                   "quickSteps":  "[IG] Quick Steps",
+                   "stepXOfY":  "[IG] Step {step} of {total}",
+                   "next":  "[IG] Next",
+                   "back":  "[IG] Back",
+                   "repeat":  "[IG] Repeat",
+                   "callEmergency":  "[IG] Call Emergency"
                },
     "search":  {
-                   "placeholder":  "Search...",
-                   "noResults":  "No results found for \"{query}\".",
-                   "recentSearches":  "Recent Searches",
-                   "trySuggestions":  "Try: heart attack, choking, bleeding",
-                   "allCategories":  "All Categories",
-                   "clearRecent":  "Clear"
+                   "placeholder":  "[IG] Search...",
+                   "noResults":  "[IG] No results found for \"{query}\".",
+                   "recentSearches":  "[IG] Recent Searches",
+                   "trySuggestions":  "[IG] Try: heart attack, choking, bleeding",
+                   "allCategories":  "[IG] All Categories",
+                   "clearRecent":  "[IG] Clear"
                },
     "incidents":  {
-                      "paediatric":  "Paediatric",
-                      "trauma":  "Trauma",
-                      "environmental":  "Environmental",
-                      "respiratory":  "Respiratory",
-                      "burns":  "Burns",
-                      "allergic":  "Allergic",
-                      "obstetric":  "Obstetric",
-                      "cardiac":  "Cardiac",
-                      "poisoning":  "Poisoning",
-                      "neurological":  "Neurological"
+                      "paediatric":  "[IG] Paediatric",
+                      "trauma":  "[IG] Trauma",
+                      "environmental":  "[IG] Environmental",
+                      "respiratory":  "[IG] Respiratory",
+                      "burns":  "[IG] Burns",
+                      "allergic":  "[IG] Allergic",
+                      "obstetric":  "[IG] Obstetric",
+                      "cardiac":  "[IG] Cardiac",
+                      "poisoning":  "[IG] Poisoning",
+                      "neurological":  "[IG] Neurological"
                   },
     "emergency":  {
-                      "callButton":  "Call",
-                      "stateNames":  "State Numbers",
-                      "nationalNumbers":  "National Emergency Numbers"
+                      "callButton":  "[IG] Call",
+                      "stateNames":  "[IG] State Numbers",
+                      "nationalNumbers":  "[IG] National Emergency Numbers"
                   },
     "settings":  {
-                     "language":  "Language",
-                     "textSize":  "Text Size",
-                     "contrast":  "Contrast",
-                     "offline":  "Offline Mode",
-                     "about":  "About AidHero"
+                     "language":  "[IG] Language",
+                     "textSize":  "[IG] Text Size",
+                     "contrast":  "[IG] Contrast",
+                     "offline":  "[IG] Offline Mode",
+                     "about":  "[IG] About AidHero"
                  },
     "accessibility":  {
-                          "ariaLabels":  "Accessibility Strings",
-                          "emergencyCallStrip":  "KpÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â NÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âmba Mberede",
-                          "changeLanguage":  "Change Language",
-                          "bottomNav":  "Bottom Navigation"
+                          "ariaLabels":  "[IG] Accessibility Strings",
+                          "emergencyCallStrip":  "[IG] KpÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â NÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âmba Mberede",
+                          "changeLanguage":  "[IG] Change Language",
+                          "bottomNav":  "[IG] Bottom Navigation"
                       },
     "offline":  {
-                    "ready":  "Ready for offline use",
-                    "limited":  "Limited offline functionality",
-                    "updated":  "Content updated",
-                    "active":  "Offline Mode Active",
-                    "downloading":  "Downloading Content..."
+                    "ready":  "[IG] Ready for offline use",
+                    "limited":  "[IG] Limited offline functionality",
+                    "updated":  "[IG] Content updated",
+                    "active":  "[IG] Offline Mode Active",
+                    "downloading":  "[IG] Downloading Content..."
                 },
     "errors":  {
-                   "notFound":  "Page not found",
-                   "audioUnavailable":  "Audio unavailable in offline mode",
-                   "offlineLimitation":  "This feature requires an internet connection"
+                   "notFound":  "[IG] Page not found",
+                   "audioUnavailable":  "[IG] Audio unavailable in offline mode",
+                   "offlineLimitation":  "[IG] This feature requires an internet connection"
                },
     "onboarding":  {
-                       "slide1Title":  "Welcome to AidHero",
-                       "slide1Desc":  "Your offline-first emergency companion.",
-                       "slide2Title":  "Always Available",
-                       "slide2Desc":  "Access life-saving guides even without internet.",
-                       "slide3Title":  "Voice Guided",
-                       "slide3Desc":  "Hands-free audio instructions during emergencies."
+                       "slide1Title":  "[IG] Welcome to AidHero",
+                       "slide1Desc":  "[IG] Your offline-first emergency companion.",
+                       "slide2Title":  "[IG] Always Available",
+                       "slide2Desc":  "[IG] Access life-saving guides even without internet.",
+                       "slide3Title":  "[IG] Voice Guided",
+                       "slide3Desc":  "[IG] Hands-free audio instructions during emergencies."
                    },
     "metadata":  {
-                     "title":  "AidHero - Emergency First Aid Nigeria",
-                     "description":  "Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
-                     "ogTitle":  "AidHero - Emergency First Aid Nigeria",
-                     "ogDescription":  "You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
+                     "title":  "[IG] AidHero - Emergency First Aid Nigeria",
+                     "description":  "[IG] Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
+                     "ogTitle":  "[IG] AidHero - Emergency First Aid Nigeria",
+                     "ogDescription":  "[IG] You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
                  }
 }

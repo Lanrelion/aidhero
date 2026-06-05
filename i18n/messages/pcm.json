@@ -1,88 +1,88 @@
 {
     "nav":  {
-                "home":  "Home",
-                "search":  "Search",
-                "emergency":  "Emergency",
-                "settings":  "Settings"
+                "home":  "[PCM] Home",
+                "search":  "[PCM] Search",
+                "emergency":  "[PCM] Emergency",
+                "settings":  "[PCM] Settings"
             },
     "home":  {
-                 "title":  "AidHero",
-                 "subtitle":  "First Aid Guide",
-                 "searchPlaceholder":  "Search for symptoms or injuries...",
-                 "sectionHeaders":  "Categories",
-                 "emergencyCall":  "Call Emergency"
+                 "title":  "[PCM] AidHero",
+                 "subtitle":  "[PCM] First Aid Guide",
+                 "searchPlaceholder":  "[PCM] Search for symptoms or injuries...",
+                 "sectionHeaders":  "[PCM] Categories",
+                 "emergencyCall":  "[PCM] Call Emergency"
              },
     "rescue":  {
-                   "startGuided":  "Start Guided Rescue",
-                   "quickSteps":  "Quick Steps",
-                   "stepXOfY":  "Step {step} of {total}",
-                   "next":  "Next",
-                   "back":  "Back",
-                   "repeat":  "Repeat",
-                   "callEmergency":  "Call Emergency"
+                   "startGuided":  "[PCM] Start Guided Rescue",
+                   "quickSteps":  "[PCM] Quick Steps",
+                   "stepXOfY":  "[PCM] Step {step} of {total}",
+                   "next":  "[PCM] Next",
+                   "back":  "[PCM] Back",
+                   "repeat":  "[PCM] Repeat",
+                   "callEmergency":  "[PCM] Call Emergency"
                },
     "search":  {
-                   "placeholder":  "Search...",
-                   "noResults":  "No results found for \"{query}\".",
-                   "recentSearches":  "Recent Searches",
-                   "trySuggestions":  "Try: heart attack, choking, bleeding",
-                   "allCategories":  "All Categories",
-                   "clearRecent":  "Clear"
+                   "placeholder":  "[PCM] Search...",
+                   "noResults":  "[PCM] No results found for \"{query}\".",
+                   "recentSearches":  "[PCM] Recent Searches",
+                   "trySuggestions":  "[PCM] Try: heart attack, choking, bleeding",
+                   "allCategories":  "[PCM] All Categories",
+                   "clearRecent":  "[PCM] Clear"
                },
     "incidents":  {
-                      "paediatric":  "Paediatric",
-                      "trauma":  "Trauma",
-                      "environmental":  "Environmental",
-                      "respiratory":  "Respiratory",
-                      "burns":  "Burns",
-                      "allergic":  "Allergic",
-                      "obstetric":  "Obstetric",
-                      "cardiac":  "Cardiac",
-                      "poisoning":  "Poisoning",
-                      "neurological":  "Neurological"
+                      "paediatric":  "[PCM] Paediatric",
+                      "trauma":  "[PCM] Trauma",
+                      "environmental":  "[PCM] Environmental",
+                      "respiratory":  "[PCM] Respiratory",
+                      "burns":  "[PCM] Burns",
+                      "allergic":  "[PCM] Allergic",
+                      "obstetric":  "[PCM] Obstetric",
+                      "cardiac":  "[PCM] Cardiac",
+                      "poisoning":  "[PCM] Poisoning",
+                      "neurological":  "[PCM] Neurological"
                   },
     "emergency":  {
-                      "callButton":  "Call",
-                      "stateNames":  "State Numbers",
-                      "nationalNumbers":  "National Emergency Numbers"
+                      "callButton":  "[PCM] Call",
+                      "stateNames":  "[PCM] State Numbers",
+                      "nationalNumbers":  "[PCM] National Emergency Numbers"
                   },
     "settings":  {
-                     "language":  "Language",
-                     "textSize":  "Text Size",
-                     "contrast":  "Contrast",
-                     "offline":  "Offline Mode",
-                     "about":  "About AidHero"
+                     "language":  "[PCM] Language",
+                     "textSize":  "[PCM] Text Size",
+                     "contrast":  "[PCM] Contrast",
+                     "offline":  "[PCM] Offline Mode",
+                     "about":  "[PCM] About AidHero"
                  },
     "accessibility":  {
-                          "ariaLabels":  "Accessibility Strings",
-                          "emergencyCallStrip":  "Call Emergency Numbers",
-                          "changeLanguage":  "Change Language",
-                          "bottomNav":  "Bottom Navigation"
+                          "ariaLabels":  "[PCM] Accessibility Strings",
+                          "emergencyCallStrip":  "[PCM] Call Emergency Numbers",
+                          "changeLanguage":  "[PCM] Change Language",
+                          "bottomNav":  "[PCM] Bottom Navigation"
                       },
     "offline":  {
-                    "ready":  "Ready for offline use",
-                    "limited":  "Limited offline functionality",
-                    "updated":  "Content updated",
-                    "active":  "Offline Mode Active",
-                    "downloading":  "Downloading Content..."
+                    "ready":  "[PCM] Ready for offline use",
+                    "limited":  "[PCM] Limited offline functionality",
+                    "updated":  "[PCM] Content updated",
+                    "active":  "[PCM] Offline Mode Active",
+                    "downloading":  "[PCM] Downloading Content..."
                 },
     "errors":  {
-                   "notFound":  "Page not found",
-                   "audioUnavailable":  "Audio unavailable in offline mode",
-                   "offlineLimitation":  "This feature requires an internet connection"
+                   "notFound":  "[PCM] Page not found",
+                   "audioUnavailable":  "[PCM] Audio unavailable in offline mode",
+                   "offlineLimitation":  "[PCM] This feature requires an internet connection"
                },
     "onboarding":  {
-                       "slide1Title":  "Welcome to AidHero",
-                       "slide1Desc":  "Your offline-first emergency companion.",
-                       "slide2Title":  "Always Available",
-                       "slide2Desc":  "Access life-saving guides even without internet.",
-                       "slide3Title":  "Voice Guided",
-                       "slide3Desc":  "Hands-free audio instructions during emergencies."
+                       "slide1Title":  "[PCM] Welcome to AidHero",
+                       "slide1Desc":  "[PCM] Your offline-first emergency companion.",
+                       "slide2Title":  "[PCM] Always Available",
+                       "slide2Desc":  "[PCM] Access life-saving guides even without internet.",
+                       "slide3Title":  "[PCM] Voice Guided",
+                       "slide3Desc":  "[PCM] Hands-free audio instructions during emergencies."
                    },
     "metadata":  {
-                     "title":  "AidHero - Emergency First Aid Nigeria",
-                     "description":  "Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
-                     "ogTitle":  "AidHero - Emergency First Aid Nigeria",
-                     "ogDescription":  "You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
+                     "title":  "[PCM] AidHero - Emergency First Aid Nigeria",
+                     "description":  "[PCM] Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
+                     "ogTitle":  "[PCM] AidHero - Emergency First Aid Nigeria",
+                     "ogDescription":  "[PCM] You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
                  }
 }

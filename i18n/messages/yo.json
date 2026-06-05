@@ -1,88 +1,88 @@
 {
     "nav":  {
-                "home":  "Home",
-                "search":  "Search",
-                "emergency":  "Emergency",
-                "settings":  "Settings"
+                "home":  "[YO] Home",
+                "search":  "[YO] Search",
+                "emergency":  "[YO] Emergency",
+                "settings":  "[YO] Settings"
             },
     "home":  {
-                 "title":  "AidHero",
-                 "subtitle":  "First Aid Guide",
-                 "searchPlaceholder":  "Search for symptoms or injuries...",
-                 "sectionHeaders":  "Categories",
-                 "emergencyCall":  "Pe Pajawiri"
+                 "title":  "[YO] AidHero",
+                 "subtitle":  "[YO] First Aid Guide",
+                 "searchPlaceholder":  "[YO] Search for symptoms or injuries...",
+                 "sectionHeaders":  "[YO] Categories",
+                 "emergencyCall":  "[YO] Pe Pajawiri"
              },
     "rescue":  {
-                   "startGuided":  "Start Guided Rescue",
-                   "quickSteps":  "Quick Steps",
-                   "stepXOfY":  "Step {step} of {total}",
-                   "next":  "Next",
-                   "back":  "Back",
-                   "repeat":  "Repeat",
-                   "callEmergency":  "Call Emergency"
+                   "startGuided":  "[YO] Start Guided Rescue",
+                   "quickSteps":  "[YO] Quick Steps",
+                   "stepXOfY":  "[YO] Step {step} of {total}",
+                   "next":  "[YO] Next",
+                   "back":  "[YO] Back",
+                   "repeat":  "[YO] Repeat",
+                   "callEmergency":  "[YO] Call Emergency"
                },
     "search":  {
-                   "placeholder":  "Search...",
-                   "noResults":  "No results found for \"{query}\".",
-                   "recentSearches":  "Recent Searches",
-                   "trySuggestions":  "Try: heart attack, choking, bleeding",
-                   "allCategories":  "All Categories",
-                   "clearRecent":  "Clear"
+                   "placeholder":  "[YO] Search...",
+                   "noResults":  "[YO] No results found for \"{query}\".",
+                   "recentSearches":  "[YO] Recent Searches",
+                   "trySuggestions":  "[YO] Try: heart attack, choking, bleeding",
+                   "allCategories":  "[YO] All Categories",
+                   "clearRecent":  "[YO] Clear"
                },
     "incidents":  {
-                      "paediatric":  "Paediatric",
-                      "trauma":  "Trauma",
-                      "environmental":  "Environmental",
-                      "respiratory":  "Respiratory",
-                      "burns":  "Burns",
-                      "allergic":  "Allergic",
-                      "obstetric":  "Obstetric",
-                      "cardiac":  "Cardiac",
-                      "poisoning":  "Poisoning",
-                      "neurological":  "Neurological"
+                      "paediatric":  "[YO] Paediatric",
+                      "trauma":  "[YO] Trauma",
+                      "environmental":  "[YO] Environmental",
+                      "respiratory":  "[YO] Respiratory",
+                      "burns":  "[YO] Burns",
+                      "allergic":  "[YO] Allergic",
+                      "obstetric":  "[YO] Obstetric",
+                      "cardiac":  "[YO] Cardiac",
+                      "poisoning":  "[YO] Poisoning",
+                      "neurological":  "[YO] Neurological"
                   },
     "emergency":  {
-                      "callButton":  "Call",
-                      "stateNames":  "State Numbers",
-                      "nationalNumbers":  "National Emergency Numbers"
+                      "callButton":  "[YO] Call",
+                      "stateNames":  "[YO] State Numbers",
+                      "nationalNumbers":  "[YO] National Emergency Numbers"
                   },
     "settings":  {
-                     "language":  "Language",
-                     "textSize":  "Text Size",
-                     "contrast":  "Contrast",
-                     "offline":  "Offline Mode",
-                     "about":  "About AidHero"
+                     "language":  "[YO] Language",
+                     "textSize":  "[YO] Text Size",
+                     "contrast":  "[YO] Contrast",
+                     "offline":  "[YO] Offline Mode",
+                     "about":  "[YO] About AidHero"
                  },
     "accessibility":  {
-                          "ariaLabels":  "Accessibility Strings",
-                          "emergencyCallStrip":  "Pe NÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âmba Pajawiri",
-                          "changeLanguage":  "Change Language",
-                          "bottomNav":  "Bottom Navigation"
+                          "ariaLabels":  "[YO] Accessibility Strings",
+                          "emergencyCallStrip":  "[YO] Pe NÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âmba Pajawiri",
+                          "changeLanguage":  "[YO] Change Language",
+                          "bottomNav":  "[YO] Bottom Navigation"
                       },
     "offline":  {
-                    "ready":  "Ready for offline use",
-                    "limited":  "Limited offline functionality",
-                    "updated":  "Content updated",
-                    "active":  "Offline Mode Active",
-                    "downloading":  "Downloading Content..."
+                    "ready":  "[YO] Ready for offline use",
+                    "limited":  "[YO] Limited offline functionality",
+                    "updated":  "[YO] Content updated",
+                    "active":  "[YO] Offline Mode Active",
+                    "downloading":  "[YO] Downloading Content..."
                 },
     "errors":  {
-                   "notFound":  "Page not found",
-                   "audioUnavailable":  "Audio unavailable in offline mode",
-                   "offlineLimitation":  "This feature requires an internet connection"
+                   "notFound":  "[YO] Page not found",
+                   "audioUnavailable":  "[YO] Audio unavailable in offline mode",
+                   "offlineLimitation":  "[YO] This feature requires an internet connection"
                },
     "onboarding":  {
-                       "slide1Title":  "Welcome to AidHero",
-                       "slide1Desc":  "Your offline-first emergency companion.",
-                       "slide2Title":  "Always Available",
-                       "slide2Desc":  "Access life-saving guides even without internet.",
-                       "slide3Title":  "Voice Guided",
-                       "slide3Desc":  "Hands-free audio instructions during emergencies."
+                       "slide1Title":  "[YO] Welcome to AidHero",
+                       "slide1Desc":  "[YO] Your offline-first emergency companion.",
+                       "slide2Title":  "[YO] Always Available",
+                       "slide2Desc":  "[YO] Access life-saving guides even without internet.",
+                       "slide3Title":  "[YO] Voice Guided",
+                       "slide3Desc":  "[YO] Hands-free audio instructions during emergencies."
                    },
     "metadata":  {
-                     "title":  "AidHero - Emergency First Aid Nigeria",
-                     "description":  "Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
-                     "ogTitle":  "AidHero - Emergency First Aid Nigeria",
-                     "ogDescription":  "You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
+                     "title":  "[YO] AidHero - Emergency First Aid Nigeria",
+                     "description":  "[YO] Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
+                     "ogTitle":  "[YO] AidHero - Emergency First Aid Nigeria",
+                     "ogDescription":  "[YO] You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
                  }
 }
