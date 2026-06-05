@@ -33,16 +33,21 @@ export function SearchResults({ results, onSelect }: SearchResultsProps) {
 
   return (
     <div className="flex flex-col gap-3 w-full">
-      {results.slice(0, 5).map((res) => {
-        const Icon = CATEGORY_ICONS[res.category] || AlertTriangle;
-        const categoryLabel = t(`incidents.${res.category}`) || res.category;
+      {results.slice(0, 5).map((res, i) => {
+        if (!res) return null; // Safety guard for undefined elements
+        
+        const category = res.category || "trauma"; // Default to trauma if undefined
+        const Icon = CATEGORY_ICONS[category] || AlertTriangle;
+        const categoryLabel = t(`incidents.${category}`) || category;
 
         return (
           <button
-            key={res.scenarioId}
+            key={res.scenarioId || i}
             onClick={() => {
-              onSelect(res.scenarioId);
-              router.push(`/${locale}/incidents/${res.scenarioId}`);
+              if (res.scenarioId) {
+                onSelect(res.scenarioId);
+                router.push(`/${locale}/incidents/${res.scenarioId}`);
+              }
             }}
             className="flex items-start gap-4 p-4 min-h-[56px] bg-surface border border-border rounded-xl active:bg-card-active transition-colors text-left"
           >
@@ -53,9 +58,9 @@ export function SearchResults({ results, onSelect }: SearchResultsProps) {
             <div className="flex-1 flex flex-col">
               <div className="flex items-center justify-between mb-1">
                 <h3 className="text-body-lg font-bold text-text-primary leading-tight">
-                  {res.title}
+                  {res.title || "Unknown Incident"}
                 </h3>
-                <SeverityBadge severity={res.severity as any} />
+                <SeverityBadge severity={(res.severity as any) || "urgent"} />
               </div>
               
               <span className="text-sm text-text-secondary capitalize mb-1">
@@ -64,7 +69,6 @@ export function SearchResults({ results, onSelect }: SearchResultsProps) {
               
               {res.matchedAlias && (
                 <span className="text-xs text-action font-medium">
-                  {/* We hardcode "Matched via:" or could add to i18n, assuming inline is ok per prompt if not specified */}
                   Matched via: "{res.matchedAlias}"
                 </span>
               )}
