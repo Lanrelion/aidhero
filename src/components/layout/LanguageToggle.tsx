@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { Globe } from 'lucide-react';
 import { LanguageSheet } from './LanguageSheet';
-import type { Locale } from '@/i18n/config';
+import type { Locale } from '@/types';
 
 export function LanguageToggle() {
   const t = useTranslations();

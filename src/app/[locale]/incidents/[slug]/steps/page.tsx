@@ -10,6 +10,8 @@ import { useOfflineStore } from '@/store/useOfflineStore';
 import { getScenario } from '@/lib/data/scenarios';
 import { getPrimaryEmergencyNumber } from '@/lib/data/emergencyNumbers';
 import { StepCard } from '@/components/rescue/StepCard';
+import { TTSProvider } from '@/components/tts/TTSProvider';
+import { ReadAllButton } from '@/components/tts/ReadAllButton';
 import { Locale } from '@/types';
 
 interface StepsPageProps {
@@ -86,7 +88,8 @@ export default function StepsPage({ params }: StepsPageProps) {
   if (!mounted) return null;
 
   return (
-    <div className="flex flex-col min-h-screen bg-background overflow-hidden pb-28">
+    <TTSProvider>
+      <div className="flex flex-col min-h-screen bg-background overflow-hidden pb-28">
       {/* Header */}
       <header className="sticky top-0 z-30 bg-surface/95 backdrop-blur supports-[backdrop-filter]:bg-surface/80">
         {/* Progress Bar (Thin red line at very top) */}
@@ -115,6 +118,7 @@ export default function StepsPage({ params }: StepsPageProps) {
       </header>
 
       <main className="flex-1 flex flex-col px-4 pt-6 max-w-md mx-auto w-full relative">
+        <ReadAllButton scenarioId={scenario.id} steps={stepsToRender} />
         <div 
           key={currentStep.id} 
           className="motion-safe:animate-in motion-safe:slide-in-from-right duration-300 ease-out fill-mode-both w-full"
@@ -168,7 +172,8 @@ export default function StepsPage({ params }: StepsPageProps) {
         >
           <Mic className="w-7 h-7" />
         </button>
+        </div>
       </div>
-    </div>
+    </TTSProvider>
   );
 }

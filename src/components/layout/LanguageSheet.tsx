@@ -6,7 +6,7 @@ import { useLanguageStore } from '@/store/useLanguageStore';
 import { useRescueStore } from '@/store/useRescueStore';
 import { Sheet, SheetContent, SheetHeader, SheetTitle } from '@/components/ui/sheet';
 import { Check } from 'lucide-react';
-import type { Locale } from '@/i18n/config';
+import type { Locale } from '@/types';
 
 interface LanguageSheetProps {
   open: boolean;

@@ -11,7 +11,7 @@ import { getDecisionTree } from '@/lib/data/decisionTrees';
 import { ProgressIndicator } from '@/components/rescue/ProgressIndicator';
 import { DecisionQuestion } from '@/components/rescue/DecisionQuestion';
 import { getPrimaryEmergencyNumber } from '@/lib/data/emergencyNumbers';
-import { Locale } from '@/i18n/config';
+import { Locale } from '@/types';
 
 interface RescuePageProps {
   params: Promise<{ locale: Locale; slug: string }>;

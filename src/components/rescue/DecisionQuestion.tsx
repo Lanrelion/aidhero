@@ -1,6 +1,6 @@
 import { cn } from '@/lib/utils';
 import type { QuestionNode } from '@/types/decision-tree';
-import type { Locale } from '@/i18n/config';
+import type { Locale } from '@/types';
 
 interface DecisionQuestionProps {
   node: QuestionNode;

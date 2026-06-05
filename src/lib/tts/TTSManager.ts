@@ -10,11 +10,16 @@ class TTSManagerClass {
   // Event callbacks
   public onEnd?: () => void;
   public onStateChange?: (isSpeaking: boolean) => void;
+  public onWordBoundary?: (charIndex: number) => void;
 
   private setSpeakingState(state: boolean) {
     this._isSpeaking = state;
     if (this.onStateChange) {
       this.onStateChange(state);
+    }
+    if (!state && this.onWordBoundary) {
+      // Reset word boundary on stop
+      this.onWordBoundary(-1);
     }
   }
 
@@ -29,6 +34,7 @@ class TTSManagerClass {
     lang: Language
   ): Promise<void> {
     await this.stop();
+    if (this.onWordBoundary) this.onWordBoundary(0);
     
     // English skips static files directly since we have highly reliable en-NG synthesis
     if (lang === 'en') {
@@ -89,7 +95,6 @@ class TTSManagerClass {
       // Optional: Find best matching voice if available
       const voices = window.speechSynthesis.getVoices();
       if (voices.length > 0) {
-        // Try to find a voice that matches the lang exactly
         const match = voices.find(v => v.lang === voiceLang || v.lang.startsWith(voiceLang));
         if (match) {
           utterance.voice = match;
@@ -98,6 +103,12 @@ class TTSManagerClass {
 
       utterance.onstart = () => {
         this.setSpeakingState(true);
+      };
+
+      utterance.onboundary = (e) => {
+        if (e.name === 'word' && this.onWordBoundary) {
+          this.onWordBoundary(e.charIndex);
+        }
       };
 
       utterance.onend = () => {
