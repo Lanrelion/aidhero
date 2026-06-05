@@ -38,7 +38,7 @@ export default async function IncidentDetailPage({
   const severityStyle = severityConfig[scenario.severity] || severityConfig.moderate;
 
   return (
-    <div className="flex flex-col min-h-screen bg-background pb-28">
+    <div className="flex flex-col min-h-screen bg-background">
       {/* Header */}
       <header className="sticky top-0 z-30 bg-surface/95 backdrop-blur supports-[backdrop-filter]:bg-surface/80 border-b border-border">
         <div className="flex items-center h-14 px-4 gap-3">
@@ -60,7 +60,7 @@ export default async function IncidentDetailPage({
         {t(`rescue.severity.${scenario.severity}`) || scenario.severity}
       </div>
 
-      <main className="flex-1 p-4 max-w-2xl mx-auto w-full flex flex-col gap-6">
+      <main className="flex-1 p-4 pb-24 max-w-2xl mx-auto w-full flex flex-col gap-6">
         
         {/* Title */}
         <h1 className="text-h1 font-display font-bold text-text-primary leading-tight">
