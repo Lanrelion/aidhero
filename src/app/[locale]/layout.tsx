@@ -1,4 +1,4 @@
-import type { Metadata, Viewport } from "next";
+﻿import type { Metadata, Viewport } from "next";
 import { Syne, DM_Sans, Syne_Mono, Geist } from "next/font/google";
 import "../globals.css";
 import { cn } from "@/lib/utils";
@@ -6,10 +6,14 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { locales, Locale } from "../../../i18n/config";
+import { BottomNav } from '@/components/layout/BottomNav';
+import { LanguageToggle } from '@/components/layout/LanguageToggle';
+import { OfflineBadge } from '@/components/layout/OfflineBadge';
+import { ContentUpdateBanner } from '@/components/layout/ContentUpdateBanner';
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
-// DESIGN.md §4: Display/Headings — Syne 600, 700, 800
+// DESIGN.md Â§4: Display/Headings â€” Syne 600, 700, 800
 const syne = Syne({
   variable: "--font-display",
   subsets: ["latin"],
@@ -17,7 +21,7 @@ const syne = Syne({
   display: "swap",
 });
 
-// DESIGN.md §4: Body/Instructions — DM Sans 400, 500, 600
+// DESIGN.md Â§4: Body/Instructions â€” DM Sans 400, 500, 600
 const dmSans = DM_Sans({
   variable: "--font-body",
   subsets: ["latin"],
@@ -25,7 +29,7 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-// DESIGN.md §4: Step Numbers/Counts — Syne Mono 400, 700
+// DESIGN.md Â§4: Step Numbers/Counts â€” Syne Mono 400, 700
 const syneMono = Syne_Mono({
   variable: "--font-mono",
   subsets: ["latin"],
@@ -103,12 +107,24 @@ export default async function RootLayout({
       lang={locale}
       className={cn("h-full", "antialiased", syne.variable, dmSans.variable, syneMono.variable, "font-sans", geist.variable)}
     >
-      {/* DESIGN.md §10 ARIA landmarks */}
-      <body className="min-h-full flex flex-col bg-[--color-surface] text-[--color-text-primary] font-body">
+      {/* DESIGN.md Â§10 ARIA landmarks */}
+            <body className="min-h-[100dvh] flex flex-col bg-[--color-surface] text-[--color-text-primary] font-body pb-16">
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <ContentUpdateBanner />
+          <header className="flex items-center justify-between px-4 h-16 border-b border-border shrink-0">
+            <h1 className="text-h3 font-bold text-text-primary font-display">AidHero</h1>
+            <div className="flex items-center gap-2">
+              <OfflineBadge />
+              <LanguageToggle />
+            </div>
+          </header>
+          <main className="flex-1 overflow-x-hidden">
+            {children}
+          </main>
+          <BottomNav />
         </NextIntlClientProvider>
       </body>
     </html>
   );
 }
+
