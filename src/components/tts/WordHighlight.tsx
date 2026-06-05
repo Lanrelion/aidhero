@@ -12,13 +12,11 @@ interface WordHighlightProps {
 export function WordHighlight({ text, className }: WordHighlightProps) {
   const { currentWordIndex, isSpeaking } = useTTS();
 
-  // Split text into words while preserving spaces
+  // Split text into words while preserving spaces and tracking char offsets
   const words = useMemo(() => {
-    // Regex splits by word boundary but we need to track character indices
     const tokens: { text: string; start: number; end: number }[] = [];
     let currentIdx = 0;
     
-    // Simple split by spaces for display, but calculating absolute char index
     const parts = text.split(/(\s+)/);
     
     for (const part of parts) {
@@ -31,18 +29,26 @@ export function WordHighlight({ text, className }: WordHighlightProps) {
     return tokens;
   }, [text]);
 
-  if (!isSpeaking || currentWordIndex < 0) {
+  // Fallback: no highlight when:
+  // - not speaking at all
+  // - charIndex is -1 (reset/idle)
+  // - charIndex is still 0 — the initial value set when speak() starts,
+  //   before any boundary event fires. On Safari, onboundary never fires
+  //   so charIndex stays at 0 indefinitely. We only start highlighting
+  //   once a real boundary event pushes charIndex > 0.
+  const shouldHighlight = isSpeaking && currentWordIndex > 0;
+
+  if (!shouldHighlight) {
+    // Render plain text — works correctly on Safari and when idle
     return <span className={className}>{text}</span>;
   }
 
   return (
     <span className={className}>
       {words.map((word, i) => {
-        // A word is active if the current char index falls within its boundaries
-        // Or if we're on a space and it's the preceding word
         const isActive = currentWordIndex >= word.start && currentWordIndex < word.end;
         
-        // Don't highlight whitespace
+        // Don't style whitespace tokens
         if (word.text.trim() === '') {
           return <span key={i}>{word.text}</span>;
         }
@@ -51,7 +57,8 @@ export function WordHighlight({ text, className }: WordHighlightProps) {
           <span
             key={i}
             className={cn(
-              "transition-colors duration-150",
+              // Only animate color transition when reduced motion is OK
+              "motion-safe:transition-colors motion-safe:duration-150",
               isActive ? "text-emergency bg-emergency/10 rounded-sm" : ""
             )}
           >

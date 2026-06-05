@@ -50,9 +50,9 @@ export function TTSButton({ scenarioId, stepId, text, size = 'lg', className }: 
       {isSpeaking ? (
         <>
           <div className="flex gap-1 items-end h-4 mr-1">
-            <span className="w-1 h-2 bg-emergency animate-[wave_1s_ease-in-out_infinite]" />
-            <span className="w-1 h-4 bg-emergency animate-[wave_1s_ease-in-out_infinite_0.2s]" />
-            <span className="w-1 h-3 bg-emergency animate-[wave_1s_ease-in-out_infinite_0.4s]" />
+            <span className="w-1 h-2 bg-emergency motion-safe:animate-[wave_1s_ease-in-out_infinite]" />
+            <span className="w-1 h-4 bg-emergency motion-safe:animate-[wave_1s_ease-in-out_infinite_0.2s]" />
+            <span className="w-1 h-3 bg-emergency motion-safe:animate-[wave_1s_ease-in-out_infinite_0.4s]" />
           </div>
           <Square className="w-5 h-5 fill-current" />
           {t('rescue.stopAudio') || "Stop"}
