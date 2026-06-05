@@ -21,12 +21,12 @@
     "paths": {
       "@/*": ["./src/*"]
     },
-    // Explicit types list prevents TypeScript from auto-discovering all
-    // @types/* packages in node_modules. vitest's transitive @types/babel__*
-    // and @types/deep-eql have broken refs that surface as IDE errors.
-    // Next.js provides React/DOM types via next-env.d.ts (/// <reference types="next" />)
-    // so only "node" needs to be listed here.
-    "types": ["node"]
+    // Explicit types list prevents TypeScript from auto-discovering ALL
+    // @types/* packages. vitest's transitive @types/babel__* and @types/deep-eql
+    // have broken cross-refs that the IDE surfaces as errors.
+    // react + react-dom are required for JSX (react/jsx-runtime) and DOM APIs.
+    // node is required for Node.js globals (process, Buffer, etc.).
+    "types": ["node", "react", "react-dom"]
   },
   "include": [
     "next-env.d.ts",
