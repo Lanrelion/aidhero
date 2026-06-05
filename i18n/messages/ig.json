@@ -10,7 +10,7 @@
                  "subtitle":  "[NEEDS_REVIEW] First Aid Guide",
                  "searchPlaceholder":  "[NEEDS_REVIEW] Search for symptoms or injuries...",
                  "sectionHeaders":  "[NEEDS_REVIEW] Categories",
-                 "emergencyCall":  "Kpá»á» Mberede"
+                 "emergencyCall":  "KpÃ¡Â»ÂÃ¡Â»Â Mberede"
              },
     "rescue":  {
                    "startGuided":  "[NEEDS_REVIEW] Start Guided Rescue",
@@ -55,7 +55,8 @@
                  },
     "accessibility":  {
                           "ariaLabels":  "[NEEDS_REVIEW] Accessibility Strings",
-                          "emergencyCallStrip":  "Kpá»á» Ná»mba Mberede"
+                          "emergencyCallStrip":  "KpÃ¡Â»ÂÃ¡Â»Â NÃ¡Â»Âmba Mberede",
+                          "changeLanguage":  "Change Language"
                       },
     "offline":  {
                     "ready":  "[NEEDS_REVIEW] Ready for offline use",
