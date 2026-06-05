@@ -6,7 +6,7 @@ interface RescueStore {
   currentStepIndex: number;
   history: string[];
   isVoiceMode: boolean;
-  startRescue: (scenarioId: string) => void;
+  startRescue: (scenarioId: string, rootNodeId?: string) => void;
   answerQuestion: (nextNodeId: string) => void;
   goBack: () => void;
   advanceStep: () => void;
@@ -21,11 +21,11 @@ export const useRescueStore = create<RescueStore>((set) => ({
   history: [],
   isVoiceMode: false,
 
-  startRescue: (scenarioId: string) => set({
+  startRescue: (scenarioId: string, rootNodeId: string = 'q1') => set({
     activeScenario: scenarioId,
-    currentNodeId: 'q1', // default root node id for our decision trees
+    currentNodeId: rootNodeId,
     currentStepIndex: 0,
-    history: ['q1'],
+    history: [rootNodeId],
   }),
 
   answerQuestion: (nextNodeId: string) => set((state) => ({

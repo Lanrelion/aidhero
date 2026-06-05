@@ -7,11 +7,11 @@ import severeBleedingFlow from '../../../data/decision-trees/severe-bleeding-flo
 import seizureFlow from '../../../data/decision-trees/seizure-flow.json';
 
 export const decisionTrees: DecisionTree[] = [
-  heartAttackFlow as DecisionTree,
-  chokingAdultFlow as DecisionTree,
-  strokeFlow as DecisionTree,
-  severeBleedingFlow as DecisionTree,
-  seizureFlow as DecisionTree
+  ((heartAttackFlow as any).default || heartAttackFlow) as DecisionTree,
+  ((chokingAdultFlow as any).default || chokingAdultFlow) as DecisionTree,
+  ((strokeFlow as any).default || strokeFlow) as DecisionTree,
+  ((severeBleedingFlow as any).default || severeBleedingFlow) as DecisionTree,
+  ((seizureFlow as any).default || seizureFlow) as DecisionTree
 ];
 
 export function getDecisionTree(id: string): DecisionTree | undefined {
