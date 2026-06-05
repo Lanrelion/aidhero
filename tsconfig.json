@@ -24,9 +24,9 @@
     // Explicit types list prevents TypeScript from auto-discovering ALL
     // @types/* packages. vitest's transitive @types/babel__* and @types/deep-eql
     // have broken cross-refs that the IDE surfaces as errors.
-    // react + react-dom are required for JSX (react/jsx-runtime) and DOM APIs.
-    // node is required for Node.js globals (process, Buffer, etc.).
-    "types": ["node", "react", "react-dom"]
+    // react and react-dom are provided by Next.js or explicit references,
+    // so we don't list them here to avoid resolution errors with "bundler".
+    "types": ["node"]
   },
   "include": [
     "next-env.d.ts",
