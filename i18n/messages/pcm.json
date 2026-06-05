@@ -1,88 +1,88 @@
 {
     "nav":  {
-                "home":  "[NEEDS_REVIEW] Home",
-                "search":  "[NEEDS_REVIEW] Search",
-                "emergency":  "[NEEDS_REVIEW] Emergency",
-                "settings":  "[NEEDS_REVIEW] Settings"
+                "home":  "Home",
+                "search":  "Search",
+                "emergency":  "Emergency",
+                "settings":  "Settings"
             },
     "home":  {
-                 "title":  "[NEEDS_REVIEW] AidHero",
-                 "subtitle":  "[NEEDS_REVIEW] First Aid Guide",
-                 "searchPlaceholder":  "[NEEDS_REVIEW] Search for symptoms or injuries...",
-                 "sectionHeaders":  "[NEEDS_REVIEW] Categories",
+                 "title":  "AidHero",
+                 "subtitle":  "First Aid Guide",
+                 "searchPlaceholder":  "Search for symptoms or injuries...",
+                 "sectionHeaders":  "Categories",
                  "emergencyCall":  "Call Emergency"
              },
     "rescue":  {
-                   "startGuided":  "[NEEDS_REVIEW] Start Guided Rescue",
-                   "quickSteps":  "[NEEDS_REVIEW] Quick Steps",
-                   "stepXOfY":  "[NEEDS_REVIEW] Step {step} of {total}",
-                   "next":  "[NEEDS_REVIEW] Next",
-                   "back":  "[NEEDS_REVIEW] Back",
-                   "repeat":  "[NEEDS_REVIEW] Repeat",
-                   "callEmergency":  "[NEEDS_REVIEW] Call Emergency"
+                   "startGuided":  "Start Guided Rescue",
+                   "quickSteps":  "Quick Steps",
+                   "stepXOfY":  "Step {step} of {total}",
+                   "next":  "Next",
+                   "back":  "Back",
+                   "repeat":  "Repeat",
+                   "callEmergency":  "Call Emergency"
                },
     "search":  {
-                   "placeholder":  "[NEEDS_REVIEW] Search...",
-                   "noResults":  "[NEEDS_REVIEW] No results found for \"{query}\".",
-                   "recentSearches":  "[NEEDS_REVIEW] Recent Searches",
+                   "placeholder":  "Search...",
+                   "noResults":  "No results found for \"{query}\".",
+                   "recentSearches":  "Recent Searches",
                    "trySuggestions":  "Try: heart attack, choking, bleeding",
                    "allCategories":  "All Categories",
                    "clearRecent":  "Clear"
                },
     "incidents":  {
-                      "paediatric":  "[NEEDS_REVIEW] Paediatric",
-                      "trauma":  "[NEEDS_REVIEW] Trauma",
-                      "environmental":  "[NEEDS_REVIEW] Environmental",
-                      "respiratory":  "[NEEDS_REVIEW] Respiratory",
-                      "burns":  "[NEEDS_REVIEW] Burns",
-                      "allergic":  "[NEEDS_REVIEW] Allergic",
-                      "obstetric":  "[NEEDS_REVIEW] Obstetric",
-                      "cardiac":  "[NEEDS_REVIEW] Cardiac",
-                      "poisoning":  "[NEEDS_REVIEW] Poisoning",
-                      "neurological":  "[NEEDS_REVIEW] Neurological"
+                      "paediatric":  "Paediatric",
+                      "trauma":  "Trauma",
+                      "environmental":  "Environmental",
+                      "respiratory":  "Respiratory",
+                      "burns":  "Burns",
+                      "allergic":  "Allergic",
+                      "obstetric":  "Obstetric",
+                      "cardiac":  "Cardiac",
+                      "poisoning":  "Poisoning",
+                      "neurological":  "Neurological"
                   },
     "emergency":  {
-                      "callButton":  "[NEEDS_REVIEW] Call",
-                      "stateNames":  "[NEEDS_REVIEW] State Numbers",
-                      "nationalNumbers":  "[NEEDS_REVIEW] National Emergency Numbers"
+                      "callButton":  "Call",
+                      "stateNames":  "State Numbers",
+                      "nationalNumbers":  "National Emergency Numbers"
                   },
     "settings":  {
-                     "language":  "[NEEDS_REVIEW] Language",
-                     "textSize":  "[NEEDS_REVIEW] Text Size",
-                     "contrast":  "[NEEDS_REVIEW] Contrast",
-                     "offline":  "[NEEDS_REVIEW] Offline Mode",
-                     "about":  "[NEEDS_REVIEW] About AidHero"
+                     "language":  "Language",
+                     "textSize":  "Text Size",
+                     "contrast":  "Contrast",
+                     "offline":  "Offline Mode",
+                     "about":  "About AidHero"
                  },
     "accessibility":  {
-                          "ariaLabels":  "[NEEDS_REVIEW] Accessibility Strings",
+                          "ariaLabels":  "Accessibility Strings",
                           "emergencyCallStrip":  "Call Emergency Numbers",
                           "changeLanguage":  "Change Language",
                           "bottomNav":  "Bottom Navigation"
                       },
     "offline":  {
-                    "ready":  "[NEEDS_REVIEW] Ready for offline use",
-                    "limited":  "[NEEDS_REVIEW] Limited offline functionality",
-                    "updated":  "[NEEDS_REVIEW] Content updated",
+                    "ready":  "Ready for offline use",
+                    "limited":  "Limited offline functionality",
+                    "updated":  "Content updated",
                     "active":  "Offline Mode Active",
                     "downloading":  "Downloading Content..."
                 },
     "errors":  {
-                   "notFound":  "[NEEDS_REVIEW] Page not found",
-                   "audioUnavailable":  "[NEEDS_REVIEW] Audio unavailable in offline mode",
-                   "offlineLimitation":  "[NEEDS_REVIEW] This feature requires an internet connection"
+                   "notFound":  "Page not found",
+                   "audioUnavailable":  "Audio unavailable in offline mode",
+                   "offlineLimitation":  "This feature requires an internet connection"
                },
     "onboarding":  {
-                       "slide1Title":  "[NEEDS_REVIEW] Welcome to AidHero",
-                       "slide1Desc":  "[NEEDS_REVIEW] Your offline-first emergency companion.",
-                       "slide2Title":  "[NEEDS_REVIEW] Always Available",
-                       "slide2Desc":  "[NEEDS_REVIEW] Access life-saving guides even without internet.",
-                       "slide3Title":  "[NEEDS_REVIEW] Voice Guided",
-                       "slide3Desc":  "[NEEDS_REVIEW] Hands-free audio instructions during emergencies."
+                       "slide1Title":  "Welcome to AidHero",
+                       "slide1Desc":  "Your offline-first emergency companion.",
+                       "slide2Title":  "Always Available",
+                       "slide2Desc":  "Access life-saving guides even without internet.",
+                       "slide3Title":  "Voice Guided",
+                       "slide3Desc":  "Hands-free audio instructions during emergencies."
                    },
     "metadata":  {
-                     "title":  "[NEEDS_REVIEW] AidHero - Emergency First Aid Nigeria",
-                     "description":  "[NEEDS_REVIEW] Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
-                     "ogTitle":  "[NEEDS_REVIEW] AidHero - Emergency First Aid Nigeria",
-                     "ogDescription":  "[NEEDS_REVIEW] You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
+                     "title":  "AidHero - Emergency First Aid Nigeria",
+                     "description":  "Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
+                     "ogTitle":  "AidHero - Emergency First Aid Nigeria",
+                     "ogDescription":  "You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
                  }
 }
