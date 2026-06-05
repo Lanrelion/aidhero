@@ -35,15 +35,8 @@ class TTSManagerClass {
       return this.webSpeechSpeak(text, 'en-NG');
     }
     
-    // Try static audio file first (production)
     const audioPath = getAudioPath(scenarioId, lang, stepId);
-    const fileExists = await this.checkAudioExists(audioPath);
     
-    if (fileExists) {
-      return this.playStaticAudio(audioPath);
-    }
-    
-    // Fallback: Web Speech API (development + missing audio files)
     const voiceMap: Record<Language, string> = {
       ha: 'ha', 
       ig: 'ig', 
@@ -52,41 +45,34 @@ class TTSManagerClass {
       en: 'en-NG'
     };
     
-    return this.webSpeechSpeak(text, voiceMap[lang]);
-  }
-  
-  private async checkAudioExists(audioPath: string): Promise<boolean> {
-    try {
-      const response = await fetch(audioPath, { method: 'HEAD' });
-      return response.ok;
-    } catch (e) {
-      return false;
-    }
+    return this.playStaticAudio(audioPath, text, voiceMap[lang]);
   }
 
-  private playStaticAudio(audioPath: string): Promise<void> {
-    return new Promise((resolve, reject) => {
-      this.currentAudio = new Audio(audioPath);
-      
-      this.currentAudio.onplay = () => {
+  private playStaticAudio(audioPath: string, fallbackText: string, fallbackLang: string): Promise<void> {
+    this.currentAudio = new Audio(audioPath);
+    
+    return new Promise((resolve) => {
+      this.currentAudio!.oncanplaythrough = () => {
         this.setSpeakingState(true);
+        this.currentAudio!.play().catch(async () => {
+          await this.webSpeechSpeak(fallbackText, fallbackLang);
+          resolve();
+        });
       };
       
-      this.currentAudio.onended = () => {
+      this.currentAudio!.onended = () => {
         this.setSpeakingState(false);
         if (this.onEnd) this.onEnd();
         resolve();
       };
       
-      this.currentAudio.onerror = (e) => {
-        this.setSpeakingState(false);
-        reject(e);
+      this.currentAudio!.onerror = async () => {
+        // File not found — fall back to Web Speech immediately
+        await this.webSpeechSpeak(fallbackText, fallbackLang);
+        resolve();
       };
 
-      this.currentAudio.play().catch(e => {
-        this.setSpeakingState(false);
-        reject(e);
-      });
+      this.currentAudio!.load();
     });
   }
 
