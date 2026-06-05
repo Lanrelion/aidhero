@@ -19,7 +19,12 @@
                    "next":  "[PCM] Next",
                    "back":  "[PCM] Back",
                    "repeat":  "[PCM] Repeat",
-                   "callEmergency":  "[PCM] Call Emergency"
+                   "callEmergency":  "[PCM] Call Emergency",
+                   "severity":  {
+                                    "critical":  "[PCM] CRITICAL",
+                                    "moderate":  "[PCM] MODERATE",
+                                    "urgent":  "[PCM] URGENT"
+                                }
                },
     "search":  {
                    "placeholder":  "[PCM] Search...",

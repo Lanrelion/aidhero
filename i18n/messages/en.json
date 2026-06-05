@@ -19,7 +19,12 @@
                    "next":  "Next",
                    "back":  "Back",
                    "repeat":  "Repeat",
-                   "callEmergency":  "Call Emergency"
+                   "callEmergency":  "Call Emergency",
+                   "severity":  {
+                                    "critical":  "CRITICAL",
+                                    "moderate":  "MODERATE",
+                                    "urgent":  "URGENT"
+                                }
                },
     "search":  {
                    "placeholder":  "Search...",

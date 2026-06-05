@@ -19,7 +19,12 @@
                    "next":  "[HA] Next",
                    "back":  "[HA] Back",
                    "repeat":  "[HA] Repeat",
-                   "callEmergency":  "[HA] Call Emergency"
+                   "callEmergency":  "[HA] Call Emergency",
+                   "severity":  {
+                                    "critical":  "[HA] CRITICAL",
+                                    "moderate":  "[HA] MODERATE",
+                                    "urgent":  "[HA] URGENT"
+                                }
                },
     "search":  {
                    "placeholder":  "[HA] Search...",
