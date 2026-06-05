@@ -29,27 +29,28 @@ export const useOfflineStore = create<OfflineStore>((set) => ({
     window.addEventListener('online', () => set({ isOnline: true }));
     window.addEventListener('offline', () => set({ isOnline: false }));
 
-    // Listen for service worker updates (handled by workbox typically)
+    if (process.env.NODE_ENV === 'development') {
+      // QA mock — simulates SW cache for visual testing only
+      // NEVER ships to production (Next.js strips dev-only code at build time)
+      setTimeout(() => {
+        set({ isCached: true });
+      }, 2000);
+      return;
+    }
+
+    // Production: real SW cache detection
+    // (full implementation in STEP 25)
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.ready.then(() => {
-        set({ isCached: true }); // optimistic cache assumed when SW is ready
+        // SW registered — check caches API for actual content
+        caches.has('aidhero-scenarios').then(has => {
+          set({ isCached: has });
+        });
       });
       
       navigator.serviceWorker.addEventListener('controllerchange', () => {
-        // If a new SW takes over, we might want to flag update
         set({ hasUpdate: true });
       });
-      
-      // Temporary QA Simulation: since SW isn't built until Step 22,
-      // simulate the cache finishing after 2 seconds so the badge turns green.
-      setTimeout(() => {
-        set({ isCached: true });
-      }, 2000);
-    } else {
-      // Fallback if no SW support
-      setTimeout(() => {
-        set({ isCached: true });
-      }, 2000);
     }
   }
 }));
