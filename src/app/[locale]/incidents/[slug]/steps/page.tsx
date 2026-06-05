@@ -6,7 +6,9 @@ import { useTranslations } from 'next-intl';
 import { ChevronLeft, Phone, Mic, Check } from 'lucide-react';
 
 import { useRescueStore } from '@/store/useRescueStore';
+import { useOfflineStore } from '@/store/useOfflineStore';
 import { getScenario } from '@/lib/data/scenarios';
+import { getPrimaryEmergencyNumber } from '@/lib/data/emergencyNumbers';
 import { StepCard } from '@/components/rescue/StepCard';
 import { Locale } from '@/i18n/config';
 
@@ -24,6 +26,7 @@ export default function StepsPage({ params }: StepsPageProps) {
   const scenario = getScenario(slug);
   
   const { currentStepIndex, advanceStep, setVoiceMode } = useRescueStore();
+  const { detectedState } = useOfflineStore();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -57,11 +60,13 @@ export default function StepsPage({ params }: StepsPageProps) {
   const currentStep = stepsToRender[safeStepIndex];
   const isLastStep = safeStepIndex === stepsToRender.length - 1;
   const progressPercentage = ((safeStepIndex + 1) / stepsToRender.length) * 100;
+  
+  const primaryNumber = getPrimaryEmergencyNumber(detectedState);
 
   const handleNext = () => {
     if (isLastStep) {
       // Done - open phone dialer
-      window.location.href = "tel:112";
+      window.location.href = `tel:${primaryNumber}`;
     } else {
       advanceStep();
     }
@@ -142,10 +147,9 @@ export default function StepsPage({ params }: StepsPageProps) {
         </button>
       </div>
 
-      {/* Persistent Emergency Call (Bottom Left) */}
       <div className="fixed bottom-28 left-4 z-40">
         <a 
-          href="tel:112"
+          href={`tel:${primaryNumber}`}
           className="flex items-center justify-center gap-2 h-12 px-5 bg-card border border-border text-emergency rounded-full shadow-sm active:scale-95 transition-transform font-bold"
           aria-label={t('emergency.callButton') || "Call"}
         >

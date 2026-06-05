@@ -10,6 +10,7 @@ import { useRescueStore } from '@/store/useRescueStore';
 import { getDecisionTree } from '@/lib/data/decisionTrees';
 import { ProgressIndicator } from '@/components/rescue/ProgressIndicator';
 import { DecisionQuestion } from '@/components/rescue/DecisionQuestion';
+import { getPrimaryEmergencyNumber } from '@/lib/data/emergencyNumbers';
 import { Locale } from '@/i18n/config';
 
 interface RescuePageProps {
@@ -116,10 +117,9 @@ export default function RescuePage({ params }: RescuePageProps) {
         )}
       </main>
 
-      {/* FAB Emergency Call Button */}
       <div className="fixed bottom-6 right-6 z-40">
         <a 
-          href="tel:112"
+          href={`tel:${getPrimaryEmergencyNumber(null)}`} // Store context could be wired later
           className="flex items-center justify-center w-16 h-16 bg-emergency text-white rounded-full shadow-emergency active:scale-95 transition-transform"
           aria-label={t('emergency.callButton') || "Call Emergency"}
         >

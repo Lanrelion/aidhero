@@ -4,9 +4,11 @@ interface OfflineStore {
   isOnline: boolean;
   isCached: boolean;
   hasUpdate: boolean;
+  detectedState: string | null;
   setOnline: (val: boolean) => void;
   setHasUpdate: (val: boolean) => void;
   setCached: (val: boolean) => void;
+  setDetectedState: (val: string) => void;
   initOfflineState: () => void;
 }
 
@@ -14,10 +16,12 @@ export const useOfflineStore = create<OfflineStore>((set) => ({
   isOnline: typeof navigator !== 'undefined' ? navigator.onLine : true,
   isCached: false,
   hasUpdate: false,
+  detectedState: null,
   
   setOnline: (val) => set({ isOnline: val }),
   setHasUpdate: (val) => set({ hasUpdate: val }),
   setCached: (val) => set({ isCached: val }),
+  setDetectedState: (val) => set({ detectedState: val }),
 
   initOfflineState: () => {
     if (typeof window === 'undefined') return;
