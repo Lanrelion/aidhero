@@ -24,7 +24,10 @@
                                     "critical":  "CRITICAL",
                                     "moderate":  "MODERATE",
                                     "urgent":  "URGENT"
-                                }
+                                },
+                   "signsToLookFor":  "Signs to recognise",
+                   "doNot":  "What NOT to do",
+                   "hospitalThreshold":  "When to go to hospital"
                },
     "search":  {
                    "placeholder":  "Search...",

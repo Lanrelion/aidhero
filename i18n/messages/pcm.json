@@ -24,7 +24,10 @@
                                     "critical":  "[PCM] CRITICAL",
                                     "moderate":  "[PCM] MODERATE",
                                     "urgent":  "[PCM] URGENT"
-                                }
+                                },
+                   "signsToLookFor":  "[PCM] Signs to recognise",
+                   "doNot":  "[PCM] What NOT to do",
+                   "hospitalThreshold":  "[PCM] When to go to hospital"
                },
     "search":  {
                    "placeholder":  "[PCM] Search...",
