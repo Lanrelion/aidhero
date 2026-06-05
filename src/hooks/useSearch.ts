@@ -1,12 +1,12 @@
-﻿import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useLanguageStore } from '@/store/useLanguageStore';
 import { idb } from '@/lib/offline/idb';
 import { scenarios } from '@/lib/data/scenarios';
 import { synonyms } from '@/lib/search/synonyms';
 import { ScenarioSearch, SearchResult } from '@/lib/search/index';
 
-export function useSearch() {
-  const [query, setQuery] = useState('');
+export function useSearch(initialQuery: string = '') {
+  const [query, setQuery] = useState(initialQuery);
   const [results, setResults] = useState<SearchResult[]>([]);
   const [isSearching, setIsSearching] = useState(false);
   const locale = useLanguageStore((state) => state.language);

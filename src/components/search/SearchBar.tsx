@@ -1,36 +1,57 @@
 ﻿"use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import { Search, Mic } from 'lucide-react';
 import { useRescueStore } from '@/store/useRescueStore';
 
-export function SearchBar() {
+interface SearchBarProps {
+  autoFocus?: boolean;
+  value?: string;
+  onChange?: (val: string) => void;
+}
+
+export function SearchBar({ autoFocus = false, value, onChange }: SearchBarProps = {}) {
   const t = useTranslations();
   const locale = useLocale();
   const router = useRouter();
   const setVoiceMode = useRescueStore(state => state.setVoiceMode);
   
-  const [query, setQuery] = useState('');
+  const [internalQuery, setInternalQuery] = useState(value || '');
+
+  // Sync prop changes (e.g. from URL)
+  useEffect(() => {
+    if (value !== undefined) {
+      setInternalQuery(value);
+    }
+  }, [value]);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const val = e.target.value;
+    setInternalQuery(val);
+    if (onChange) {
+      onChange(val);
+    }
+  };
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (query.trim()) {
-      router.push(`/${locale}/search?q=${encodeURIComponent(query.trim())}`);
+    if (!onChange && internalQuery.trim()) {
+      // If used in standalone mode (Home), navigate on submit
+      router.push(`/${locale}/search?q=${encodeURIComponent(internalQuery.trim())}`);
     }
   };
 
   const handleFocus = () => {
-    // If empty query, push to search page to show recent searches
-    if (!query) {
+    if (!onChange && !internalQuery) {
+      // If empty query on home, push to search page
       router.push(`/${locale}/search`);
     }
   };
 
   const startVoiceMode = () => {
     setVoiceMode(true);
-    // Voice Mode logic will be handled later, for now we just flag it
   };
 
   return (
@@ -41,9 +62,10 @@ export function SearchBar() {
       
       <input
         type="search"
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
+        value={internalQuery}
+        onChange={handleChange}
         onFocus={handleFocus}
+        autoFocus={autoFocus}
         placeholder={t('home.searchPlaceholder')}
         className="w-full h-full pl-12 pr-14 rounded-lg bg-surface border-2 border-border focus:border-action focus:outline-none transition-colors text-body-lg text-text-primary shadow-sm"
         aria-label={t('home.searchPlaceholder')}

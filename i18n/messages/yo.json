@@ -24,7 +24,10 @@
     "search":  {
                    "placeholder":  "[NEEDS_REVIEW] Search...",
                    "noResults":  "[NEEDS_REVIEW] No results found for \"{query}\".",
-                   "recentSearches":  "[NEEDS_REVIEW] Recent Searches"
+                   "recentSearches":  "[NEEDS_REVIEW] Recent Searches",
+                   "trySuggestions":  "Try: heart attack, choking, bleeding",
+                   "allCategories":  "All Categories",
+                   "clearRecent":  "Clear"
                },
     "incidents":  {
                       "Cardiac":  "[NEEDS_REVIEW] Cardiac",
@@ -52,7 +55,7 @@
                  },
     "accessibility":  {
                           "ariaLabels":  "[NEEDS_REVIEW] Accessibility Strings",
-                          "emergencyCallStrip":  "Pe Nọmba Pajawiri"
+                          "emergencyCallStrip":  "Pe Ná»mba Pajawiri"
                       },
     "offline":  {
                     "ready":  "[NEEDS_REVIEW] Ready for offline use",

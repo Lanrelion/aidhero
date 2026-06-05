@@ -24,7 +24,10 @@
     "search":  {
                    "placeholder":  "Search...",
                    "noResults":  "No results found for \"{query}\".",
-                   "recentSearches":  "Recent Searches"
+                   "recentSearches":  "Recent Searches",
+                   "trySuggestions":  "Try: heart attack, choking, bleeding",
+                   "allCategories":  "All Categories",
+                   "clearRecent":  "Clear"
                },
     "incidents":  {
                       "Cardiac":  "Cardiac",
