@@ -9,7 +9,8 @@
                  "title":  "[NEEDS_REVIEW] AidHero",
                  "subtitle":  "[NEEDS_REVIEW] First Aid Guide",
                  "searchPlaceholder":  "[NEEDS_REVIEW] Search for symptoms or injuries...",
-                 "sectionHeaders":  "[NEEDS_REVIEW] Categories"
+                 "sectionHeaders":  "[NEEDS_REVIEW] Categories",
+                 "emergencyCall":  "Call Emergency"
              },
     "rescue":  {
                    "startGuided":  "[NEEDS_REVIEW] Start Guided Rescue",
@@ -50,7 +51,8 @@
                      "about":  "[NEEDS_REVIEW] About AidHero"
                  },
     "accessibility":  {
-                          "ariaLabels":  "[NEEDS_REVIEW] Accessibility Strings"
+                          "ariaLabels":  "[NEEDS_REVIEW] Accessibility Strings",
+                          "emergencyCallStrip":  "Call Emergency Numbers"
                       },
     "offline":  {
                     "ready":  "[NEEDS_REVIEW] Ready for offline use",

@@ -1,4 +1,4 @@
-﻿{
+{
     "nav":  {
                 "home":  "Home",
                 "search":  "Search",
@@ -9,7 +9,8 @@
                  "title":  "AidHero",
                  "subtitle":  "First Aid Guide",
                  "searchPlaceholder":  "Search for symptoms or injuries...",
-                 "sectionHeaders":  "Categories"
+                 "sectionHeaders":  "Categories",
+                 "emergencyCall":  "Call Emergency"
              },
     "rescue":  {
                    "startGuided":  "Start Guided Rescue",
@@ -51,7 +52,8 @@
                      "confirmDuringRescue":  "Changing language will restart your rescue flow. Continue?"
                  },
     "accessibility":  {
-                          "ariaLabels":  "Accessibility Strings"
+                          "ariaLabels":  "Accessibility Strings",
+                          "emergencyCallStrip":  "Call Emergency Numbers"
                       },
     "offline":  {
                     "ready":  "Ready for offline use",
