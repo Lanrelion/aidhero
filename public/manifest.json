@@ -1,0 +1,91 @@
+/**
+ * PWA manifest for AidHero
+ * Installed as a standalone app — no browser chrome, emergency-first UX
+ */
+{
+  "name": "AidHero — Emergency First Aid",
+  "short_name": "AidHero",
+  "description": "Offline-first emergency first aid guide for Nigeria. Save lives with guided first aid in English, Hausa, Igbo, Yoruba, and Pidgin.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0f1e",
+  "theme_color": "#e63946",
+  "orientation": "portrait-primary",
+  "lang": "en-NG",
+  "categories": ["health", "medical", "education"],
+  "icons": [
+    {
+      "src": "/icons/icon-72x72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-128x128.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-144x144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-152x152.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-384x384.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Search Emergency",
+      "short_name": "Search",
+      "description": "Search for emergency first aid instructions",
+      "url": "/search",
+      "icons": [{ "src": "/icons/shortcut-search.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Emergency Contacts",
+      "short_name": "Call",
+      "description": "View and call emergency numbers for your state",
+      "url": "/emergency",
+      "icons": [{ "src": "/icons/shortcut-emergency.png", "sizes": "96x96" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/screenshots/home-mobile.png",
+      "sizes": "390x844",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "AidHero Home Screen"
+    }
+  ]
+}

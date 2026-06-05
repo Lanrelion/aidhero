@@ -1,0 +1,56 @@
+{
+  "app": {
+    "name": "AidHero",
+    "tagline": "Kuna iya ceton rai. AidHero yana nuna muku yadda."
+  },
+  "nav": {
+    "home": "Gida",
+    "search": "Bincike",
+    "incidents": "Abubuwan gaggawa",
+    "emergency": "Gaggawa",
+    "settings": "Saiti"
+  },
+  "home": {
+    "search_placeholder": "Binciki gaggawa (misali: bugun zuciya, maƙarƙashiya...)",
+    "categories_title": "Nau'ikan Gaggawa",
+    "quick_access": "Sauri Samun"
+  },
+  "emergency": {
+    "call_button": "Kira Gaggawa",
+    "call_confirm": "Kira {number}?",
+    "call_confirm_yes": "Eh, Kira Yanzu",
+    "call_confirm_no": "Soke",
+    "offline_ready": "A Shirye Offline"
+  },
+  "rescue": {
+    "start": "Fara Jagoran Ceto",
+    "skip": "Tsallake zuwa Matakai",
+    "back": "Koma Baya",
+    "next": "Gaba",
+    "step": "Mataki {current} na {total}",
+    "repeat": "Maimata",
+    "voice_mode": "Yanayin Murya"
+  },
+  "tts": {
+    "play": "Kara umarni",
+    "pause": "Tsayawa",
+    "stop": "Dakatar"
+  },
+  "settings": {
+    "language": "Harshe",
+    "about": "Game da",
+    "offline_status": "Matsayin Offline"
+  },
+  "onboarding": {
+    "select_language": "Zaɓi Harshenku",
+    "continue": "Ci gaba",
+    "welcome": "Barka da zuwa AidHero"
+  },
+  "common": {
+    "loading": "Ana lodawa...",
+    "error": "Wani abu ya yi kuskure",
+    "retry": "Sake Gwadawa",
+    "offline_message": "Kuna offline. Nuna abun da aka adana.",
+    "disclaimer": "AidHero yana ba da jagorar taimakon farko na gaba ɗaya don dalilai na ilimi kawai. Ba ya maye gurbin shawarar likita na ƙwararru. Koyaushe kira sabis ɗin gaggawa nan da nan don yanayi mai barazana ga rai."
+  }
+}

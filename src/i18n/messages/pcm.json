@@ -1,0 +1,56 @@
+{
+  "app": {
+    "name": "AidHero",
+    "tagline": "You fit save life. AidHero go show you how."
+  },
+  "nav": {
+    "home": "Home",
+    "search": "Search",
+    "incidents": "Emergencies",
+    "emergency": "Emergency",
+    "settings": "Settings"
+  },
+  "home": {
+    "search_placeholder": "Search emergency (e.g. heart attack, person dey choke...)",
+    "categories_title": "Emergency Categories",
+    "quick_access": "Quick Access"
+  },
+  "emergency": {
+    "call_button": "Call Emergency",
+    "call_confirm": "Call {number}?",
+    "call_confirm_yes": "Yes, Call Now",
+    "call_confirm_no": "No, Cancel",
+    "offline_ready": "Offline Ready"
+  },
+  "rescue": {
+    "start": "Start Guided Rescue",
+    "skip": "Skip go Quick Steps",
+    "back": "Go Back",
+    "next": "Next",
+    "step": "Step {current} of {total}",
+    "repeat": "Repeat",
+    "voice_mode": "Voice Mode"
+  },
+  "tts": {
+    "play": "Play instructions",
+    "pause": "Pause",
+    "stop": "Stop"
+  },
+  "settings": {
+    "language": "Language",
+    "about": "About",
+    "offline_status": "Offline Status"
+  },
+  "onboarding": {
+    "select_language": "Pick Your Language",
+    "continue": "Continue",
+    "welcome": "Welcome to AidHero"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something don go wrong",
+    "retry": "Try Again",
+    "offline_message": "You offline. We dey show cached content.",
+    "disclaimer": "AidHero dey give general first aid guidance for learning purpose only. E no be replacement for professional medical advice. Always call emergency services sharp sharp for life-threatening situations."
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "app": {
+    "name": "AidHero",
+    "tagline": "O le gba ẹmi là. AidHero fihan ọ bí."
+  },
+  "nav": {
+    "home": "Ilé",
+    "search": "Wá wá",
+    "incidents": "Àwọn ìṣẹ̀lẹ̀",
+    "emergency": "Ìpayàpayà",
+    "settings": "Ètò"
+  },
+  "home": {
+    "search_placeholder": "Wá ìpayàpayà (fún àpẹẹrẹ: ìkọlù ọkàn, ẹ̀mí ń kó...) ",
+    "categories_title": "Àwọn Ẹ̀ka Ìpayàpayà",
+    "quick_access": "Ìráǹṣẹ́ Yára"
+  },
+  "emergency": {
+    "call_button": "Pe Ìpayàpayà",
+    "call_confirm": "Pe {number}?",
+    "call_confirm_yes": "Bẹ̃ẹ̀ni, Pe Báyìí",
+    "call_confirm_no": "Fagilé",
+    "offline_ready": "Ó Ṣetán Offline"
+  },
+  "rescue": {
+    "start": "Bẹ̀rẹ̀ Ìgbàlà",
+    "skip": "Fo sí Àwọn Ìgbésẹ̀",
+    "back": "Padà",
+    "next": "Tẹ̀síwájú",
+    "step": "Ìgbésẹ̀ {current} nínú {total}",
+    "repeat": "Tún ṣe",
+    "voice_mode": "Ipo Ohùn"
+  },
+  "tts": {
+    "play": "Gbọ àwọn ìtọ́sọ́nà",
+    "pause": "Dúró",
+    "stop": "Dáwọ̀ dúró"
+  },
+  "settings": {
+    "language": "Èdè",
+    "about": "Nípa",
+    "offline_status": "Ipò Offline"
+  },
+  "onboarding": {
+    "select_language": "Yan Èdè Rẹ",
+    "continue": "Tẹ̀síwájú",
+    "welcome": "Káàbọ̀ sí AidHero"
+  },
+  "common": {
+    "loading": "Ń ṣe ìgbékalẹ̀...",
+    "error": "Ìṣòro kan wáyé",
+    "retry": "Gbìyànjú Lẹ́ẹ̀kan Sí",
+    "offline_message": "O wà offline. N ṣàfihàn àkóónú tí a fipamọ́.",
+    "disclaimer": "AidHero pèsè ìtọ́sọ́nà ìrànlọ́wọ́ àkọ́kọ́ gbogbogbòò fún ìdí ẹ̀kọ́ nìkan. Kò rọ́pò ìmọ̀ràn dókítà akọṣẹ́mọṣẹ́. Máa pe àwọn iṣẹ́ ìpayàpayà lẹ́sẹ̀kẹsẹ̀ fún àwọn ipò tí ó léwu."
+  }
+}
