@@ -2,22 +2,7 @@ import { useRouter } from 'next/navigation';
 import { useTranslations, useLocale } from 'next-intl';
 import { SearchResult } from '@/lib/search/index';
 import { SeverityBadge } from '@/components/ui/severity-badge';
-import { Heart, Wind, Brain, Droplets, Zap, Flame, AlertTriangle, Baby, User, Eye, AlertCircle, Sun } from 'lucide-react';
-
-const CATEGORY_ICONS: Record<string, React.ElementType> = {
-  cardiac: Heart,
-  respiratory: Wind,
-  neurological: Brain,
-  trauma: Zap,
-  burns: Flame,
-  environmental: Sun,
-  poisoning: AlertTriangle,
-  obstetric: Baby,
-  paediatric: User,
-  "eye/ent": Eye,
-  diabetic: Droplets,
-  allergic: AlertCircle
-};
+import { CATEGORY_ICONS } from '@/lib/utils/icons';
 
 interface SearchResultsProps {
   results: SearchResult[];
