@@ -88,6 +88,12 @@ Never hardcode English text in JSX — always use `t('key')` from next-intl.
 Language follows IndexedDB preference, not browser locale.
 Decision tree max depth: 3 questions. Enforced in CI — do not bypass.
 
+### 10. TypeScript Scope
+`.agent/` and `scripts/` are excluded from `tsconfig.json`.
+`tsconfig.json` must declare `"types": ["node"]` explicitly.
+React types are loaded via `src/types/react.d.ts` triple-slash references.
+Do not remove these exclusions — they prevent gstack's transitive @types
+from polluting the IDE type resolver.
 ---
 
 ## gstack Skills

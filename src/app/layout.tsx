@@ -1,6 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Syne, DM_Sans, Syne_Mono } from "next/font/google";
+import { Syne, DM_Sans, Syne_Mono, Geist } from "next/font/google";
 import "./globals.css";
+import { cn } from "@/lib/utils";
+
+const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+
 
 // DESIGN.md §4: Display/Headings — Syne 600, 700, 800
 const syne = Syne({
@@ -78,7 +82,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${syne.variable} ${dmSans.variable} ${syneMono.variable} h-full antialiased`}
+      className={cn("h-full", "antialiased", syne.variable, dmSans.variable, syneMono.variable, "font-sans", geist.variable)}
     >
       {/* DESIGN.md §10 ARIA landmarks */}
       <body className="min-h-full flex flex-col bg-[--color-surface] text-[--color-text-primary] font-body">

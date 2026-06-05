@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
@@ -19,14 +23,18 @@
       }
     ],
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     },
     // Explicit types list prevents TypeScript from auto-discovering ALL
     // @types/* packages. vitest's transitive @types/babel__* and @types/deep-eql
     // have broken cross-refs that the IDE surfaces as errors.
     // react and react-dom are provided by Next.js or explicit references,
     // so we don't list them here to avoid resolution errors with "bundler".
-    "types": ["node"]
+    "types": [
+      "node"
+    ]
   },
   "include": [
     "next-env.d.ts",
@@ -36,5 +44,9 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules", ".agent", "scripts"]
+  "exclude": [
+    "node_modules",
+    ".agent",
+    "scripts"
+  ]
 }
