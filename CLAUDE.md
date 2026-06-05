@@ -240,3 +240,6 @@ When executing the AidHero Prompt Pack (STEP 01 → STEP N):
 ---
 
 *CLAUDE.md v1.0 — AidHero / Antigravity*
+### Architecture Notes
+- **Routing Note (Step 13/14)**: Next.js App Router forbids identical dynamic segments at the same level. The prompt specified \/[locale]/incidents/[category]\ for category browsing and \/[locale]/incidents/[slug]\ for incident details. To prevent a collision, we established \/[locale]/categories/[category]\ for the category list view. The Incident Detail screen (Step 14) and Guided Rescue (Step 15) remain safely at \/[locale]/incidents/[slug]\ and \/[locale]/incidents/[slug]/rescue\. The handoff from the category list successfully routes to \/[locale]/incidents/[slug]\.
+
