@@ -42,7 +42,8 @@
         },
         "signsToLookFor": "[PCM] Signs to recognise",
         "doNot": "[PCM] What NOT to do",
-        "hospitalThreshold": "[PCM] When to go to hospital"
+        "hospitalThreshold": "[PCM] When to go to hospital",
+        "step1": "[PCM] Step 1"
     },
     "search": {
         "placeholder": "[PCM] Search...",

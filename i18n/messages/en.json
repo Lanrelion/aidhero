@@ -42,7 +42,8 @@
         },
         "signsToLookFor": "Signs to recognise",
         "doNot": "What NOT to do",
-        "hospitalThreshold": "When to go to hospital"
+        "hospitalThreshold": "When to go to hospital",
+        "step1": "Step 1"
     },
     "search": {
         "placeholder": "Search...",

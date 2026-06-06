@@ -42,7 +42,8 @@
         },
         "signsToLookFor": "[IG] Signs to recognise",
         "doNot": "[IG] What NOT to do",
-        "hospitalThreshold": "[IG] When to go to hospital"
+        "hospitalThreshold": "[IG] When to go to hospital",
+        "step1": "[IG] Step 1"
     },
     "search": {
         "placeholder": "[IG] Search...",
