@@ -1,111 +1,113 @@
 {
-    "nav":  {
-                "home":  "[HA] Home",
-                "search":  "[HA] Search",
-                "emergency":  "[HA] Emergency",
-                "settings":  "[HA] Settings"
-            },
-    "home":  {
-                 "title":  "[HA] AidHero",
-                 "subtitle":  "[HA] First Aid Guide",
-                 "searchPlaceholder":  "[HA] Search for symptoms or injuries...",
-                 "sectionHeaders":  "[HA] Categories",
-                 "emergencyCall":  "[HA] Kira Gaggawa"
-             },
-    "rescue":  {
-                   "startGuided":  "[HA] Start Guided Rescue",
-                   "quickSteps":  "[HA] Quick Steps",
-                   "stepXOfY":  "[HA] Step {step} of {total}",
-                   "stepNumber":  "[HA] STEP {number}",
-                   "next":  "[HA] Next",
-                   "nextStep":  "[HA] Next Step",
-                   "back":  "[HA] Back",
-                   "repeat":  "[HA] Repeat",
-                   "callEmergency":  "[HA] Call Emergency",
-                   "doneCall":  "[HA] Done — Call Emergency",
-                   "playAudio":  "[HA] Play in",
-                   "stopAudio":  "[HA] Stop",
-                   "readAll":  "[HA] Read all steps in",
-                   "voiceMode":  "[HA] Voice Mode",
-                   "startVoice":  "[HA] Voice Mode",
-                   "skipToSteps":  "[HA] Skip to steps",
-                   "exitVoiceMode":  "[HA] Exit Voice Mode",
-                   "exit":  "[HA] Exit",
-                   "pause":  "[HA] Pause",
-                   "resume":  "[HA] Resume",
-                   "voiceHint":  "[HA] Say next, back, or repeat",
-                   "voiceUnavailable":  "[HA] Voice commands unavailable",
-                   "severity":  {
-                                    "critical":  "[HA] CRITICAL",
-                                    "moderate":  "[HA] MODERATE",
-                                    "urgent":  "[HA] URGENT"
-                                },
-                   "signsToLookFor":  "[HA] Signs to recognise",
-                   "doNot":  "[HA] What NOT to do",
-                   "hospitalThreshold":  "[HA] When to go to hospital"
-               },
-    "search":  {
-                   "placeholder":  "[HA] Search...",
-                   "noResults":  "[HA] No results found for \"{query}\".",
-                   "recentSearches":  "[HA] Recent Searches",
-                   "trySuggestions":  "[HA] Try: heart attack, choking, bleeding",
-                   "allCategories":  "[HA] All Categories",
-                   "clearRecent":  "[HA] Clear"
-               },
-    "incidents":  {
-                      "paediatric":  "[HA] Paediatric",
-                      "trauma":  "[HA] Trauma",
-                      "environmental":  "[HA] Environmental",
-                      "respiratory":  "[HA] Respiratory",
-                      "burns":  "[HA] Burns",
-                      "allergic":  "[HA] Allergic",
-                      "obstetric":  "[HA] Obstetric",
-                      "cardiac":  "[HA] Cardiac",
-                      "poisoning":  "[HA] Poisoning",
-                      "neurological":  "[HA] Neurological"
-                  },
-    "emergency":  {
-                      "callButton":  "[HA] Call",
-                      "stateNames":  "[HA] State Numbers",
-                      "nationalNumbers":  "[HA] National Emergency Numbers"
-                  },
-    "settings":  {
-                     "language":  "[HA] Language",
-                     "textSize":  "[HA] Text Size",
-                     "contrast":  "[HA] Contrast",
-                     "offline":  "[HA] Offline Mode",
-                     "about":  "[HA] About AidHero"
-                 },
-    "accessibility":  {
-                          "ariaLabels":  "[HA] Accessibility Strings",
-                          "emergencyCallStrip":  "[HA] Kira Lambobin Gaggawa",
-                          "changeLanguage":  "[HA] Change Language",
-                          "bottomNav":  "[HA] Bottom Navigation"
-                      },
-    "offline":  {
-                    "ready":  "[HA] Ready for offline use",
-                    "limited":  "[HA] Limited offline functionality",
-                    "updated":  "[HA] Content updated",
-                    "active":  "[HA] Offline Mode Active",
-                    "downloading":  "[HA] Downloading Content..."
-                },
-    "errors":  {
-                   "notFound":  "[HA] Page not found",
-                   "audioUnavailable":  "[HA] Audio unavailable in offline mode",
-                   "offlineLimitation":  "[HA] This feature requires an internet connection"
-               },
-    "onboarding":  {
-                       "slide1Title":  "[HA] Welcome to AidHero",
-                       "slide1Desc":  "[HA] Your offline-first emergency companion.",
-                       "slide2Title":  "[HA] Always Available",
-                       "slide2Desc":  "[HA] Access life-saving guides even without internet.",
-                       "slide3Title":  "[HA] Voice Guided",
-                       "slide3Desc":  "[HA] Hands-free audio instructions during emergencies."
-                   },
-    "metadata":  {
-                     "title":  "[HA] AidHero - Emergency First Aid Nigeria",
-                     "description":  "[HA] Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
-                     "ogTitle":  "[HA] AidHero - Emergency First Aid Nigeria",
-                     "ogDescription":  "[HA] You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
-                 }
+    "nav": {
+        "home": "[HA] Home",
+        "search": "[HA] Search",
+        "emergency": "[HA] Emergency",
+        "settings": "[HA] Settings"
+    },
+    "home": {
+        "title": "[HA] AidHero",
+        "subtitle": "[HA] First Aid Guide",
+        "searchPlaceholder": "[HA] Search for symptoms or injuries...",
+        "sectionHeaders": "[HA] Categories",
+        "emergencyCall": "[HA] Kira Gaggawa"
+    },
+    "rescue": {
+        "startGuided": "[HA] Start Guided Rescue",
+        "quickSteps": "[HA] Quick Steps",
+        "stepXOfY": "[HA] Step {step} of {total}",
+        "stepNumber": "[HA] STEP {number}",
+        "next": "[HA] Next",
+        "nextStep": "[HA] Next Step",
+        "back": "[HA] Back",
+        "repeat": "[HA] Repeat",
+        "callEmergency": "[HA] Call Emergency",
+        "doneCall": "[HA] Done — Call Emergency",
+        "playAudio": "[HA] Play in",
+        "stopAudio": "[HA] Stop",
+        "readAll": "[HA] Read all steps in",
+        "voiceMode": "[HA] Voice Mode",
+        "startVoice": "[HA] Voice Mode",
+        "skipToSteps": "[HA] Skip to steps",
+        "exitVoiceMode": "[HA] Exit Voice Mode",
+        "exit": "[HA] Exit",
+        "pause": "[HA] Pause",
+        "resume": "[HA] Resume",
+        "voiceHint": "[HA] Say next, back, or repeat",
+        "voiceUnavailable": "[HA] Voice commands unavailable",
+        "severity": {
+            "critical": "[HA] CRITICAL",
+            "moderate": "[HA] MODERATE",
+            "urgent": "[HA] URGENT"
+        },
+        "signsToLookFor": "[HA] Signs to recognise",
+        "doNot": "[HA] What NOT to do",
+        "hospitalThreshold": "[HA] When to go to hospital"
+    },
+    "search": {
+        "placeholder": "[HA] Search...",
+        "noResults": "[HA] No results found for \"{query}\".",
+        "recentSearches": "[HA] Recent Searches",
+        "trySuggestions": "[HA] Try: heart attack, choking, bleeding",
+        "allCategories": "[HA] All Categories",
+        "clearRecent": "[HA] Clear"
+    },
+    "incidents": {
+        "paediatric": "[HA] Paediatric",
+        "trauma": "[HA] Trauma",
+        "environmental": "[HA] Environmental",
+        "respiratory": "[HA] Respiratory",
+        "burns": "[HA] Burns",
+        "allergic": "[HA] Allergic",
+        "obstetric": "[HA] Obstetric",
+        "cardiac": "[HA] Cardiac",
+        "poisoning": "[HA] Poisoning",
+        "neurological": "[HA] Neurological",
+        "gastrointestinal": "[HA] Gastrointestinal",
+        "other": "[HA] Other"
+    },
+    "emergency": {
+        "callButton": "[HA] Call",
+        "stateNames": "[HA] State Numbers",
+        "nationalNumbers": "[HA] National Emergency Numbers"
+    },
+    "settings": {
+        "language": "[HA] Language",
+        "textSize": "[HA] Text Size",
+        "contrast": "[HA] Contrast",
+        "offline": "[HA] Offline Mode",
+        "about": "[HA] About AidHero"
+    },
+    "accessibility": {
+        "ariaLabels": "[HA] Accessibility Strings",
+        "emergencyCallStrip": "[HA] Kira Lambobin Gaggawa",
+        "changeLanguage": "[HA] Change Language",
+        "bottomNav": "[HA] Bottom Navigation"
+    },
+    "offline": {
+        "ready": "[HA] Ready for offline use",
+        "limited": "[HA] Limited offline functionality",
+        "updated": "[HA] Content updated",
+        "active": "[HA] Offline Mode Active",
+        "downloading": "[HA] Downloading Content..."
+    },
+    "errors": {
+        "notFound": "[HA] Page not found",
+        "audioUnavailable": "[HA] Audio unavailable in offline mode",
+        "offlineLimitation": "[HA] This feature requires an internet connection"
+    },
+    "onboarding": {
+        "slide1Title": "[HA] Welcome to AidHero",
+        "slide1Desc": "[HA] Your offline-first emergency companion.",
+        "slide2Title": "[HA] Always Available",
+        "slide2Desc": "[HA] Access life-saving guides even without internet.",
+        "slide3Title": "[HA] Voice Guided",
+        "slide3Desc": "[HA] Hands-free audio instructions during emergencies."
+    },
+    "metadata": {
+        "title": "[HA] AidHero - Emergency First Aid Nigeria",
+        "description": "[HA] Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
+        "ogTitle": "[HA] AidHero - Emergency First Aid Nigeria",
+        "ogDescription": "[HA] You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
+    }
 }
