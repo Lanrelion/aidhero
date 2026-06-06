@@ -17,12 +17,11 @@ interface VoiceModeProps {
   onClose: () => void;
 }
 
-// Supported voice command keywords
 const COMMANDS = {
   next: ['next', 'next step', 'forward'],
   back: ['back', 'previous', 'go back'],
   repeat: ['repeat', 'again', 'say again'],
-  emergency: ['call emergency', 'call 999', 'call ambulance'],
+  emergency: ['call emergency', 'call ambulance'],
 };
 
 function matchCommand(transcript: string): keyof typeof COMMANDS | null {
@@ -46,96 +45,110 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
   const [isPaused, setIsPaused] = useState(false);
   const [voiceCommandsActive, setVoiceCommandsActive] = useState(false);
 
-  // Ref mirrors to allow the async loop to see current values
-  const activeRef = useRef(true);
-  const pausedRef = useRef(false);
-  const currentStepRef = useRef(currentStepIndex);
-  currentStepRef.current = currentStepIndex;
+  // --- Imperative refs so the async loop never captures stale state ---
+  const activeRef = useRef(true);         // false when overlay is closed
+  const pausedRef = useRef(false);        // mirrors isPaused
+  const loopAbortRef = useRef(false);     // signals current loop to stop (for restarts)
+  const loopIndexRef = useRef(currentStepIndex); // tracks where the loop currently is
 
   const recognitionRef = useRef<any>(null);
-  const autoAdvanceTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const safeStepIndex = Math.min(Math.max(0, currentStepIndex), steps.length - 1);
-  const currentStep = steps[safeStepIndex];
-  const isLastStep = safeStepIndex >= steps.length - 1;
+  const safeIndex = (idx: number) =>
+    Math.min(Math.max(0, idx), steps.length - 1);
 
-  // Speak the current step
-  const speakStep = useCallback(async (stepIndex: number) => {
-    if (!activeRef.current) return;
-    const step = steps[stepIndex];
-    if (!step) return;
+  // ─────────────────────────────────────────────
+  // Core loop — awaits each speak() promise so there
+  // is exactly ONE speaking task at any moment. No
+  // effects watch currentStepIndex; this loop IS the
+  // sequencer.
+  // ─────────────────────────────────────────────
+  const runLoop = useCallback(async (fromIndex: number) => {
+    loopAbortRef.current = false;
+    let idx = safeIndex(fromIndex);
+    loopIndexRef.current = idx;
 
-    const text = step.instruction_translations?.[locale] || step.instruction;
-    setIsSpeaking(true);
+    while (activeRef.current && !loopAbortRef.current) {
+      if (pausedRef.current) break;
 
-    await TTSManager.speak(scenarioId, step.id, text, locale);
+      const step = steps[idx];
+      if (!step) break;
 
-    setIsSpeaking(false);
+      const text = step.instruction_translations?.[locale] || step.instruction;
 
-    // Auto-advance 1.5s after TTS ends (unless paused or last step or closed)
-    if (activeRef.current && !pausedRef.current && stepIndex < steps.length - 1) {
-      autoAdvanceTimerRef.current = setTimeout(() => {
-        if (activeRef.current && !pausedRef.current) {
-          advanceStep();
-          // Reading the next step is handled by the useEffect below on currentStepIndex change
-        }
-      }, 1500);
+      setIsSpeaking(true);
+      // await resolves when speech ends (naturally) OR is cancelled by stop()
+      await TTSManager.speak(scenarioId, step.id, text, locale);
+      setIsSpeaking(false);
+
+      // Bail if closed / aborted / paused while speaking
+      if (!activeRef.current || loopAbortRef.current || pausedRef.current) break;
+
+      if (idx >= steps.length - 1) {
+        // Finished last step — stay on it, don't loop
+        break;
+      }
+
+      // 1.5 s gap before auto-advancing
+      await new Promise<void>(r => setTimeout(r, 1500));
+      if (!activeRef.current || loopAbortRef.current || pausedRef.current) break;
+
+      // Advance Zustand store for visual sync, then move loop index
+      advanceStep();
+      idx += 1;
+      loopIndexRef.current = idx;
     }
-  }, [scenarioId, steps, locale, advanceStep]);
+  }, [scenarioId, steps, locale, advanceStep]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Auto-read when Voice Mode opens (reads current step)
+  // ─── Helper: abort current loop + stop TTS, then optionally restart ───
+  const restartFrom = useCallback((newIdx: number) => {
+    loopAbortRef.current = true;   // kills loop on next iteration
+    TTSManager.stop();             // resolves outstanding speak() immediately
+    // Tiny tick to let the current loop iteration notice the abort before we
+    // kick off the new loop
+    setTimeout(() => {
+      if (activeRef.current && !pausedRef.current) {
+        runLoop(safeIndex(newIdx));
+      }
+    }, 50);
+  }, [runLoop]);
+
+  // ─── Mount: start the loop once ───
   useEffect(() => {
     activeRef.current = true;
-    speakStep(safeStepIndex);
+    runLoop(currentStepIndex);
 
     return () => {
       activeRef.current = false;
-      if (autoAdvanceTimerRef.current) clearTimeout(autoAdvanceTimerRef.current);
+      loopAbortRef.current = true;
       TTSManager.stop();
+      try { recognitionRef.current?.stop(); } catch {}
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // When currentStepIndex changes (auto-advance or voice "next"), read the new step
-  useEffect(() => {
-    if (!activeRef.current) return;
-    if (autoAdvanceTimerRef.current) clearTimeout(autoAdvanceTimerRef.current);
-    if (!isPaused) {
-      speakStep(safeStepIndex);
-    }
-  }, [currentStepIndex]); // eslint-disable-line react-hooks/exhaustive-deps
-
-  // Speech recognition setup
+  // ─── Speech recognition ───
   useEffect(() => {
     const SpeechRecognition =
       (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-
-    if (!SpeechRecognition) {
-      setVoiceCommandsActive(false);
-      return;
-    }
+    if (!SpeechRecognition) return;
 
     const recognition = new SpeechRecognition();
     recognition.continuous = true;
     recognition.interimResults = false;
-    recognition.lang = locale === 'en' ? 'en-NG' : 'en-NG'; // Always listen in English for commands
+    recognition.lang = 'en-NG';
 
     recognition.onresult = (event: any) => {
       const transcript = event.results[event.results.length - 1][0].transcript;
       const cmd = matchCommand(transcript);
       if (!cmd) return;
 
-      if (cmd === 'next' && !isLastStep) {
-        if (autoAdvanceTimerRef.current) clearTimeout(autoAdvanceTimerRef.current);
-        TTSManager.stop();
+      if (cmd === 'next' && loopIndexRef.current < steps.length - 1) {
         advanceStep();
-      } else if (cmd === 'back') {
-        if (autoAdvanceTimerRef.current) clearTimeout(autoAdvanceTimerRef.current);
-        TTSManager.stop();
+        restartFrom(loopIndexRef.current + 1);
+      } else if (cmd === 'back' && loopIndexRef.current > 0) {
         goBack();
+        restartFrom(loopIndexRef.current - 1);
       } else if (cmd === 'repeat') {
-        if (autoAdvanceTimerRef.current) clearTimeout(autoAdvanceTimerRef.current);
-        TTSManager.stop();
-        speakStep(currentStepRef.current);
+        restartFrom(loopIndexRef.current);
       } else if (cmd === 'emergency') {
         window.location.href = `tel:${primaryNumber}`;
       }
@@ -155,34 +168,34 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
       setVoiceCommandsActive(false);
     }
 
-    return () => {
-      try { recognition.stop(); } catch {}
-    };
+    return () => { try { recognition.stop(); } catch {} };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
+  // ─── Pause / Resume ───
   const handlePauseResume = () => {
     if (isPaused) {
       pausedRef.current = false;
       setIsPaused(false);
-      speakStep(safeStepIndex);
+      runLoop(loopIndexRef.current); // restart loop from where we are
     } else {
       pausedRef.current = true;
       setIsPaused(true);
-      if (autoAdvanceTimerRef.current) clearTimeout(autoAdvanceTimerRef.current);
+      loopAbortRef.current = true;
       TTSManager.stop();
     }
   };
 
   const handleClose = () => {
     activeRef.current = false;
-    if (autoAdvanceTimerRef.current) clearTimeout(autoAdvanceTimerRef.current);
+    loopAbortRef.current = true;
     TTSManager.stop();
     try { recognitionRef.current?.stop(); } catch {}
     onClose();
   };
 
+  const displayIndex = safeIndex(currentStepIndex);
+  const currentStep = steps[displayIndex];
   if (!currentStep) return null;
-
   const instruction = currentStep.instruction_translations?.[locale] || currentStep.instruction;
 
   return (
@@ -193,7 +206,7 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
       aria-modal="true"
       aria-label={t('rescue.voiceMode') || 'Voice Mode'}
     >
-      {/* Exit button — top right */}
+      {/* Exit button */}
       <button
         onClick={handleClose}
         className="absolute top-6 right-6 flex items-center gap-2 min-h-[48px] px-4 rounded-full bg-white/10 text-white font-bold hover:bg-white/20 active:scale-95 transition-all"
@@ -203,17 +216,12 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
         {t('rescue.exit') || 'Exit'}
       </button>
 
-      {/* Main content area */}
       <div className="flex flex-col items-center gap-8 w-full max-w-sm">
-
-        {/* Step instruction — aria-live for screen readers */}
-        <div
-          aria-live="assertive"
-          aria-atomic="true"
-          className="text-center"
-        >
+        {/* Instruction */}
+        <div aria-live="assertive" aria-atomic="true" className="text-center">
           <p className="text-white/60 text-base font-semibold uppercase tracking-widest mb-3">
-            {t('rescue.stepXOfY', { step: safeStepIndex + 1, total: steps.length }) || `Step ${safeStepIndex + 1} of ${steps.length}`}
+            {t('rescue.stepXOfY', { step: displayIndex + 1, total: steps.length }) ||
+              `Step ${displayIndex + 1} of ${steps.length}`}
           </p>
           <h2 className="text-white font-bold text-[24px] leading-snug max-w-[300px] mx-auto">
             {instruction}
@@ -227,37 +235,31 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
         <button
           onClick={handlePauseResume}
           className="w-20 h-20 rounded-full bg-white/15 flex items-center justify-center hover:bg-white/25 active:scale-95 transition-all border border-white/20"
-          aria-label={isPaused ? (t('rescue.resume') || 'Resume') : (t('rescue.pause') || 'Pause')}
+          aria-label={isPaused ? t('rescue.resume') || 'Resume' : t('rescue.pause') || 'Pause'}
         >
           {isPaused
             ? <Play className="w-9 h-9 text-white fill-white" />
-            : <Pause className="w-9 h-9 text-white" />
-          }
+            : <Pause className="w-9 h-9 text-white" />}
         </button>
 
-        {/* Voice command hint */}
-        {voiceCommandsActive ? (
-          <p className="text-white/50 text-sm text-center leading-relaxed">
-            {t('rescue.voiceHint') || "Say \"next\", \"back\", or \"repeat\""}
-          </p>
-        ) : (
-          <p className="text-white/30 text-sm text-center">
-            {t('rescue.voiceUnavailable') || "Voice commands unavailable"}
-          </p>
-        )}
+        {/* Voice hint */}
+        <p className={`text-sm text-center leading-relaxed ${voiceCommandsActive ? 'text-white/50' : 'text-white/25'}`}>
+          {voiceCommandsActive
+            ? t('rescue.voiceHint') || 'Say "next", "back", or "repeat"'
+            : t('rescue.voiceUnavailable') || 'Voice commands unavailable'}
+        </p>
       </div>
 
-      {/* Progress dots at bottom */}
+      {/* Progress dots */}
       <div className="absolute bottom-10 flex gap-2">
         {steps.map((_, i) => (
           <span
             key={i}
             className="w-2 h-2 rounded-full transition-all"
             style={{
-              backgroundColor: i === safeStepIndex
-                ? '#C0392B'
-                : i < safeStepIndex
-                  ? 'rgba(255,255,255,0.5)'
+              backgroundColor:
+                i === displayIndex ? '#C0392B'
+                  : i < displayIndex ? 'rgba(255,255,255,0.5)'
                   : 'rgba(255,255,255,0.2)'
             }}
           />
