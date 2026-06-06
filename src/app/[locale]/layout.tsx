@@ -108,7 +108,7 @@ export default async function RootLayout({
       className={cn("h-full", "antialiased", syne.variable, dmSans.variable, syneMono.variable, "font-sans", geist.variable)}
     >
       {/* DESIGN.md Â§10 ARIA landmarks */}
-            <body className="min-h-[100dvh] flex flex-col bg-[--color-surface] text-[--color-text-primary] font-body pb-16">
+            <body suppressHydrationWarning className="min-h-[100dvh] flex flex-col bg-[--color-surface] text-[--color-text-primary] font-body pb-16">
         <NextIntlClientProvider messages={messages}>
           <ContentUpdateBanner />
           <header className="flex items-center justify-between px-4 h-16 border-b border-border shrink-0">
