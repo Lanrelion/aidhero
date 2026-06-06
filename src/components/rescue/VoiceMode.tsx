@@ -44,6 +44,7 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [voiceCommandsActive, setVoiceCommandsActive] = useState(false);
+  const [isListening, setIsListening] = useState(false);
 
   // --- Imperative refs so the async loop never captures stale state ---
   const activeRef = useRef(true);         // false when overlay is closed
@@ -52,6 +53,8 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
   const loopIndexRef = useRef(currentStepIndex); // tracks where the loop currently is
 
   const recognitionRef = useRef<any>(null);
+  const isSpeakingRef = useRef(false); // mirrors isSpeaking for recognition mute
+  const recognitionBlockedRef = useRef(false); // true = don't restart (mic denied)
 
   const safeIndex = (idx: number) =>
     Math.min(Math.max(0, idx), steps.length - 1);
@@ -76,9 +79,11 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
       const text = step.instruction_translations?.[locale] || step.instruction;
 
       setIsSpeaking(true);
+      isSpeakingRef.current = true;
       // await resolves when speech ends (naturally) OR is cancelled by stop()
       await TTSManager.speak(scenarioId, step.id, text, locale);
       setIsSpeaking(false);
+      isSpeakingRef.current = false;
 
       // Bail if closed / aborted / paused while speaking
       if (!activeRef.current || loopAbortRef.current || pausedRef.current) break;
@@ -129,46 +134,90 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
   useEffect(() => {
     const SpeechRecognition =
       (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-    if (!SpeechRecognition) return;
+    if (!SpeechRecognition) {
+      setVoiceCommandsActive(false);
+      return;
+    }
 
-    const recognition = new SpeechRecognition();
-    recognition.continuous = true;
-    recognition.interimResults = false;
-    recognition.lang = 'en-NG';
+    let recognition: any = null;
+    let restartTimer: ReturnType<typeof setTimeout> | null = null;
 
-    recognition.onresult = (event: any) => {
-      const transcript = event.results[event.results.length - 1][0].transcript;
-      const cmd = matchCommand(transcript);
-      if (!cmd) return;
+    const startRecognition = () => {
+      if (!activeRef.current || recognitionBlockedRef.current) return;
+      try {
+        recognition = new SpeechRecognition();
+        // en-NG is unsupported in Chrome — always use en-US for commands
+        recognition.lang = 'en-US';
+        recognition.continuous = false;   // one utterance at a time is more reliable
+        recognition.interimResults = false;
+        recognition.maxAlternatives = 3;
 
-      if (cmd === 'next' && loopIndexRef.current < steps.length - 1) {
-        advanceStep();
-        restartFrom(loopIndexRef.current + 1);
-      } else if (cmd === 'back' && loopIndexRef.current > 0) {
-        goBack();
-        restartFrom(loopIndexRef.current - 1);
-      } else if (cmd === 'repeat') {
-        restartFrom(loopIndexRef.current);
-      } else if (cmd === 'emergency') {
-        window.location.href = `tel:${primaryNumber}`;
-      }
-    };
+        recognition.onstart = () => {
+          setIsListening(true);
+        };
 
-    recognition.onerror = (e: any) => {
-      if (e.error === 'not-allowed' || e.error === 'service-not-allowed') {
+        recognition.onresult = (event: any) => {
+          // Ignore results while TTS is playing to avoid feedback loop
+          if (isSpeakingRef.current) return;
+
+          // Try all alternatives for better command matching
+          for (let i = 0; i < event.results.length; i++) {
+            for (let j = 0; j < event.results[i].length; j++) {
+              const transcript = event.results[i][j].transcript;
+              const cmd = matchCommand(transcript);
+              if (!cmd) continue;
+
+              if (cmd === 'next' && loopIndexRef.current < steps.length - 1) {
+                advanceStep();
+                restartFrom(loopIndexRef.current + 1);
+              } else if (cmd === 'back' && loopIndexRef.current > 0) {
+                goBack();
+                restartFrom(loopIndexRef.current - 1);
+              } else if (cmd === 'repeat') {
+                restartFrom(loopIndexRef.current);
+              } else if (cmd === 'emergency') {
+                window.location.href = `tel:${primaryNumber}`;
+              }
+              return; // stop after first match
+            }
+          }
+        };
+
+        recognition.onerror = (e: any) => {
+          setIsListening(false);
+          if (e.error === 'not-allowed' || e.error === 'service-not-allowed') {
+            // Mic permission denied — don't try again
+            recognitionBlockedRef.current = true;
+            setVoiceCommandsActive(false);
+          }
+          // For aborted / no-speech / audio-capture / network — onend will restart
+        };
+
+        recognition.onend = () => {
+          setIsListening(false);
+          // Auto-restart unless closed or blocked
+          if (activeRef.current && !recognitionBlockedRef.current) {
+            // Small delay so we're not hammering the API
+            restartTimer = setTimeout(startRecognition, 300);
+          }
+        };
+
+        recognition.start();
+        recognitionRef.current = recognition;
+        setVoiceCommandsActive(true);
+      } catch {
         setVoiceCommandsActive(false);
       }
     };
 
-    try {
-      recognition.start();
-      recognitionRef.current = recognition;
-      setVoiceCommandsActive(true);
-    } catch {
-      setVoiceCommandsActive(false);
-    }
+    startRecognition();
 
-    return () => { try { recognition.stop(); } catch {} };
+    return () => {
+      recognitionBlockedRef.current = true; // stop restarts during cleanup
+      if (restartTimer) clearTimeout(restartTimer);
+      try { recognition?.stop(); } catch {}
+      setIsListening(false);
+    };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ─── Pause / Resume ───
@@ -242,12 +291,28 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
             : <Pause className="w-9 h-9 text-white" />}
         </button>
 
-        {/* Voice hint */}
-        <p className={`text-sm text-center leading-relaxed ${voiceCommandsActive ? 'text-white/50' : 'text-white/25'}`}>
-          {voiceCommandsActive
-            ? t('rescue.voiceHint') || 'Say "next", "back", or "repeat"'
-            : t('rescue.voiceUnavailable') || 'Voice commands unavailable'}
-        </p>
+        {/* Voice hint + live listening indicator */}
+        <div className="flex flex-col items-center gap-2">
+          {voiceCommandsActive && (
+            <div className="flex items-center gap-2">
+              <span
+                className={`w-2.5 h-2.5 rounded-full ${
+                  isListening && !isSpeaking
+                    ? 'bg-emergency motion-safe:animate-pulse'
+                    : 'bg-white/30'
+                }`}
+              />
+              <span className="text-white/40 text-xs">
+                {isListening && !isSpeaking ? 'Listening…' : 'Mic ready'}
+              </span>
+            </div>
+          )}
+          <p className={`text-sm text-center leading-relaxed ${voiceCommandsActive ? 'text-white/50' : 'text-white/25'}`}>
+            {voiceCommandsActive
+              ? t('rescue.voiceHint') || 'Say "next", "back", or "repeat"'
+              : t('rescue.voiceUnavailable') || 'Voice commands unavailable'}
+          </p>
+        </div>
       </div>
 
       {/* Progress dots */}
