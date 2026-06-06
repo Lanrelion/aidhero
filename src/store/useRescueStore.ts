@@ -10,6 +10,7 @@ interface RescueStore {
   answerQuestion: (nextNodeId: string) => void;
   goBack: () => void;
   advanceStep: () => void;
+  jumpToStep: (index: number) => void;
   setVoiceMode: (val: boolean) => void;
   clearRescue: () => void;
 }
@@ -46,6 +47,8 @@ export const useRescueStore = create<RescueStore>((set) => ({
   advanceStep: () => set((state) => ({
     currentStepIndex: state.currentStepIndex + 1
   })),
+
+  jumpToStep: (index: number) => set({ currentStepIndex: Math.max(0, index) }),
 
   setVoiceMode: (val: boolean) => set({ isVoiceMode: val }),
 

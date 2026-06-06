@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useRef, useState, useCallback } from 'react';
-import { X, Pause, Play } from 'lucide-react';
+import { X, Pause, Play, SkipBack } from 'lucide-react';
 import { useTranslations, useLocale } from 'next-intl';
 import { TTSManager } from '@/lib/tts/TTSManager';
 import { useRescueStore } from '@/store/useRescueStore';
@@ -18,9 +18,10 @@ interface VoiceModeProps {
 }
 
 const COMMANDS = {
-  next: ['next', 'next step', 'forward'],
-  back: ['back', 'previous', 'go back'],
-  repeat: ['repeat', 'again', 'say again'],
+  next:      ['next', 'next step', 'forward'],
+  back:      ['back', 'previous', 'go back'],
+  restart:   ['restart', 'start over', 'beginning', 'from the start', 'first step'],
+  repeat:    ['repeat', 'again', 'say again'],
   emergency: ['call emergency', 'call ambulance'],
 };
 
@@ -37,7 +38,7 @@ function matchCommand(transcript: string): keyof typeof COMMANDS | null {
 export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
   const t = useTranslations();
   const locale = useLocale() as Locale;
-  const { currentStepIndex, advanceStep, goBack } = useRescueStore();
+  const { currentStepIndex, advanceStep, jumpToStep } = useRescueStore();
   const { detectedState } = useOfflineStore();
   const primaryNumber = getPrimaryEmergencyNumber(detectedState);
 
@@ -46,31 +47,30 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
   const [voiceCommandsActive, setVoiceCommandsActive] = useState(false);
   const [isListening, setIsListening] = useState(false);
 
-  // --- Imperative refs so the async loop never captures stale state ---
-  const activeRef = useRef(true);         // false when overlay is closed
-  const pausedRef = useRef(false);        // mirrors isPaused
-  const loopAbortRef = useRef(false);     // signals current loop to stop (for restarts)
-  const loopIndexRef = useRef(currentStepIndex); // tracks where the loop currently is
-
+  // ─── Imperative refs ───
+  const activeRef = useRef(true);
+  const pausedRef = useRef(false);
+  const isSpeakingRef = useRef(false);
+  const loopIndexRef = useRef(currentStepIndex);
+  const recognitionBlockedRef = useRef(false);
   const recognitionRef = useRef<any>(null);
-  const isSpeakingRef = useRef(false); // mirrors isSpeaking for recognition mute
-  const recognitionBlockedRef = useRef(false); // true = don't restart (mic denied)
 
-  const safeIndex = (idx: number) =>
-    Math.min(Math.max(0, idx), steps.length - 1);
+  // ─── Session ID pattern — prevents stale loops from advancing ───
+  // Every call to runLoop gets a unique session number. The loop checks
+  // it hasn't been superseded before each advance. This eliminates the
+  // race where TTSManager.stop() resolves asynchronously AFTER a new
+  // loop has already started and reset the abort flag.
+  const sessionRef = useRef(0);
 
-  // ─────────────────────────────────────────────
-  // Core loop — awaits each speak() promise so there
-  // is exactly ONE speaking task at any moment. No
-  // effects watch currentStepIndex; this loop IS the
-  // sequencer.
-  // ─────────────────────────────────────────────
+  const safeIndex = (idx: number) => Math.min(Math.max(0, idx), steps.length - 1);
+
+  // ─── Core loop ───
   const runLoop = useCallback(async (fromIndex: number) => {
-    loopAbortRef.current = false;
+    const mySession = ++sessionRef.current; // claim this session
     let idx = safeIndex(fromIndex);
     loopIndexRef.current = idx;
 
-    while (activeRef.current && !loopAbortRef.current) {
+    while (activeRef.current && sessionRef.current === mySession) {
       if (pausedRef.current) break;
 
       const step = steps[idx];
@@ -80,57 +80,54 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
 
       setIsSpeaking(true);
       isSpeakingRef.current = true;
-      // await resolves when speech ends (naturally) OR is cancelled by stop()
       await TTSManager.speak(scenarioId, step.id, text, locale);
       setIsSpeaking(false);
       isSpeakingRef.current = false;
 
-      // Bail if closed / aborted / paused while speaking
-      if (!activeRef.current || loopAbortRef.current || pausedRef.current) break;
+      // Check session is still ours after the async await
+      if (!activeRef.current || sessionRef.current !== mySession || pausedRef.current) break;
 
-      if (idx >= steps.length - 1) {
-        // Finished last step — stay on it, don't loop
-        break;
-      }
+      if (idx >= steps.length - 1) break; // last step — done
 
-      // 1.5 s gap before auto-advancing
+      // 1.5 s gap
       await new Promise<void>(r => setTimeout(r, 1500));
-      if (!activeRef.current || loopAbortRef.current || pausedRef.current) break;
 
-      // Advance Zustand store for visual sync, then move loop index
+      // Re-check session after the gap (restart commands fire during gap)
+      if (!activeRef.current || sessionRef.current !== mySession || pausedRef.current) break;
+
       advanceStep();
       idx += 1;
       loopIndexRef.current = idx;
     }
   }, [scenarioId, steps, locale, advanceStep]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // ─── Helper: abort current loop + stop TTS, then optionally restart ───
+  // ─── Restart loop from a new index ───
+  // Increments sessionRef first so the running loop sees it's superseded
+  // on its next session check — even if stop() resolves asynchronously.
   const restartFrom = useCallback((newIdx: number) => {
-    loopAbortRef.current = true;   // kills loop on next iteration
-    TTSManager.stop();             // resolves outstanding speak() immediately
-    // Tiny tick to let the current loop iteration notice the abort before we
-    // kick off the new loop
+    sessionRef.current++;  // invalidate current loop (no flag to reset)
+    TTSManager.stop();
     setTimeout(() => {
       if (activeRef.current && !pausedRef.current) {
         runLoop(safeIndex(newIdx));
       }
-    }, 50);
-  }, [runLoop]);
+    }, 80);
+  }, [runLoop]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // ─── Mount: start the loop once ───
+  // ─── Mount: start loop once ───
   useEffect(() => {
     activeRef.current = true;
     runLoop(currentStepIndex);
 
     return () => {
       activeRef.current = false;
-      loopAbortRef.current = true;
+      sessionRef.current++; // kill any running loop
       TTSManager.stop();
       try { recognitionRef.current?.stop(); } catch {}
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // ─── Speech recognition ───
+  // ─── Speech recognition with auto-restart ───
   useEffect(() => {
     const SpeechRecognition =
       (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
@@ -146,39 +143,38 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
       if (!activeRef.current || recognitionBlockedRef.current) return;
       try {
         recognition = new SpeechRecognition();
-        // en-NG is unsupported in Chrome — always use en-US for commands
         recognition.lang = 'en-US';
-        recognition.continuous = false;   // one utterance at a time is more reliable
+        recognition.continuous = false;
         recognition.interimResults = false;
         recognition.maxAlternatives = 3;
 
-        recognition.onstart = () => {
-          setIsListening(true);
-        };
+        recognition.onstart = () => setIsListening(true);
 
         recognition.onresult = (event: any) => {
-          // Ignore results while TTS is playing to avoid feedback loop
-          if (isSpeakingRef.current) return;
+          if (isSpeakingRef.current) return; // mute during TTS
 
-          // Try all alternatives for better command matching
           for (let i = 0; i < event.results.length; i++) {
             for (let j = 0; j < event.results[i].length; j++) {
-              const transcript = event.results[i][j].transcript;
-              const cmd = matchCommand(transcript);
+              const cmd = matchCommand(event.results[i][j].transcript);
               if (!cmd) continue;
 
               if (cmd === 'next' && loopIndexRef.current < steps.length - 1) {
-                advanceStep();
-                restartFrom(loopIndexRef.current + 1);
+                const nextIdx = loopIndexRef.current + 1;
+                jumpToStep(nextIdx);
+                restartFrom(nextIdx);
               } else if (cmd === 'back' && loopIndexRef.current > 0) {
-                goBack();
-                restartFrom(loopIndexRef.current - 1);
+                const prevIdx = loopIndexRef.current - 1;
+                jumpToStep(prevIdx);
+                restartFrom(prevIdx);
+              } else if (cmd === 'restart') {
+                jumpToStep(0);
+                restartFrom(0);
               } else if (cmd === 'repeat') {
                 restartFrom(loopIndexRef.current);
               } else if (cmd === 'emergency') {
                 window.location.href = `tel:${primaryNumber}`;
               }
-              return; // stop after first match
+              return;
             }
           }
         };
@@ -186,18 +182,14 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
         recognition.onerror = (e: any) => {
           setIsListening(false);
           if (e.error === 'not-allowed' || e.error === 'service-not-allowed') {
-            // Mic permission denied — don't try again
             recognitionBlockedRef.current = true;
             setVoiceCommandsActive(false);
           }
-          // For aborted / no-speech / audio-capture / network — onend will restart
         };
 
         recognition.onend = () => {
           setIsListening(false);
-          // Auto-restart unless closed or blocked
           if (activeRef.current && !recognitionBlockedRef.current) {
-            // Small delay so we're not hammering the API
             restartTimer = setTimeout(startRecognition, 300);
           }
         };
@@ -213,7 +205,7 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
     startRecognition();
 
     return () => {
-      recognitionBlockedRef.current = true; // stop restarts during cleanup
+      recognitionBlockedRef.current = true;
       if (restartTimer) clearTimeout(restartTimer);
       try { recognition?.stop(); } catch {}
       setIsListening(false);
@@ -225,18 +217,24 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
     if (isPaused) {
       pausedRef.current = false;
       setIsPaused(false);
-      runLoop(loopIndexRef.current); // restart loop from where we are
+      runLoop(loopIndexRef.current);
     } else {
       pausedRef.current = true;
       setIsPaused(true);
-      loopAbortRef.current = true;
+      sessionRef.current++; // kill loop
       TTSManager.stop();
     }
   };
 
+  // ─── Back to Step 1 ───
+  const handleRestart = () => {
+    jumpToStep(0);
+    restartFrom(0);
+  };
+
   const handleClose = () => {
     activeRef.current = false;
-    loopAbortRef.current = true;
+    sessionRef.current++;
     TTSManager.stop();
     try { recognitionRef.current?.stop(); } catch {}
     onClose();
@@ -265,8 +263,20 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
         {t('rescue.exit') || 'Exit'}
       </button>
 
+      {/* Back to Step 1 button — top left */}
+      {displayIndex > 0 && (
+        <button
+          onClick={handleRestart}
+          className="absolute top-6 left-6 flex items-center gap-2 min-h-[48px] px-4 rounded-full bg-white/10 text-white hover:bg-white/20 active:scale-95 transition-all text-sm"
+          aria-label="Back to Step 1"
+        >
+          <SkipBack className="w-4 h-4" />
+          Step 1
+        </button>
+      )}
+
       <div className="flex flex-col items-center gap-8 w-full max-w-sm">
-        {/* Instruction */}
+        {/* Step counter + instruction */}
         <div aria-live="assertive" aria-atomic="true" className="text-center">
           <p className="text-white/60 text-base font-semibold uppercase tracking-widest mb-3">
             {t('rescue.stepXOfY', { step: displayIndex + 1, total: steps.length }) ||
@@ -280,7 +290,7 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
         {/* Waveform */}
         <WaveformVisualizer isActive={isSpeaking && !isPaused} />
 
-        {/* Pause / Resume — 80px circle */}
+        {/* Pause / Resume */}
         <button
           onClick={handlePauseResume}
           className="w-20 h-20 rounded-full bg-white/15 flex items-center justify-center hover:bg-white/25 active:scale-95 transition-all border border-white/20"
@@ -291,7 +301,7 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
             : <Pause className="w-9 h-9 text-white" />}
         </button>
 
-        {/* Voice hint + live listening indicator */}
+        {/* Listening indicator + voice hint */}
         <div className="flex flex-col items-center gap-2">
           {voiceCommandsActive && (
             <div className="flex items-center gap-2">
@@ -309,7 +319,7 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
           )}
           <p className={`text-sm text-center leading-relaxed ${voiceCommandsActive ? 'text-white/50' : 'text-white/25'}`}>
             {voiceCommandsActive
-              ? t('rescue.voiceHint') || 'Say "next", "back", or "repeat"'
+              ? t('rescue.voiceHint') || 'Say "next", "back", "repeat", or "restart"'
               : t('rescue.voiceUnavailable') || 'Voice commands unavailable'}
           </p>
         </div>
