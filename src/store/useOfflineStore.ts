@@ -5,6 +5,7 @@ interface OfflineStore {
   isCached: boolean;
   hasUpdate: boolean;
   detectedState: string | null;
+  isSpeechRecognitionAvailable: boolean;
   setOnline: (val: boolean) => void;
   setHasUpdate: (val: boolean) => void;
   setCached: (val: boolean) => void;
@@ -17,8 +18,15 @@ export const useOfflineStore = create<OfflineStore>((set) => ({
   isCached: false,
   hasUpdate: false,
   detectedState: null,
+  isSpeechRecognitionAvailable: false,
   
-  setOnline: (val) => set({ isOnline: val }),
+  setOnline: (val) => set((state) => {
+    const hasSpeechAPI = typeof window !== 'undefined' && !!((window as any).SpeechRecognition || (window as any).webkitSpeechRecognition);
+    return { 
+      isOnline: val,
+      isSpeechRecognitionAvailable: val && hasSpeechAPI
+    };
+  }),
   setHasUpdate: (val) => set({ hasUpdate: val }),
   setCached: (val) => set({ isCached: val }),
   setDetectedState: (val) => set({ detectedState: val }),
@@ -27,11 +35,15 @@ export const useOfflineStore = create<OfflineStore>((set) => ({
     if (typeof window === 'undefined') return;
     
     // Set initial network state
-    set({ isOnline: navigator.onLine });
+    const hasSpeechAPI = !!((window as any).SpeechRecognition || (window as any).webkitSpeechRecognition);
+    set({ 
+      isOnline: navigator.onLine,
+      isSpeechRecognitionAvailable: navigator.onLine && hasSpeechAPI
+    });
 
     // Listen for network changes
-    window.addEventListener('online', () => set({ isOnline: true }));
-    window.addEventListener('offline', () => set({ isOnline: false }));
+    window.addEventListener('online', () => set({ isOnline: true, isSpeechRecognitionAvailable: hasSpeechAPI }));
+    window.addEventListener('offline', () => set({ isOnline: false, isSpeechRecognitionAvailable: false }));
 
     if (process.env.NODE_ENV === 'development') {
       // QA mock — simulates SW cache for visual testing only
