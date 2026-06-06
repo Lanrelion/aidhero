@@ -62,6 +62,11 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
   // loop has already started and reset the abort flag.
   const sessionRef = useRef(0);
 
+  // Controls recognition start/stop from outside the effect
+  const startListeningRef = useRef<(() => void) | null>(null);
+  const stopListeningRef = useRef<(() => void) | null>(null);
+  const postTTSTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
   const safeIndex = (idx: number) => Math.min(Math.max(0, idx), steps.length - 1);
 
   // ─── Core loop ───
@@ -78,6 +83,8 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
 
       const text = step.instruction_translations?.[locale] || step.instruction;
 
+      // Stop mic before TTS plays
+      stopListeningRef.current?.();
       setIsSpeaking(true);
       isSpeakingRef.current = true;
       await TTSManager.speak(scenarioId, step.id, text, locale);
@@ -89,12 +96,24 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
 
       if (idx >= steps.length - 1) break; // last step — done
 
-      // 1.5 s gap
+      // 1.5 s gap — start mic after 600ms buffer (mic was capturing TTS tail)
+      if (postTTSTimerRef.current) clearTimeout(postTTSTimerRef.current);
+      postTTSTimerRef.current = setTimeout(() => {
+        if (activeRef.current && sessionRef.current === mySession && !pausedRef.current) {
+          startListeningRef.current?.();
+        }
+      }, 600);
+
       await new Promise<void>(r => setTimeout(r, 1500));
+
+      // Clean up post-TTS timer if still pending
+      if (postTTSTimerRef.current) clearTimeout(postTTSTimerRef.current);
 
       // Re-check session after the gap (restart commands fire during gap)
       if (!activeRef.current || sessionRef.current !== mySession || pausedRef.current) break;
 
+      // Stop mic again before advancing to next step's TTS
+      stopListeningRef.current?.();
       advanceStep();
       idx += 1;
       loopIndexRef.current = idx;
@@ -122,12 +141,17 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
     return () => {
       activeRef.current = false;
       sessionRef.current++; // kill any running loop
+      if (postTTSTimerRef.current) clearTimeout(postTTSTimerRef.current);
       TTSManager.stop();
-      try { recognitionRef.current?.stop(); } catch {}
+      stopListeningRef.current?.();
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // ─── Speech recognition with auto-restart ───
+  // ─── Speech recognition — controlled start/stop ───
+  // Recognition is NOT continuously running. It is:
+  //   - started 600ms AFTER TTS ends (mic buffer cleared)
+  //   - stopped BEFORE TTS starts
+  // This prevents the mic from capturing TTS output as voice commands.
   useEffect(() => {
     const SpeechRecognition =
       (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
@@ -136,22 +160,37 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
       return;
     }
 
-    let recognition: any = null;
-    let restartTimer: ReturnType<typeof setTimeout> | null = null;
+    let activeRecognition: any = null;
+    let isRecognitionRunning = false;
+    recognitionBlockedRef.current = false;
 
-    const startRecognition = () => {
-      if (!activeRef.current || recognitionBlockedRef.current) return;
+    const stopListening = () => {
+      if (!isRecognitionRunning || !activeRecognition) return;
+      isRecognitionRunning = false;
+      try { activeRecognition.abort(); } catch {}
+      setIsListening(false);
+    };
+
+    const startListening = () => {
+      if (recognitionBlockedRef.current || !activeRef.current) return;
+      if (isRecognitionRunning) return; // already running
+
       try {
-        recognition = new SpeechRecognition();
+        const recognition = new SpeechRecognition();
+        activeRecognition = recognition;
         recognition.lang = 'en-US';
         recognition.continuous = false;
         recognition.interimResults = false;
         recognition.maxAlternatives = 3;
 
-        recognition.onstart = () => setIsListening(true);
+        recognition.onstart = () => {
+          isRecognitionRunning = true;
+          setIsListening(true);
+        };
 
         recognition.onresult = (event: any) => {
-          if (isSpeakingRef.current) return; // mute during TTS
+          // Double-check TTS isn't playing (belt + suspenders)
+          if (isSpeakingRef.current) return;
 
           for (let i = 0; i < event.results.length; i++) {
             for (let j = 0; j < event.results[i].length; j++) {
@@ -180,18 +219,20 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
         };
 
         recognition.onerror = (e: any) => {
+          isRecognitionRunning = false;
           setIsListening(false);
           if (e.error === 'not-allowed' || e.error === 'service-not-allowed') {
             recognitionBlockedRef.current = true;
             setVoiceCommandsActive(false);
           }
+          // Other errors (no-speech, aborted) are fine — loop will restart on next gap
         };
 
         recognition.onend = () => {
+          isRecognitionRunning = false;
           setIsListening(false);
-          if (activeRef.current && !recognitionBlockedRef.current) {
-            restartTimer = setTimeout(startRecognition, 300);
-          }
+          // Do NOT auto-restart here. startListening() is called explicitly
+          // by runLoop at the right moment (600ms after TTS ends).
         };
 
         recognition.start();
@@ -202,13 +243,15 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
       }
     };
 
-    startRecognition();
+    // Expose controls to runLoop via refs
+    startListeningRef.current = startListening;
+    stopListeningRef.current = stopListening;
 
     return () => {
       recognitionBlockedRef.current = true;
-      if (restartTimer) clearTimeout(restartTimer);
-      try { recognition?.stop(); } catch {}
-      setIsListening(false);
+      startListeningRef.current = null;
+      stopListeningRef.current = null;
+      stopListening();
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -222,7 +265,9 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
       pausedRef.current = true;
       setIsPaused(true);
       sessionRef.current++; // kill loop
+      if (postTTSTimerRef.current) clearTimeout(postTTSTimerRef.current);
       TTSManager.stop();
+      stopListeningRef.current?.();
     }
   };
 
