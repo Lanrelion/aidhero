@@ -1,0 +1,217 @@
+{
+  "id": "severe-burn",
+  "slug": "severe-burn",
+  "content_version": 1,
+  "content_version_date": "2026-08-18T12:31:24.429Z",
+  "category": "burns",
+  "title": "Severe Burn",
+  "title_translations": {
+    "en": "Severe Burn",
+    "ha": "[NEEDS_REVIEW] Severe Burn",
+    "ig": "[NEEDS_REVIEW] Severe Burn",
+    "yo": "[NEEDS_REVIEW] Severe Burn",
+    "pcm": "[NEEDS_REVIEW] Severe Burn"
+  },
+  "aliases": [
+    "severe burn",
+    "deep burn",
+    "big burn",
+    "fire accident",
+    "chemical burn",
+    "third degree burn",
+    "body don burn",
+    "kerosene explosion"
+  ],
+  "severity": "critical",
+  "immediate_warning": "Call 112 now. Do not remove clothing stuck to the burn.",
+  "immediate_warning_translations": {
+    "en": "Call 112 now. Do not remove clothing stuck to the burn.",
+    "ha": "[NEEDS_REVIEW] Call 112 now. Do not remove clothing stuck to the burn.",
+    "ig": "[NEEDS_REVIEW] Call 112 now. Do not remove clothing stuck to the burn.",
+    "yo": "[NEEDS_REVIEW] Call 112 now. Do not remove clothing stuck to the burn.",
+    "pcm": "[NEEDS_REVIEW] Call 112 now. Do not remove clothing stuck to the burn."
+  },
+  "description": "A severe burn damages deep layers of skin and tissue. It is a life-threatening emergency requiring immediate hospital care.",
+  "description_translations": {
+    "en": "A severe burn damages deep layers of skin and tissue. It is a life-threatening emergency requiring immediate hospital care.",
+    "ha": "[NEEDS_REVIEW] A severe burn damages deep layers of skin and tissue. It is a life-threatening emergency requiring immediate hospital care.",
+    "ig": "[NEEDS_REVIEW] A severe burn damages deep layers of skin and tissue. It is a life-threatening emergency requiring immediate hospital care.",
+    "yo": "[NEEDS_REVIEW] A severe burn damages deep layers of skin and tissue. It is a life-threatening emergency requiring immediate hospital care.",
+    "pcm": "[NEEDS_REVIEW] A severe burn damages deep layers of skin and tissue. It is a life-threatening emergency requiring immediate hospital care."
+  },
+  "signs": [
+    "Charred, white, or leathery skin",
+    "Large blistered area",
+    "Severe pain or no pain (nerve damage)",
+    "Swelling",
+    "Shock symptoms"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Charred, white, or leathery skin",
+      "ha": "[NEEDS_REVIEW] Charred, white, or leathery skin",
+      "ig": "[NEEDS_REVIEW] Charred, white, or leathery skin",
+      "yo": "[NEEDS_REVIEW] Charred, white, or leathery skin",
+      "pcm": "[NEEDS_REVIEW] Charred, white, or leathery skin"
+    },
+    "1": {
+      "en": "Large blistered area",
+      "ha": "[NEEDS_REVIEW] Large blistered area",
+      "ig": "[NEEDS_REVIEW] Large blistered area",
+      "yo": "[NEEDS_REVIEW] Large blistered area",
+      "pcm": "[NEEDS_REVIEW] Large blistered area"
+    },
+    "2": {
+      "en": "Severe pain or no pain (nerve damage)",
+      "ha": "[NEEDS_REVIEW] Severe pain or no pain (nerve damage)",
+      "ig": "[NEEDS_REVIEW] Severe pain or no pain (nerve damage)",
+      "yo": "[NEEDS_REVIEW] Severe pain or no pain (nerve damage)",
+      "pcm": "[NEEDS_REVIEW] Severe pain or no pain (nerve damage)"
+    },
+    "3": {
+      "en": "Swelling",
+      "ha": "[NEEDS_REVIEW] Swelling",
+      "ig": "[NEEDS_REVIEW] Swelling",
+      "yo": "[NEEDS_REVIEW] Swelling",
+      "pcm": "[NEEDS_REVIEW] Swelling"
+    },
+    "4": {
+      "en": "Shock symptoms",
+      "ha": "[NEEDS_REVIEW] Shock symptoms",
+      "ig": "[NEEDS_REVIEW] Shock symptoms",
+      "yo": "[NEEDS_REVIEW] Shock symptoms",
+      "pcm": "[NEEDS_REVIEW] Shock symptoms"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Call 112 immediately.",
+      "instruction_translations": {
+        "en": "Call 112 immediately.",
+        "ha": "[NEEDS_REVIEW] Call 112 immediately.",
+        "ig": "[NEEDS_REVIEW] Call 112 immediately.",
+        "yo": "[NEEDS_REVIEW] Call 112 immediately.",
+        "pcm": "[NEEDS_REVIEW] Call 112 immediately."
+      },
+      "audio_path": "/audio/severe-burn/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Remove the person from the source of heat. Stop any flames by rolling them on the ground.",
+      "instruction_translations": {
+        "en": "Remove the person from the source of heat. Stop any flames by rolling them on the ground.",
+        "ha": "[NEEDS_REVIEW] Remove the person from the source of heat. Stop any flames by rolling them on the ground.",
+        "ig": "[NEEDS_REVIEW] Remove the person from the source of heat. Stop any flames by rolling them on the ground.",
+        "yo": "[NEEDS_REVIEW] Remove the person from the source of heat. Stop any flames by rolling them on the ground.",
+        "pcm": "[NEEDS_REVIEW] Remove the person from the source of heat. Stop any flames by rolling them on the ground."
+      },
+      "audio_path": "/audio/severe-burn/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "Cool the burn with cool running water for at least 20 minutes.",
+      "instruction_translations": {
+        "en": "Cool the burn with cool running water for at least 20 minutes.",
+        "ha": "[NEEDS_REVIEW] Cool the burn with cool running water for at least 20 minutes.",
+        "ig": "[NEEDS_REVIEW] Cool the burn with cool running water for at least 20 minutes.",
+        "yo": "[NEEDS_REVIEW] Cool the burn with cool running water for at least 20 minutes.",
+        "pcm": "[NEEDS_REVIEW] Cool the burn with cool running water for at least 20 minutes."
+      },
+      "audio_path": "/audio/severe-burn/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Do NOT remove clothing stuck to the burn — cut around it carefully.",
+      "instruction_translations": {
+        "en": "Do NOT remove clothing stuck to the burn — cut around it carefully.",
+        "ha": "[NEEDS_REVIEW] Do NOT remove clothing stuck to the burn — cut around it carefully.",
+        "ig": "[NEEDS_REVIEW] Do NOT remove clothing stuck to the burn — cut around it carefully.",
+        "yo": "[NEEDS_REVIEW] Do NOT remove clothing stuck to the burn — cut around it carefully.",
+        "pcm": "[NEEDS_REVIEW] Do NOT remove clothing stuck to the burn — cut around it carefully."
+      },
+      "audio_path": "/audio/severe-burn/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "Cover loosely with a clean sheet, cling wrap, or a sterile dressing.",
+      "instruction_translations": {
+        "en": "Cover loosely with a clean sheet, cling wrap, or a sterile dressing.",
+        "ha": "[NEEDS_REVIEW] Cover loosely with a clean sheet, cling wrap, or a sterile dressing.",
+        "ig": "[NEEDS_REVIEW] Cover loosely with a clean sheet, cling wrap, or a sterile dressing.",
+        "yo": "[NEEDS_REVIEW] Cover loosely with a clean sheet, cling wrap, or a sterile dressing.",
+        "pcm": "[NEEDS_REVIEW] Cover loosely with a clean sheet, cling wrap, or a sterile dressing."
+      },
+      "audio_path": "/audio/severe-burn/{lang}/step-5.mp3"
+    },
+    {
+      "id": 6,
+      "instruction": "Keep the person warm to prevent shock. Elevate burned limbs if possible.",
+      "instruction_translations": {
+        "en": "Keep the person warm to prevent shock. Elevate burned limbs if possible.",
+        "ha": "[NEEDS_REVIEW] Keep the person warm to prevent shock. Elevate burned limbs if possible.",
+        "ig": "[NEEDS_REVIEW] Keep the person warm to prevent shock. Elevate burned limbs if possible.",
+        "yo": "[NEEDS_REVIEW] Keep the person warm to prevent shock. Elevate burned limbs if possible.",
+        "pcm": "[NEEDS_REVIEW] Keep the person warm to prevent shock. Elevate burned limbs if possible."
+      },
+      "audio_path": "/audio/severe-burn/{lang}/step-6.mp3"
+    },
+    {
+      "id": 7,
+      "instruction": "Monitor breathing and consciousness until help arrives.",
+      "instruction_translations": {
+        "en": "Monitor breathing and consciousness until help arrives.",
+        "ha": "[NEEDS_REVIEW] Monitor breathing and consciousness until help arrives.",
+        "ig": "[NEEDS_REVIEW] Monitor breathing and consciousness until help arrives.",
+        "yo": "[NEEDS_REVIEW] Monitor breathing and consciousness until help arrives.",
+        "pcm": "[NEEDS_REVIEW] Monitor breathing and consciousness until help arrives."
+      },
+      "audio_path": "/audio/severe-burn/{lang}/step-7.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not apply any ointment, toothpaste, or oil.",
+    "Do not remove stuck clothing.",
+    "Do not give anything by mouth if person may need surgery."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not apply any ointment, toothpaste, or oil.",
+      "ha": "[NEEDS_REVIEW] Do not apply any ointment, toothpaste, or oil.",
+      "ig": "[NEEDS_REVIEW] Do not apply any ointment, toothpaste, or oil.",
+      "yo": "[NEEDS_REVIEW] Do not apply any ointment, toothpaste, or oil.",
+      "pcm": "[NEEDS_REVIEW] Do not apply any ointment, toothpaste, or oil."
+    },
+    "1": {
+      "en": "Do not remove stuck clothing.",
+      "ha": "[NEEDS_REVIEW] Do not remove stuck clothing.",
+      "ig": "[NEEDS_REVIEW] Do not remove stuck clothing.",
+      "yo": "[NEEDS_REVIEW] Do not remove stuck clothing.",
+      "pcm": "[NEEDS_REVIEW] Do not remove stuck clothing."
+    },
+    "2": {
+      "en": "Do not give anything by mouth if person may need surgery.",
+      "ha": "[NEEDS_REVIEW] Do not give anything by mouth if person may need surgery.",
+      "ig": "[NEEDS_REVIEW] Do not give anything by mouth if person may need surgery.",
+      "yo": "[NEEDS_REVIEW] Do not give anything by mouth if person may need surgery.",
+      "pcm": "[NEEDS_REVIEW] Do not give anything by mouth if person may need surgery."
+    }
+  },
+  "hospital_threshold": "Always required. Transport to hospital immediately.",
+  "hospital_threshold_translations": {
+    "en": "Always required. Transport to hospital immediately.",
+    "ha": "[NEEDS_REVIEW] Always required. Transport to hospital immediately.",
+    "ig": "[NEEDS_REVIEW] Always required. Transport to hospital immediately.",
+    "yo": "[NEEDS_REVIEW] Always required. Transport to hospital immediately.",
+    "pcm": "[NEEDS_REVIEW] Always required. Transport to hospital immediately."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-08-18T12:31:24.428Z",
+    "medical_references": [
+      "WHO First Aid",
+      "Nigerian Emergency Medicine Association Guidelines"
+    ]
+  }
+}

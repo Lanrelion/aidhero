@@ -13,7 +13,7 @@ const stateBounds = [
   { state: 'Kaduna', minLat: 9.0, maxLat: 11.5, minLng: 6.0, maxLng: 8.8 }
 ];
 
-function getStateFromCoords(lat: number, lng: number): string | null {
+export function getStateFromCoords(lat: number, lng: number): string | null {
   for (const bounds of stateBounds) {
     if (lat >= bounds.minLat && lat <= bounds.maxLat && lng >= bounds.minLng && lng <= bounds.maxLng) {
       return bounds.state;

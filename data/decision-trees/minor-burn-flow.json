@@ -1,0 +1,52 @@
+{
+  "id": "minor-burn-flow",
+  "incident_id": "minor-burn",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "How large is the burn?",
+      "translations": {
+        "en": "How large is the burn?",
+        "ha": "[NEEDS_REVIEW] How large is the burn?",
+        "ig": "[NEEDS_REVIEW] How large is the burn?",
+        "yo": "[NEEDS_REVIEW] How large is the burn?",
+        "pcm": "[NEEDS_REVIEW] How large is the burn?"
+      },
+      "options": [
+        {
+          "label": "Smaller than palm of hand",
+          "translations": {
+            "en": "Smaller than palm of hand",
+            "ha": "[NEEDS_REVIEW] Smaller than palm of hand",
+            "ig": "[NEEDS_REVIEW] Smaller than palm of hand",
+            "yo": "[NEEDS_REVIEW] Smaller than palm of hand",
+            "pcm": "[NEEDS_REVIEW] Smaller than palm of hand"
+          },
+          "next_node_id": "minor-steps"
+        },
+        {
+          "label": "Larger than palm or on face/hands",
+          "translations": {
+            "en": "Larger than palm or on face/hands",
+            "ha": "[NEEDS_REVIEW] Larger than palm or on face/hands",
+            "ig": "[NEEDS_REVIEW] Larger than palm or on face/hands",
+            "yo": "[NEEDS_REVIEW] Larger than palm or on face/hands",
+            "pcm": "[NEEDS_REVIEW] Larger than palm or on face/hands"
+          },
+          "next_node_id": "major-burn"
+        }
+      ]
+    },
+    "minor-steps": {
+      "type": "instruction",
+      "steps_reference": "minor-burn",
+      "variant": "minor"
+    },
+    "major-burn": {
+      "type": "instruction",
+      "steps_reference": "severe-burn",
+      "variant": "severe"
+    }
+  }
+}

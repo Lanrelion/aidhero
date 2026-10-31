@@ -1,0 +1,52 @@
+{
+  "id": "snake-bite-flow",
+  "incident_id": "snake-bite",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Is the person conscious and breathing normally?",
+      "translations": {
+        "en": "Is the person conscious and breathing normally?",
+        "ha": "[NEEDS_REVIEW] Is the person conscious and breathing normally?",
+        "ig": "[NEEDS_REVIEW] Is the person conscious and breathing normally?",
+        "yo": "[NEEDS_REVIEW] Is the person conscious and breathing normally?",
+        "pcm": "[NEEDS_REVIEW] Is the person conscious and breathing normally?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "stabilise-steps"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "cpr-steps"
+        }
+      ]
+    },
+    "stabilise-steps": {
+      "type": "instruction",
+      "steps_reference": "snake-bite",
+      "variant": "conscious"
+    },
+    "cpr-steps": {
+      "type": "instruction",
+      "steps_reference": "snake-bite",
+      "variant": "unconscious"
+    }
+  }
+}

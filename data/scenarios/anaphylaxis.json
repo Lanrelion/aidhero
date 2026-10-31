@@ -1,0 +1,206 @@
+{
+  "id": "anaphylaxis",
+  "slug": "anaphylaxis",
+  "content_version": 1,
+  "content_version_date": "2026-08-18T12:31:24.429Z",
+  "category": "allergic",
+  "title": "Severe Allergic Reaction (Anaphylaxis)",
+  "title_translations": {
+    "en": "Severe Allergic Reaction (Anaphylaxis)",
+    "ha": "[NEEDS_REVIEW] Severe Allergic Reaction (Anaphylaxis)",
+    "ig": "[NEEDS_REVIEW] Severe Allergic Reaction (Anaphylaxis)",
+    "yo": "[NEEDS_REVIEW] Severe Allergic Reaction (Anaphylaxis)",
+    "pcm": "[NEEDS_REVIEW] Severe Allergic Reaction (Anaphylaxis)"
+  },
+  "aliases": [
+    "anaphylaxis",
+    "allergic reaction",
+    "severe allergy",
+    "allergy shock",
+    "drug reaction",
+    "bee sting allergy",
+    "food allergy severe",
+    "injection reaction",
+    "body react bad"
+  ],
+  "severity": "critical",
+  "immediate_warning": "Call 112 immediately. This is a life-threatening emergency. Use adrenaline (epinephrine) auto-injector if available.",
+  "immediate_warning_translations": {
+    "en": "Call 112 immediately. This is a life-threatening emergency. Use adrenaline (epinephrine) auto-injector if available.",
+    "ha": "[NEEDS_REVIEW] Call 112 immediately. This is a life-threatening emergency. Use adrenaline (epinephrine) auto-injector if available.",
+    "ig": "[NEEDS_REVIEW] Call 112 immediately. This is a life-threatening emergency. Use adrenaline (epinephrine) auto-injector if available.",
+    "yo": "[NEEDS_REVIEW] Call 112 immediately. This is a life-threatening emergency. Use adrenaline (epinephrine) auto-injector if available.",
+    "pcm": "[NEEDS_REVIEW] Call 112 immediately. This is a life-threatening emergency. Use adrenaline (epinephrine) auto-injector if available."
+  },
+  "description": "Anaphylaxis is a severe, sudden, life-threatening allergic reaction. Common triggers include foods (groundnuts, shellfish), medications, and insect stings.",
+  "description_translations": {
+    "en": "Anaphylaxis is a severe, sudden, life-threatening allergic reaction. Common triggers include foods (groundnuts, shellfish), medications, and insect stings.",
+    "ha": "[NEEDS_REVIEW] Anaphylaxis is a severe, sudden, life-threatening allergic reaction. Common triggers include foods (groundnuts, shellfish), medications, and insect stings.",
+    "ig": "[NEEDS_REVIEW] Anaphylaxis is a severe, sudden, life-threatening allergic reaction. Common triggers include foods (groundnuts, shellfish), medications, and insect stings.",
+    "yo": "[NEEDS_REVIEW] Anaphylaxis is a severe, sudden, life-threatening allergic reaction. Common triggers include foods (groundnuts, shellfish), medications, and insect stings.",
+    "pcm": "[NEEDS_REVIEW] Anaphylaxis is a severe, sudden, life-threatening allergic reaction. Common triggers include foods (groundnuts, shellfish), medications, and insect stings."
+  },
+  "signs": [
+    "Swollen face, lips, or throat",
+    "Difficulty breathing or wheezing",
+    "Rash or hives spreading rapidly",
+    "Dizziness or collapse",
+    "Rapid or weak pulse"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Swollen face, lips, or throat",
+      "ha": "[NEEDS_REVIEW] Swollen face, lips, or throat",
+      "ig": "[NEEDS_REVIEW] Swollen face, lips, or throat",
+      "yo": "[NEEDS_REVIEW] Swollen face, lips, or throat",
+      "pcm": "[NEEDS_REVIEW] Swollen face, lips, or throat"
+    },
+    "1": {
+      "en": "Difficulty breathing or wheezing",
+      "ha": "[NEEDS_REVIEW] Difficulty breathing or wheezing",
+      "ig": "[NEEDS_REVIEW] Difficulty breathing or wheezing",
+      "yo": "[NEEDS_REVIEW] Difficulty breathing or wheezing",
+      "pcm": "[NEEDS_REVIEW] Difficulty breathing or wheezing"
+    },
+    "2": {
+      "en": "Rash or hives spreading rapidly",
+      "ha": "[NEEDS_REVIEW] Rash or hives spreading rapidly",
+      "ig": "[NEEDS_REVIEW] Rash or hives spreading rapidly",
+      "yo": "[NEEDS_REVIEW] Rash or hives spreading rapidly",
+      "pcm": "[NEEDS_REVIEW] Rash or hives spreading rapidly"
+    },
+    "3": {
+      "en": "Dizziness or collapse",
+      "ha": "[NEEDS_REVIEW] Dizziness or collapse",
+      "ig": "[NEEDS_REVIEW] Dizziness or collapse",
+      "yo": "[NEEDS_REVIEW] Dizziness or collapse",
+      "pcm": "[NEEDS_REVIEW] Dizziness or collapse"
+    },
+    "4": {
+      "en": "Rapid or weak pulse",
+      "ha": "[NEEDS_REVIEW] Rapid or weak pulse",
+      "ig": "[NEEDS_REVIEW] Rapid or weak pulse",
+      "yo": "[NEEDS_REVIEW] Rapid or weak pulse",
+      "pcm": "[NEEDS_REVIEW] Rapid or weak pulse"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Call 112 immediately.",
+      "instruction_translations": {
+        "en": "Call 112 immediately.",
+        "ha": "[NEEDS_REVIEW] Call 112 immediately.",
+        "ig": "[NEEDS_REVIEW] Call 112 immediately.",
+        "yo": "[NEEDS_REVIEW] Call 112 immediately.",
+        "pcm": "[NEEDS_REVIEW] Call 112 immediately."
+      },
+      "audio_path": "/audio/anaphylaxis/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "If the person has an adrenaline (epinephrine) auto-injector (EpiPen), use it on the outer thigh immediately.",
+      "instruction_translations": {
+        "en": "If the person has an adrenaline (epinephrine) auto-injector (EpiPen), use it on the outer thigh immediately.",
+        "ha": "[NEEDS_REVIEW] If the person has an adrenaline (epinephrine) auto-injector (EpiPen), use it on the outer thigh immediately.",
+        "ig": "[NEEDS_REVIEW] If the person has an adrenaline (epinephrine) auto-injector (EpiPen), use it on the outer thigh immediately.",
+        "yo": "[NEEDS_REVIEW] If the person has an adrenaline (epinephrine) auto-injector (EpiPen), use it on the outer thigh immediately.",
+        "pcm": "[NEEDS_REVIEW] If the person has an adrenaline (epinephrine) auto-injector (EpiPen), use it on the outer thigh immediately."
+      },
+      "audio_path": "/audio/anaphylaxis/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "Lay the person flat with their legs elevated. If breathing is difficult, let them sit up slightly.",
+      "instruction_translations": {
+        "en": "Lay the person flat with their legs elevated. If breathing is difficult, let them sit up slightly.",
+        "ha": "[NEEDS_REVIEW] Lay the person flat with their legs elevated. If breathing is difficult, let them sit up slightly.",
+        "ig": "[NEEDS_REVIEW] Lay the person flat with their legs elevated. If breathing is difficult, let them sit up slightly.",
+        "yo": "[NEEDS_REVIEW] Lay the person flat with their legs elevated. If breathing is difficult, let them sit up slightly.",
+        "pcm": "[NEEDS_REVIEW] Lay the person flat with their legs elevated. If breathing is difficult, let them sit up slightly."
+      },
+      "audio_path": "/audio/anaphylaxis/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Remove or avoid the trigger allergen if still present (e.g. remove a bee stinger).",
+      "instruction_translations": {
+        "en": "Remove or avoid the trigger allergen if still present (e.g. remove a bee stinger).",
+        "ha": "[NEEDS_REVIEW] Remove or avoid the trigger allergen if still present (e.g. remove a bee stinger).",
+        "ig": "[NEEDS_REVIEW] Remove or avoid the trigger allergen if still present (e.g. remove a bee stinger).",
+        "yo": "[NEEDS_REVIEW] Remove or avoid the trigger allergen if still present (e.g. remove a bee stinger).",
+        "pcm": "[NEEDS_REVIEW] Remove or avoid the trigger allergen if still present (e.g. remove a bee stinger)."
+      },
+      "audio_path": "/audio/anaphylaxis/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "If unconscious and not breathing, begin CPR immediately.",
+      "instruction_translations": {
+        "en": "If unconscious and not breathing, begin CPR immediately.",
+        "ha": "[NEEDS_REVIEW] If unconscious and not breathing, begin CPR immediately.",
+        "ig": "[NEEDS_REVIEW] If unconscious and not breathing, begin CPR immediately.",
+        "yo": "[NEEDS_REVIEW] If unconscious and not breathing, begin CPR immediately.",
+        "pcm": "[NEEDS_REVIEW] If unconscious and not breathing, begin CPR immediately."
+      },
+      "audio_path": "/audio/anaphylaxis/{lang}/step-5.mp3"
+    },
+    {
+      "id": 6,
+      "instruction": "If a second EpiPen is available and no improvement in 5 minutes, use it.",
+      "instruction_translations": {
+        "en": "If a second EpiPen is available and no improvement in 5 minutes, use it.",
+        "ha": "[NEEDS_REVIEW] If a second EpiPen is available and no improvement in 5 minutes, use it.",
+        "ig": "[NEEDS_REVIEW] If a second EpiPen is available and no improvement in 5 minutes, use it.",
+        "yo": "[NEEDS_REVIEW] If a second EpiPen is available and no improvement in 5 minutes, use it.",
+        "pcm": "[NEEDS_REVIEW] If a second EpiPen is available and no improvement in 5 minutes, use it."
+      },
+      "audio_path": "/audio/anaphylaxis/{lang}/step-6.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not leave the person alone.",
+    "Do not give oral medication if they cannot swallow.",
+    "Do not let them stand up."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not leave the person alone.",
+      "ha": "[NEEDS_REVIEW] Do not leave the person alone.",
+      "ig": "[NEEDS_REVIEW] Do not leave the person alone.",
+      "yo": "[NEEDS_REVIEW] Do not leave the person alone.",
+      "pcm": "[NEEDS_REVIEW] Do not leave the person alone."
+    },
+    "1": {
+      "en": "Do not give oral medication if they cannot swallow.",
+      "ha": "[NEEDS_REVIEW] Do not give oral medication if they cannot swallow.",
+      "ig": "[NEEDS_REVIEW] Do not give oral medication if they cannot swallow.",
+      "yo": "[NEEDS_REVIEW] Do not give oral medication if they cannot swallow.",
+      "pcm": "[NEEDS_REVIEW] Do not give oral medication if they cannot swallow."
+    },
+    "2": {
+      "en": "Do not let them stand up.",
+      "ha": "[NEEDS_REVIEW] Do not let them stand up.",
+      "ig": "[NEEDS_REVIEW] Do not let them stand up.",
+      "yo": "[NEEDS_REVIEW] Do not let them stand up.",
+      "pcm": "[NEEDS_REVIEW] Do not let them stand up."
+    }
+  },
+  "hospital_threshold": "Always required even if symptoms resolve — reactions can return after 8–24 hours.",
+  "hospital_threshold_translations": {
+    "en": "Always required even if symptoms resolve — reactions can return after 8–24 hours.",
+    "ha": "[NEEDS_REVIEW] Always required even if symptoms resolve — reactions can return after 8–24 hours.",
+    "ig": "[NEEDS_REVIEW] Always required even if symptoms resolve — reactions can return after 8–24 hours.",
+    "yo": "[NEEDS_REVIEW] Always required even if symptoms resolve — reactions can return after 8–24 hours.",
+    "pcm": "[NEEDS_REVIEW] Always required even if symptoms resolve — reactions can return after 8–24 hours."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-08-18T12:31:24.428Z",
+    "medical_references": [
+      "WHO First Aid",
+      "Nigerian Emergency Medicine Association Guidelines"
+    ]
+  }
+}

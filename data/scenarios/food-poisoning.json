@@ -1,0 +1,193 @@
+{
+  "id": "food-poisoning",
+  "slug": "food-poisoning",
+  "content_version": 1,
+  "content_version_date": "2026-08-18T12:31:24.429Z",
+  "category": "gastrointestinal",
+  "title": "Food Poisoning",
+  "title_translations": {
+    "en": "Food Poisoning",
+    "ha": "[NEEDS_REVIEW] Food Poisoning",
+    "ig": "[NEEDS_REVIEW] Food Poisoning",
+    "yo": "[NEEDS_REVIEW] Food Poisoning",
+    "pcm": "[NEEDS_REVIEW] Food Poisoning"
+  },
+  "aliases": [
+    "food poisoning",
+    "bad food",
+    "food make person sick",
+    "stomach poisoning",
+    "diarrhea vomiting",
+    "food don spoil",
+    "expired food sick",
+    "stomach upset bad"
+  ],
+  "severity": "moderate",
+  "immediate_warning": "Call 112 if the person is severely dehydrated, has bloody diarrhoea, is unconscious, or cannot keep fluids down for 8 hours.",
+  "immediate_warning_translations": {
+    "en": "Call 112 if the person is severely dehydrated, has bloody diarrhoea, is unconscious, or cannot keep fluids down for 8 hours.",
+    "ha": "[NEEDS_REVIEW] Call 112 if the person is severely dehydrated, has bloody diarrhoea, is unconscious, or cannot keep fluids down for 8 hours.",
+    "ig": "[NEEDS_REVIEW] Call 112 if the person is severely dehydrated, has bloody diarrhoea, is unconscious, or cannot keep fluids down for 8 hours.",
+    "yo": "[NEEDS_REVIEW] Call 112 if the person is severely dehydrated, has bloody diarrhoea, is unconscious, or cannot keep fluids down for 8 hours.",
+    "pcm": "[NEEDS_REVIEW] Call 112 if the person is severely dehydrated, has bloody diarrhoea, is unconscious, or cannot keep fluids down for 8 hours."
+  },
+  "description": "Food poisoning is caused by eating contaminated food. Most cases resolve within 1–3 days with rest and fluids.",
+  "description_translations": {
+    "en": "Food poisoning is caused by eating contaminated food. Most cases resolve within 1–3 days with rest and fluids.",
+    "ha": "[NEEDS_REVIEW] Food poisoning is caused by eating contaminated food. Most cases resolve within 1–3 days with rest and fluids.",
+    "ig": "[NEEDS_REVIEW] Food poisoning is caused by eating contaminated food. Most cases resolve within 1–3 days with rest and fluids.",
+    "yo": "[NEEDS_REVIEW] Food poisoning is caused by eating contaminated food. Most cases resolve within 1–3 days with rest and fluids.",
+    "pcm": "[NEEDS_REVIEW] Food poisoning is caused by eating contaminated food. Most cases resolve within 1–3 days with rest and fluids."
+  },
+  "signs": [
+    "Nausea and vomiting",
+    "Diarrhoea",
+    "Stomach cramps",
+    "Fever",
+    "Weakness"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Nausea and vomiting",
+      "ha": "[NEEDS_REVIEW] Nausea and vomiting",
+      "ig": "[NEEDS_REVIEW] Nausea and vomiting",
+      "yo": "[NEEDS_REVIEW] Nausea and vomiting",
+      "pcm": "[NEEDS_REVIEW] Nausea and vomiting"
+    },
+    "1": {
+      "en": "Diarrhoea",
+      "ha": "[NEEDS_REVIEW] Diarrhoea",
+      "ig": "[NEEDS_REVIEW] Diarrhoea",
+      "yo": "[NEEDS_REVIEW] Diarrhoea",
+      "pcm": "[NEEDS_REVIEW] Diarrhoea"
+    },
+    "2": {
+      "en": "Stomach cramps",
+      "ha": "[NEEDS_REVIEW] Stomach cramps",
+      "ig": "[NEEDS_REVIEW] Stomach cramps",
+      "yo": "[NEEDS_REVIEW] Stomach cramps",
+      "pcm": "[NEEDS_REVIEW] Stomach cramps"
+    },
+    "3": {
+      "en": "Fever",
+      "ha": "[NEEDS_REVIEW] Fever",
+      "ig": "[NEEDS_REVIEW] Fever",
+      "yo": "[NEEDS_REVIEW] Fever",
+      "pcm": "[NEEDS_REVIEW] Fever"
+    },
+    "4": {
+      "en": "Weakness",
+      "ha": "[NEEDS_REVIEW] Weakness",
+      "ig": "[NEEDS_REVIEW] Weakness",
+      "yo": "[NEEDS_REVIEW] Weakness",
+      "pcm": "[NEEDS_REVIEW] Weakness"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Have the person rest and drink plenty of fluids — water, oral rehydration salts (ORS), or weak tea.",
+      "instruction_translations": {
+        "en": "Have the person rest and drink plenty of fluids — water, oral rehydration salts (ORS), or weak tea.",
+        "ha": "[NEEDS_REVIEW] Have the person rest and drink plenty of fluids — water, oral rehydration salts (ORS), or weak tea.",
+        "ig": "[NEEDS_REVIEW] Have the person rest and drink plenty of fluids — water, oral rehydration salts (ORS), or weak tea.",
+        "yo": "[NEEDS_REVIEW] Have the person rest and drink plenty of fluids — water, oral rehydration salts (ORS), or weak tea.",
+        "pcm": "[NEEDS_REVIEW] Have the person rest and drink plenty of fluids — water, oral rehydration salts (ORS), or weak tea."
+      },
+      "audio_path": "/audio/food-poisoning/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Give ORS sachets mixed in clean water to replace lost fluids and electrolytes.",
+      "instruction_translations": {
+        "en": "Give ORS sachets mixed in clean water to replace lost fluids and electrolytes.",
+        "ha": "[NEEDS_REVIEW] Give ORS sachets mixed in clean water to replace lost fluids and electrolytes.",
+        "ig": "[NEEDS_REVIEW] Give ORS sachets mixed in clean water to replace lost fluids and electrolytes.",
+        "yo": "[NEEDS_REVIEW] Give ORS sachets mixed in clean water to replace lost fluids and electrolytes.",
+        "pcm": "[NEEDS_REVIEW] Give ORS sachets mixed in clean water to replace lost fluids and electrolytes."
+      },
+      "audio_path": "/audio/food-poisoning/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "Avoid solid food until vomiting stops. Then start with bland food like plain rice or bread.",
+      "instruction_translations": {
+        "en": "Avoid solid food until vomiting stops. Then start with bland food like plain rice or bread.",
+        "ha": "[NEEDS_REVIEW] Avoid solid food until vomiting stops. Then start with bland food like plain rice or bread.",
+        "ig": "[NEEDS_REVIEW] Avoid solid food until vomiting stops. Then start with bland food like plain rice or bread.",
+        "yo": "[NEEDS_REVIEW] Avoid solid food until vomiting stops. Then start with bland food like plain rice or bread.",
+        "pcm": "[NEEDS_REVIEW] Avoid solid food until vomiting stops. Then start with bland food like plain rice or bread."
+      },
+      "audio_path": "/audio/food-poisoning/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Monitor for signs of severe dehydration: very dry mouth, sunken eyes, little or no urine.",
+      "instruction_translations": {
+        "en": "Monitor for signs of severe dehydration: very dry mouth, sunken eyes, little or no urine.",
+        "ha": "[NEEDS_REVIEW] Monitor for signs of severe dehydration: very dry mouth, sunken eyes, little or no urine.",
+        "ig": "[NEEDS_REVIEW] Monitor for signs of severe dehydration: very dry mouth, sunken eyes, little or no urine.",
+        "yo": "[NEEDS_REVIEW] Monitor for signs of severe dehydration: very dry mouth, sunken eyes, little or no urine.",
+        "pcm": "[NEEDS_REVIEW] Monitor for signs of severe dehydration: very dry mouth, sunken eyes, little or no urine."
+      },
+      "audio_path": "/audio/food-poisoning/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "Seek hospital care if symptoms worsen after 24 hours or severe dehydration occurs.",
+      "instruction_translations": {
+        "en": "Seek hospital care if symptoms worsen after 24 hours or severe dehydration occurs.",
+        "ha": "[NEEDS_REVIEW] Seek hospital care if symptoms worsen after 24 hours or severe dehydration occurs.",
+        "ig": "[NEEDS_REVIEW] Seek hospital care if symptoms worsen after 24 hours or severe dehydration occurs.",
+        "yo": "[NEEDS_REVIEW] Seek hospital care if symptoms worsen after 24 hours or severe dehydration occurs.",
+        "pcm": "[NEEDS_REVIEW] Seek hospital care if symptoms worsen after 24 hours or severe dehydration occurs."
+      },
+      "audio_path": "/audio/food-poisoning/{lang}/step-5.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not give anti-diarrhoea medication unless advised by a doctor.",
+    "Do not give children aspirin.",
+    "Do not ignore bloody stool or high fever."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not give anti-diarrhoea medication unless advised by a doctor.",
+      "ha": "[NEEDS_REVIEW] Do not give anti-diarrhoea medication unless advised by a doctor.",
+      "ig": "[NEEDS_REVIEW] Do not give anti-diarrhoea medication unless advised by a doctor.",
+      "yo": "[NEEDS_REVIEW] Do not give anti-diarrhoea medication unless advised by a doctor.",
+      "pcm": "[NEEDS_REVIEW] Do not give anti-diarrhoea medication unless advised by a doctor."
+    },
+    "1": {
+      "en": "Do not give children aspirin.",
+      "ha": "[NEEDS_REVIEW] Do not give children aspirin.",
+      "ig": "[NEEDS_REVIEW] Do not give children aspirin.",
+      "yo": "[NEEDS_REVIEW] Do not give children aspirin.",
+      "pcm": "[NEEDS_REVIEW] Do not give children aspirin."
+    },
+    "2": {
+      "en": "Do not ignore bloody stool or high fever.",
+      "ha": "[NEEDS_REVIEW] Do not ignore bloody stool or high fever.",
+      "ig": "[NEEDS_REVIEW] Do not ignore bloody stool or high fever.",
+      "yo": "[NEEDS_REVIEW] Do not ignore bloody stool or high fever.",
+      "pcm": "[NEEDS_REVIEW] Do not ignore bloody stool or high fever."
+    }
+  },
+  "hospital_threshold": "Go to hospital if symptoms persist beyond 48 hours, or signs of severe dehydration appear.",
+  "hospital_threshold_translations": {
+    "en": "Go to hospital if symptoms persist beyond 48 hours, or signs of severe dehydration appear.",
+    "ha": "[NEEDS_REVIEW] Go to hospital if symptoms persist beyond 48 hours, or signs of severe dehydration appear.",
+    "ig": "[NEEDS_REVIEW] Go to hospital if symptoms persist beyond 48 hours, or signs of severe dehydration appear.",
+    "yo": "[NEEDS_REVIEW] Go to hospital if symptoms persist beyond 48 hours, or signs of severe dehydration appear.",
+    "pcm": "[NEEDS_REVIEW] Go to hospital if symptoms persist beyond 48 hours, or signs of severe dehydration appear."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-08-18T12:31:24.428Z",
+    "medical_references": [
+      "WHO First Aid",
+      "Nigerian Emergency Medicine Association Guidelines"
+    ]
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "id": "head-injury-flow",
+  "incident_id": "head-injury",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Did the person lose consciousness?",
+      "translations": {
+        "en": "Did the person lose consciousness?",
+        "ha": "[NEEDS_REVIEW] Did the person lose consciousness?",
+        "ig": "[NEEDS_REVIEW] Did the person lose consciousness?",
+        "yo": "[NEEDS_REVIEW] Did the person lose consciousness?",
+        "pcm": "[NEEDS_REVIEW] Did the person lose consciousness?"
+      },
+      "options": [
+        {
+          "label": "Yes — even briefly",
+          "translations": {
+            "en": "Yes — even briefly",
+            "ha": "[NEEDS_REVIEW] Yes — even briefly",
+            "ig": "[NEEDS_REVIEW] Yes — even briefly",
+            "yo": "[NEEDS_REVIEW] Yes — even briefly",
+            "pcm": "[NEEDS_REVIEW] Yes — even briefly"
+          },
+          "next_node_id": "serious-steps"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "q2"
+        }
+      ]
+    },
+    "q2": {
+      "type": "question",
+      "text": "Are they confused, vomiting, or have a severe headache?",
+      "translations": {
+        "en": "Are they confused, vomiting, or have a severe headache?",
+        "ha": "[NEEDS_REVIEW] Are they confused, vomiting, or have a severe headache?",
+        "ig": "[NEEDS_REVIEW] Are they confused, vomiting, or have a severe headache?",
+        "yo": "[NEEDS_REVIEW] Are they confused, vomiting, or have a severe headache?",
+        "pcm": "[NEEDS_REVIEW] Are they confused, vomiting, or have a severe headache?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "serious-steps"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "minor-steps"
+        }
+      ]
+    },
+    "serious-steps": {
+      "type": "instruction",
+      "steps_reference": "head-injury",
+      "variant": "serious"
+    },
+    "minor-steps": {
+      "type": "instruction",
+      "steps_reference": "head-injury",
+      "variant": "minor"
+    }
+  }
+}

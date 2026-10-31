@@ -1,0 +1,98 @@
+{
+  "id": "cardiac-arrest-flow",
+  "incident_id": "cardiac-arrest",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Is the person breathing?",
+      "translations": {
+        "en": "Is the person breathing?",
+        "ha": "[NEEDS_REVIEW] Is the person breathing?",
+        "ig": "[NEEDS_REVIEW] Is the person breathing?",
+        "yo": "[NEEDS_REVIEW] Is the person breathing?",
+        "pcm": "[NEEDS_REVIEW] Is the person breathing?"
+      },
+      "options": [
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "start-cpr"
+        },
+        {
+          "label": "Yes — barely / gasping",
+          "translations": {
+            "en": "Yes — barely / gasping",
+            "ha": "[NEEDS_REVIEW] Yes — barely / gasping",
+            "ig": "[NEEDS_REVIEW] Yes — barely / gasping",
+            "yo": "[NEEDS_REVIEW] Yes — barely / gasping",
+            "pcm": "[NEEDS_REVIEW] Yes — barely / gasping"
+          },
+          "next_node_id": "start-cpr"
+        },
+        {
+          "label": "Yes — normally",
+          "translations": {
+            "en": "Yes — normally",
+            "ha": "[NEEDS_REVIEW] Yes — normally",
+            "ig": "[NEEDS_REVIEW] Yes — normally",
+            "yo": "[NEEDS_REVIEW] Yes — normally",
+            "pcm": "[NEEDS_REVIEW] Yes — normally"
+          },
+          "next_node_id": "q2"
+        }
+      ]
+    },
+    "q2": {
+      "type": "question",
+      "text": "Are they conscious and responsive?",
+      "translations": {
+        "en": "Are they conscious and responsive?",
+        "ha": "[NEEDS_REVIEW] Are they conscious and responsive?",
+        "ig": "[NEEDS_REVIEW] Are they conscious and responsive?",
+        "yo": "[NEEDS_REVIEW] Are they conscious and responsive?",
+        "pcm": "[NEEDS_REVIEW] Are they conscious and responsive?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "recovery-steps"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "start-cpr"
+        }
+      ]
+    },
+    "start-cpr": {
+      "type": "instruction",
+      "steps_reference": "cardiac-arrest",
+      "variant": "cpr"
+    },
+    "recovery-steps": {
+      "type": "instruction",
+      "steps_reference": "cardiac-arrest",
+      "variant": "recovery"
+    }
+  }
+}

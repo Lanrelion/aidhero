@@ -1,0 +1,52 @@
+{
+  "id": "severe-burn-flow",
+  "incident_id": "severe-burn",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Is the person still on fire or in contact with the heat source?",
+      "translations": {
+        "en": "Is the person still on fire or in contact with the heat source?",
+        "ha": "[NEEDS_REVIEW] Is the person still on fire or in contact with the heat source?",
+        "ig": "[NEEDS_REVIEW] Is the person still on fire or in contact with the heat source?",
+        "yo": "[NEEDS_REVIEW] Is the person still on fire or in contact with the heat source?",
+        "pcm": "[NEEDS_REVIEW] Is the person still on fire or in contact with the heat source?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "stop-burning"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "treat-burn"
+        }
+      ]
+    },
+    "stop-burning": {
+      "type": "instruction",
+      "steps_reference": "severe-burn",
+      "variant": "stop-fire"
+    },
+    "treat-burn": {
+      "type": "instruction",
+      "steps_reference": "severe-burn",
+      "variant": "treat"
+    }
+  }
+}

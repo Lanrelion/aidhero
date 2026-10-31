@@ -12,8 +12,12 @@ import { getPrimaryEmergencyNumber } from '@/lib/data/emergencyNumbers';
 import { StepCard } from '@/components/rescue/StepCard';
 import { TTSProvider } from '@/components/tts/TTSProvider';
 import { ReadAllButton } from '@/components/tts/ReadAllButton';
-import { VoiceMode } from '@/components/rescue/VoiceMode';
+import dynamic from 'next/dynamic';
 import { Locale } from '@/types';
+
+const VoiceMode = dynamic(() => import('@/components/rescue/VoiceMode').then(mod => mod.VoiceMode), {
+  ssr: false,
+});
 
 interface StepsPageProps {
   params: Promise<{ locale: Locale; slug: string }>;
@@ -28,14 +32,17 @@ export default function StepsPage({ params }: StepsPageProps) {
   const variant = searchParams.get('variant');
   const scenario = getScenario(slug);
   
-  const { currentStepIndex, advanceStep, setVoiceMode } = useRescueStore();
+  const { currentStepIndex, activeScenario, advanceStep, setVoiceMode, startRescue } = useRescueStore();
   const { detectedState } = useOfflineStore();
   const [mounted, setMounted] = useState(false);
   const [voiceModeOpen, setVoiceModeOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+    if (activeScenario !== slug) {
+      startRescue(slug, '');
+    }
+  }, [slug, activeScenario, startRescue]);
 
   if (!scenario) {
     return (
@@ -59,8 +66,9 @@ export default function StepsPage({ params }: StepsPageProps) {
     );
   }
 
-  // Ensure index is within bounds (in case of weird state)
-  const safeStepIndex = Math.min(Math.max(0, currentStepIndex), stepsToRender.length - 1);
+  // Ensure index is within bounds and reset if coming from a different scenario
+  const effectiveStepIndex = activeScenario === slug ? currentStepIndex : 0;
+  const safeStepIndex = Math.min(Math.max(0, effectiveStepIndex), stepsToRender.length - 1);
   const currentStep = stepsToRender[safeStepIndex];
   const isLastStep = safeStepIndex === stepsToRender.length - 1;
   const progressPercentage = ((safeStepIndex + 1) / stepsToRender.length) * 100;
@@ -129,7 +137,7 @@ export default function StepsPage({ params }: StepsPageProps) {
         </div>
       </header>
 
-      <main className="flex-1 flex flex-col px-4 pt-6 max-w-md mx-auto w-full relative">
+      <div className="flex-1 flex flex-col px-4 pt-6 max-w-md mx-auto w-full relative">
         <ReadAllButton scenarioId={scenario.id} steps={stepsToRender} />
         <div 
           key={currentStep.id} 
@@ -142,7 +150,7 @@ export default function StepsPage({ params }: StepsPageProps) {
             locale={locale} 
           />
         </div>
-      </main>
+      </div>
 
       {/* Bottom Sticky Action Area */}
       <div className="fixed bottom-0 left-0 right-0 p-4 bg-background border-t border-border z-40 max-w-md mx-auto">

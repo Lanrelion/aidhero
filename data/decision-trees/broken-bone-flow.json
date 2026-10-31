@@ -1,0 +1,52 @@
+{
+  "id": "broken-bone-flow",
+  "incident_id": "broken-bone",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Is the bone breaking through the skin?",
+      "translations": {
+        "en": "Is the bone breaking through the skin?",
+        "ha": "[NEEDS_REVIEW] Is the bone breaking through the skin?",
+        "ig": "[NEEDS_REVIEW] Is the bone breaking through the skin?",
+        "yo": "[NEEDS_REVIEW] Is the bone breaking through the skin?",
+        "pcm": "[NEEDS_REVIEW] Is the bone breaking through the skin?"
+      },
+      "options": [
+        {
+          "label": "Yes — open fracture",
+          "translations": {
+            "en": "Yes — open fracture",
+            "ha": "[NEEDS_REVIEW] Yes — open fracture",
+            "ig": "[NEEDS_REVIEW] Yes — open fracture",
+            "yo": "[NEEDS_REVIEW] Yes — open fracture",
+            "pcm": "[NEEDS_REVIEW] Yes — open fracture"
+          },
+          "next_node_id": "open-fracture"
+        },
+        {
+          "label": "No — skin intact",
+          "translations": {
+            "en": "No — skin intact",
+            "ha": "[NEEDS_REVIEW] No — skin intact",
+            "ig": "[NEEDS_REVIEW] No — skin intact",
+            "yo": "[NEEDS_REVIEW] No — skin intact",
+            "pcm": "[NEEDS_REVIEW] No — skin intact"
+          },
+          "next_node_id": "closed-fracture"
+        }
+      ]
+    },
+    "open-fracture": {
+      "type": "instruction",
+      "steps_reference": "broken-bone",
+      "variant": "open"
+    },
+    "closed-fracture": {
+      "type": "instruction",
+      "steps_reference": "broken-bone",
+      "variant": "closed"
+    }
+  }
+}

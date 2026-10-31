@@ -1,0 +1,213 @@
+{
+  "id": "head-injury",
+  "slug": "head-injury",
+  "content_version": 1,
+  "content_version_date": "2026-08-18T12:31:24.429Z",
+  "category": "trauma",
+  "title": "Head Injury",
+  "title_translations": {
+    "en": "Head Injury",
+    "ha": "[NEEDS_REVIEW] Head Injury",
+    "ig": "[NEEDS_REVIEW] Head Injury",
+    "yo": "[NEEDS_REVIEW] Head Injury",
+    "pcm": "[NEEDS_REVIEW] Head Injury"
+  },
+  "aliases": [
+    "head injury",
+    "head wound",
+    "concussion",
+    "head trauma",
+    "fall head",
+    "head don knock",
+    "head cut",
+    "skull injury"
+  ],
+  "severity": "critical",
+  "immediate_warning": "Any loss of consciousness, vomiting, or confusion after a head injury requires immediate hospital attention.",
+  "immediate_warning_translations": {
+    "en": "Any loss of consciousness, vomiting, or confusion after a head injury requires immediate hospital attention.",
+    "ha": "[NEEDS_REVIEW] Any loss of consciousness, vomiting, or confusion after a head injury requires immediate hospital attention.",
+    "ig": "[NEEDS_REVIEW] Any loss of consciousness, vomiting, or confusion after a head injury requires immediate hospital attention.",
+    "yo": "[NEEDS_REVIEW] Any loss of consciousness, vomiting, or confusion after a head injury requires immediate hospital attention.",
+    "pcm": "[NEEDS_REVIEW] Any loss of consciousness, vomiting, or confusion after a head injury requires immediate hospital attention."
+  },
+  "description": "Head injuries can range from minor cuts to serious brain injuries. Always take head injuries seriously, especially in children.",
+  "description_translations": {
+    "en": "Head injuries can range from minor cuts to serious brain injuries. Always take head injuries seriously, especially in children.",
+    "ha": "[NEEDS_REVIEW] Head injuries can range from minor cuts to serious brain injuries. Always take head injuries seriously, especially in children.",
+    "ig": "[NEEDS_REVIEW] Head injuries can range from minor cuts to serious brain injuries. Always take head injuries seriously, especially in children.",
+    "yo": "[NEEDS_REVIEW] Head injuries can range from minor cuts to serious brain injuries. Always take head injuries seriously, especially in children.",
+    "pcm": "[NEEDS_REVIEW] Head injuries can range from minor cuts to serious brain injuries. Always take head injuries seriously, especially in children."
+  },
+  "signs": [
+    "Headache",
+    "Confusion or memory loss",
+    "Vomiting",
+    "Loss of consciousness",
+    "Unequal pupils",
+    "Clear fluid from nose or ears"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Headache",
+      "ha": "[NEEDS_REVIEW] Headache",
+      "ig": "[NEEDS_REVIEW] Headache",
+      "yo": "[NEEDS_REVIEW] Headache",
+      "pcm": "[NEEDS_REVIEW] Headache"
+    },
+    "1": {
+      "en": "Confusion or memory loss",
+      "ha": "[NEEDS_REVIEW] Confusion or memory loss",
+      "ig": "[NEEDS_REVIEW] Confusion or memory loss",
+      "yo": "[NEEDS_REVIEW] Confusion or memory loss",
+      "pcm": "[NEEDS_REVIEW] Confusion or memory loss"
+    },
+    "2": {
+      "en": "Vomiting",
+      "ha": "[NEEDS_REVIEW] Vomiting",
+      "ig": "[NEEDS_REVIEW] Vomiting",
+      "yo": "[NEEDS_REVIEW] Vomiting",
+      "pcm": "[NEEDS_REVIEW] Vomiting"
+    },
+    "3": {
+      "en": "Loss of consciousness",
+      "ha": "[NEEDS_REVIEW] Loss of consciousness",
+      "ig": "[NEEDS_REVIEW] Loss of consciousness",
+      "yo": "[NEEDS_REVIEW] Loss of consciousness",
+      "pcm": "[NEEDS_REVIEW] Loss of consciousness"
+    },
+    "4": {
+      "en": "Unequal pupils",
+      "ha": "[NEEDS_REVIEW] Unequal pupils",
+      "ig": "[NEEDS_REVIEW] Unequal pupils",
+      "yo": "[NEEDS_REVIEW] Unequal pupils",
+      "pcm": "[NEEDS_REVIEW] Unequal pupils"
+    },
+    "5": {
+      "en": "Clear fluid from nose or ears",
+      "ha": "[NEEDS_REVIEW] Clear fluid from nose or ears",
+      "ig": "[NEEDS_REVIEW] Clear fluid from nose or ears",
+      "yo": "[NEEDS_REVIEW] Clear fluid from nose or ears",
+      "pcm": "[NEEDS_REVIEW] Clear fluid from nose or ears"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Call 112 if unconscious, vomiting, confused, or if there is clear fluid from nose/ears.",
+      "instruction_translations": {
+        "en": "Call 112 if unconscious, vomiting, confused, or if there is clear fluid from nose/ears.",
+        "ha": "[NEEDS_REVIEW] Call 112 if unconscious, vomiting, confused, or if there is clear fluid from nose/ears.",
+        "ig": "[NEEDS_REVIEW] Call 112 if unconscious, vomiting, confused, or if there is clear fluid from nose/ears.",
+        "yo": "[NEEDS_REVIEW] Call 112 if unconscious, vomiting, confused, or if there is clear fluid from nose/ears.",
+        "pcm": "[NEEDS_REVIEW] Call 112 if unconscious, vomiting, confused, or if there is clear fluid from nose/ears."
+      },
+      "audio_path": "/audio/head-injury/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Keep the person still. Do not move them if a neck injury is possible.",
+      "instruction_translations": {
+        "en": "Keep the person still. Do not move them if a neck injury is possible.",
+        "ha": "[NEEDS_REVIEW] Keep the person still. Do not move them if a neck injury is possible.",
+        "ig": "[NEEDS_REVIEW] Keep the person still. Do not move them if a neck injury is possible.",
+        "yo": "[NEEDS_REVIEW] Keep the person still. Do not move them if a neck injury is possible.",
+        "pcm": "[NEEDS_REVIEW] Keep the person still. Do not move them if a neck injury is possible."
+      },
+      "audio_path": "/audio/head-injury/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "Apply gentle pressure to any scalp wound with a clean cloth to stop bleeding.",
+      "instruction_translations": {
+        "en": "Apply gentle pressure to any scalp wound with a clean cloth to stop bleeding.",
+        "ha": "[NEEDS_REVIEW] Apply gentle pressure to any scalp wound with a clean cloth to stop bleeding.",
+        "ig": "[NEEDS_REVIEW] Apply gentle pressure to any scalp wound with a clean cloth to stop bleeding.",
+        "yo": "[NEEDS_REVIEW] Apply gentle pressure to any scalp wound with a clean cloth to stop bleeding.",
+        "pcm": "[NEEDS_REVIEW] Apply gentle pressure to any scalp wound with a clean cloth to stop bleeding."
+      },
+      "audio_path": "/audio/head-injury/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Do not remove any object embedded in the head.",
+      "instruction_translations": {
+        "en": "Do not remove any object embedded in the head.",
+        "ha": "[NEEDS_REVIEW] Do not remove any object embedded in the head.",
+        "ig": "[NEEDS_REVIEW] Do not remove any object embedded in the head.",
+        "yo": "[NEEDS_REVIEW] Do not remove any object embedded in the head.",
+        "pcm": "[NEEDS_REVIEW] Do not remove any object embedded in the head."
+      },
+      "audio_path": "/audio/head-injury/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "Monitor consciousness — speak to them regularly and check their responses.",
+      "instruction_translations": {
+        "en": "Monitor consciousness — speak to them regularly and check their responses.",
+        "ha": "[NEEDS_REVIEW] Monitor consciousness — speak to them regularly and check their responses.",
+        "ig": "[NEEDS_REVIEW] Monitor consciousness — speak to them regularly and check their responses.",
+        "yo": "[NEEDS_REVIEW] Monitor consciousness — speak to them regularly and check their responses.",
+        "pcm": "[NEEDS_REVIEW] Monitor consciousness — speak to them regularly and check their responses."
+      },
+      "audio_path": "/audio/head-injury/{lang}/step-5.mp3"
+    },
+    {
+      "id": 6,
+      "instruction": "If unconscious but breathing, place in recovery position on their side.",
+      "instruction_translations": {
+        "en": "If unconscious but breathing, place in recovery position on their side.",
+        "ha": "[NEEDS_REVIEW] If unconscious but breathing, place in recovery position on their side.",
+        "ig": "[NEEDS_REVIEW] If unconscious but breathing, place in recovery position on their side.",
+        "yo": "[NEEDS_REVIEW] If unconscious but breathing, place in recovery position on their side.",
+        "pcm": "[NEEDS_REVIEW] If unconscious but breathing, place in recovery position on their side."
+      },
+      "audio_path": "/audio/head-injury/{lang}/step-6.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not give aspirin (increases bleeding).",
+    "Do not leave a head-injured person alone for 24 hours.",
+    "Do not allow them to sleep unless assessed by a doctor."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not give aspirin (increases bleeding).",
+      "ha": "[NEEDS_REVIEW] Do not give aspirin (increases bleeding).",
+      "ig": "[NEEDS_REVIEW] Do not give aspirin (increases bleeding).",
+      "yo": "[NEEDS_REVIEW] Do not give aspirin (increases bleeding).",
+      "pcm": "[NEEDS_REVIEW] Do not give aspirin (increases bleeding)."
+    },
+    "1": {
+      "en": "Do not leave a head-injured person alone for 24 hours.",
+      "ha": "[NEEDS_REVIEW] Do not leave a head-injured person alone for 24 hours.",
+      "ig": "[NEEDS_REVIEW] Do not leave a head-injured person alone for 24 hours.",
+      "yo": "[NEEDS_REVIEW] Do not leave a head-injured person alone for 24 hours.",
+      "pcm": "[NEEDS_REVIEW] Do not leave a head-injured person alone for 24 hours."
+    },
+    "2": {
+      "en": "Do not allow them to sleep unless assessed by a doctor.",
+      "ha": "[NEEDS_REVIEW] Do not allow them to sleep unless assessed by a doctor.",
+      "ig": "[NEEDS_REVIEW] Do not allow them to sleep unless assessed by a doctor.",
+      "yo": "[NEEDS_REVIEW] Do not allow them to sleep unless assessed by a doctor.",
+      "pcm": "[NEEDS_REVIEW] Do not allow them to sleep unless assessed by a doctor."
+    }
+  },
+  "hospital_threshold": "Always required. Any loss of consciousness must be evaluated immediately.",
+  "hospital_threshold_translations": {
+    "en": "Always required. Any loss of consciousness must be evaluated immediately.",
+    "ha": "[NEEDS_REVIEW] Always required. Any loss of consciousness must be evaluated immediately.",
+    "ig": "[NEEDS_REVIEW] Always required. Any loss of consciousness must be evaluated immediately.",
+    "yo": "[NEEDS_REVIEW] Always required. Any loss of consciousness must be evaluated immediately.",
+    "pcm": "[NEEDS_REVIEW] Always required. Any loss of consciousness must be evaluated immediately."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-08-18T12:31:24.428Z",
+    "medical_references": [
+      "WHO First Aid",
+      "Nigerian Emergency Medicine Association Guidelines"
+    ]
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "id": "fainting-flow",
+  "incident_id": "fainting",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Has the person regained consciousness?",
+      "translations": {
+        "en": "Has the person regained consciousness?",
+        "ha": "[NEEDS_REVIEW] Has the person regained consciousness?",
+        "ig": "[NEEDS_REVIEW] Has the person regained consciousness?",
+        "yo": "[NEEDS_REVIEW] Has the person regained consciousness?",
+        "pcm": "[NEEDS_REVIEW] Has the person regained consciousness?"
+      },
+      "options": [
+        {
+          "label": "Yes — within 1 minute",
+          "translations": {
+            "en": "Yes — within 1 minute",
+            "ha": "[NEEDS_REVIEW] Yes — within 1 minute",
+            "ig": "[NEEDS_REVIEW] Yes — within 1 minute",
+            "yo": "[NEEDS_REVIEW] Yes — within 1 minute",
+            "pcm": "[NEEDS_REVIEW] Yes — within 1 minute"
+          },
+          "next_node_id": "recovery-steps"
+        },
+        {
+          "label": "No — still unconscious",
+          "translations": {
+            "en": "No — still unconscious",
+            "ha": "[NEEDS_REVIEW] No — still unconscious",
+            "ig": "[NEEDS_REVIEW] No — still unconscious",
+            "yo": "[NEEDS_REVIEW] No — still unconscious",
+            "pcm": "[NEEDS_REVIEW] No — still unconscious"
+          },
+          "next_node_id": "emergency-steps"
+        }
+      ]
+    },
+    "recovery-steps": {
+      "type": "instruction",
+      "steps_reference": "fainting",
+      "variant": "recovery"
+    },
+    "emergency-steps": {
+      "type": "instruction",
+      "steps_reference": "fainting",
+      "variant": "emergency"
+    }
+  }
+}

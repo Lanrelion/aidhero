@@ -6,8 +6,10 @@ import { useTranslations, useLocale } from 'next-intl';
 import { TTSManager } from '@/lib/tts/TTSManager';
 import { useRescueStore } from '@/store/useRescueStore';
 import { useOfflineStore } from '@/store/useOfflineStore';
+import { useLanguageStore } from '@/store/useLanguageStore';
 import { getPrimaryEmergencyNumber } from '@/lib/data/emergencyNumbers';
 import { WordHighlight } from '@/components/tts/WordHighlight';
+import { WaveformVisualizer } from '@/components/rescue/WaveformVisualizer';
 import { getSetting } from '@/lib/storage/settings';
 import type { Step } from '@/types/scenario';
 import type { Locale } from '@/types';
@@ -19,18 +21,55 @@ interface VoiceModeProps {
 }
 
 const COMMANDS = {
-  next:      ['next', 'next step', 'forward'],
-  back:      ['back', 'previous', 'go back'],
-  restart:   ['restart', 'start over', 'beginning', 'from the start', 'first step'],
-  repeat:    ['repeat', 'again', 'say again'],
-  emergency: ['call emergency', 'call ambulance'],
+  next: [
+    // English
+    'next', 'next step', 'continue', 'go on', 'forward',
+    // Pidgin
+    'carry go', 'go front', 'next one', 'oya next', 'move',
+    // Yoruba
+    'tẹsiwaju', 'lo siwaju',
+    // Hausa
+    'ci gaba', 'gaba',
+    // Igbo
+    'gaa n\'ihu', 'ọ dị mma',
+  ],
+  back: [
+    'back', 'previous', 'go back', 'before',
+    'go back', 'return', 'oya back',
+    'pada sẹhin',
+    'koma baya',
+    'laghachi azụ',
+  ],
+  repeat: [
+    'repeat', 'again', 'say again', 'one more time',
+    'repeat am', 'abeg repeat', 'say am again', 'do am again',
+    'sọ lẹẹkan si',
+    'sake da shi',
+    'melite ya',
+  ],
+  restart: [
+    'restart', 'start over', 'beginning', 'from the start',
+    'start from beginning', 'start afresh',
+    'bẹrẹ lati ibẹrẹ',
+    'fara daga farko',
+    'bido site na mbido',
+  ],
+  emergency: [
+    'call emergency', 'call 199', 'call help', 'call ambulance',
+    'call doctor', 'call 911', 'call for help',
+    'pe ẹ̀gbọn', 'pe ìrànwọ́',
+    'kira agajin gaggawa',
+    'kpọọ ọ nyeafọ',
+  ],
 };
 
-function matchCommand(transcript: string): keyof typeof COMMANDS | null {
+type CommandType = keyof typeof COMMANDS;
+
+function matchCommand(transcript: string): CommandType | null {
   const lower = transcript.toLowerCase().trim();
-  for (const [cmd, variants] of Object.entries(COMMANDS)) {
-    if (variants.some(v => lower.includes(v))) {
-      return cmd as keyof typeof COMMANDS;
+  for (const [command, phrases] of Object.entries(COMMANDS)) {
+    if (phrases.some(phrase => lower.includes(phrase))) {
+      return command as CommandType;
     }
   }
   return null;
@@ -38,43 +77,47 @@ function matchCommand(transcript: string): keyof typeof COMMANDS | null {
 
 export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
   const t = useTranslations();
-  const locale = useLocale() as Locale;
+  const routeLocale = useLocale() as Locale;
+  const { language } = useLanguageStore();
+  const currentLang = (language && language !== 'en') ? language : (routeLocale || language);
   const { currentStepIndex, advanceStep, jumpToStep } = useRescueStore();
-  const { detectedState, isSpeechRecognitionAvailable } = useOfflineStore();
+  const { detectedState } = useOfflineStore();
   const primaryNumber = getPrimaryEmergencyNumber(detectedState);
 
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
-  const [voiceCommandsActive, setVoiceCommandsActive] = useState(false);
+  const [voiceCommandsAvailable, setVoiceCommandsAvailable] = useState(false);
   const [isListening, setIsListening] = useState(false);
-  
+
   // Auto-advance Timer State
-  const [stepDurationPref, setStepDurationPref] = useState<number | 'manual'>('manual');
+  const [stepDurationPref, setStepDurationPref] = useState<number | 'manual'>(30);
   const [timeRemaining, setTimeRemaining] = useState<number | null>(null);
   const [isTimerActive, setIsTimerActive] = useState(false);
 
-  // ─── Imperative refs ───
+  // ─── Imperative session and lifecycle refs ───
   const activeRef = useRef(true);
   const pausedRef = useRef(false);
   const isSpeakingRef = useRef(false);
   const loopIndexRef = useRef(currentStepIndex);
-  
-  const recognitionBlockedRef = useRef(!isSpeechRecognitionAvailable);
-  const activeRecognitionRef = useRef<any>(null);
-  const isRecognitionRunningRef = useRef(false);
   const sessionRef = useRef(0);
-  
-  // Expose to loop
+
+  // Resolver for pending advance promise
+  const advanceResolverRef = useRef<((advanced: boolean) => void) | null>(null);
+
+  // Control handlers for speech recognition and timer
   const startListeningRef = useRef<(() => void) | null>(null);
   const stopListeningRef = useRef<(() => void) | null>(null);
+  const shouldListenRef = useRef(false);
   const timerTickRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
   const safeIndex = (idx: number) => Math.min(Math.max(0, idx), steps.length - 1);
 
-  // Load preferences
+  // Load preferences from settings storage
   useEffect(() => {
     getSetting<number | 'manual'>('voice-mode-step-duration', 30).then(val => {
-      setStepDurationPref(val);
+      if (val !== undefined && val !== null) {
+        setStepDurationPref(val);
+      }
     });
   }, []);
 
@@ -85,93 +128,142 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
     setIsTimerActive(false);
   }, []);
 
-  // ─── Core loop ───
+  // ─── waitForAdvance Promise (Awaits Voice Command, UI Next, or Step Duration Countdown) ───
+  const waitForAdvance = useCallback((mySession: number): Promise<boolean> => {
+    return new Promise<boolean>((resolve) => {
+      let timerId: ReturnType<typeof setInterval> | null = null;
+      let micTimerId: ReturnType<typeof setTimeout> | null = null;
+      let resolved = false;
+
+      const cleanup = () => {
+        if (timerId) clearInterval(timerId);
+        if (micTimerId) clearTimeout(micTimerId);
+        timerTickRef.current = null;
+        advanceResolverRef.current = null;
+        stopListeningRef.current?.();
+        setTimeRemaining(null);
+        setIsTimerActive(false);
+      };
+
+      const finish = (result: boolean) => {
+        if (resolved) return;
+        resolved = true;
+        cleanup();
+        if (sessionRef.current === mySession && activeRef.current && !pausedRef.current) {
+          resolve(result);
+        } else {
+          resolve(false);
+        }
+      };
+
+      advanceResolverRef.current = finish;
+
+      // Check if session became stale before waiting
+      if (!activeRef.current || sessionRef.current !== mySession || pausedRef.current) {
+        finish(false);
+        return;
+      }
+
+      const isOnline = typeof navigator !== 'undefined' && navigator.onLine;
+
+      // 1. Pipeline flush: Wait exactly 600ms after TTS ends before opening mic (CLAUDE.md Rule 13)
+      if (isOnline) {
+        micTimerId = setTimeout(() => {
+          if (!activeRef.current || sessionRef.current !== mySession || pausedRef.current) {
+            finish(false);
+            return;
+          }
+          startListeningRef.current?.();
+        }, 600);
+      }
+
+      // 2. Countdown Timer based on user's preference (e.g. 15s / 30s / 60s)
+      if (stepDurationPref !== 'manual') {
+        let remaining = typeof stepDurationPref === 'number' ? stepDurationPref : 30;
+        setTimeRemaining(remaining);
+        setIsTimerActive(true);
+
+        timerId = setInterval(() => {
+          if (!activeRef.current || sessionRef.current !== mySession || pausedRef.current) {
+            finish(false);
+            return;
+          }
+          remaining -= 1;
+          setTimeRemaining(remaining);
+          if (remaining <= 0) {
+            // Timer reached 0 -> auto-advance!
+            finish(true);
+          }
+        }, 1000);
+        timerTickRef.current = timerId;
+      }
+    });
+  }, [stepDurationPref]);
+
+  // ─── Core Loop (TTS -> Mutual Exclusion (600ms) -> waitForAdvance -> Advance) ───
   const runLoop = useCallback(async (fromIndex: number) => {
-    const mySession = ++sessionRef.current; // claim this session
+    const mySession = ++sessionRef.current; // Claim this session counter
     let idx = safeIndex(fromIndex);
     loopIndexRef.current = idx;
 
-    while (activeRef.current && sessionRef.current === mySession) {
-      if (pausedRef.current) break;
+    while (idx < steps.length) {
+      if (!activeRef.current || sessionRef.current !== mySession || pausedRef.current) return;
 
       const step = steps[idx];
       if (!step) break;
 
-      const text = step.instruction_translations?.[locale] || step.instruction;
+      const text = step.instruction_translations?.[currentLang] || step.instruction;
 
-      // Stop mic before TTS plays
+      // 1. Mutual exclusion: Close mic BEFORE TTS starts
       stopListeningRef.current?.();
       clearAutoAdvanceTimer();
-      
+
       setIsSpeaking(true);
       isSpeakingRef.current = true;
 
-      await TTSManager.speak(scenarioId, step.id, text, locale);
-      
+      // Play step audio / synthesis
+      await TTSManager.speak(scenarioId, step.id, text, currentLang);
+
       setIsSpeaking(false);
       isSpeakingRef.current = false;
 
-      // Check session is still ours after the async await
-      if (!activeRef.current || sessionRef.current !== mySession || pausedRef.current) break;
+      // Check session validity after async speak
+      if (!activeRef.current || sessionRef.current !== mySession || pausedRef.current) return;
 
       if (idx >= steps.length - 1) {
-        // Stop at the last step
-        clearAutoAdvanceTimer();
-        break; 
+        // Last step reached: keep mic listening for restart/repeat/emergency, but do not auto-advance
+        if (typeof navigator !== 'undefined' && navigator.onLine) {
+          setTimeout(() => {
+            if (activeRef.current && sessionRef.current === mySession && !pausedRef.current) {
+              startListeningRef.current?.();
+            }
+          }, 600);
+        }
+        break;
       }
 
-      // If online and speech recognition is available, use voice commands mode (1.5s gap, no UI timer)
-      if (isSpeechRecognitionAvailable && !recognitionBlockedRef.current) {
-        startListeningRef.current?.();
-        await new Promise<void>(r => setTimeout(r, 1500));
-        
-        if (!activeRef.current || sessionRef.current !== mySession || pausedRef.current) break;
-        
-        stopListeningRef.current?.();
-        advanceStep();
-        idx += 1;
-        loopIndexRef.current = idx;
-      } else {
-        // Offline or voice unavailable: Timed auto-advance mode
-        if (stepDurationPref === 'manual') {
-          break; // Stop loop, user must tap Next manually
-        } else {
-          // Start countdown
-          let remaining = stepDurationPref as number;
-          setTimeRemaining(remaining);
-          setIsTimerActive(true);
-          
-          await new Promise<void>((resolve) => {
-            timerTickRef.current = setInterval(() => {
-              if (pausedRef.current || sessionRef.current !== mySession || !activeRef.current) {
-                clearAutoAdvanceTimer();
-                resolve();
-                return;
-              }
-              remaining -= 1;
-              setTimeRemaining(remaining);
-              if (remaining <= 0) {
-                clearAutoAdvanceTimer();
-                resolve();
-              }
-            }, 1000);
-          });
-          
-          if (!activeRef.current || sessionRef.current !== mySession || pausedRef.current) break;
-          
-          advanceStep();
-          idx += 1;
-          loopIndexRef.current = idx;
-        }
+      // 2. Wait for user action (voice command, Next button) OR user's configured duration timer
+      const advanced = await waitForAdvance(mySession);
+      if (!advanced || sessionRef.current !== mySession || !activeRef.current || pausedRef.current) {
+        return; // Session invalidated or cancelled
       }
+
+      // Step successfully advanced
+      advanceStep();
+      idx += 1;
+      loopIndexRef.current = idx;
     }
-  }, [scenarioId, steps, locale, advanceStep, isSpeechRecognitionAvailable, stepDurationPref, clearAutoAdvanceTimer]);
+  }, [scenarioId, steps, currentLang, advanceStep, clearAutoAdvanceTimer, waitForAdvance]);
 
   // ─── Restart loop from a new index ───
   const restartFrom = useCallback((newIdx: number) => {
     sessionRef.current++;
+    if (advanceResolverRef.current) {
+      advanceResolverRef.current(false);
+    }
     clearAutoAdvanceTimer();
     TTSManager.stop();
+    stopListeningRef.current?.();
     setTimeout(() => {
       if (activeRef.current && !pausedRef.current) {
         runLoop(safeIndex(newIdx));
@@ -179,122 +271,164 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
     }, 80);
   }, [runLoop, clearAutoAdvanceTimer]);
 
-  // ─── Mount: start loop once ───
+  // ─── Mount: Start Loop ───
   useEffect(() => {
     activeRef.current = true;
-    runLoop(currentStepIndex);
+    setTimeout(() => {
+      runLoop(currentStepIndex);
+    }, 0);
 
     return () => {
       activeRef.current = false;
       sessionRef.current++;
+      if (advanceResolverRef.current) {
+        advanceResolverRef.current(false);
+      }
       clearAutoAdvanceTimer();
       TTSManager.stop();
       stopListeningRef.current?.();
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // ─── Speech recognition setup ───
+  // ─── Single isolated SpeechRecognition effect (100% Client-Side Guarded) ───
   useEffect(() => {
     if (typeof window === 'undefined') return;
-    const SR = (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-    if (!SR || !isSpeechRecognitionAvailable) {
-      setVoiceCommandsActive(false);
+
+    console.log('SR: checking support');
+
+    const SpeechRecognitionAPI =
+      (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
+
+    const isOnline = typeof navigator !== 'undefined' && navigator.onLine;
+
+    if (!SpeechRecognitionAPI || !isOnline) {
+      console.log('SR: unavailable (supported:', !!SpeechRecognitionAPI, 'online:', isOnline, ')');
+      setVoiceCommandsAvailable(false);
       return;
     }
 
+    console.log('SR: initialising');
+    let recognition: any = null;
+    let isRunning = false;
+
     try {
-      const recognition = new SR();
-      activeRecognitionRef.current = recognition;
-      recognition.lang = 'en-US';
+      recognition = new SpeechRecognitionAPI();
+      recognition.lang = 'en-US'; // Rule 13: en-US required for Chrome SR
       recognition.continuous = false;
       recognition.interimResults = false;
       recognition.maxAlternatives = 3;
 
       recognition.onstart = () => {
-        isRecognitionRunningRef.current = true;
+        isRunning = true;
         setIsListening(true);
+        console.log('SR: started');
       };
 
       recognition.onresult = (event: any) => {
+        // Do not process commands if TTS is currently speaking
         if (isSpeakingRef.current) return;
 
-        for (let i = 0; i < event.results.length; i++) {
-          for (let j = 0; j < event.results[i].length; j++) {
-            const cmd = matchCommand(event.results[i][j].transcript);
-            if (!cmd) continue;
+        const results = event.results;
+        if (!results || results.length === 0) return;
 
-            if (cmd === 'next' && loopIndexRef.current < steps.length - 1) {
-              const nextIdx = loopIndexRef.current + 1;
-              jumpToStep(nextIdx);
-              restartFrom(nextIdx);
-            } else if (cmd === 'back' && loopIndexRef.current > 0) {
-              const prevIdx = loopIndexRef.current - 1;
-              jumpToStep(prevIdx);
-              restartFrom(prevIdx);
-            } else if (cmd === 'restart') {
-              jumpToStep(0);
-              restartFrom(0);
-            } else if (cmd === 'repeat') {
-              restartFrom(loopIndexRef.current);
-            } else if (cmd === 'emergency') {
-              window.location.href = `tel:${primaryNumber}`;
-            }
-            return;
+        const transcript = results[results.length - 1][0]?.transcript || '';
+        console.log(`SR: result received: ${transcript}`);
+
+        const cmd = matchCommand(transcript);
+        if (!cmd) return;
+
+        console.log(`SR: matched command: ${cmd}`);
+
+        if (cmd === 'next') {
+          if (advanceResolverRef.current) {
+            advanceResolverRef.current(true);
+          } else if (loopIndexRef.current < steps.length - 1) {
+            const nextIdx = loopIndexRef.current + 1;
+            jumpToStep(nextIdx);
+            restartFrom(nextIdx);
           }
+        } else if (cmd === 'back' && loopIndexRef.current > 0) {
+          const prevIdx = loopIndexRef.current - 1;
+          jumpToStep(prevIdx);
+          restartFrom(prevIdx);
+        } else if (cmd === 'restart') {
+          jumpToStep(0);
+          restartFrom(0);
+        } else if (cmd === 'repeat') {
+          restartFrom(loopIndexRef.current);
+        } else if (cmd === 'emergency') {
+          window.location.href = `tel:${primaryNumber}`;
         }
       };
 
       recognition.onerror = (e: any) => {
-        isRecognitionRunningRef.current = false;
+        isRunning = false;
         setIsListening(false);
+        console.warn('SR: error', e.error);
         if (e.error === 'not-allowed' || e.error === 'service-not-allowed') {
-          recognitionBlockedRef.current = true;
-          setVoiceCommandsActive(false);
+          setVoiceCommandsAvailable(false);
+          startListeningRef.current = null;
         }
       };
 
       recognition.onend = () => {
-        isRecognitionRunningRef.current = false;
-        setIsListening(false);
+        isRunning = false;
+        if (shouldListenRef.current && activeRef.current && !isSpeakingRef.current && !pausedRef.current) {
+          setTimeout(() => {
+            if (shouldListenRef.current && activeRef.current && !isSpeakingRef.current && !pausedRef.current) {
+              try {
+                recognition.start();
+              } catch {}
+            }
+          }, 200);
+        } else {
+          setIsListening(false);
+        }
       };
 
-      // Exact fix requested: initialize directly in useEffect to capture user gesture
-      recognition.start();
-      console.log('SpeechRecognition initialised');
-      setVoiceCommandsActive(true);
-      
-    } catch {
-      setVoiceCommandsActive(false);
+      setVoiceCommandsAvailable(true);
+
+      const startListening = () => {
+        if (!activeRef.current || isSpeakingRef.current || isRunning || !recognition) return;
+        shouldListenRef.current = true;
+        try {
+          recognition.start();
+        } catch (e: any) {
+          console.warn('SR: start error', e);
+        }
+      };
+
+      const stopListening = () => {
+        shouldListenRef.current = false;
+        isRunning = false;
+        setIsListening(false);
+        if (recognition) {
+          try {
+            recognition.abort();
+          } catch {}
+        }
+      };
+
+      startListeningRef.current = startListening;
+      stopListeningRef.current = stopListening;
+
+    } catch (err) {
+      console.error('SR: failed to initialise', err);
+      setVoiceCommandsAvailable(false);
     }
 
-    const stopListening = () => {
-      if (!isRecognitionRunningRef.current || !activeRecognitionRef.current) return;
-      isRecognitionRunningRef.current = false;
-      try { activeRecognitionRef.current.abort(); } catch {}
-      setIsListening(false);
-    };
-
-    const startListening = () => {
-      if (recognitionBlockedRef.current || !activeRef.current) return;
-      if (isRecognitionRunningRef.current || !activeRecognitionRef.current) return;
-      try {
-        activeRecognitionRef.current.start();
-        console.log('SpeechRecognition started for step gap');
-      } catch {}
-    };
-
-    startListeningRef.current = startListening;
-    stopListeningRef.current = stopListening;
-
     return () => {
-      recognitionBlockedRef.current = true;
       startListeningRef.current = null;
       stopListeningRef.current = null;
-      stopListening();
+      if (recognition) {
+        try {
+          recognition.abort();
+        } catch {}
+      }
     };
-  }, [isSpeechRecognitionAvailable, steps.length, primaryNumber, jumpToStep, restartFrom]);
+  }, [steps.length, primaryNumber, jumpToStep, restartFrom]);
 
-  // ─── Controls ───
+  // ─── User Controls ───
   const handlePauseResume = (e?: React.MouseEvent) => {
     e?.stopPropagation();
     if (isPaused) {
@@ -305,6 +439,9 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
       pausedRef.current = true;
       setIsPaused(true);
       sessionRef.current++;
+      if (advanceResolverRef.current) {
+        advanceResolverRef.current(false);
+      }
       clearAutoAdvanceTimer();
       TTSManager.stop();
       stopListeningRef.current?.();
@@ -319,7 +456,9 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
 
   const handleNext = (e?: React.MouseEvent) => {
     e?.stopPropagation();
-    if (displayIndex < steps.length - 1) {
+    if (advanceResolverRef.current) {
+      advanceResolverRef.current(true);
+    } else if (displayIndex < steps.length - 1) {
       const nextIdx = displayIndex + 1;
       jumpToStep(nextIdx);
       restartFrom(nextIdx);
@@ -344,13 +483,15 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
     e?.stopPropagation();
     activeRef.current = false;
     sessionRef.current++;
+    if (advanceResolverRef.current) {
+      advanceResolverRef.current(false);
+    }
     clearAutoAdvanceTimer();
     TTSManager.stop();
     stopListeningRef.current?.();
     onClose();
   };
-  
-  // Single tap anywhere on the overlay pauses/resumes
+
   const handleOverlayClick = () => {
     handlePauseResume();
   };
@@ -358,14 +499,14 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
   const displayIndex = safeIndex(currentStepIndex);
   const currentStep = steps[displayIndex];
   if (!currentStep) return null;
-  const instruction = currentStep.instruction_translations?.[locale] || currentStep.instruction;
+  const instruction = currentStep.instruction_translations?.[currentLang] || currentStep.instruction;
 
-  // Calculate SVG ring progress
+  // SVG ring progress calculations
   const timerMax = typeof stepDurationPref === 'number' ? stepDurationPref : 30;
   const timerPct = timeRemaining !== null ? (timeRemaining / timerMax) * 100 : 0;
   const dashArray = 2 * Math.PI * 46; // r=46
   const dashOffset = dashArray * ((100 - timerPct) / 100);
-  const showCountdown = timeRemaining !== null && (!isSpeechRecognitionAvailable || recognitionBlockedRef.current) && stepDurationPref !== 'manual';
+  const showCountdown = timeRemaining !== null && stepDurationPref !== 'manual';
 
   return (
     <div
@@ -455,31 +596,17 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
           </div>
         </div>
         
-        {/* Secondary Voice Hint */}
-        <div className="h-10 flex items-center justify-center">
-          {voiceCommandsActive ? (
-            <div className="flex flex-col items-center gap-1.5 animate-in fade-in zoom-in duration-300">
-              <div className="flex items-center gap-2">
-                <span
-                  className={`w-2.5 h-2.5 rounded-full ${
-                    isListening && !isSpeaking
-                      ? 'bg-emergency motion-safe:animate-pulse'
-                      : 'bg-white/30'
-                  }`}
-                />
-                <span className="text-white/50 text-xs font-medium uppercase tracking-wider">
-                  {isListening && !isSpeaking ? 'Listening…' : 'Mic ready'}
-                </span>
-              </div>
-              <p className="text-white/40 text-xs">
-                {t('rescue.voiceHint') || 'Say "next", "back", or "repeat"'}
-              </p>
-            </div>
+        {/* Voice Status & Visual Indicators */}
+        <div className="flex flex-col items-center justify-center gap-3">
+          <WaveformVisualizer isActive={isSpeaking || isListening} />
+          {voiceCommandsAvailable ? (
+            <p className="text-white/60 text-[16px] font-ui text-center">
+              {t('voiceMode.sayCommand')}
+            </p>
           ) : (
-            <div className="flex items-center gap-2 text-white/30 text-xs font-medium">
-              <MicOff className="w-4 h-4" />
-              <span>{t('rescue.voiceUnavailable') || 'Voice commands unavailable — use buttons'}</span>
-            </div>
+            <p className="text-white/60 text-[16px] font-ui text-center">
+              {t('voiceMode.offlineHint')}
+            </p>
           )}
         </div>
       </div>

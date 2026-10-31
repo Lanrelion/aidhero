@@ -5,11 +5,17 @@ import { cn } from "@/lib/utils";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations } from 'next-intl/server';
 import { notFound } from 'next/navigation';
-import { locales, Locale } from "../../../i18n/config";
+import { locales, Locale } from '@/i18n/config';
 import { BottomNav } from '@/components/layout/BottomNav';
 import { LanguageToggle } from '@/components/layout/LanguageToggle';
 import { OfflineBadge } from '@/components/layout/OfflineBadge';
 import { ContentUpdateBanner } from '@/components/layout/ContentUpdateBanner';
+import { ClientInitializer } from '@/components/layout/ClientInitializer';
+import { ClientOnboardingGate } from '@/components/onboarding/ClientOnboardingGate';
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }));
+}
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -17,7 +23,7 @@ const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 const syne = Syne({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
+  weight: ["700", "800"],
   display: "swap",
 });
 
@@ -101,15 +107,25 @@ export default async function RootLayout({
   }
 
   const messages = await getMessages();
+  const t = await getTranslations({ locale });
 
   return (
     <html
       lang={locale}
+      suppressHydrationWarning
       className={cn("h-full", "antialiased", syne.variable, dmSans.variable, syneMono.variable, "font-sans", geist.variable)}
     >
       {/* DESIGN.md Â§10 ARIA landmarks */}
             <body suppressHydrationWarning className="min-h-[100dvh] flex flex-col bg-[--color-surface] text-[--color-text-primary] font-body pb-16">
+        <a 
+          href="#main-content" 
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-surface focus:text-action focus:font-bold focus:shadow-float rounded-md"
+        >
+          {t('accessibility.skipToMain')}
+        </a>
         <NextIntlClientProvider messages={messages}>
+          <ClientInitializer />
+          <ClientOnboardingGate />
           <ContentUpdateBanner />
           <header className="flex items-center justify-between px-4 h-16 border-b border-border shrink-0">
             <h1 className="text-h3 font-bold text-text-primary font-display">AidHero</h1>
@@ -118,7 +134,7 @@ export default async function RootLayout({
               <LanguageToggle />
             </div>
           </header>
-          <main className="flex-1 overflow-x-hidden">
+          <main id="main-content" className="flex-1 overflow-x-hidden">
             {children}
           </main>
           <BottomNav />

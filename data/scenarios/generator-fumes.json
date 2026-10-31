@@ -1,0 +1,213 @@
+{
+  "id": "generator-fumes",
+  "slug": "generator-fumes",
+  "content_version": 1,
+  "content_version_date": "2026-08-18T12:31:24.429Z",
+  "category": "environmental",
+  "title": "Generator Fumes (Carbon Monoxide Poisoning)",
+  "title_translations": {
+    "en": "Generator Fumes (Carbon Monoxide Poisoning)",
+    "ha": "[NEEDS_REVIEW] Generator Fumes (Carbon Monoxide Poisoning)",
+    "ig": "[NEEDS_REVIEW] Generator Fumes (Carbon Monoxide Poisoning)",
+    "yo": "[NEEDS_REVIEW] Generator Fumes (Carbon Monoxide Poisoning)",
+    "pcm": "[NEEDS_REVIEW] Generator Fumes (Carbon Monoxide Poisoning)"
+  },
+  "aliases": [
+    "generator fumes",
+    "carbon monoxide",
+    "CO poisoning",
+    "gen poisoning",
+    "generator poison",
+    "fumes",
+    "generator smoke",
+    "gen don affect person"
+  ],
+  "severity": "critical",
+  "immediate_warning": "Move the person to fresh air immediately. Call 112. Do not re-enter the building alone.",
+  "immediate_warning_translations": {
+    "en": "Move the person to fresh air immediately. Call 112. Do not re-enter the building alone.",
+    "ha": "[NEEDS_REVIEW] Move the person to fresh air immediately. Call 112. Do not re-enter the building alone.",
+    "ig": "[NEEDS_REVIEW] Move the person to fresh air immediately. Call 112. Do not re-enter the building alone.",
+    "yo": "[NEEDS_REVIEW] Move the person to fresh air immediately. Call 112. Do not re-enter the building alone.",
+    "pcm": "[NEEDS_REVIEW] Move the person to fresh air immediately. Call 112. Do not re-enter the building alone."
+  },
+  "description": "Carbon monoxide from generators is colourless and odourless. Running a generator indoors or in poorly ventilated spaces can kill within minutes.",
+  "description_translations": {
+    "en": "Carbon monoxide from generators is colourless and odourless. Running a generator indoors or in poorly ventilated spaces can kill within minutes.",
+    "ha": "[NEEDS_REVIEW] Carbon monoxide from generators is colourless and odourless. Running a generator indoors or in poorly ventilated spaces can kill within minutes.",
+    "ig": "[NEEDS_REVIEW] Carbon monoxide from generators is colourless and odourless. Running a generator indoors or in poorly ventilated spaces can kill within minutes.",
+    "yo": "[NEEDS_REVIEW] Carbon monoxide from generators is colourless and odourless. Running a generator indoors or in poorly ventilated spaces can kill within minutes.",
+    "pcm": "[NEEDS_REVIEW] Carbon monoxide from generators is colourless and odourless. Running a generator indoors or in poorly ventilated spaces can kill within minutes."
+  },
+  "signs": [
+    "Headache",
+    "Dizziness or confusion",
+    "Nausea or vomiting",
+    "Shortness of breath",
+    "Unconsciousness",
+    "Cherry-red skin (late sign)"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Headache",
+      "ha": "[NEEDS_REVIEW] Headache",
+      "ig": "[NEEDS_REVIEW] Headache",
+      "yo": "[NEEDS_REVIEW] Headache",
+      "pcm": "[NEEDS_REVIEW] Headache"
+    },
+    "1": {
+      "en": "Dizziness or confusion",
+      "ha": "[NEEDS_REVIEW] Dizziness or confusion",
+      "ig": "[NEEDS_REVIEW] Dizziness or confusion",
+      "yo": "[NEEDS_REVIEW] Dizziness or confusion",
+      "pcm": "[NEEDS_REVIEW] Dizziness or confusion"
+    },
+    "2": {
+      "en": "Nausea or vomiting",
+      "ha": "[NEEDS_REVIEW] Nausea or vomiting",
+      "ig": "[NEEDS_REVIEW] Nausea or vomiting",
+      "yo": "[NEEDS_REVIEW] Nausea or vomiting",
+      "pcm": "[NEEDS_REVIEW] Nausea or vomiting"
+    },
+    "3": {
+      "en": "Shortness of breath",
+      "ha": "[NEEDS_REVIEW] Shortness of breath",
+      "ig": "[NEEDS_REVIEW] Shortness of breath",
+      "yo": "[NEEDS_REVIEW] Shortness of breath",
+      "pcm": "[NEEDS_REVIEW] Shortness of breath"
+    },
+    "4": {
+      "en": "Unconsciousness",
+      "ha": "[NEEDS_REVIEW] Unconsciousness",
+      "ig": "[NEEDS_REVIEW] Unconsciousness",
+      "yo": "[NEEDS_REVIEW] Unconsciousness",
+      "pcm": "[NEEDS_REVIEW] Unconsciousness"
+    },
+    "5": {
+      "en": "Cherry-red skin (late sign)",
+      "ha": "[NEEDS_REVIEW] Cherry-red skin (late sign)",
+      "ig": "[NEEDS_REVIEW] Cherry-red skin (late sign)",
+      "yo": "[NEEDS_REVIEW] Cherry-red skin (late sign)",
+      "pcm": "[NEEDS_REVIEW] Cherry-red skin (late sign)"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Move the person to fresh air IMMEDIATELY — outdoors or open all windows and doors.",
+      "instruction_translations": {
+        "en": "Move the person to fresh air IMMEDIATELY — outdoors or open all windows and doors.",
+        "ha": "[NEEDS_REVIEW] Move the person to fresh air IMMEDIATELY — outdoors or open all windows and doors.",
+        "ig": "[NEEDS_REVIEW] Move the person to fresh air IMMEDIATELY — outdoors or open all windows and doors.",
+        "yo": "[NEEDS_REVIEW] Move the person to fresh air IMMEDIATELY — outdoors or open all windows and doors.",
+        "pcm": "[NEEDS_REVIEW] Move the person to fresh air IMMEDIATELY — outdoors or open all windows and doors."
+      },
+      "audio_path": "/audio/generator-fumes/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Call 112 or take to the nearest hospital at once.",
+      "instruction_translations": {
+        "en": "Call 112 or take to the nearest hospital at once.",
+        "ha": "[NEEDS_REVIEW] Call 112 or take to the nearest hospital at once.",
+        "ig": "[NEEDS_REVIEW] Call 112 or take to the nearest hospital at once.",
+        "yo": "[NEEDS_REVIEW] Call 112 or take to the nearest hospital at once.",
+        "pcm": "[NEEDS_REVIEW] Call 112 or take to the nearest hospital at once."
+      },
+      "audio_path": "/audio/generator-fumes/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "Turn off the generator if it is safe to do so.",
+      "instruction_translations": {
+        "en": "Turn off the generator if it is safe to do so.",
+        "ha": "[NEEDS_REVIEW] Turn off the generator if it is safe to do so.",
+        "ig": "[NEEDS_REVIEW] Turn off the generator if it is safe to do so.",
+        "yo": "[NEEDS_REVIEW] Turn off the generator if it is safe to do so.",
+        "pcm": "[NEEDS_REVIEW] Turn off the generator if it is safe to do so."
+      },
+      "audio_path": "/audio/generator-fumes/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "If unconscious, check for breathing. If not breathing, start CPR.",
+      "instruction_translations": {
+        "en": "If unconscious, check for breathing. If not breathing, start CPR.",
+        "ha": "[NEEDS_REVIEW] If unconscious, check for breathing. If not breathing, start CPR.",
+        "ig": "[NEEDS_REVIEW] If unconscious, check for breathing. If not breathing, start CPR.",
+        "yo": "[NEEDS_REVIEW] If unconscious, check for breathing. If not breathing, start CPR.",
+        "pcm": "[NEEDS_REVIEW] If unconscious, check for breathing. If not breathing, start CPR."
+      },
+      "audio_path": "/audio/generator-fumes/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "Place a conscious person in the recovery position on their side.",
+      "instruction_translations": {
+        "en": "Place a conscious person in the recovery position on their side.",
+        "ha": "[NEEDS_REVIEW] Place a conscious person in the recovery position on their side.",
+        "ig": "[NEEDS_REVIEW] Place a conscious person in the recovery position on their side.",
+        "yo": "[NEEDS_REVIEW] Place a conscious person in the recovery position on their side.",
+        "pcm": "[NEEDS_REVIEW] Place a conscious person in the recovery position on their side."
+      },
+      "audio_path": "/audio/generator-fumes/{lang}/step-5.mp3"
+    },
+    {
+      "id": 6,
+      "instruction": "Keep the person warm and still until help arrives.",
+      "instruction_translations": {
+        "en": "Keep the person warm and still until help arrives.",
+        "ha": "[NEEDS_REVIEW] Keep the person warm and still until help arrives.",
+        "ig": "[NEEDS_REVIEW] Keep the person warm and still until help arrives.",
+        "yo": "[NEEDS_REVIEW] Keep the person warm and still until help arrives.",
+        "pcm": "[NEEDS_REVIEW] Keep the person warm and still until help arrives."
+      },
+      "audio_path": "/audio/generator-fumes/{lang}/step-6.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not re-enter the building alone without fresh air.",
+    "Do not leave the person alone.",
+    "Do not run a generator inside any enclosed space — ever."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not re-enter the building alone without fresh air.",
+      "ha": "[NEEDS_REVIEW] Do not re-enter the building alone without fresh air.",
+      "ig": "[NEEDS_REVIEW] Do not re-enter the building alone without fresh air.",
+      "yo": "[NEEDS_REVIEW] Do not re-enter the building alone without fresh air.",
+      "pcm": "[NEEDS_REVIEW] Do not re-enter the building alone without fresh air."
+    },
+    "1": {
+      "en": "Do not leave the person alone.",
+      "ha": "[NEEDS_REVIEW] Do not leave the person alone.",
+      "ig": "[NEEDS_REVIEW] Do not leave the person alone.",
+      "yo": "[NEEDS_REVIEW] Do not leave the person alone.",
+      "pcm": "[NEEDS_REVIEW] Do not leave the person alone."
+    },
+    "2": {
+      "en": "Do not run a generator inside any enclosed space — ever.",
+      "ha": "[NEEDS_REVIEW] Do not run a generator inside any enclosed space — ever.",
+      "ig": "[NEEDS_REVIEW] Do not run a generator inside any enclosed space — ever.",
+      "yo": "[NEEDS_REVIEW] Do not run a generator inside any enclosed space — ever.",
+      "pcm": "[NEEDS_REVIEW] Do not run a generator inside any enclosed space — ever."
+    }
+  },
+  "hospital_threshold": "Always required. CO poisoning can cause lasting brain damage.",
+  "hospital_threshold_translations": {
+    "en": "Always required. CO poisoning can cause lasting brain damage.",
+    "ha": "[NEEDS_REVIEW] Always required. CO poisoning can cause lasting brain damage.",
+    "ig": "[NEEDS_REVIEW] Always required. CO poisoning can cause lasting brain damage.",
+    "yo": "[NEEDS_REVIEW] Always required. CO poisoning can cause lasting brain damage.",
+    "pcm": "[NEEDS_REVIEW] Always required. CO poisoning can cause lasting brain damage."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-08-18T12:31:24.428Z",
+    "medical_references": [
+      "WHO First Aid",
+      "Nigerian Emergency Medicine Association Guidelines"
+    ]
+  }
+}

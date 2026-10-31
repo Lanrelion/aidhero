@@ -1,0 +1,189 @@
+{
+  "id": "broken-bone",
+  "slug": "broken-bone",
+  "content_version": 1,
+  "content_version_date": "2026-08-18T12:31:24.429Z",
+  "category": "trauma",
+  "title": "Broken Bone (Fracture)",
+  "title_translations": {
+    "en": "Broken Bone (Fracture)",
+    "ha": "[NEEDS_REVIEW] Broken Bone (Fracture)",
+    "ig": "[NEEDS_REVIEW] Broken Bone (Fracture)",
+    "yo": "[NEEDS_REVIEW] Broken Bone (Fracture)",
+    "pcm": "[NEEDS_REVIEW] Broken Bone (Fracture)"
+  },
+  "aliases": [
+    "broken bone",
+    "fracture",
+    "broken arm",
+    "broken leg",
+    "bone fracture",
+    "fall wound",
+    "bone break",
+    "bone don crack"
+  ],
+  "severity": "urgent",
+  "immediate_warning": "If the bone is piercing the skin or the person cannot move their limbs, call 112 immediately.",
+  "immediate_warning_translations": {
+    "en": "If the bone is piercing the skin or the person cannot move their limbs, call 112 immediately.",
+    "ha": "[NEEDS_REVIEW] If the bone is piercing the skin or the person cannot move their limbs, call 112 immediately.",
+    "ig": "[NEEDS_REVIEW] If the bone is piercing the skin or the person cannot move their limbs, call 112 immediately.",
+    "yo": "[NEEDS_REVIEW] If the bone is piercing the skin or the person cannot move their limbs, call 112 immediately.",
+    "pcm": "[NEEDS_REVIEW] If the bone is piercing the skin or the person cannot move their limbs, call 112 immediately."
+  },
+  "description": "A broken bone (fracture) requires immobilisation to prevent further injury. Never try to straighten the bone.",
+  "description_translations": {
+    "en": "A broken bone (fracture) requires immobilisation to prevent further injury. Never try to straighten the bone.",
+    "ha": "[NEEDS_REVIEW] A broken bone (fracture) requires immobilisation to prevent further injury. Never try to straighten the bone.",
+    "ig": "[NEEDS_REVIEW] A broken bone (fracture) requires immobilisation to prevent further injury. Never try to straighten the bone.",
+    "yo": "[NEEDS_REVIEW] A broken bone (fracture) requires immobilisation to prevent further injury. Never try to straighten the bone.",
+    "pcm": "[NEEDS_REVIEW] A broken bone (fracture) requires immobilisation to prevent further injury. Never try to straighten the bone."
+  },
+  "signs": [
+    "Severe pain at injury site",
+    "Swelling and bruising",
+    "Deformity or unnatural angle",
+    "Inability to use the limb"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Severe pain at injury site",
+      "ha": "[NEEDS_REVIEW] Severe pain at injury site",
+      "ig": "[NEEDS_REVIEW] Severe pain at injury site",
+      "yo": "[NEEDS_REVIEW] Severe pain at injury site",
+      "pcm": "[NEEDS_REVIEW] Severe pain at injury site"
+    },
+    "1": {
+      "en": "Swelling and bruising",
+      "ha": "[NEEDS_REVIEW] Swelling and bruising",
+      "ig": "[NEEDS_REVIEW] Swelling and bruising",
+      "yo": "[NEEDS_REVIEW] Swelling and bruising",
+      "pcm": "[NEEDS_REVIEW] Swelling and bruising"
+    },
+    "2": {
+      "en": "Deformity or unnatural angle",
+      "ha": "[NEEDS_REVIEW] Deformity or unnatural angle",
+      "ig": "[NEEDS_REVIEW] Deformity or unnatural angle",
+      "yo": "[NEEDS_REVIEW] Deformity or unnatural angle",
+      "pcm": "[NEEDS_REVIEW] Deformity or unnatural angle"
+    },
+    "3": {
+      "en": "Inability to use the limb",
+      "ha": "[NEEDS_REVIEW] Inability to use the limb",
+      "ig": "[NEEDS_REVIEW] Inability to use the limb",
+      "yo": "[NEEDS_REVIEW] Inability to use the limb",
+      "pcm": "[NEEDS_REVIEW] Inability to use the limb"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Keep the person still and calm. Do not attempt to move them if a spine injury is possible.",
+      "instruction_translations": {
+        "en": "Keep the person still and calm. Do not attempt to move them if a spine injury is possible.",
+        "ha": "[NEEDS_REVIEW] Keep the person still and calm. Do not attempt to move them if a spine injury is possible.",
+        "ig": "[NEEDS_REVIEW] Keep the person still and calm. Do not attempt to move them if a spine injury is possible.",
+        "yo": "[NEEDS_REVIEW] Keep the person still and calm. Do not attempt to move them if a spine injury is possible.",
+        "pcm": "[NEEDS_REVIEW] Keep the person still and calm. Do not attempt to move them if a spine injury is possible."
+      },
+      "audio_path": "/audio/broken-bone/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Immobilise the injured limb in the position you find it — use a splint made from stiff material (wood, rolled newspaper) padded with cloth.",
+      "instruction_translations": {
+        "en": "Immobilise the injured limb in the position you find it — use a splint made from stiff material (wood, rolled newspaper) padded with cloth.",
+        "ha": "[NEEDS_REVIEW] Immobilise the injured limb in the position you find it — use a splint made from stiff material (wood, rolled newspaper) padded with cloth.",
+        "ig": "[NEEDS_REVIEW] Immobilise the injured limb in the position you find it — use a splint made from stiff material (wood, rolled newspaper) padded with cloth.",
+        "yo": "[NEEDS_REVIEW] Immobilise the injured limb in the position you find it — use a splint made from stiff material (wood, rolled newspaper) padded with cloth.",
+        "pcm": "[NEEDS_REVIEW] Immobilise the injured limb in the position you find it — use a splint made from stiff material (wood, rolled newspaper) padded with cloth."
+      },
+      "audio_path": "/audio/broken-bone/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "If bone is through skin, cover with a clean cloth. Do not push it back.",
+      "instruction_translations": {
+        "en": "If bone is through skin, cover with a clean cloth. Do not push it back.",
+        "ha": "[NEEDS_REVIEW] If bone is through skin, cover with a clean cloth. Do not push it back.",
+        "ig": "[NEEDS_REVIEW] If bone is through skin, cover with a clean cloth. Do not push it back.",
+        "yo": "[NEEDS_REVIEW] If bone is through skin, cover with a clean cloth. Do not push it back.",
+        "pcm": "[NEEDS_REVIEW] If bone is through skin, cover with a clean cloth. Do not push it back."
+      },
+      "audio_path": "/audio/broken-bone/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Apply an ice pack wrapped in cloth to reduce swelling. Do not apply ice directly to skin.",
+      "instruction_translations": {
+        "en": "Apply an ice pack wrapped in cloth to reduce swelling. Do not apply ice directly to skin.",
+        "ha": "[NEEDS_REVIEW] Apply an ice pack wrapped in cloth to reduce swelling. Do not apply ice directly to skin.",
+        "ig": "[NEEDS_REVIEW] Apply an ice pack wrapped in cloth to reduce swelling. Do not apply ice directly to skin.",
+        "yo": "[NEEDS_REVIEW] Apply an ice pack wrapped in cloth to reduce swelling. Do not apply ice directly to skin.",
+        "pcm": "[NEEDS_REVIEW] Apply an ice pack wrapped in cloth to reduce swelling. Do not apply ice directly to skin."
+      },
+      "audio_path": "/audio/broken-bone/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "Elevate the injured limb if possible to reduce swelling.",
+      "instruction_translations": {
+        "en": "Elevate the injured limb if possible to reduce swelling.",
+        "ha": "[NEEDS_REVIEW] Elevate the injured limb if possible to reduce swelling.",
+        "ig": "[NEEDS_REVIEW] Elevate the injured limb if possible to reduce swelling.",
+        "yo": "[NEEDS_REVIEW] Elevate the injured limb if possible to reduce swelling.",
+        "pcm": "[NEEDS_REVIEW] Elevate the injured limb if possible to reduce swelling."
+      },
+      "audio_path": "/audio/broken-bone/{lang}/step-5.mp3"
+    },
+    {
+      "id": 6,
+      "instruction": "Transport to hospital carefully, keeping the limb still.",
+      "instruction_translations": {
+        "en": "Transport to hospital carefully, keeping the limb still.",
+        "ha": "[NEEDS_REVIEW] Transport to hospital carefully, keeping the limb still.",
+        "ig": "[NEEDS_REVIEW] Transport to hospital carefully, keeping the limb still.",
+        "yo": "[NEEDS_REVIEW] Transport to hospital carefully, keeping the limb still.",
+        "pcm": "[NEEDS_REVIEW] Transport to hospital carefully, keeping the limb still."
+      },
+      "audio_path": "/audio/broken-bone/{lang}/step-6.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not try to straighten the bone.",
+    "Do not ignore a suspected fracture."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not try to straighten the bone.",
+      "ha": "[NEEDS_REVIEW] Do not try to straighten the bone.",
+      "ig": "[NEEDS_REVIEW] Do not try to straighten the bone.",
+      "yo": "[NEEDS_REVIEW] Do not try to straighten the bone.",
+      "pcm": "[NEEDS_REVIEW] Do not try to straighten the bone."
+    },
+    "1": {
+      "en": "Do not ignore a suspected fracture.",
+      "ha": "[NEEDS_REVIEW] Do not ignore a suspected fracture.",
+      "ig": "[NEEDS_REVIEW] Do not ignore a suspected fracture.",
+      "yo": "[NEEDS_REVIEW] Do not ignore a suspected fracture.",
+      "pcm": "[NEEDS_REVIEW] Do not ignore a suspected fracture."
+    }
+  },
+  "hospital_threshold": "Always required for X-ray and proper immobilisation.",
+  "hospital_threshold_translations": {
+    "en": "Always required for X-ray and proper immobilisation.",
+    "ha": "[NEEDS_REVIEW] Always required for X-ray and proper immobilisation.",
+    "ig": "[NEEDS_REVIEW] Always required for X-ray and proper immobilisation.",
+    "yo": "[NEEDS_REVIEW] Always required for X-ray and proper immobilisation.",
+    "pcm": "[NEEDS_REVIEW] Always required for X-ray and proper immobilisation."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-08-18T12:31:24.428Z",
+    "medical_references": [
+      "WHO First Aid",
+      "Nigerian Emergency Medicine Association Guidelines"
+    ]
+  }
+}

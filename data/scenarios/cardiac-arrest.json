@@ -1,0 +1,189 @@
+{
+  "id": "cardiac-arrest",
+  "slug": "cardiac-arrest",
+  "content_version": 1,
+  "content_version_date": "2026-08-18T12:31:24.428Z",
+  "category": "cardiac",
+  "title": "Cardiac Arrest",
+  "title_translations": {
+    "en": "Cardiac Arrest",
+    "ha": "[NEEDS_REVIEW] Cardiac Arrest",
+    "ig": "[NEEDS_REVIEW] Cardiac Arrest",
+    "yo": "[NEEDS_REVIEW] Cardiac Arrest",
+    "pcm": "[NEEDS_REVIEW] Cardiac Arrest"
+  },
+  "aliases": [
+    "no pulse",
+    "heart stopped",
+    "collapse",
+    "person not breathing",
+    "ọkan duro",
+    "zuciya ta tsaya",
+    "obi kwusiri",
+    "heart don stop"
+  ],
+  "severity": "critical",
+  "immediate_warning": "Call emergency services immediately. Begin CPR right now.",
+  "immediate_warning_translations": {
+    "en": "Call emergency services immediately. Begin CPR right now.",
+    "ha": "[NEEDS_REVIEW] Call emergency services immediately. Begin CPR right now.",
+    "ig": "[NEEDS_REVIEW] Call emergency services immediately. Begin CPR right now.",
+    "yo": "[NEEDS_REVIEW] Call emergency services immediately. Begin CPR right now.",
+    "pcm": "[NEEDS_REVIEW] Call emergency services immediately. Begin CPR right now."
+  },
+  "description": "Cardiac arrest occurs when the heart suddenly stops pumping blood. Without immediate CPR, death can occur within minutes.",
+  "description_translations": {
+    "en": "Cardiac arrest occurs when the heart suddenly stops pumping blood. Without immediate CPR, death can occur within minutes.",
+    "ha": "[NEEDS_REVIEW] Cardiac arrest occurs when the heart suddenly stops pumping blood. Without immediate CPR, death can occur within minutes.",
+    "ig": "[NEEDS_REVIEW] Cardiac arrest occurs when the heart suddenly stops pumping blood. Without immediate CPR, death can occur within minutes.",
+    "yo": "[NEEDS_REVIEW] Cardiac arrest occurs when the heart suddenly stops pumping blood. Without immediate CPR, death can occur within minutes.",
+    "pcm": "[NEEDS_REVIEW] Cardiac arrest occurs when the heart suddenly stops pumping blood. Without immediate CPR, death can occur within minutes."
+  },
+  "signs": [
+    "Sudden collapse",
+    "No pulse",
+    "No breathing or gasping",
+    "Loss of consciousness"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Sudden collapse",
+      "ha": "[NEEDS_REVIEW] Sudden collapse",
+      "ig": "[NEEDS_REVIEW] Sudden collapse",
+      "yo": "[NEEDS_REVIEW] Sudden collapse",
+      "pcm": "[NEEDS_REVIEW] Sudden collapse"
+    },
+    "1": {
+      "en": "No pulse",
+      "ha": "[NEEDS_REVIEW] No pulse",
+      "ig": "[NEEDS_REVIEW] No pulse",
+      "yo": "[NEEDS_REVIEW] No pulse",
+      "pcm": "[NEEDS_REVIEW] No pulse"
+    },
+    "2": {
+      "en": "No breathing or gasping",
+      "ha": "[NEEDS_REVIEW] No breathing or gasping",
+      "ig": "[NEEDS_REVIEW] No breathing or gasping",
+      "yo": "[NEEDS_REVIEW] No breathing or gasping",
+      "pcm": "[NEEDS_REVIEW] No breathing or gasping"
+    },
+    "3": {
+      "en": "Loss of consciousness",
+      "ha": "[NEEDS_REVIEW] Loss of consciousness",
+      "ig": "[NEEDS_REVIEW] Loss of consciousness",
+      "yo": "[NEEDS_REVIEW] Loss of consciousness",
+      "pcm": "[NEEDS_REVIEW] Loss of consciousness"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Call emergency services immediately (112 or 767).",
+      "instruction_translations": {
+        "en": "Call emergency services immediately (112 or 767).",
+        "ha": "[NEEDS_REVIEW] Call emergency services immediately (112 or 767).",
+        "ig": "[NEEDS_REVIEW] Call emergency services immediately (112 or 767).",
+        "yo": "[NEEDS_REVIEW] Call emergency services immediately (112 or 767).",
+        "pcm": "[NEEDS_REVIEW] Call emergency services immediately (112 or 767)."
+      },
+      "audio_path": "/audio/cardiac-arrest/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Check for responsiveness — tap shoulder, shout \"Are you okay?\"",
+      "instruction_translations": {
+        "en": "Check for responsiveness — tap shoulder, shout \"Are you okay?\"",
+        "ha": "[NEEDS_REVIEW] Check for responsiveness — tap shoulder, shout \"Are you okay?\"",
+        "ig": "[NEEDS_REVIEW] Check for responsiveness — tap shoulder, shout \"Are you okay?\"",
+        "yo": "[NEEDS_REVIEW] Check for responsiveness — tap shoulder, shout \"Are you okay?\"",
+        "pcm": "[NEEDS_REVIEW] Check for responsiveness — tap shoulder, shout \"Are you okay?\""
+      },
+      "audio_path": "/audio/cardiac-arrest/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "Begin chest compressions: place heel of hand on centre of chest, push down hard and fast — 100–120 per minute.",
+      "instruction_translations": {
+        "en": "Begin chest compressions: place heel of hand on centre of chest, push down hard and fast — 100–120 per minute.",
+        "ha": "[NEEDS_REVIEW] Begin chest compressions: place heel of hand on centre of chest, push down hard and fast — 100–120 per minute.",
+        "ig": "[NEEDS_REVIEW] Begin chest compressions: place heel of hand on centre of chest, push down hard and fast — 100–120 per minute.",
+        "yo": "[NEEDS_REVIEW] Begin chest compressions: place heel of hand on centre of chest, push down hard and fast — 100–120 per minute.",
+        "pcm": "[NEEDS_REVIEW] Begin chest compressions: place heel of hand on centre of chest, push down hard and fast — 100–120 per minute."
+      },
+      "audio_path": "/audio/cardiac-arrest/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "After 30 compressions, give 2 rescue breaths (tilt head back, lift chin, seal mouth, blow in).",
+      "instruction_translations": {
+        "en": "After 30 compressions, give 2 rescue breaths (tilt head back, lift chin, seal mouth, blow in).",
+        "ha": "[NEEDS_REVIEW] After 30 compressions, give 2 rescue breaths (tilt head back, lift chin, seal mouth, blow in).",
+        "ig": "[NEEDS_REVIEW] After 30 compressions, give 2 rescue breaths (tilt head back, lift chin, seal mouth, blow in).",
+        "yo": "[NEEDS_REVIEW] After 30 compressions, give 2 rescue breaths (tilt head back, lift chin, seal mouth, blow in).",
+        "pcm": "[NEEDS_REVIEW] After 30 compressions, give 2 rescue breaths (tilt head back, lift chin, seal mouth, blow in)."
+      },
+      "audio_path": "/audio/cardiac-arrest/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "Continue 30:2 cycle until emergency services arrive or person recovers.",
+      "instruction_translations": {
+        "en": "Continue 30:2 cycle until emergency services arrive or person recovers.",
+        "ha": "[NEEDS_REVIEW] Continue 30:2 cycle until emergency services arrive or person recovers.",
+        "ig": "[NEEDS_REVIEW] Continue 30:2 cycle until emergency services arrive or person recovers.",
+        "yo": "[NEEDS_REVIEW] Continue 30:2 cycle until emergency services arrive or person recovers.",
+        "pcm": "[NEEDS_REVIEW] Continue 30:2 cycle until emergency services arrive or person recovers."
+      },
+      "audio_path": "/audio/cardiac-arrest/{lang}/step-5.mp3"
+    },
+    {
+      "id": 6,
+      "instruction": "Use an AED if available — turn it on and follow the voice instructions.",
+      "instruction_translations": {
+        "en": "Use an AED if available — turn it on and follow the voice instructions.",
+        "ha": "[NEEDS_REVIEW] Use an AED if available — turn it on and follow the voice instructions.",
+        "ig": "[NEEDS_REVIEW] Use an AED if available — turn it on and follow the voice instructions.",
+        "yo": "[NEEDS_REVIEW] Use an AED if available — turn it on and follow the voice instructions.",
+        "pcm": "[NEEDS_REVIEW] Use an AED if available — turn it on and follow the voice instructions."
+      },
+      "audio_path": "/audio/cardiac-arrest/{lang}/step-6.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not leave the person unattended.",
+    "Do not stop CPR until help arrives."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not leave the person unattended.",
+      "ha": "[NEEDS_REVIEW] Do not leave the person unattended.",
+      "ig": "[NEEDS_REVIEW] Do not leave the person unattended.",
+      "yo": "[NEEDS_REVIEW] Do not leave the person unattended.",
+      "pcm": "[NEEDS_REVIEW] Do not leave the person unattended."
+    },
+    "1": {
+      "en": "Do not stop CPR until help arrives.",
+      "ha": "[NEEDS_REVIEW] Do not stop CPR until help arrives.",
+      "ig": "[NEEDS_REVIEW] Do not stop CPR until help arrives.",
+      "yo": "[NEEDS_REVIEW] Do not stop CPR until help arrives.",
+      "pcm": "[NEEDS_REVIEW] Do not stop CPR until help arrives."
+    }
+  },
+  "hospital_threshold": "Always required immediately.",
+  "hospital_threshold_translations": {
+    "en": "Always required immediately.",
+    "ha": "[NEEDS_REVIEW] Always required immediately.",
+    "ig": "[NEEDS_REVIEW] Always required immediately.",
+    "yo": "[NEEDS_REVIEW] Always required immediately.",
+    "pcm": "[NEEDS_REVIEW] Always required immediately."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-08-18T12:31:24.428Z",
+    "medical_references": [
+      "WHO First Aid",
+      "Nigerian Emergency Medicine Association Guidelines"
+    ]
+  }
+}

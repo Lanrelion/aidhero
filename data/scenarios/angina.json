@@ -1,0 +1,175 @@
+{
+  "id": "angina",
+  "slug": "angina",
+  "content_version": 1,
+  "content_version_date": "2026-08-18T12:31:24.429Z",
+  "category": "cardiac",
+  "title": "Angina (Chest Pain)",
+  "title_translations": {
+    "en": "Angina (Chest Pain)",
+    "ha": "[NEEDS_REVIEW] Angina (Chest Pain)",
+    "ig": "[NEEDS_REVIEW] Angina (Chest Pain)",
+    "yo": "[NEEDS_REVIEW] Angina (Chest Pain)",
+    "pcm": "[NEEDS_REVIEW] Angina (Chest Pain)"
+  },
+  "aliases": [
+    "chest pain",
+    "angina",
+    "chest tightness",
+    "ọkan nnu mi",
+    "zuciya tana ciwo",
+    "chest dey pain me"
+  ],
+  "severity": "urgent",
+  "immediate_warning": "If chest pain lasts more than 15 minutes, suspect a heart attack — call emergency services.",
+  "immediate_warning_translations": {
+    "en": "If chest pain lasts more than 15 minutes, suspect a heart attack — call emergency services.",
+    "ha": "[NEEDS_REVIEW] If chest pain lasts more than 15 minutes, suspect a heart attack — call emergency services.",
+    "ig": "[NEEDS_REVIEW] If chest pain lasts more than 15 minutes, suspect a heart attack — call emergency services.",
+    "yo": "[NEEDS_REVIEW] If chest pain lasts more than 15 minutes, suspect a heart attack — call emergency services.",
+    "pcm": "[NEEDS_REVIEW] If chest pain lasts more than 15 minutes, suspect a heart attack — call emergency services."
+  },
+  "description": "Angina is chest pain caused by reduced blood flow to the heart muscle. It is usually triggered by physical activity or stress.",
+  "description_translations": {
+    "en": "Angina is chest pain caused by reduced blood flow to the heart muscle. It is usually triggered by physical activity or stress.",
+    "ha": "[NEEDS_REVIEW] Angina is chest pain caused by reduced blood flow to the heart muscle. It is usually triggered by physical activity or stress.",
+    "ig": "[NEEDS_REVIEW] Angina is chest pain caused by reduced blood flow to the heart muscle. It is usually triggered by physical activity or stress.",
+    "yo": "[NEEDS_REVIEW] Angina is chest pain caused by reduced blood flow to the heart muscle. It is usually triggered by physical activity or stress.",
+    "pcm": "[NEEDS_REVIEW] Angina is chest pain caused by reduced blood flow to the heart muscle. It is usually triggered by physical activity or stress."
+  },
+  "signs": [
+    "Chest pressure or tightness",
+    "Pain spreading to arm, neck, or jaw",
+    "Shortness of breath",
+    "Nausea"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Chest pressure or tightness",
+      "ha": "[NEEDS_REVIEW] Chest pressure or tightness",
+      "ig": "[NEEDS_REVIEW] Chest pressure or tightness",
+      "yo": "[NEEDS_REVIEW] Chest pressure or tightness",
+      "pcm": "[NEEDS_REVIEW] Chest pressure or tightness"
+    },
+    "1": {
+      "en": "Pain spreading to arm, neck, or jaw",
+      "ha": "[NEEDS_REVIEW] Pain spreading to arm, neck, or jaw",
+      "ig": "[NEEDS_REVIEW] Pain spreading to arm, neck, or jaw",
+      "yo": "[NEEDS_REVIEW] Pain spreading to arm, neck, or jaw",
+      "pcm": "[NEEDS_REVIEW] Pain spreading to arm, neck, or jaw"
+    },
+    "2": {
+      "en": "Shortness of breath",
+      "ha": "[NEEDS_REVIEW] Shortness of breath",
+      "ig": "[NEEDS_REVIEW] Shortness of breath",
+      "yo": "[NEEDS_REVIEW] Shortness of breath",
+      "pcm": "[NEEDS_REVIEW] Shortness of breath"
+    },
+    "3": {
+      "en": "Nausea",
+      "ha": "[NEEDS_REVIEW] Nausea",
+      "ig": "[NEEDS_REVIEW] Nausea",
+      "yo": "[NEEDS_REVIEW] Nausea",
+      "pcm": "[NEEDS_REVIEW] Nausea"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Help the person sit or lie down in a comfortable position.",
+      "instruction_translations": {
+        "en": "Help the person sit or lie down in a comfortable position.",
+        "ha": "[NEEDS_REVIEW] Help the person sit or lie down in a comfortable position.",
+        "ig": "[NEEDS_REVIEW] Help the person sit or lie down in a comfortable position.",
+        "yo": "[NEEDS_REVIEW] Help the person sit or lie down in a comfortable position.",
+        "pcm": "[NEEDS_REVIEW] Help the person sit or lie down in a comfortable position."
+      },
+      "audio_path": "/audio/angina/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Loosen any tight clothing around the neck and chest.",
+      "instruction_translations": {
+        "en": "Loosen any tight clothing around the neck and chest.",
+        "ha": "[NEEDS_REVIEW] Loosen any tight clothing around the neck and chest.",
+        "ig": "[NEEDS_REVIEW] Loosen any tight clothing around the neck and chest.",
+        "yo": "[NEEDS_REVIEW] Loosen any tight clothing around the neck and chest.",
+        "pcm": "[NEEDS_REVIEW] Loosen any tight clothing around the neck and chest."
+      },
+      "audio_path": "/audio/angina/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "If the person has prescribed nitroglycerin, help them take it.",
+      "instruction_translations": {
+        "en": "If the person has prescribed nitroglycerin, help them take it.",
+        "ha": "[NEEDS_REVIEW] If the person has prescribed nitroglycerin, help them take it.",
+        "ig": "[NEEDS_REVIEW] If the person has prescribed nitroglycerin, help them take it.",
+        "yo": "[NEEDS_REVIEW] If the person has prescribed nitroglycerin, help them take it.",
+        "pcm": "[NEEDS_REVIEW] If the person has prescribed nitroglycerin, help them take it."
+      },
+      "audio_path": "/audio/angina/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Keep them calm and still. Do not let them walk around.",
+      "instruction_translations": {
+        "en": "Keep them calm and still. Do not let them walk around.",
+        "ha": "[NEEDS_REVIEW] Keep them calm and still. Do not let them walk around.",
+        "ig": "[NEEDS_REVIEW] Keep them calm and still. Do not let them walk around.",
+        "yo": "[NEEDS_REVIEW] Keep them calm and still. Do not let them walk around.",
+        "pcm": "[NEEDS_REVIEW] Keep them calm and still. Do not let them walk around."
+      },
+      "audio_path": "/audio/angina/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "If pain does not improve within 15 minutes, call emergency services immediately.",
+      "instruction_translations": {
+        "en": "If pain does not improve within 15 minutes, call emergency services immediately.",
+        "ha": "[NEEDS_REVIEW] If pain does not improve within 15 minutes, call emergency services immediately.",
+        "ig": "[NEEDS_REVIEW] If pain does not improve within 15 minutes, call emergency services immediately.",
+        "yo": "[NEEDS_REVIEW] If pain does not improve within 15 minutes, call emergency services immediately.",
+        "pcm": "[NEEDS_REVIEW] If pain does not improve within 15 minutes, call emergency services immediately."
+      },
+      "audio_path": "/audio/angina/{lang}/step-5.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not ignore chest pain.",
+    "Do not give aspirin unless advised by a medical professional."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not ignore chest pain.",
+      "ha": "[NEEDS_REVIEW] Do not ignore chest pain.",
+      "ig": "[NEEDS_REVIEW] Do not ignore chest pain.",
+      "yo": "[NEEDS_REVIEW] Do not ignore chest pain.",
+      "pcm": "[NEEDS_REVIEW] Do not ignore chest pain."
+    },
+    "1": {
+      "en": "Do not give aspirin unless advised by a medical professional.",
+      "ha": "[NEEDS_REVIEW] Do not give aspirin unless advised by a medical professional.",
+      "ig": "[NEEDS_REVIEW] Do not give aspirin unless advised by a medical professional.",
+      "yo": "[NEEDS_REVIEW] Do not give aspirin unless advised by a medical professional.",
+      "pcm": "[NEEDS_REVIEW] Do not give aspirin unless advised by a medical professional."
+    }
+  },
+  "hospital_threshold": "Go to hospital if pain is new, severe, or lasts more than 15 minutes.",
+  "hospital_threshold_translations": {
+    "en": "Go to hospital if pain is new, severe, or lasts more than 15 minutes.",
+    "ha": "[NEEDS_REVIEW] Go to hospital if pain is new, severe, or lasts more than 15 minutes.",
+    "ig": "[NEEDS_REVIEW] Go to hospital if pain is new, severe, or lasts more than 15 minutes.",
+    "yo": "[NEEDS_REVIEW] Go to hospital if pain is new, severe, or lasts more than 15 minutes.",
+    "pcm": "[NEEDS_REVIEW] Go to hospital if pain is new, severe, or lasts more than 15 minutes."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-08-18T12:31:24.428Z",
+    "medical_references": [
+      "WHO First Aid",
+      "Nigerian Emergency Medicine Association Guidelines"
+    ]
+  }
+}

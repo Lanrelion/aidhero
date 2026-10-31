@@ -1,0 +1,52 @@
+{
+  "id": "heatstroke-flow",
+  "incident_id": "heatstroke",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Is the person conscious?",
+      "translations": {
+        "en": "Is the person conscious?",
+        "ha": "[NEEDS_REVIEW] Is the person conscious?",
+        "ig": "[NEEDS_REVIEW] Is the person conscious?",
+        "yo": "[NEEDS_REVIEW] Is the person conscious?",
+        "pcm": "[NEEDS_REVIEW] Is the person conscious?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "cooling-steps"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "emergency-cooling"
+        }
+      ]
+    },
+    "cooling-steps": {
+      "type": "instruction",
+      "steps_reference": "heatstroke",
+      "variant": "conscious"
+    },
+    "emergency-cooling": {
+      "type": "instruction",
+      "steps_reference": "heatstroke",
+      "variant": "unconscious"
+    }
+  }
+}

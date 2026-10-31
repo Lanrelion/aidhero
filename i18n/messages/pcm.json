@@ -1,114 +1,195 @@
 {
-    "nav": {
-        "home": "[PCM] Home",
-        "search": "[PCM] Search",
-        "emergency": "[PCM] Emergency",
-        "settings": "[PCM] Settings"
+  "nav": {
+    "home": "Home",
+    "search": "Find",
+    "emergency": "Emergency",
+    "settings": "Settings"
+  },
+  "home": {
+    "title": "AidHero",
+    "subtitle": "First Aid Guide",
+    "searchPlaceholder": "Find symptoms or wound...",
+    "sectionHeaders": "Categories",
+    "emergencyCall": "Call Emergency",
+    "voiceSearchPrompt": "I dey listen... talk wetin happen",
+    "voiceSearchHint": "example \"Heart Attack\", \"Fire Burn\", \"Bleeding\""
+  },
+  "rescue": {
+    "startGuided": "Start Step-by-Step Rescue",
+    "quickSteps": "Sharp Steps",
+    "stepXOfY": "Step {step} out of {total}",
+    "stepNumber": "STEP {number}",
+    "next": "Next",
+    "nextStep": "Next Step",
+    "back": "Back",
+    "repeat": "Talk am again",
+    "callEmergency": "Call Emergency",
+    "doneCall": "I Don Finish — Call Emergency",
+    "playAudio": "Play for",
+    "stopAudio": "Stop",
+    "readAll": "Read all steps for",
+    "voiceMode": "Voice Mode",
+    "startVoice": "Voice Mode",
+    "skipToSteps": "Jump go steps",
+    "exitVoiceMode": "Comot Voice Mode",
+    "exit": "Comot",
+    "pause": "Pause",
+    "resume": "Continue",
+    "voiceHint": "Talk \"next\", \"back\", or \"repeat\"",
+    "voiceUnavailable": "Voice command no dey work now",
+    "severity": {
+      "critical": "DEY SERIOUS WELL WELL",
+      "moderate": "DEY NORMAL",
+      "urgent": "DEY URGENT"
     },
-    "home": {
-        "title": "[PCM] AidHero",
-        "subtitle": "[PCM] First Aid Guide",
-        "searchPlaceholder": "[PCM] Search for symptoms or injuries...",
-        "sectionHeaders": "[PCM] Categories",
-        "emergencyCall": "[PCM] Call Emergency"
-    },
-    "rescue": {
-        "startGuided": "[PCM] Start Guided Rescue",
-        "quickSteps": "[PCM] Quick Steps",
-        "stepXOfY": "[PCM] Step {step} of {total}",
-        "stepNumber": "[PCM] STEP {number}",
-        "next": "[PCM] Next",
-        "nextStep": "[PCM] Next Step",
-        "back": "[PCM] Back",
-        "repeat": "[PCM] Repeat",
-        "callEmergency": "[PCM] Call Emergency",
-        "doneCall": "[PCM] Done — Call Emergency",
-        "playAudio": "[PCM] Play in",
-        "stopAudio": "[PCM] Stop",
-        "readAll": "[PCM] Read all steps in",
-        "voiceMode": "[PCM] Voice Mode",
-        "startVoice": "[PCM] Voice Mode",
-        "skipToSteps": "[PCM] Skip to steps",
-        "exitVoiceMode": "[PCM] Exit Voice Mode",
-        "exit": "[PCM] Exit",
-        "pause": "[PCM] Pause",
-        "resume": "[PCM] Resume",
-        "voiceHint": "[PCM] Say next, back, or repeat",
-        "voiceUnavailable": "[PCM] Voice commands unavailable",
-        "severity": {
-            "critical": "[PCM] CRITICAL",
-            "moderate": "[PCM] MODERATE",
-            "urgent": "[PCM] URGENT"
-        },
-        "signsToLookFor": "[PCM] Signs to recognise",
-        "doNot": "[PCM] What NOT to do",
-        "hospitalThreshold": "[PCM] When to go to hospital",
-        "step1": "[PCM] Step 1"
-    },
-    "search": {
-        "placeholder": "[PCM] Search...",
-        "noResults": "[PCM] No results found for \"{query}\".",
-        "recentSearches": "[PCM] Recent Searches",
-        "trySuggestions": "[PCM] Try: heart attack, choking, bleeding",
-        "allCategories": "[PCM] All Categories",
-        "clearRecent": "[PCM] Clear"
-    },
-    "incidents": {
-        "paediatric": "[PCM] Paediatric",
-        "trauma": "[PCM] Trauma",
-        "environmental": "[PCM] Environmental",
-        "respiratory": "[PCM] Respiratory",
-        "burns": "[PCM] Burns",
-        "allergic": "[PCM] Allergic",
-        "obstetric": "[PCM] Obstetric",
-        "cardiac": "[PCM] Cardiac",
-        "poisoning": "[PCM] Poisoning",
-        "neurological": "[PCM] Neurological",
-        "gastrointestinal": "[PCM] Gastrointestinal",
-        "other": "[PCM] Other"
-    },
-    "emergency": {
-        "callButton": "[PCM] Call",
-        "stateNames": "[PCM] State Numbers",
-        "nationalNumbers": "[PCM] National Emergency Numbers"
-    },
-    "settings": {
-        "language": "[PCM] Language",
-        "textSize": "[PCM] Text Size",
-        "contrast": "[PCM] Contrast",
-        "offline": "[PCM] Offline Mode",
-        "about": "[PCM] About AidHero"
-    },
-    "accessibility": {
-        "ariaLabels": "[PCM] Accessibility Strings",
-        "emergencyCallStrip": "[PCM] Call Emergency Numbers",
-        "changeLanguage": "[PCM] Change Language",
-        "bottomNav": "[PCM] Bottom Navigation"
-    },
-    "offline": {
-        "ready": "[PCM] Ready for offline use",
-        "limited": "[PCM] Limited offline functionality",
-        "updated": "[PCM] Content updated",
-        "active": "[PCM] Offline Mode Active",
-        "downloading": "[PCM] Downloading Content..."
-    },
-    "errors": {
-        "notFound": "[PCM] Page not found",
-        "audioUnavailable": "[PCM] Audio unavailable in offline mode",
-        "offlineLimitation": "[PCM] This feature requires an internet connection"
-    },
-    "onboarding": {
-        "slide1Title": "[PCM] Welcome to AidHero",
-        "slide1Desc": "[PCM] Your offline-first emergency companion.",
-        "slide2Title": "[PCM] Always Available",
-        "slide2Desc": "[PCM] Access life-saving guides even without internet.",
-        "slide3Title": "[PCM] Voice Guided",
-        "slide3Desc": "[PCM] Hands-free audio instructions during emergencies."
-    },
-    "metadata": {
-        "title": "[PCM] AidHero - Emergency First Aid Nigeria",
-        "description": "[PCM] Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
-        "ogTitle": "[PCM] AidHero - Emergency First Aid Nigeria",
-        "ogDescription": "[PCM] You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
+    "signsToLookFor": "Signs to look for",
+    "doNot": "Wetin you NO MUST do",
+    "hospitalThreshold": "When to carry person go hospital",
+    "step1": "Step 1"
+  },
+  "search": {
+    "placeholder": "Find...",
+    "noResults": "Nothing dey for wetin you find: \"{query}\".",
+    "recentSearches": "Things you find recently",
+    "trySuggestions": "Try: heart attack, choking, bleeding",
+    "allCategories": "All Categories",
+    "clearRecent": "Clear am"
+  },
+  "incidents": {
+    "paediatric": "Children Matter",
+    "trauma": "Wound & Injury",
+    "environmental": "Environment Issue",
+    "respiratory": "Breathing Problem",
+    "burns": "Fire Burn",
+    "allergic": "Allergy Issue",
+    "obstetric": "Belle / Pregnancy Matter",
+    "cardiac": "Heart Problem",
+    "poisoning": "Poison Matter",
+    "neurological": "Brain & Nerve Problem",
+    "gastrointestinal": "Belle Pain & Stomach",
+    "other": "Other Matters"
+  },
+  "emergency": {
+    "callButton": "Call",
+    "stateNames": "State Phone Numbers",
+    "nationalNumbers": "National Emergency Numbers",
+    "showingNumbersFor": "De show numbers for",
+    "showingNationalNumbers": "De show national numbers",
+    "services": "Services",
+    "nationalServices": "National Services",
+    "changeState": "Change State",
+    "selectState": "Pick State",
+    "searchStates": "Find state...",
+    "noStatesFound": "No state match wetin you type \"{search}\""
+  },
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "none": "Nothing",
+    "all": "All",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "back": "Back"
+  },
+  "settings": {
+    "language": "Language",
+    "textSize": "How Text Big Reach",
+    "contrast": "Color Brightness",
+    "offline": "No-Internet Mode",
+    "manage": "Manage",
+    "contentDownloaded": "App matter don download",
+    "audioDownloadedFor": "Voice don download for",
+    "yes": "Yes",
+    "no": "No",
+    "about": "About AidHero",
+    "aboutAidHero": "About AidHero",
+    "version": "Version",
+    "offlineFirst": "E Dey Work Without Internet",
+    "medicalDisclaimer": "Medical Warning: Dis app dey give normal first aid guidance, e no be doctor advice. Always call emergency people sharp sharp for serious matter.",
+    "confirmDuringRescue": "If you change language e go restart your rescue flow. You wan continue?",
+    "general": "General",
+    "accessibility": "Easy to Use",
+    "scaleNormal": "Normal",
+    "scaleLarge": "Large",
+    "scaleXL": "Extra Large",
+    "highContrast": "High Contrast Screen",
+    "highContrastDesc": "Make words clear well well",
+    "autoplayVoice": "Play Voice Automatic",
+    "autoplayVoiceDesc": "Read steps loud loud by itself",
+    "offlineVoiceModeFallback": "Voice Mode When Internet No Dey",
+    "offlineVoiceModeDesc": "Pick how many seconds to wait before e go go next step when voice command no dey work.",
+    "manualAdvance": "Manual (Tap with hand to go next)",
+    "seconds": "{count} seconds",
+    "offlineScreen": {
+      "title": "Download for Use Without Internet",
+      "appContent": "App content",
+      "appContentStatus": "E don download already on first visit",
+      "englishAudio": "English voice",
+      "englishAudioStatus": "E download by itself",
+      "download": "Download",
+      "downloading": "E de download... {progress}%",
+      "downloaded": "Don Download",
+      "storageUsed": "Space wey e use: {used}MB out of {total}MB total",
+      "lastUpdated": "Last time wey we update am",
+      "checkUpdates": "Check if update dey"
     }
+  },
+  "accessibility": {
+    "ariaLabels": "Accessibility Words",
+    "emergencyCallStrip": "Call Emergency Numbers",
+    "changeLanguage": "Change Language",
+    "bottomNav": "Bottom Navigation",
+    "skipToMain": "Jump go main content",
+    "voiceSearch": "Voice Search"
+  },
+  "offline": {
+    "ready": "E don ready for use without internet",
+    "limited": "Some things no go work without internet",
+    "updated": "Content don update",
+    "active": "No-Internet Mode Dey Active",
+    "downloading": "De download content..."
+  },
+  "errors": {
+    "notFound": "We no see this page",
+    "audioUnavailable": "Voice no dey when internet no dey",
+    "offlineLimitation": "You need internet for this one"
+  },
+  "onboarding": {
+    "slide1": {
+      "title": "You fit save person life.",
+      "body": "AidHero go show you how."
+    },
+    "slide2": {
+      "title": "E dey work without internet,",
+      "body": "for your own language."
+    },
+    "slide3": {
+      "title": "Pick your language",
+      "body": "+ download content"
+    },
+    "download": "Download for use without internet",
+    "skipLater": "I go do am later",
+    "skip": "Skip",
+    "back": "Back",
+    "next": "Next",
+    "progressDots": "Onboarding progress"
+  },
+  "trust": {
+    "pendingReview": "Pending medical review",
+    "pendingWarning": "This information is awaiting verification by a certified medical professional. Use with caution.",
+    "reviewed": "Medically Reviewed",
+    "reviewedBy": "Reviewed by {name}",
+    "lastReviewed": "Last reviewed: {date}"
+  },
+  "metadata": {
+    "title": "AidHero - Emergency First Aid Nigeria",
+    "description": "First aid guide wey dey work without internet for Nigeria. Sharp instructions in English, Hausa, Igbo, Yoruba and Pidgin.",
+    "ogTitle": "AidHero - Emergency First Aid Nigeria",
+    "ogDescription": "You fit save person life. AidHero go show you how. Offline first aid guide for Nigeria."
+  },
+  "voiceMode": {
+    "sayCommand": "Say: carry go, back, repeat am",
+    "offlineHint": "Voice command need internet — use buttons or make e move by itself"
+  }
 }

@@ -1,0 +1,52 @@
+{
+  "id": "anaphylaxis-flow",
+  "incident_id": "anaphylaxis",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Does the person have an adrenaline auto-injector (EpiPen)?",
+      "translations": {
+        "en": "Does the person have an adrenaline auto-injector (EpiPen)?",
+        "ha": "[NEEDS_REVIEW] Does the person have an adrenaline auto-injector (EpiPen)?",
+        "ig": "[NEEDS_REVIEW] Does the person have an adrenaline auto-injector (EpiPen)?",
+        "yo": "[NEEDS_REVIEW] Does the person have an adrenaline auto-injector (EpiPen)?",
+        "pcm": "[NEEDS_REVIEW] Does the person have an adrenaline auto-injector (EpiPen)?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "epipen-steps"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "no-epipen-steps"
+        }
+      ]
+    },
+    "epipen-steps": {
+      "type": "instruction",
+      "steps_reference": "anaphylaxis",
+      "variant": "epipen"
+    },
+    "no-epipen-steps": {
+      "type": "instruction",
+      "steps_reference": "anaphylaxis",
+      "variant": "no-epipen"
+    }
+  }
+}

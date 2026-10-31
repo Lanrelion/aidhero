@@ -9,9 +9,13 @@ import { ChevronLeft, Phone, ArrowRight } from 'lucide-react';
 import { useRescueStore } from '@/store/useRescueStore';
 import { getDecisionTree } from '@/lib/data/decisionTrees';
 import { ProgressIndicator } from '@/components/rescue/ProgressIndicator';
-import { DecisionQuestion } from '@/components/rescue/DecisionQuestion';
 import { getPrimaryEmergencyNumber } from '@/lib/data/emergencyNumbers';
 import { Locale } from '@/types';
+import dynamic from 'next/dynamic';
+
+const DecisionQuestion = dynamic(() => import('@/components/rescue/DecisionQuestion').then(mod => mod.DecisionQuestion), {
+  ssr: false,
+});
 
 interface RescuePageProps {
   params: Promise<{ locale: Locale; slug: string }>;
@@ -23,23 +27,29 @@ export default function RescuePage({ params }: RescuePageProps) {
   const t = useTranslations();
   
   const tree = getDecisionTree(`${slug}-flow`);
-  const { startRescue, currentNodeId, history, answerQuestion, goBack } = useRescueStore();
+  const { startRescue, currentNodeId, activeScenario, history, answerQuestion, goBack } = useRescueStore();
   
   const [direction, setDirection] = useState<'forward' | 'back'>('forward');
   const [isLoadingSteps, setIsLoadingSteps] = useState(false);
 
   // Initialize rescue flow
   useEffect(() => {
-    if (tree) {
+    if (tree && activeScenario !== slug) {
       startRescue(slug, tree.root_node_id);
     }
-  }, [slug, tree, startRescue]);
+  }, [slug, tree, startRescue, activeScenario]);
 
-  if (!tree || !currentNodeId) {
-    return null; // or a loading spinner
+  if (!tree) {
+    return (
+      <div className="flex h-screen items-center justify-center text-text-secondary">
+        Flow not found for {slug}.
+      </div>
+    );
   }
 
-  const currentNode = tree.nodes[currentNodeId];
+  // If the store is holding state from a different scenario, ignore it and use root
+  const safeNodeId = (activeScenario === slug && currentNodeId) ? currentNodeId : tree.root_node_id;
+  const currentNode = tree.nodes[safeNodeId];
 
   // If node is an instruction node, handle redirect
   if (currentNode?.type === 'instruction') {
@@ -76,7 +86,7 @@ export default function RescuePage({ params }: RescuePageProps) {
         <div className="flex items-center justify-between h-14 px-4">
           <button 
             onClick={handleBack}
-            className="w-10 h-10 flex items-center justify-center -ml-2 rounded-full hover:bg-card active:bg-card-active transition-colors text-text-primary"
+            className="w-12 h-12 flex items-center justify-center -ml-2 rounded-full hover:bg-card active:bg-card-active transition-colors text-text-primary"
             aria-label={t('rescue.back') || "Back"}
           >
             <ChevronLeft className="w-6 h-6" />
@@ -84,13 +94,13 @@ export default function RescuePage({ params }: RescuePageProps) {
         </div>
       </header>
 
-      <main className="flex-1 flex flex-col items-center justify-center px-4 max-w-md mx-auto w-full relative">
+      <div className="flex-1 flex flex-col items-center justify-center px-4 max-w-md mx-auto w-full relative">
         {isLoadingSteps ? (
           <div className="text-center animate-pulse text-text-secondary font-bold text-lg">
             Loading your steps...
           </div>
         ) : (
-          <div key={currentNodeId} className={`w-full flex flex-col gap-10 duration-200 ease-out fill-mode-both ${animationClass}`}>
+          <div key={safeNodeId} className={`w-full flex flex-col gap-10 duration-200 ease-out fill-mode-both ${animationClass}`}>
             
             {currentNode?.type === 'question' && (
               <>
@@ -115,7 +125,7 @@ export default function RescuePage({ params }: RescuePageProps) {
             
           </div>
         )}
-      </main>
+      </div>
 
       <div className="fixed bottom-6 right-6 z-40">
         <a 

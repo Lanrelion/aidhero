@@ -114,6 +114,15 @@ on .json or .ts files, verify no BOM exists:
 
 Fix: npx tsx scripts/strip-bom.ts (keep the script the agent wrote — reuse it)
 
+### 13. Voice Mode / SpeechRecognition
+SpeechRecognition and speechSynthesis must be mutually exclusive.
+Never open the mic while TTS is speaking — Chrome buffers TTS audio
+and parses it as commands ~200ms after utterance.onend fires.
+Architecture: mic opens 600ms after TTS ends (pipeline flush),
+closes before next TTS starts. Use sessionRef (not boolean flags)
+for loop cancellation — boolean flags have async reset race conditions.
+SpeechRecognition lang must be 'en-US' not 'en-NG' (Chrome rejects en-NG silently).
+
 ## gstack Skills
 
 gstack is installed at `.agent/skills/gstack`.

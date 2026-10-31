@@ -1,0 +1,186 @@
+{
+  "id": "fainting",
+  "slug": "fainting",
+  "content_version": 1,
+  "content_version_date": "2026-08-18T12:31:24.429Z",
+  "category": "neurological",
+  "title": "Fainting (Syncope)",
+  "title_translations": {
+    "en": "Fainting (Syncope)",
+    "ha": "[NEEDS_REVIEW] Fainting (Syncope)",
+    "ig": "[NEEDS_REVIEW] Fainting (Syncope)",
+    "yo": "[NEEDS_REVIEW] Fainting (Syncope)",
+    "pcm": "[NEEDS_REVIEW] Fainting (Syncope)"
+  },
+  "aliases": [
+    "fainting",
+    "faint",
+    "blackout",
+    "passed out",
+    "collapse",
+    "person fall down",
+    "syncope",
+    "person don faint",
+    "dizziness fall"
+  ],
+  "severity": "moderate",
+  "immediate_warning": "If the person does not regain consciousness within 1 minute, call 112.",
+  "immediate_warning_translations": {
+    "en": "If the person does not regain consciousness within 1 minute, call 112.",
+    "ha": "[NEEDS_REVIEW] If the person does not regain consciousness within 1 minute, call 112.",
+    "ig": "[NEEDS_REVIEW] If the person does not regain consciousness within 1 minute, call 112.",
+    "yo": "[NEEDS_REVIEW] If the person does not regain consciousness within 1 minute, call 112.",
+    "pcm": "[NEEDS_REVIEW] If the person does not regain consciousness within 1 minute, call 112."
+  },
+  "description": "Fainting is a brief loss of consciousness caused by a sudden drop in blood flow to the brain. It is usually harmless but can indicate a serious condition.",
+  "description_translations": {
+    "en": "Fainting is a brief loss of consciousness caused by a sudden drop in blood flow to the brain. It is usually harmless but can indicate a serious condition.",
+    "ha": "[NEEDS_REVIEW] Fainting is a brief loss of consciousness caused by a sudden drop in blood flow to the brain. It is usually harmless but can indicate a serious condition.",
+    "ig": "[NEEDS_REVIEW] Fainting is a brief loss of consciousness caused by a sudden drop in blood flow to the brain. It is usually harmless but can indicate a serious condition.",
+    "yo": "[NEEDS_REVIEW] Fainting is a brief loss of consciousness caused by a sudden drop in blood flow to the brain. It is usually harmless but can indicate a serious condition.",
+    "pcm": "[NEEDS_REVIEW] Fainting is a brief loss of consciousness caused by a sudden drop in blood flow to the brain. It is usually harmless but can indicate a serious condition."
+  },
+  "signs": [
+    "Sudden brief loss of consciousness",
+    "Pale or grey skin before fainting",
+    "Weak pulse",
+    "Dizziness before collapse"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Sudden brief loss of consciousness",
+      "ha": "[NEEDS_REVIEW] Sudden brief loss of consciousness",
+      "ig": "[NEEDS_REVIEW] Sudden brief loss of consciousness",
+      "yo": "[NEEDS_REVIEW] Sudden brief loss of consciousness",
+      "pcm": "[NEEDS_REVIEW] Sudden brief loss of consciousness"
+    },
+    "1": {
+      "en": "Pale or grey skin before fainting",
+      "ha": "[NEEDS_REVIEW] Pale or grey skin before fainting",
+      "ig": "[NEEDS_REVIEW] Pale or grey skin before fainting",
+      "yo": "[NEEDS_REVIEW] Pale or grey skin before fainting",
+      "pcm": "[NEEDS_REVIEW] Pale or grey skin before fainting"
+    },
+    "2": {
+      "en": "Weak pulse",
+      "ha": "[NEEDS_REVIEW] Weak pulse",
+      "ig": "[NEEDS_REVIEW] Weak pulse",
+      "yo": "[NEEDS_REVIEW] Weak pulse",
+      "pcm": "[NEEDS_REVIEW] Weak pulse"
+    },
+    "3": {
+      "en": "Dizziness before collapse",
+      "ha": "[NEEDS_REVIEW] Dizziness before collapse",
+      "ig": "[NEEDS_REVIEW] Dizziness before collapse",
+      "yo": "[NEEDS_REVIEW] Dizziness before collapse",
+      "pcm": "[NEEDS_REVIEW] Dizziness before collapse"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Lay the person flat on the ground on their back.",
+      "instruction_translations": {
+        "en": "Lay the person flat on the ground on their back.",
+        "ha": "[NEEDS_REVIEW] Lay the person flat on the ground on their back.",
+        "ig": "[NEEDS_REVIEW] Lay the person flat on the ground on their back.",
+        "yo": "[NEEDS_REVIEW] Lay the person flat on the ground on their back.",
+        "pcm": "[NEEDS_REVIEW] Lay the person flat on the ground on their back."
+      },
+      "audio_path": "/audio/fainting/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Raise their legs about 30cm (12 inches) to improve blood flow to the brain.",
+      "instruction_translations": {
+        "en": "Raise their legs about 30cm (12 inches) to improve blood flow to the brain.",
+        "ha": "[NEEDS_REVIEW] Raise their legs about 30cm (12 inches) to improve blood flow to the brain.",
+        "ig": "[NEEDS_REVIEW] Raise their legs about 30cm (12 inches) to improve blood flow to the brain.",
+        "yo": "[NEEDS_REVIEW] Raise their legs about 30cm (12 inches) to improve blood flow to the brain.",
+        "pcm": "[NEEDS_REVIEW] Raise their legs about 30cm (12 inches) to improve blood flow to the brain."
+      },
+      "audio_path": "/audio/fainting/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "Loosen any tight clothing around the neck and chest.",
+      "instruction_translations": {
+        "en": "Loosen any tight clothing around the neck and chest.",
+        "ha": "[NEEDS_REVIEW] Loosen any tight clothing around the neck and chest.",
+        "ig": "[NEEDS_REVIEW] Loosen any tight clothing around the neck and chest.",
+        "yo": "[NEEDS_REVIEW] Loosen any tight clothing around the neck and chest.",
+        "pcm": "[NEEDS_REVIEW] Loosen any tight clothing around the neck and chest."
+      },
+      "audio_path": "/audio/fainting/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Check for breathing. If not breathing, begin CPR and call 112.",
+      "instruction_translations": {
+        "en": "Check for breathing. If not breathing, begin CPR and call 112.",
+        "ha": "[NEEDS_REVIEW] Check for breathing. If not breathing, begin CPR and call 112.",
+        "ig": "[NEEDS_REVIEW] Check for breathing. If not breathing, begin CPR and call 112.",
+        "yo": "[NEEDS_REVIEW] Check for breathing. If not breathing, begin CPR and call 112.",
+        "pcm": "[NEEDS_REVIEW] Check for breathing. If not breathing, begin CPR and call 112."
+      },
+      "audio_path": "/audio/fainting/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "When they recover, have them sit up slowly. Do not let them stand immediately.",
+      "instruction_translations": {
+        "en": "When they recover, have them sit up slowly. Do not let them stand immediately.",
+        "ha": "[NEEDS_REVIEW] When they recover, have them sit up slowly. Do not let them stand immediately.",
+        "ig": "[NEEDS_REVIEW] When they recover, have them sit up slowly. Do not let them stand immediately.",
+        "yo": "[NEEDS_REVIEW] When they recover, have them sit up slowly. Do not let them stand immediately.",
+        "pcm": "[NEEDS_REVIEW] When they recover, have them sit up slowly. Do not let them stand immediately."
+      },
+      "audio_path": "/audio/fainting/{lang}/step-5.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not give water until fully conscious.",
+    "Do not leave them alone.",
+    "Do not prop them upright."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not give water until fully conscious.",
+      "ha": "[NEEDS_REVIEW] Do not give water until fully conscious.",
+      "ig": "[NEEDS_REVIEW] Do not give water until fully conscious.",
+      "yo": "[NEEDS_REVIEW] Do not give water until fully conscious.",
+      "pcm": "[NEEDS_REVIEW] Do not give water until fully conscious."
+    },
+    "1": {
+      "en": "Do not leave them alone.",
+      "ha": "[NEEDS_REVIEW] Do not leave them alone.",
+      "ig": "[NEEDS_REVIEW] Do not leave them alone.",
+      "yo": "[NEEDS_REVIEW] Do not leave them alone.",
+      "pcm": "[NEEDS_REVIEW] Do not leave them alone."
+    },
+    "2": {
+      "en": "Do not prop them upright.",
+      "ha": "[NEEDS_REVIEW] Do not prop them upright.",
+      "ig": "[NEEDS_REVIEW] Do not prop them upright.",
+      "yo": "[NEEDS_REVIEW] Do not prop them upright.",
+      "pcm": "[NEEDS_REVIEW] Do not prop them upright."
+    }
+  },
+  "hospital_threshold": "Go to hospital if fainting recurs, the person has heart disease, or there is chest pain.",
+  "hospital_threshold_translations": {
+    "en": "Go to hospital if fainting recurs, the person has heart disease, or there is chest pain.",
+    "ha": "[NEEDS_REVIEW] Go to hospital if fainting recurs, the person has heart disease, or there is chest pain.",
+    "ig": "[NEEDS_REVIEW] Go to hospital if fainting recurs, the person has heart disease, or there is chest pain.",
+    "yo": "[NEEDS_REVIEW] Go to hospital if fainting recurs, the person has heart disease, or there is chest pain.",
+    "pcm": "[NEEDS_REVIEW] Go to hospital if fainting recurs, the person has heart disease, or there is chest pain."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-08-18T12:31:24.428Z",
+    "medical_references": [
+      "WHO First Aid",
+      "Nigerian Emergency Medicine Association Guidelines"
+    ]
+  }
+}

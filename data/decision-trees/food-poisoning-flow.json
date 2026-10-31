@@ -1,0 +1,52 @@
+{
+  "id": "food-poisoning-flow",
+  "incident_id": "food-poisoning",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "How severe are the symptoms?",
+      "translations": {
+        "en": "How severe are the symptoms?",
+        "ha": "[NEEDS_REVIEW] How severe are the symptoms?",
+        "ig": "[NEEDS_REVIEW] How severe are the symptoms?",
+        "yo": "[NEEDS_REVIEW] How severe are the symptoms?",
+        "pcm": "[NEEDS_REVIEW] How severe are the symptoms?"
+      },
+      "options": [
+        {
+          "label": "Mild — nausea, vomiting, diarrhoea",
+          "translations": {
+            "en": "Mild — nausea, vomiting, diarrhoea",
+            "ha": "[NEEDS_REVIEW] Mild — nausea, vomiting, diarrhoea",
+            "ig": "[NEEDS_REVIEW] Mild — nausea, vomiting, diarrhoea",
+            "yo": "[NEEDS_REVIEW] Mild — nausea, vomiting, diarrhoea",
+            "pcm": "[NEEDS_REVIEW] Mild — nausea, vomiting, diarrhoea"
+          },
+          "next_node_id": "home-care"
+        },
+        {
+          "label": "Severe — bloody stool, cannot keep fluids down, very weak",
+          "translations": {
+            "en": "Severe — bloody stool, cannot keep fluids down, very weak",
+            "ha": "[NEEDS_REVIEW] Severe — bloody stool, cannot keep fluids down, very weak",
+            "ig": "[NEEDS_REVIEW] Severe — bloody stool, cannot keep fluids down, very weak",
+            "yo": "[NEEDS_REVIEW] Severe — bloody stool, cannot keep fluids down, very weak",
+            "pcm": "[NEEDS_REVIEW] Severe — bloody stool, cannot keep fluids down, very weak"
+          },
+          "next_node_id": "hospital-steps"
+        }
+      ]
+    },
+    "home-care": {
+      "type": "instruction",
+      "steps_reference": "food-poisoning",
+      "variant": "home"
+    },
+    "hospital-steps": {
+      "type": "instruction",
+      "steps_reference": "food-poisoning",
+      "variant": "severe"
+    }
+  }
+}

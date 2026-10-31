@@ -1,114 +1,195 @@
 {
-    "nav": {
-        "home": "[HA] Home",
-        "search": "[HA] Search",
-        "emergency": "[HA] Emergency",
-        "settings": "[HA] Settings"
+  "nav": {
+    "home": "Gida",
+    "search": "Nema",
+    "emergency": "Gaggawa",
+    "settings": "Saituna"
+  },
+  "home": {
+    "title": "AidHero",
+    "subtitle": "Jagoran Agajin Gaggawa",
+    "searchPlaceholder": "Nemi alamomi ko raunuka...",
+    "sectionHeaders": "Rukuni",
+    "emergencyCall": "Kira Gaggawa",
+    "voiceSearchPrompt": "Ina sauraro... fadi abin da ya faru",
+    "voiceSearchHint": "misali \"Ciwon Zuciya\", \"Kone\", \"Zubar Jini\""
+  },
+  "rescue": {
+    "startGuided": "Fara Agajin Gaggawa Mai Jagora",
+    "quickSteps": "Matakai Masu Sauri",
+    "stepXOfY": "Mataki na {step} cikin {total}",
+    "stepNumber": "MATAKI NA {number}",
+    "next": "Na Gaba",
+    "nextStep": "Mataki na Gaba",
+    "back": "Baya",
+    "repeat": "Maimaita",
+    "callEmergency": "Kira Gaggawa",
+    "doneCall": "An Gama — Kira Gaggawa",
+    "playAudio": "Saurara da",
+    "stopAudio": "Tsaya",
+    "readAll": "Karanta duk matakan da",
+    "voiceMode": "Yanayin Murya",
+    "startVoice": "Yanayin Murya",
+    "skipToSteps": "Tsallake zuwa matakai",
+    "exitVoiceMode": "Fita daga Yanayin Murya",
+    "exit": "Fita",
+    "pause": "Dakata",
+    "resume": "Ci gaba",
+    "voiceHint": "Ce \"next\", \"back\", ko \"repeat\"",
+    "voiceUnavailable": "Umarnin murya baya aiki a yanzu",
+    "severity": {
+      "critical": "MAI HATSARIN GASKE",
+      "moderate": "MAI SAUƘI",
+      "urgent": "MAI GAGGAWA"
     },
-    "home": {
-        "title": "[HA] AidHero",
-        "subtitle": "[HA] First Aid Guide",
-        "searchPlaceholder": "[HA] Search for symptoms or injuries...",
-        "sectionHeaders": "[HA] Categories",
-        "emergencyCall": "[HA] Kira Gaggawa"
-    },
-    "rescue": {
-        "startGuided": "[HA] Start Guided Rescue",
-        "quickSteps": "[HA] Quick Steps",
-        "stepXOfY": "[HA] Step {step} of {total}",
-        "stepNumber": "[HA] STEP {number}",
-        "next": "[HA] Next",
-        "nextStep": "[HA] Next Step",
-        "back": "[HA] Back",
-        "repeat": "[HA] Repeat",
-        "callEmergency": "[HA] Call Emergency",
-        "doneCall": "[HA] Done — Call Emergency",
-        "playAudio": "[HA] Play in",
-        "stopAudio": "[HA] Stop",
-        "readAll": "[HA] Read all steps in",
-        "voiceMode": "[HA] Voice Mode",
-        "startVoice": "[HA] Voice Mode",
-        "skipToSteps": "[HA] Skip to steps",
-        "exitVoiceMode": "[HA] Exit Voice Mode",
-        "exit": "[HA] Exit",
-        "pause": "[HA] Pause",
-        "resume": "[HA] Resume",
-        "voiceHint": "[HA] Say next, back, or repeat",
-        "voiceUnavailable": "[HA] Voice commands unavailable",
-        "severity": {
-            "critical": "[HA] CRITICAL",
-            "moderate": "[HA] MODERATE",
-            "urgent": "[HA] URGENT"
-        },
-        "signsToLookFor": "[HA] Signs to recognise",
-        "doNot": "[HA] What NOT to do",
-        "hospitalThreshold": "[HA] When to go to hospital",
-        "step1": "[HA] Step 1"
-    },
-    "search": {
-        "placeholder": "[HA] Search...",
-        "noResults": "[HA] No results found for \"{query}\".",
-        "recentSearches": "[HA] Recent Searches",
-        "trySuggestions": "[HA] Try: heart attack, choking, bleeding",
-        "allCategories": "[HA] All Categories",
-        "clearRecent": "[HA] Clear"
-    },
-    "incidents": {
-        "paediatric": "[HA] Paediatric",
-        "trauma": "[HA] Trauma",
-        "environmental": "[HA] Environmental",
-        "respiratory": "[HA] Respiratory",
-        "burns": "[HA] Burns",
-        "allergic": "[HA] Allergic",
-        "obstetric": "[HA] Obstetric",
-        "cardiac": "[HA] Cardiac",
-        "poisoning": "[HA] Poisoning",
-        "neurological": "[HA] Neurological",
-        "gastrointestinal": "[HA] Gastrointestinal",
-        "other": "[HA] Other"
-    },
-    "emergency": {
-        "callButton": "[HA] Call",
-        "stateNames": "[HA] State Numbers",
-        "nationalNumbers": "[HA] National Emergency Numbers"
-    },
-    "settings": {
-        "language": "[HA] Language",
-        "textSize": "[HA] Text Size",
-        "contrast": "[HA] Contrast",
-        "offline": "[HA] Offline Mode",
-        "about": "[HA] About AidHero"
-    },
-    "accessibility": {
-        "ariaLabels": "[HA] Accessibility Strings",
-        "emergencyCallStrip": "[HA] Kira Lambobin Gaggawa",
-        "changeLanguage": "[HA] Change Language",
-        "bottomNav": "[HA] Bottom Navigation"
-    },
-    "offline": {
-        "ready": "[HA] Ready for offline use",
-        "limited": "[HA] Limited offline functionality",
-        "updated": "[HA] Content updated",
-        "active": "[HA] Offline Mode Active",
-        "downloading": "[HA] Downloading Content..."
-    },
-    "errors": {
-        "notFound": "[HA] Page not found",
-        "audioUnavailable": "[HA] Audio unavailable in offline mode",
-        "offlineLimitation": "[HA] This feature requires an internet connection"
-    },
-    "onboarding": {
-        "slide1Title": "[HA] Welcome to AidHero",
-        "slide1Desc": "[HA] Your offline-first emergency companion.",
-        "slide2Title": "[HA] Always Available",
-        "slide2Desc": "[HA] Access life-saving guides even without internet.",
-        "slide3Title": "[HA] Voice Guided",
-        "slide3Desc": "[HA] Hands-free audio instructions during emergencies."
-    },
-    "metadata": {
-        "title": "[HA] AidHero - Emergency First Aid Nigeria",
-        "description": "[HA] Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
-        "ogTitle": "[HA] AidHero - Emergency First Aid Nigeria",
-        "ogDescription": "[HA] You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
+    "signsToLookFor": "Alamomin da za a gane",
+    "doNot": "Abin da KADA a yi",
+    "hospitalThreshold": "Lokacin tafiya asibiti",
+    "step1": "Mataki na 1"
+  },
+  "search": {
+    "placeholder": "Nema...",
+    "noResults": "Ba a sami sakamako ba don \"{query}\".",
+    "recentSearches": "Binciken Kwanan Nan",
+    "trySuggestions": "Gwada: ciwon zuciya, shaƙewa, zubar jini",
+    "allCategories": "Duk Rukunoni",
+    "clearRecent": "Share"
+  },
+  "incidents": {
+    "paediatric": "Na Yara",
+    "trauma": "Rauni / Hatsari",
+    "environmental": "Na Muhalli",
+    "respiratory": "Hanyar Numfashi",
+    "burns": "Kone-kone",
+    "allergic": "Rashin Lafiya ta Rashin Dace (Allergy)",
+    "obstetric": "Na Masu Juna Biyu",
+    "cardiac": "Na Zuciya",
+    "poisoning": "Guba",
+    "neurological": "Na Ƙwaƙwalwa / Jijiyoyi",
+    "gastrointestinal": "Na Ciki / Hanji",
+    "other": "Sauran"
+  },
+  "emergency": {
+    "callButton": "Kira",
+    "stateNames": "Lambobin Jihohi",
+    "nationalNumbers": "Lambobin Gaggawa na Ƙasa",
+    "showingNumbersFor": "Ana nuna lambobi don",
+    "showingNationalNumbers": "Ana nuna lambobin ƙasa",
+    "services": "Ayyuka",
+    "nationalServices": "Ayyukan Ƙasa",
+    "changeState": "Canza Jiha",
+    "selectState": "Zaɓi Jiha",
+    "searchStates": "Nemi jiha...",
+    "noStatesFound": "Babu jihar da ta dace da \"{search}\""
+  },
+  "common": {
+    "yes": "Eh",
+    "no": "A'a",
+    "none": "Babu",
+    "all": "Duka",
+    "loading": "Ana lodawa...",
+    "save": "Ajiye",
+    "cancel": "Soke",
+    "back": "Baya"
+  },
+  "settings": {
+    "language": "Harshe",
+    "textSize": "Girmar Rubutu",
+    "contrast": "Bambancin Launi",
+    "offline": "Yanayin Ba Tare da Intanet Ba",
+    "manage": "Sarrafa",
+    "contentDownloaded": "An sauke bayanan manhaja",
+    "audioDownloadedFor": "An sauke sautin murya don",
+    "yes": "Eh",
+    "no": "A'a",
+    "about": "Game da AidHero",
+    "aboutAidHero": "Game da AidHero",
+    "version": "Sigar",
+    "offlineFirst": "Aiki Ba Tare da Intanet Ba",
+    "medicalDisclaimer": "Gargaɗi na Likita: Wannan manhaja tana ba da jagorancin agajin gaggawa ne kawai bisa ƙa'ida, ba ta maye gurbin shawarar likita ba. Koyaushe kira lambobin gaggawa nan take.",
+    "confirmDuringRescue": "Canza harshe zai sake farawa da aikin ceto. Ci gaba?",
+    "general": "Gabaɗaya",
+    "accessibility": "Sauƙin Amfani",
+    "scaleNormal": "Na al'ada",
+    "scaleLarge": "Babba",
+    "scaleXL": "Mai Girma",
+    "highContrast": "Launi Mai Haske",
+    "highContrastDesc": "Yanayi mafi bayyane don karantawa",
+    "autoplayVoice": "Kunnawa ta atomatik",
+    "autoplayVoiceDesc": "Karanta matakai da murya ta atomatik",
+    "offlineVoiceModeFallback": "Zaɓin Yanayin Murya Ba Tare da Intanet Ba",
+    "offlineVoiceModeDesc": "Zaɓi lokacin da za a jira kafin wucewa zuwa mataki na gaba lokacin da umarnin murya baya aiki.",
+    "manualAdvance": "Da hannu (Danna don ci gaba)",
+    "seconds": "Daƙiƙa {count}",
+    "offlineScreen": {
+      "title": "Sauke don Amfani Ba Tare da Intanet Ba",
+      "appContent": "Bayanan Manhaja",
+      "appContentStatus": "An riga an sauke a ziyarar farko",
+      "englishAudio": "Sautin Turanci",
+      "englishAudioStatus": "An sauke ta atomatik",
+      "download": "Sauke",
+      "downloading": "Ana saukewa... {progress}%",
+      "downloaded": "An Sauke",
+      "storageUsed": "Wurin da aka yi amfani da shi: {used}MB cikin kimanin {total}MB",
+      "lastUpdated": "Sabuntawar ƙarshe",
+      "checkUpdates": "Duba sabuntawa"
     }
+  },
+  "accessibility": {
+    "ariaLabels": "Rubutun Sauƙin Amfani",
+    "emergencyCallStrip": "Kira Lambobin Gaggawa",
+    "changeLanguage": "Canza Harshe",
+    "bottomNav": "Kewayawa na Ƙasa",
+    "skipToMain": "Tsallake zuwa ainihin abun ciki",
+    "voiceSearch": "Binciken Murya"
+  },
+  "offline": {
+    "ready": "A shirye yake don aiki ba tare da intanet ba",
+    "limited": "Iyakantaccen aiki ba tare da intanet ba",
+    "updated": "An sabunta abun ciki",
+    "active": "Yanayin Aiki Ba Tare da Intanet Ba Kunnanne",
+    "downloading": "Ana sauke abun ciki..."
+  },
+  "errors": {
+    "notFound": "Ba a sami shafin ba",
+    "audioUnavailable": "Babu sautin murya a yanayin ba tare da intanet ba",
+    "offlineLimitation": "Wannan aikin yana buƙatar haɗin intanet"
+  },
+  "onboarding": {
+    "slide1": {
+      "title": "Kuna iya ceton rai.",
+      "body": "AidHero zai nuna muku yadda ake yi."
+    },
+    "slide2": {
+      "title": "Yana aiki ba tare da intanet ba,",
+      "body": "a cikin harshenku."
+    },
+    "slide3": {
+      "title": "Zaɓi harshenku",
+      "body": "+ sauke bayanan manhaja"
+    },
+    "download": "Sauke don amfani ba tare da intanet ba",
+    "skipLater": "Zan yi wannan daga baya",
+    "skip": "Tsallake",
+    "back": "Baya",
+    "next": "Na Gaba",
+    "progressDots": "Ci gaban hawan"
+  },
+  "trust": {
+    "pendingReview": "Binciken likita yana jiran",
+    "pendingWarning": "Wannan bayanin yana jiran tabbaci daga ƙwararren ƙwararren likita. Yi amfani da hankali.",
+    "reviewed": "Likitan Bita",
+    "reviewedBy": "_VAR_0__ ne ya duba",
+    "lastReviewed": "An sake dubawa na ƙarshe: _VAR_0__"
+  },
+  "metadata": {
+    "title": "AidHero - Agajin Gaggawa Na Najeriya",
+    "description": "Jagoran agajin gaggawa na Najeriya ba tare da intanet ba. Umarnin agaji nan take a Turanci, Hausa, Igbo, Yarbanci da Pidgin.",
+    "ogTitle": "AidHero - Agajin Gaggawa Na Najeriya",
+    "ogDescription": "Kuna iya ceton rai. AidHero zai nuna muku yadda ake yi. Jagoran agaji ba tare da intanet ba a Najeriya."
+  },
+  "voiceMode": {
+    "sayCommand": "Fada: gaba, koma baya, sake yi",
+    "offlineHint": "Umarnin murya yana bukatar intanet — yi amfani da maballan ko ci gaba da kansa"
+  }
 }

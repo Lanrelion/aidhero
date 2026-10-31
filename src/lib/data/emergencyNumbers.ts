@@ -3,6 +3,29 @@ import emergencyDataRaw from '../../../data/emergency-numbers.json';
 // Handle Turbopack JSON import issue gracefully
 const emergencyData = ((emergencyDataRaw as any).default || emergencyDataRaw) as any;
 
+export interface EmergencyContact {
+  id: string;
+  name: string;
+  name_translations: Record<string, string>;
+  number: string;
+  type: string;
+}
+
+export function getAllStates(): string[] {
+  if (!emergencyData.states) return [];
+  return Object.keys(emergencyData.states).sort();
+}
+
+export function getNationalNumbers(): EmergencyContact[] {
+  if (!emergencyData.national) return [];
+  return emergencyData.national;
+}
+
+export function getStateNumbers(state: string): EmergencyContact[] {
+  if (!emergencyData.states || !emergencyData.states[state]) return [];
+  return emergencyData.states[state].contacts;
+}
+
 export function getPrimaryEmergencyNumber(detectedState: string | null): string {
   // 1. Try state-specific general emergency number first (e.g. LASEMA in Lagos)
   if (detectedState && emergencyData.states[detectedState]) {

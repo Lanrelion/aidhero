@@ -3,6 +3,17 @@ import type { Locale } from '../../i18n/config';
 import { defaultLocale } from '../../i18n/config';
 import { idb } from '@/lib/offline/idb';
 
+async function cacheAudioForLanguage(lang: Locale) {
+  if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
+    try {
+      const sw = await navigator.serviceWorker.ready;
+      sw.active?.postMessage({ type: 'CACHE_AUDIO_LANGUAGE', lang });
+    } catch (e) {
+      console.warn('Service worker not ready for audio caching', e);
+    }
+  }
+}
+
 interface LanguageStore {
   language: Locale;
   setLanguage: (lang: Locale) => Promise<void>;
@@ -27,6 +38,8 @@ export const useLanguageStore = create<LanguageStore>((set) => ({
     // 3. Dispatch custom event for progressive audio caching (implemented later)
     if (typeof window !== 'undefined') {
       window.dispatchEvent(new CustomEvent('language-changed', { detail: { lang } }));
+      // 4. Send message to service worker to pre-fetch audio
+      cacheAudioForLanguage(lang);
     }
   },
 

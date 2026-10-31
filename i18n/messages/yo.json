@@ -1,114 +1,195 @@
 {
-    "nav": {
-        "home": "[YO] Home",
-        "search": "[YO] Search",
-        "emergency": "[YO] Emergency",
-        "settings": "[YO] Settings"
+  "nav": {
+    "home": "Ilé",
+    "search": "Wá",
+    "emergency": "Pàjáwìrì",
+    "settings": "Ètò"
+  },
+  "home": {
+    "title": "AidHero",
+    "subtitle": "Itọsọna Iranlọwọ Akọkọ",
+    "searchPlaceholder": "Wá àwọn àmì àìsàn tàbí egbò...",
+    "sectionHeaders": "Àwọn Ẹ̀ka",
+    "emergencyCall": "Pe Pàjáwìrì",
+    "voiceSearchPrompt": "Mo ń gbọ́... sọ ohun tó ṣẹlẹ̀",
+    "voiceSearchHint": "bíi \"Ìkọlù Ọkàn\", \"Iná Jóni\", \"Ẹ̀jẹ̀ Dídà\""
+  },
+  "rescue": {
+    "startGuided": "Bẹ̀rẹ̀ Ìgbàlà Pẹ̀lú Ìtọ́sọ́nà",
+    "quickSteps": "Àwọn Ìgbésẹ̀ Kíákíá",
+    "stepXOfY": "Ìgbésẹ̀ {step} nínú {total}",
+    "stepNumber": "ÌGBÉSẸ̀ {number}",
+    "next": "Tókàn",
+    "nextStep": "Ìgbésẹ̀ Tókàn",
+    "back": "Padà",
+    "repeat": "Tún ṣe",
+    "callEmergency": "Pe Pàjáwìrì",
+    "doneCall": "Ti parí — Pe Pàjáwìrì",
+    "playAudio": "Gbọ́ ní",
+    "stopAudio": "Dúró",
+    "readAll": "Ka gbogbo ìgbésẹ̀ ní",
+    "voiceMode": "Ètò Ohùn",
+    "startVoice": "Ètò Ohùn",
+    "skipToSteps": "Fò lọ sí àwọn ìgbésẹ̀",
+    "exitVoiceMode": "Jáde kúrò ní Ètò Ohùn",
+    "exit": "Jáde",
+    "pause": "Dánu dúró",
+    "resume": "Tẹ̀síwájú",
+    "voiceHint": "Sọ \"next\", \"back\", tàbí \"repeat\"",
+    "voiceUnavailable": "Àwọn àṣẹ ohùn kò sí níbẹ̀ báyìí",
+    "severity": {
+      "critical": "PÀTÀKÌ GAN-AN",
+      "moderate": "DÁWỌ̀RỌ̀",
+      "urgent": "KÍÁKÍÁ"
     },
-    "home": {
-        "title": "[YO] AidHero",
-        "subtitle": "[YO] First Aid Guide",
-        "searchPlaceholder": "[YO] Search for symptoms or injuries...",
-        "sectionHeaders": "[YO] Categories",
-        "emergencyCall": "[YO] Pe Pajawiri"
-    },
-    "rescue": {
-        "startGuided": "[YO] Start Guided Rescue",
-        "quickSteps": "[YO] Quick Steps",
-        "stepXOfY": "[YO] Step {step} of {total}",
-        "stepNumber": "[YO] STEP {number}",
-        "next": "[YO] Next",
-        "nextStep": "[YO] Next Step",
-        "back": "[YO] Back",
-        "repeat": "[YO] Repeat",
-        "callEmergency": "[YO] Call Emergency",
-        "doneCall": "[YO] Done — Call Emergency",
-        "playAudio": "[YO] Play in",
-        "stopAudio": "[YO] Stop",
-        "readAll": "[YO] Read all steps in",
-        "voiceMode": "[YO] Voice Mode",
-        "startVoice": "[YO] Voice Mode",
-        "skipToSteps": "[YO] Skip to steps",
-        "exitVoiceMode": "[YO] Exit Voice Mode",
-        "exit": "[YO] Exit",
-        "pause": "[YO] Pause",
-        "resume": "[YO] Resume",
-        "voiceHint": "[YO] Say next, back, or repeat",
-        "voiceUnavailable": "[YO] Voice commands unavailable",
-        "severity": {
-            "critical": "[YO] CRITICAL",
-            "moderate": "[YO] MODERATE",
-            "urgent": "[YO] URGENT"
-        },
-        "signsToLookFor": "[YO] Signs to recognise",
-        "doNot": "[YO] What NOT to do",
-        "hospitalThreshold": "[YO] When to go to hospital",
-        "step1": "[YO] Step 1"
-    },
-    "search": {
-        "placeholder": "[YO] Search...",
-        "noResults": "[YO] No results found for \"{query}\".",
-        "recentSearches": "[YO] Recent Searches",
-        "trySuggestions": "[YO] Try: heart attack, choking, bleeding",
-        "allCategories": "[YO] All Categories",
-        "clearRecent": "[YO] Clear"
-    },
-    "incidents": {
-        "paediatric": "[YO] Paediatric",
-        "trauma": "[YO] Trauma",
-        "environmental": "[YO] Environmental",
-        "respiratory": "[YO] Respiratory",
-        "burns": "[YO] Burns",
-        "allergic": "[YO] Allergic",
-        "obstetric": "[YO] Obstetric",
-        "cardiac": "[YO] Cardiac",
-        "poisoning": "[YO] Poisoning",
-        "neurological": "[YO] Neurological",
-        "gastrointestinal": "[YO] Gastrointestinal",
-        "other": "[YO] Other"
-    },
-    "emergency": {
-        "callButton": "[YO] Call",
-        "stateNames": "[YO] State Numbers",
-        "nationalNumbers": "[YO] National Emergency Numbers"
-    },
-    "settings": {
-        "language": "[YO] Language",
-        "textSize": "[YO] Text Size",
-        "contrast": "[YO] Contrast",
-        "offline": "[YO] Offline Mode",
-        "about": "[YO] About AidHero"
-    },
-    "accessibility": {
-        "ariaLabels": "[YO] Accessibility Strings",
-        "emergencyCallStrip": "[YO] Pe NÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âmba Pajawiri",
-        "changeLanguage": "[YO] Change Language",
-        "bottomNav": "[YO] Bottom Navigation"
-    },
-    "offline": {
-        "ready": "[YO] Ready for offline use",
-        "limited": "[YO] Limited offline functionality",
-        "updated": "[YO] Content updated",
-        "active": "[YO] Offline Mode Active",
-        "downloading": "[YO] Downloading Content..."
-    },
-    "errors": {
-        "notFound": "[YO] Page not found",
-        "audioUnavailable": "[YO] Audio unavailable in offline mode",
-        "offlineLimitation": "[YO] This feature requires an internet connection"
-    },
-    "onboarding": {
-        "slide1Title": "[YO] Welcome to AidHero",
-        "slide1Desc": "[YO] Your offline-first emergency companion.",
-        "slide2Title": "[YO] Always Available",
-        "slide2Desc": "[YO] Access life-saving guides even without internet.",
-        "slide3Title": "[YO] Voice Guided",
-        "slide3Desc": "[YO] Hands-free audio instructions during emergencies."
-    },
-    "metadata": {
-        "title": "[YO] AidHero - Emergency First Aid Nigeria",
-        "description": "[YO] Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
-        "ogTitle": "[YO] AidHero - Emergency First Aid Nigeria",
-        "ogDescription": "[YO] You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
+    "signsToLookFor": "Àwọn àmì láti mọ̀",
+    "doNot": "Ohun tí KÒ GBỌ́DỌ̀ ṣe",
+    "hospitalThreshold": "Ìgbà láti lọ sí ilé ìwòsàn",
+    "step1": "Ìgbésẹ̀ 1"
+  },
+  "search": {
+    "placeholder": "Wá...",
+    "noResults": "Kò sí àbájáde tí a rí fún \"{query}\".",
+    "recentSearches": "Àwọn Ìwádìí Àìpẹ́",
+    "trySuggestions": "Gbìyànjú: àrùn ọkàn, gbé nǹkan mì, ẹ̀jẹ̀ ríru",
+    "allCategories": "Gbogbo Àwọn Ẹ̀ka",
+    "clearRecent": "Pa rẹ́"
+  },
+  "incidents": {
+    "paediatric": "Fún Ọmọdé",
+    "trauma": "Ìpalára / Egbò",
+    "environmental": "Nípa Àyíká",
+    "respiratory": "Ètò Ìmí",
+    "burns": "Iná Jíjó",
+    "allergic": "Àìfararọ (Allergy)",
+    "obstetric": "Fún Aboyún",
+    "cardiac": "Nípa Ọkàn",
+    "poisoning": "Oró / Márawò",
+    "neurological": "Nípa Ọpọlọ àti Iṣan",
+    "gastrointestinal": "Nípa Inú",
+    "other": "Àwọn Ìyókù"
+  },
+  "emergency": {
+    "callButton": "Pe",
+    "stateNames": "Àwọn Nọ́mbà Ìpínlẹ̀",
+    "nationalNumbers": "Àwọn Nọ́mbà Pàjáwìrì Orílẹ̀-Èdè",
+    "showingNumbersFor": "Ń fi àwọn nọ́mbà hàn fún",
+    "showingNationalNumbers": "Ń fi àwọn nọ́mbà orílẹ̀-èdè hàn",
+    "services": "Àwọn Iṣẹ́",
+    "nationalServices": "Àwọn Iṣẹ́ Orílẹ̀-Èdè",
+    "changeState": "Yí Ìpínlẹ̀ Padà",
+    "selectState": "Yan Ìpínlẹ̀",
+    "searchStates": "Wá ìpínlẹ̀...",
+    "noStatesFound": "Kò sí ìpínlẹ̀ tó bá \"{search}\" mu"
+  },
+  "common": {
+    "yes": "Bẹ́ẹ̀ni",
+    "no": "Bẹ́ẹ̀kọ́",
+    "none": "Kò sí",
+    "all": "Gbogbo",
+    "loading": "Nkojọpọ...",
+    "save": "Fipamọ",
+    "cancel": "Fagilee",
+    "back": "Padà"
+  },
+  "settings": {
+    "language": "Èdè",
+    "textSize": "Ìwọ̀n Ọ̀rọ̀",
+    "contrast": "Ìyàtọ̀ Àwọ̀",
+    "offline": "Ètò Láìsí Íńtánẹ́ẹ̀tì",
+    "manage": "Ṣakoso awọn",
+    "contentDownloaded": "A ti gba àkóónú sílẹ̀",
+    "audioDownloadedFor": "A ti gba ohùn sílẹ̀ fún",
+    "yes": "Bẹ́ẹ̀ni",
+    "no": "Bẹ́ẹ̀kọ́",
+    "about": "Nípa AidHero",
+    "aboutAidHero": "Nípa AidHero",
+    "version": "Àtẹ̀jáde",
+    "offlineFirst": "Ń ṣiṣẹ́ láìsí Íńtánẹ́ẹ̀tì",
+    "medicalDisclaimer": "Ìkìlọ̀ Ìṣègùn: Ètò ìṣiṣẹ́ yìí ń pèsè ìtọ́sọ́nà ìrànlọ́wọ́ àkọ́kọ́ lásán, kìí ṣe dípò ìmọ̀ràn dókítà. Máa pe àwọn iṣẹ́ pàjáwìrì lẹ́sẹ̀kẹsẹ̀ ní àwọn ipò tó le koko.",
+    "confirmDuringRescue": "Yíyí èdè padà yóò tún ètò ìgbàlà bẹ̀rẹ̀. Ṣé kí a tẹ̀síwájú?",
+    "general": "Gbogbogbò",
+    "accessibility": "Ìrọ̀rùn Ìlò",
+    "scaleNormal": "Deede",
+    "scaleLarge": "Tobi",
+    "scaleXL": "Afikun Tobi",
+    "highContrast": "Àwọ̀ Tó Hàn Gbangba",
+    "highContrastDesc": "Ètò kíkà tó rọrùn jùlọ",
+    "autoplayVoice": "Kíkà Ohùn Lẹ́sẹ̀kẹsẹ̀",
+    "autoplayVoiceDesc": "Ka àwọn ìgbésẹ̀ jáde ní ohùn fúnra rẹ̀",
+    "offlineVoiceModeFallback": "Ètò Àfikún Ohùn Láìsí Íńtánẹ́ẹ̀tì",
+    "offlineVoiceModeDesc": "Yan iye àkókò láti dúró kí o tó tẹ̀síwájú sí ìgbésẹ̀ tókàn nígbà tí àṣẹ ohùn kò bá ṣiṣẹ́.",
+    "manualAdvance": "Pẹ̀lú ọwọ́ (Fọwọ́ kàn án láti tẹ̀síwájú)",
+    "seconds": "Àáyá {count}",
+    "offlineScreen": {
+      "title": "Gba sílẹ̀ fún Ìlò Láìsí Íńtánẹ́ẹ̀tì",
+      "appContent": "Àkóónú Ètò",
+      "appContentStatus": "A ti gbà á sílẹ̀ ní ìbẹ̀wò àkọ́kọ́",
+      "englishAudio": "Ohùn Gẹ̀ẹ́sì",
+      "englishAudioStatus": "Gbígbà sílẹ̀ fúnra rẹ̀",
+      "download": "Gba sílẹ̀",
+      "downloading": "Ń gba sílẹ̀... {progress}%",
+      "downloaded": "Ti gbà sílẹ̀",
+      "storageUsed": "Ààyè tí a lò: {used}MB nínú nǹkan bí {total}MB lápapọ̀",
+      "lastUpdated": "Àtúnṣe ìkẹyìn",
+      "checkUpdates": "Ṣàyẹ̀wò àwọn àtúnṣe"
     }
+  },
+  "accessibility": {
+    "ariaLabels": "Àwọn Ọ̀rọ̀ Ìrọ̀rùn Ìlò",
+    "emergencyCallStrip": "Pe Àwọn Nọ́mbà Pàjáwìrì",
+    "changeLanguage": "Yí Èdè Padà",
+    "bottomNav": "Ìtọ́sọ́nà Ìsàlẹ̀",
+    "skipToMain": "Fò lọ sí orí àkóónú gangan",
+    "voiceSearch": "Wiwa ohun"
+  },
+  "offline": {
+    "ready": "Ó ti ṣetán fún ìlò láìsí íńtánẹ́ẹ̀tì",
+    "limited": "Iṣẹ́ díẹ̀ ló wà láìsí íńtánẹ́ẹ̀tì",
+    "updated": "Àkóónú ti di títúnṣe",
+    "active": "Ètò Láìsí Íńtánẹ́ẹ̀tì Ń Ṣiṣẹ́",
+    "downloading": "Ń gba àkóónú sílẹ̀..."
+  },
+  "errors": {
+    "notFound": "A kò rí ojú ewé náà",
+    "audioUnavailable": "Ohùn kò sí ní ètò láìsí íńtánẹ́ẹ̀tì",
+    "offlineLimitation": "Ètò yìí nílò ìsopọ̀ íńtánẹ́ẹ̀tì"
+  },
+  "onboarding": {
+    "slide1": {
+      "title": "O lè gba ẹ̀mí là.",
+      "body": "AidHero yóò fi bí a ṣe ń ṣe é hàn ọ́."
+    },
+    "slide2": {
+      "title": "Ń ṣiṣẹ́ láìsí íńtánẹ́ẹ̀tì,",
+      "body": "ní èdè rẹ."
+    },
+    "slide3": {
+      "title": "Yan èdè rẹ",
+      "body": "+ gba àkóónú sílẹ̀"
+    },
+    "download": "Gba sílẹ̀ fún ìlò láìsí íńtánẹ́ẹ̀tì",
+    "skipLater": "N ó ṣe èyí nígbà mìíràn",
+    "skip": "Fò kọjá",
+    "back": "Padà",
+    "next": "Tókàn",
+    "progressDots": "Ilọsiwaju onboarding"
+  },
+  "trust": {
+    "pendingReview": "Ni isunmọtosi ni egbogi awotẹlẹ",
+    "pendingWarning": "Alaye yii n duro de ijẹrisi nipasẹ alamọdaju iṣoogun ti a fọwọsi. Lo pẹlu iṣọra.",
+    "reviewed": "Atunwo iṣoogun",
+    "reviewedBy": "Atunwo nipasẹ {name}",
+    "lastReviewed": "Atunyẹwo kẹhin: _VAR_0__"
+  },
+  "metadata": {
+    "title": "AidHero - Ìrànwọ́ Pàjáwìrì Ní Nàìjíríà",
+    "description": "Itọsọna iranlọwọ akọkọ laisi intanẹẹti fun orilẹ-ede Naijiria. Awọn itọnisọna ni ede Gẹẹsi, Hausa, Igbo, Yoruba ati Pidgin.",
+    "ogTitle": "AidHero - Ìrànwọ́ Pàjáwìrì Ní Nàìjíríà",
+    "ogDescription": "O lè gba ẹ̀mí là. AidHero yóò fi bí a ṣe ń ṣe é hàn ọ́. Itọsọna iranlọwọ akọkọ laisi intanẹẹti ni Naijiria."
+  },
+  "voiceMode": {
+    "sayCommand": "Sọ: tẹsiwaju, pada sẹhin, tun sọ",
+    "offlineHint": "Àṣẹ ohùn nílò íńtánẹ́ẹ̀tì — lo àwọn bọ́tìnì tàbí kí ó tẹ̀síwájú fúnrarẹ̀"
+  }
 }

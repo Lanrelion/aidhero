@@ -1,0 +1,52 @@
+{
+  "id": "asthma-attack-flow",
+  "incident_id": "asthma-attack",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Does the person have their reliever inhaler (usually blue)?",
+      "translations": {
+        "en": "Does the person have their reliever inhaler (usually blue)?",
+        "ha": "[NEEDS_REVIEW] Does the person have their reliever inhaler (usually blue)?",
+        "ig": "[NEEDS_REVIEW] Does the person have their reliever inhaler (usually blue)?",
+        "yo": "[NEEDS_REVIEW] Does the person have their reliever inhaler (usually blue)?",
+        "pcm": "[NEEDS_REVIEW] Does the person have their reliever inhaler (usually blue)?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "inhaler-steps"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "no-inhaler-steps"
+        }
+      ]
+    },
+    "inhaler-steps": {
+      "type": "instruction",
+      "steps_reference": "asthma-attack",
+      "variant": "with-inhaler"
+    },
+    "no-inhaler-steps": {
+      "type": "instruction",
+      "steps_reference": "asthma-attack",
+      "variant": "no-inhaler"
+    }
+  }
+}

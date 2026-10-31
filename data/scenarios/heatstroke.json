@@ -1,0 +1,204 @@
+{
+  "id": "heatstroke",
+  "slug": "heatstroke",
+  "content_version": 1,
+  "content_version_date": "2026-08-18T12:31:24.429Z",
+  "category": "environmental",
+  "title": "Heatstroke",
+  "title_translations": {
+    "en": "Heatstroke",
+    "ha": "[NEEDS_REVIEW] Heatstroke",
+    "ig": "[NEEDS_REVIEW] Heatstroke",
+    "yo": "[NEEDS_REVIEW] Heatstroke",
+    "pcm": "[NEEDS_REVIEW] Heatstroke"
+  },
+  "aliases": [
+    "heatstroke",
+    "heat exhaustion",
+    "sun stroke",
+    "too much sun",
+    "body temperature high",
+    "heat don catch am",
+    "sun dey affect am"
+  ],
+  "severity": "critical",
+  "immediate_warning": "Cool the person down immediately. Heatstroke can cause death or brain damage within minutes.",
+  "immediate_warning_translations": {
+    "en": "Cool the person down immediately. Heatstroke can cause death or brain damage within minutes.",
+    "ha": "[NEEDS_REVIEW] Cool the person down immediately. Heatstroke can cause death or brain damage within minutes.",
+    "ig": "[NEEDS_REVIEW] Cool the person down immediately. Heatstroke can cause death or brain damage within minutes.",
+    "yo": "[NEEDS_REVIEW] Cool the person down immediately. Heatstroke can cause death or brain damage within minutes.",
+    "pcm": "[NEEDS_REVIEW] Cool the person down immediately. Heatstroke can cause death or brain damage within minutes."
+  },
+  "description": "Heatstroke occurs when the body temperature rises dangerously high (above 40°C). It is a medical emergency common in hot Nigerian weather.",
+  "description_translations": {
+    "en": "Heatstroke occurs when the body temperature rises dangerously high (above 40°C). It is a medical emergency common in hot Nigerian weather.",
+    "ha": "[NEEDS_REVIEW] Heatstroke occurs when the body temperature rises dangerously high (above 40°C). It is a medical emergency common in hot Nigerian weather.",
+    "ig": "[NEEDS_REVIEW] Heatstroke occurs when the body temperature rises dangerously high (above 40°C). It is a medical emergency common in hot Nigerian weather.",
+    "yo": "[NEEDS_REVIEW] Heatstroke occurs when the body temperature rises dangerously high (above 40°C). It is a medical emergency common in hot Nigerian weather.",
+    "pcm": "[NEEDS_REVIEW] Heatstroke occurs when the body temperature rises dangerously high (above 40°C). It is a medical emergency common in hot Nigerian weather."
+  },
+  "signs": [
+    "Very high body temperature",
+    "Hot, red, and dry skin (no sweating)",
+    "Rapid heartbeat",
+    "Confusion or unconsciousness",
+    "Headache"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Very high body temperature",
+      "ha": "[NEEDS_REVIEW] Very high body temperature",
+      "ig": "[NEEDS_REVIEW] Very high body temperature",
+      "yo": "[NEEDS_REVIEW] Very high body temperature",
+      "pcm": "[NEEDS_REVIEW] Very high body temperature"
+    },
+    "1": {
+      "en": "Hot, red, and dry skin (no sweating)",
+      "ha": "[NEEDS_REVIEW] Hot, red, and dry skin (no sweating)",
+      "ig": "[NEEDS_REVIEW] Hot, red, and dry skin (no sweating)",
+      "yo": "[NEEDS_REVIEW] Hot, red, and dry skin (no sweating)",
+      "pcm": "[NEEDS_REVIEW] Hot, red, and dry skin (no sweating)"
+    },
+    "2": {
+      "en": "Rapid heartbeat",
+      "ha": "[NEEDS_REVIEW] Rapid heartbeat",
+      "ig": "[NEEDS_REVIEW] Rapid heartbeat",
+      "yo": "[NEEDS_REVIEW] Rapid heartbeat",
+      "pcm": "[NEEDS_REVIEW] Rapid heartbeat"
+    },
+    "3": {
+      "en": "Confusion or unconsciousness",
+      "ha": "[NEEDS_REVIEW] Confusion or unconsciousness",
+      "ig": "[NEEDS_REVIEW] Confusion or unconsciousness",
+      "yo": "[NEEDS_REVIEW] Confusion or unconsciousness",
+      "pcm": "[NEEDS_REVIEW] Confusion or unconsciousness"
+    },
+    "4": {
+      "en": "Headache",
+      "ha": "[NEEDS_REVIEW] Headache",
+      "ig": "[NEEDS_REVIEW] Headache",
+      "yo": "[NEEDS_REVIEW] Headache",
+      "pcm": "[NEEDS_REVIEW] Headache"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Call 112 immediately.",
+      "instruction_translations": {
+        "en": "Call 112 immediately.",
+        "ha": "[NEEDS_REVIEW] Call 112 immediately.",
+        "ig": "[NEEDS_REVIEW] Call 112 immediately.",
+        "yo": "[NEEDS_REVIEW] Call 112 immediately.",
+        "pcm": "[NEEDS_REVIEW] Call 112 immediately."
+      },
+      "audio_path": "/audio/heatstroke/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Move the person to a cool, shaded area immediately.",
+      "instruction_translations": {
+        "en": "Move the person to a cool, shaded area immediately.",
+        "ha": "[NEEDS_REVIEW] Move the person to a cool, shaded area immediately.",
+        "ig": "[NEEDS_REVIEW] Move the person to a cool, shaded area immediately.",
+        "yo": "[NEEDS_REVIEW] Move the person to a cool, shaded area immediately.",
+        "pcm": "[NEEDS_REVIEW] Move the person to a cool, shaded area immediately."
+      },
+      "audio_path": "/audio/heatstroke/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "Remove excess clothing.",
+      "instruction_translations": {
+        "en": "Remove excess clothing.",
+        "ha": "[NEEDS_REVIEW] Remove excess clothing.",
+        "ig": "[NEEDS_REVIEW] Remove excess clothing.",
+        "yo": "[NEEDS_REVIEW] Remove excess clothing.",
+        "pcm": "[NEEDS_REVIEW] Remove excess clothing."
+      },
+      "audio_path": "/audio/heatstroke/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Cool them rapidly: apply cool water to skin, fan vigorously, or use wet towels on neck, armpits, and groin.",
+      "instruction_translations": {
+        "en": "Cool them rapidly: apply cool water to skin, fan vigorously, or use wet towels on neck, armpits, and groin.",
+        "ha": "[NEEDS_REVIEW] Cool them rapidly: apply cool water to skin, fan vigorously, or use wet towels on neck, armpits, and groin.",
+        "ig": "[NEEDS_REVIEW] Cool them rapidly: apply cool water to skin, fan vigorously, or use wet towels on neck, armpits, and groin.",
+        "yo": "[NEEDS_REVIEW] Cool them rapidly: apply cool water to skin, fan vigorously, or use wet towels on neck, armpits, and groin.",
+        "pcm": "[NEEDS_REVIEW] Cool them rapidly: apply cool water to skin, fan vigorously, or use wet towels on neck, armpits, and groin."
+      },
+      "audio_path": "/audio/heatstroke/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "If conscious and able to swallow, give cool water to drink slowly.",
+      "instruction_translations": {
+        "en": "If conscious and able to swallow, give cool water to drink slowly.",
+        "ha": "[NEEDS_REVIEW] If conscious and able to swallow, give cool water to drink slowly.",
+        "ig": "[NEEDS_REVIEW] If conscious and able to swallow, give cool water to drink slowly.",
+        "yo": "[NEEDS_REVIEW] If conscious and able to swallow, give cool water to drink slowly.",
+        "pcm": "[NEEDS_REVIEW] If conscious and able to swallow, give cool water to drink slowly."
+      },
+      "audio_path": "/audio/heatstroke/{lang}/step-5.mp3"
+    },
+    {
+      "id": 6,
+      "instruction": "Do not give paracetamol or aspirin — they do not help in heatstroke.",
+      "instruction_translations": {
+        "en": "Do not give paracetamol or aspirin — they do not help in heatstroke.",
+        "ha": "[NEEDS_REVIEW] Do not give paracetamol or aspirin — they do not help in heatstroke.",
+        "ig": "[NEEDS_REVIEW] Do not give paracetamol or aspirin — they do not help in heatstroke.",
+        "yo": "[NEEDS_REVIEW] Do not give paracetamol or aspirin — they do not help in heatstroke.",
+        "pcm": "[NEEDS_REVIEW] Do not give paracetamol or aspirin — they do not help in heatstroke."
+      },
+      "audio_path": "/audio/heatstroke/{lang}/step-6.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not give medication for fever in heatstroke.",
+    "Do not leave the person alone.",
+    "Do not use ice-cold water — it can cause shock."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not give medication for fever in heatstroke.",
+      "ha": "[NEEDS_REVIEW] Do not give medication for fever in heatstroke.",
+      "ig": "[NEEDS_REVIEW] Do not give medication for fever in heatstroke.",
+      "yo": "[NEEDS_REVIEW] Do not give medication for fever in heatstroke.",
+      "pcm": "[NEEDS_REVIEW] Do not give medication for fever in heatstroke."
+    },
+    "1": {
+      "en": "Do not leave the person alone.",
+      "ha": "[NEEDS_REVIEW] Do not leave the person alone.",
+      "ig": "[NEEDS_REVIEW] Do not leave the person alone.",
+      "yo": "[NEEDS_REVIEW] Do not leave the person alone.",
+      "pcm": "[NEEDS_REVIEW] Do not leave the person alone."
+    },
+    "2": {
+      "en": "Do not use ice-cold water — it can cause shock.",
+      "ha": "[NEEDS_REVIEW] Do not use ice-cold water — it can cause shock.",
+      "ig": "[NEEDS_REVIEW] Do not use ice-cold water — it can cause shock.",
+      "yo": "[NEEDS_REVIEW] Do not use ice-cold water — it can cause shock.",
+      "pcm": "[NEEDS_REVIEW] Do not use ice-cold water — it can cause shock."
+    }
+  },
+  "hospital_threshold": "Always required. Heatstroke is a medical emergency.",
+  "hospital_threshold_translations": {
+    "en": "Always required. Heatstroke is a medical emergency.",
+    "ha": "[NEEDS_REVIEW] Always required. Heatstroke is a medical emergency.",
+    "ig": "[NEEDS_REVIEW] Always required. Heatstroke is a medical emergency.",
+    "yo": "[NEEDS_REVIEW] Always required. Heatstroke is a medical emergency.",
+    "pcm": "[NEEDS_REVIEW] Always required. Heatstroke is a medical emergency."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-08-18T12:31:24.428Z",
+    "medical_references": [
+      "WHO First Aid",
+      "Nigerian Emergency Medicine Association Guidelines"
+    ]
+  }
+}

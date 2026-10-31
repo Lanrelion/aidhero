@@ -1,10 +1,11 @@
 'use client';
 
-import React, { useState, useRef, useCallback } from 'react';
+import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { Play, Square } from 'lucide-react';
 import { useTranslations, useLocale } from 'next-intl';
 import { TTSManager } from '@/lib/tts/TTSManager';
 import { useRescueStore } from '@/store/useRescueStore';
+import { useLanguageStore } from '@/store/useLanguageStore';
 import { Locale } from '@/types/index';
 import type { Step } from '@/types/scenario';
 
@@ -23,7 +24,9 @@ const LANGUAGE_NAMES: Record<Locale, string> = {
 
 export function ReadAllButton({ scenarioId, steps }: ReadAllButtonProps) {
   const t = useTranslations();
-  const locale = useLocale() as Locale;
+  const routeLocale = useLocale() as Locale;
+  const { language } = useLanguageStore();
+  const currentLang = (language && language !== 'en') ? language : (routeLocale || language);
   const { currentStepIndex, advanceStep } = useRescueStore();
   
   const [isReadingAll, setIsReadingAll] = useState(false);
@@ -31,7 +34,7 @@ export function ReadAllButton({ scenarioId, steps }: ReadAllButtonProps) {
   // Ref mirrors state so the async loop can check it without stale closures
   const isReadingAllRef = useRef(false);
 
-  const langName = LANGUAGE_NAMES[locale] || 'Language';
+  const langName = LANGUAGE_NAMES[currentLang] || 'Language';
 
   const startReadingFrom = useCallback(async (startIndex: number) => {
     let idx = startIndex;
@@ -40,10 +43,10 @@ export function ReadAllButton({ scenarioId, steps }: ReadAllButtonProps) {
       const step = steps[idx];
       if (!step) break;
 
-      const text = step.instruction_translations[locale] || step.instruction;
+      const text = step.instruction_translations?.[currentLang] || step.instruction;
 
       // Await the speak() promise — resolves only when speech fully ends
-      await TTSManager.speak(scenarioId, step.id, text, locale);
+      await TTSManager.speak(scenarioId, step.id, text, currentLang);
 
       // If user stopped in the meantime, bail out
       if (!isReadingAllRef.current) break;
@@ -66,7 +69,14 @@ export function ReadAllButton({ scenarioId, steps }: ReadAllButtonProps) {
     // Always clean up
     isReadingAllRef.current = false;
     setIsReadingAll(false);
-  }, [scenarioId, steps, locale, advanceStep]);
+  }, [scenarioId, steps, currentLang, advanceStep]);
+
+  // Clean up on unmount
+  useEffect(() => {
+    return () => {
+      isReadingAllRef.current = false;
+    };
+  }, []);
 
   const handleToggle = () => {
     if (isReadingAllRef.current) {

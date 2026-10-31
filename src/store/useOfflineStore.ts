@@ -58,8 +58,8 @@ export const useOfflineStore = create<OfflineStore>((set) => ({
     // (full implementation in STEP 25)
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.ready.then(() => {
-        // SW registered — check caches API for actual content
-        caches.has('aidhero-scenarios').then(has => {
+        // Check for our runtime cache (aidhero-pages-v1) set by public/sw.js
+        caches.has('aidhero-pages-v1').then(has => {
           set({ isCached: has });
         });
       });

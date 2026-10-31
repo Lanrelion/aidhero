@@ -1,114 +1,195 @@
 {
-    "nav": {
-        "home": "[IG] Home",
-        "search": "[IG] Search",
-        "emergency": "[IG] Emergency",
-        "settings": "[IG] Settings"
+  "nav": {
+    "home": "Ụlọ",
+    "search": "Chọọ",
+    "emergency": "Ihe Mberede",
+    "settings": "Ntọala"
+  },
+  "home": {
+    "title": "AidHero",
+    "subtitle": "Ntuziaka Enyemaka Mbụ",
+    "searchPlaceholder": "Chọọ mgbaàmà ma ọ bụ mmerụ ahụ...",
+    "sectionHeaders": "Otu Dị Iche Iche",
+    "emergencyCall": "Kpọọ Ndị Mberede",
+    "voiceSearchPrompt": "Ana m ege ntị... kwuo ihe mberede ahụ",
+    "voiceSearchHint": "dịka \"Nkụchi Obi\", \"Ọkụ\", \"Ọbara\""
+  },
+  "rescue": {
+    "startGuided": "Malite Nnapụta Nduzi",
+    "quickSteps": "Nzọụkwụ Ngwa Ngwa",
+    "stepXOfY": "Nzọụkwụ {step} nke {total}",
+    "stepNumber": "NZỌỤKWỤ {number}",
+    "next": "Osote",
+    "nextStep": "Nzọụkwụ Ọzọ",
+    "back": "Azu",
+    "repeat": "Meghachi",
+    "callEmergency": "Kpọọ Ndị Mberede",
+    "doneCall": "Emela — Kpọọ Ndị Mberede",
+    "playAudio": "Kpọọ na",
+    "stopAudio": "Kwụsị",
+    "readAll": "Gụọ usoro niile na",
+    "voiceMode": "Ụdị Olu",
+    "startVoice": "Ụdị Olu",
+    "skipToSteps": "Gaa na nzọụkwụ",
+    "exitVoiceMode": "Pụọ n'Ụdị Olu",
+    "exit": "Pụọ",
+    "pause": "Kwụsịtụ",
+    "resume": "Gaa n'ihu",
+    "voiceHint": "Kwu \"next\", \"back\", ma ọ bụ \"repeat\"",
+    "voiceUnavailable": "Iwu olu adịghị ugbu a",
+    "severity": {
+      "critical": "DỊ OKWU OKWU",
+      "moderate": "DỊ NDEKỌ",
+      "urgent": "DỊ NGWA"
     },
-    "home": {
-        "title": "[IG] AidHero",
-        "subtitle": "[IG] First Aid Guide",
-        "searchPlaceholder": "[IG] Search for symptoms or injuries...",
-        "sectionHeaders": "[IG] Categories",
-        "emergencyCall": "[IG] KpÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â Mberede"
-    },
-    "rescue": {
-        "startGuided": "[IG] Start Guided Rescue",
-        "quickSteps": "[IG] Quick Steps",
-        "stepXOfY": "[IG] Step {step} of {total}",
-        "stepNumber": "[IG] STEP {number}",
-        "next": "[IG] Next",
-        "nextStep": "[IG] Next Step",
-        "back": "[IG] Back",
-        "repeat": "[IG] Repeat",
-        "callEmergency": "[IG] Call Emergency",
-        "doneCall": "[IG] Done — Call Emergency",
-        "playAudio": "[IG] Play in",
-        "stopAudio": "[IG] Stop",
-        "readAll": "[IG] Read all steps in",
-        "voiceMode": "[IG] Voice Mode",
-        "startVoice": "[IG] Voice Mode",
-        "skipToSteps": "[IG] Skip to steps",
-        "exitVoiceMode": "[IG] Exit Voice Mode",
-        "exit": "[IG] Exit",
-        "pause": "[IG] Pause",
-        "resume": "[IG] Resume",
-        "voiceHint": "[IG] Say next, back, or repeat",
-        "voiceUnavailable": "[IG] Voice commands unavailable",
-        "severity": {
-            "critical": "[IG] CRITICAL",
-            "moderate": "[IG] MODERATE",
-            "urgent": "[IG] URGENT"
-        },
-        "signsToLookFor": "[IG] Signs to recognise",
-        "doNot": "[IG] What NOT to do",
-        "hospitalThreshold": "[IG] When to go to hospital",
-        "step1": "[IG] Step 1"
-    },
-    "search": {
-        "placeholder": "[IG] Search...",
-        "noResults": "[IG] No results found for \"{query}\".",
-        "recentSearches": "[IG] Recent Searches",
-        "trySuggestions": "[IG] Try: heart attack, choking, bleeding",
-        "allCategories": "[IG] All Categories",
-        "clearRecent": "[IG] Clear"
-    },
-    "incidents": {
-        "paediatric": "[IG] Paediatric",
-        "trauma": "[IG] Trauma",
-        "environmental": "[IG] Environmental",
-        "respiratory": "[IG] Respiratory",
-        "burns": "[IG] Burns",
-        "allergic": "[IG] Allergic",
-        "obstetric": "[IG] Obstetric",
-        "cardiac": "[IG] Cardiac",
-        "poisoning": "[IG] Poisoning",
-        "neurological": "[IG] Neurological",
-        "gastrointestinal": "[IG] Gastrointestinal",
-        "other": "[IG] Other"
-    },
-    "emergency": {
-        "callButton": "[IG] Call",
-        "stateNames": "[IG] State Numbers",
-        "nationalNumbers": "[IG] National Emergency Numbers"
-    },
-    "settings": {
-        "language": "[IG] Language",
-        "textSize": "[IG] Text Size",
-        "contrast": "[IG] Contrast",
-        "offline": "[IG] Offline Mode",
-        "about": "[IG] About AidHero"
-    },
-    "accessibility": {
-        "ariaLabels": "[IG] Accessibility Strings",
-        "emergencyCallStrip": "[IG] KpÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚ÂÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â NÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¾Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â»ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â‚¬Å¾Ã‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Â ÃƒÂ¢Ã¢â€šÂ¬Ã¢â€žÂ¢ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡Ãƒâ€šÃ‚Â¬ÃƒÆ’Ã¢â‚¬Â¦Ãƒâ€šÃ‚Â¡ÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€¦Ã‚Â¡ÃƒÆ’Ã†â€™ÃƒÂ¢Ã¢â€šÂ¬Ã…Â¡ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âmba Mberede",
-        "changeLanguage": "[IG] Change Language",
-        "bottomNav": "[IG] Bottom Navigation"
-    },
-    "offline": {
-        "ready": "[IG] Ready for offline use",
-        "limited": "[IG] Limited offline functionality",
-        "updated": "[IG] Content updated",
-        "active": "[IG] Offline Mode Active",
-        "downloading": "[IG] Downloading Content..."
-    },
-    "errors": {
-        "notFound": "[IG] Page not found",
-        "audioUnavailable": "[IG] Audio unavailable in offline mode",
-        "offlineLimitation": "[IG] This feature requires an internet connection"
-    },
-    "onboarding": {
-        "slide1Title": "[IG] Welcome to AidHero",
-        "slide1Desc": "[IG] Your offline-first emergency companion.",
-        "slide2Title": "[IG] Always Available",
-        "slide2Desc": "[IG] Access life-saving guides even without internet.",
-        "slide3Title": "[IG] Voice Guided",
-        "slide3Desc": "[IG] Hands-free audio instructions during emergencies."
-    },
-    "metadata": {
-        "title": "[IG] AidHero - Emergency First Aid Nigeria",
-        "description": "[IG] Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
-        "ogTitle": "[IG] AidHero - Emergency First Aid Nigeria",
-        "ogDescription": "[IG] You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
+    "signsToLookFor": "Ihe ịrịba ama ị ga-amata",
+    "doNot": "Ihe ị NA-EKWESỊGHỊ ime",
+    "hospitalThreshold": "Mgbe ị ga-aga ụlọ ọgwụ",
+    "step1": "Nzọụkwụ 1"
+  },
+  "search": {
+    "placeholder": "Chọọ...",
+    "noResults": "Ọ nweghị ihe achọtara maka \"{query}\".",
+    "recentSearches": "Ọchụchọ Na-adịbeghị Anya",
+    "trySuggestions": "Nwalee: nkụchi obi, iku ume ike, ọbara ọgbụgba",
+    "allCategories": "Ụdị Niile",
+    "clearRecent": "Kpochapụ"
+  },
+  "incidents": {
+    "paediatric": "Maka Ụmụaka",
+    "trauma": "Mmerụ Ahụ",
+    "environmental": "Nke Gburugburu Ebe Obibi",
+    "respiratory": "Nke Ikuku Ume",
+    "burns": "Ọkụ Ọkụ",
+    "allergic": "Ọrịa Nfụkasị Ahụ (Allergy)",
+    "obstetric": "Maka Ụmụ Nwanyị Dị Ime",
+    "cardiac": "Nke Obi",
+    "poisoning": "Nsị",
+    "neurological": "Nke Ụbụrụ na Akwara",
+    "gastrointestinal": "Nke Afọ",
+    "other": "Ndị Ọzọ"
+  },
+  "emergency": {
+    "callButton": "Kpọọ",
+    "stateNames": "Nọmba Steeti",
+    "nationalNumbers": "Nọmba Mberede Mba",
+    "showingNumbersFor": "Na-egosi nọmba maka",
+    "showingNationalNumbers": "Na-egosi nọmba mba",
+    "services": "Ọrụ",
+    "nationalServices": "Ọrụ Mba",
+    "changeState": "Gbanwee Steeti",
+    "selectState": "Họrọ Steeti",
+    "searchStates": "Chọọ steeti...",
+    "noStatesFound": "Ọ nweghị steeti kwekọrọ na \"{search}\""
+  },
+  "common": {
+    "yes": "Ee",
+    "no": "Mba",
+    "none": "Ọ dịghị",
+    "all": "Ha niile",
+    "loading": "Na-ebu...",
+    "save": "Chekwa",
+    "cancel": "Kagbuo",
+    "back": "Azu"
+  },
+  "settings": {
+    "language": "Asụsụ",
+    "textSize": "Ogo Ederede",
+    "contrast": "Ọdịiche Agba",
+    "offline": "Ọnọdụ Na-enweghị Ịntanetị",
+    "manage": "Jikwaa",
+    "contentDownloaded": "Ebudatara ọdịnaya ngwa",
+    "audioDownloadedFor": "Ebudatara ụda olu maka",
+    "yes": "Ee",
+    "no": "Mba",
+    "about": "Gbasara AidHero",
+    "aboutAidHero": "Gbasara AidHero",
+    "version": "Ụdị",
+    "offlineFirst": "Na-arụ Ọrụ Na-enweghị Ịntanetị",
+    "medicalDisclaimer": "Ịdọ Aka Ná Ntị Ahụike: Ngwa a na-enye ntuziaka enyemaka mbụ izugbe, ọ bụghị nnọchi maka ndụmọdụ dọkịta. Kpọọ ndị ọrụ mberede ozugbo n'ọnọdụ dị egwu.",
+    "confirmDuringRescue": "Ịgbanwe asụsụ ga-eme ka ị malitegharịa nnapụta. Gaa n'ihu?",
+    "general": "N'ozuzu",
+    "accessibility": "Nnweta",
+    "scaleNormal": "Nkịtị",
+    "scaleLarge": "Nnukwu",
+    "scaleXL": "Oke ukwuu",
+    "highContrast": "Ọdịiche Agba Dị Elu",
+    "highContrastDesc": "Ọnọdụ kacha mma maka ịgụ ihe",
+    "autoplayVoice": "Kpọọ Olu Na-akpaghị Aka",
+    "autoplayVoiceDesc": "Gụọ usoro n'olu dara ụda na-akpaghị aka",
+    "offlineVoiceModeFallback": "Nkwado Ụdị Olu Na-enweghị Ịntanetị",
+    "offlineVoiceModeDesc": "Họrọ oge ị ga-eche tupu ị gaa n'ihu na nzọụkwụ ọzọ mgbe iwu olu adịghị.",
+    "manualAdvance": "Site n'aka (Kpatụ iji gaa n'ihu)",
+    "seconds": "Sekọnd {count}",
+    "offlineScreen": {
+      "title": "Budata maka Ojiji Na-enweghị Ịntanetị",
+      "appContent": "Ọdịnaya Ngwa",
+      "appContentStatus": "Ebudatara na nleta mbụ",
+      "englishAudio": "Ụda Bekee",
+      "englishAudioStatus": "Ebudatara na-akpaghị aka",
+      "download": "Budata",
+      "downloading": "Na-ebudata... {progress}%",
+      "downloaded": "Ebudatara",
+      "storageUsed": "Ohere ejiri rụọ ọrụ: {used}MB n'ime ihe dịka {total}MB",
+      "lastUpdated": "Mmelite ikpeazụ",
+      "checkUpdates": "Lelee mmelite"
     }
+  },
+  "accessibility": {
+    "ariaLabels": "Okwu Nnweta",
+    "emergencyCallStrip": "Kpọọ Nọmba Mberede",
+    "changeLanguage": "Gbanwee Asụsụ",
+    "bottomNav": "Nchọgharị Ala",
+    "skipToMain": "Gaa na isi ọdịnaya",
+    "voiceSearch": "Nchọ olu"
+  },
+  "offline": {
+    "ready": "Dị njikere maka ojiji na-enweghị ịntanetị",
+    "limited": "Ọrụ nwere oke na-enweghị ịntanetị",
+    "updated": "Emelitere ọdịnaya",
+    "active": "Ọnọdụ Na-enweghị Ịntanetị Na-arụ Ọrụ",
+    "downloading": "Na-ebudata ọdịnaya..."
+  },
+  "errors": {
+    "notFound": "Ahụghị ibe ahụ",
+    "audioUnavailable": "Ụda adịghị n'ọnọdụ na-enweghị ịntanetị",
+    "offlineLimitation": "Njirimara a chọrọ njikọ ịntanetị"
+  },
+  "onboarding": {
+    "slide1": {
+      "title": "Ị nwere ike ịzọpụta ndụ.",
+      "body": "AidHero na-egosi gị otu esi eme ya."
+    },
+    "slide2": {
+      "title": "Na-arụ ọrụ na-enweghị ịntanetị,",
+      "body": "n'asụsụ gị."
+    },
+    "slide3": {
+      "title": "Họrọ asụsụ gị",
+      "body": "+ budata ọdịnaya"
+    },
+    "download": "Budata maka ojiji na-enweghị ịntanetị",
+    "skipLater": "M ga-eme nke a ma emechaa",
+    "skip": "Wụpụ",
+    "back": "Azu",
+    "next": "Osote",
+    "progressDots": "Ọganihu ịbanye"
+  },
+  "trust": {
+    "pendingReview": "Nyocha ahụike na-echere",
+    "pendingWarning": "Ozi a na-eche nkwenye site n'aka ọkachamara ahụike gbaara agbazinye. Jiri nlezianya mee ihe.",
+    "reviewed": "Nyochaa ahụike",
+    "reviewedBy": "{name} nyochara ya",
+    "lastReviewed": "Nyochaa ikpeazụ: _VAR_0__"
+  },
+  "metadata": {
+    "title": "AidHero - Enyemaka Mbụ Mberede Na Naịjirịa",
+    "description": "Ntuziaka enyemaka mbụ na-enweghị ịntanetị maka Naịjirịa. Ntuziaka enyemaka mbụ ozugbo n'asụsụ Bekee, Hausa, Igbo, Yoruba, na Pidgin.",
+    "ogTitle": "AidHero - Enyemaka Mbụ Mberede Na Naịjirịa",
+    "ogDescription": "Ị nwere ike ịzọpụta ndụ. AidHero na-egosi gị otu esi eme ya. Ntuziaka enyemaka mbụ na-enweghị ịntanetị na Naịjirịa."
+  },
+  "voiceMode": {
+    "sayCommand": "Kwu: gaa n'ihu, laghachi azụ, megharịa",
+    "offlineHint": "Iwu olu chọrọ ịntanetị — jiri bọtịnụ ma ọ bụ gaa n'ihu n'onwe ya"
+  }
 }

@@ -1,0 +1,241 @@
+{
+  "id": "snake-bite",
+  "slug": "snake-bite",
+  "content_version": 1,
+  "content_version_date": "2026-08-18T12:31:24.429Z",
+  "category": "poisoning",
+  "title": "Snake Bite",
+  "title_translations": {
+    "en": "Snake Bite",
+    "ha": "[NEEDS_REVIEW] Snake Bite",
+    "ig": "[NEEDS_REVIEW] Snake Bite",
+    "yo": "[NEEDS_REVIEW] Snake Bite",
+    "pcm": "[NEEDS_REVIEW] Snake Bite"
+  },
+  "aliases": [
+    "snake bite",
+    "snakebite",
+    "snake wound",
+    "dangerous snake",
+    "viper bite",
+    "cobra bite",
+    "python bite",
+    "snake don bite am",
+    "ọra ejò",
+    "macijin ya cije",
+    "agwo tara ya",
+    "snake bite am"
+  ],
+  "severity": "critical",
+  "immediate_warning": "Take the person to hospital immediately. Time is critical — do not wait for symptoms to appear. Nigeria has deadly species including puff adder, Gaboon viper, and black-necked spitting cobra.",
+  "immediate_warning_translations": {
+    "en": "Take the person to hospital immediately. Time is critical — do not wait for symptoms to appear. Nigeria has deadly species including puff adder, Gaboon viper, and black-necked spitting cobra.",
+    "ha": "[NEEDS_REVIEW] Take the person to hospital immediately. Time is critical — do not wait for symptoms to appear. Nigeria has deadly species including puff adder, Gaboon viper, and black-necked spitting cobra.",
+    "ig": "[NEEDS_REVIEW] Take the person to hospital immediately. Time is critical — do not wait for symptoms to appear. Nigeria has deadly species including puff adder, Gaboon viper, and black-necked spitting cobra.",
+    "yo": "[NEEDS_REVIEW] Take the person to hospital immediately. Time is critical — do not wait for symptoms to appear. Nigeria has deadly species including puff adder, Gaboon viper, and black-necked spitting cobra.",
+    "pcm": "[NEEDS_REVIEW] Take the person to hospital immediately. Time is critical — do not wait for symptoms to appear. Nigeria has deadly species including puff adder, Gaboon viper, and black-necked spitting cobra."
+  },
+  "description": "Nigeria has many venomous snakes including puff adder, Gaboon viper, carpet viper, and black-necked spitting cobra. All snake bites must be treated as medical emergencies until proven otherwise.",
+  "description_translations": {
+    "en": "Nigeria has many venomous snakes including puff adder, Gaboon viper, carpet viper, and black-necked spitting cobra. All snake bites must be treated as medical emergencies until proven otherwise.",
+    "ha": "[NEEDS_REVIEW] Nigeria has many venomous snakes including puff adder, Gaboon viper, carpet viper, and black-necked spitting cobra. All snake bites must be treated as medical emergencies until proven otherwise.",
+    "ig": "[NEEDS_REVIEW] Nigeria has many venomous snakes including puff adder, Gaboon viper, carpet viper, and black-necked spitting cobra. All snake bites must be treated as medical emergencies until proven otherwise.",
+    "yo": "[NEEDS_REVIEW] Nigeria has many venomous snakes including puff adder, Gaboon viper, carpet viper, and black-necked spitting cobra. All snake bites must be treated as medical emergencies until proven otherwise.",
+    "pcm": "[NEEDS_REVIEW] Nigeria has many venomous snakes including puff adder, Gaboon viper, carpet viper, and black-necked spitting cobra. All snake bites must be treated as medical emergencies until proven otherwise."
+  },
+  "signs": [
+    "Two small puncture marks",
+    "Severe pain at bite site",
+    "Swelling rapidly spreading",
+    "Nausea and vomiting",
+    "Difficulty breathing",
+    "Blurred vision",
+    "Paralysis"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Two small puncture marks",
+      "ha": "[NEEDS_REVIEW] Two small puncture marks",
+      "ig": "[NEEDS_REVIEW] Two small puncture marks",
+      "yo": "[NEEDS_REVIEW] Two small puncture marks",
+      "pcm": "[NEEDS_REVIEW] Two small puncture marks"
+    },
+    "1": {
+      "en": "Severe pain at bite site",
+      "ha": "[NEEDS_REVIEW] Severe pain at bite site",
+      "ig": "[NEEDS_REVIEW] Severe pain at bite site",
+      "yo": "[NEEDS_REVIEW] Severe pain at bite site",
+      "pcm": "[NEEDS_REVIEW] Severe pain at bite site"
+    },
+    "2": {
+      "en": "Swelling rapidly spreading",
+      "ha": "[NEEDS_REVIEW] Swelling rapidly spreading",
+      "ig": "[NEEDS_REVIEW] Swelling rapidly spreading",
+      "yo": "[NEEDS_REVIEW] Swelling rapidly spreading",
+      "pcm": "[NEEDS_REVIEW] Swelling rapidly spreading"
+    },
+    "3": {
+      "en": "Nausea and vomiting",
+      "ha": "[NEEDS_REVIEW] Nausea and vomiting",
+      "ig": "[NEEDS_REVIEW] Nausea and vomiting",
+      "yo": "[NEEDS_REVIEW] Nausea and vomiting",
+      "pcm": "[NEEDS_REVIEW] Nausea and vomiting"
+    },
+    "4": {
+      "en": "Difficulty breathing",
+      "ha": "[NEEDS_REVIEW] Difficulty breathing",
+      "ig": "[NEEDS_REVIEW] Difficulty breathing",
+      "yo": "[NEEDS_REVIEW] Difficulty breathing",
+      "pcm": "[NEEDS_REVIEW] Difficulty breathing"
+    },
+    "5": {
+      "en": "Blurred vision",
+      "ha": "[NEEDS_REVIEW] Blurred vision",
+      "ig": "[NEEDS_REVIEW] Blurred vision",
+      "yo": "[NEEDS_REVIEW] Blurred vision",
+      "pcm": "[NEEDS_REVIEW] Blurred vision"
+    },
+    "6": {
+      "en": "Paralysis",
+      "ha": "[NEEDS_REVIEW] Paralysis",
+      "ig": "[NEEDS_REVIEW] Paralysis",
+      "yo": "[NEEDS_REVIEW] Paralysis",
+      "pcm": "[NEEDS_REVIEW] Paralysis"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Keep the person calm and still. Movement spreads venom faster through the body.",
+      "instruction_translations": {
+        "en": "Keep the person calm and still. Movement spreads venom faster through the body.",
+        "ha": "[NEEDS_REVIEW] Keep the person calm and still. Movement spreads venom faster through the body.",
+        "ig": "[NEEDS_REVIEW] Keep the person calm and still. Movement spreads venom faster through the body.",
+        "yo": "[NEEDS_REVIEW] Keep the person calm and still. Movement spreads venom faster through the body.",
+        "pcm": "[NEEDS_REVIEW] Keep the person calm and still. Movement spreads venom faster through the body."
+      },
+      "audio_path": "/audio/snake-bite/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Transport to the nearest hospital immediately — antivenom is the only effective treatment.",
+      "instruction_translations": {
+        "en": "Transport to the nearest hospital immediately — antivenom is the only effective treatment.",
+        "ha": "[NEEDS_REVIEW] Transport to the nearest hospital immediately — antivenom is the only effective treatment.",
+        "ig": "[NEEDS_REVIEW] Transport to the nearest hospital immediately — antivenom is the only effective treatment.",
+        "yo": "[NEEDS_REVIEW] Transport to the nearest hospital immediately — antivenom is the only effective treatment.",
+        "pcm": "[NEEDS_REVIEW] Transport to the nearest hospital immediately — antivenom is the only effective treatment."
+      },
+      "audio_path": "/audio/snake-bite/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "Remove jewellery and tight clothing near the bite before swelling starts.",
+      "instruction_translations": {
+        "en": "Remove jewellery and tight clothing near the bite before swelling starts.",
+        "ha": "[NEEDS_REVIEW] Remove jewellery and tight clothing near the bite before swelling starts.",
+        "ig": "[NEEDS_REVIEW] Remove jewellery and tight clothing near the bite before swelling starts.",
+        "yo": "[NEEDS_REVIEW] Remove jewellery and tight clothing near the bite before swelling starts.",
+        "pcm": "[NEEDS_REVIEW] Remove jewellery and tight clothing near the bite before swelling starts."
+      },
+      "audio_path": "/audio/snake-bite/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Keep the bitten limb at or below heart level.",
+      "instruction_translations": {
+        "en": "Keep the bitten limb at or below heart level.",
+        "ha": "[NEEDS_REVIEW] Keep the bitten limb at or below heart level.",
+        "ig": "[NEEDS_REVIEW] Keep the bitten limb at or below heart level.",
+        "yo": "[NEEDS_REVIEW] Keep the bitten limb at or below heart level.",
+        "pcm": "[NEEDS_REVIEW] Keep the bitten limb at or below heart level."
+      },
+      "audio_path": "/audio/snake-bite/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "Note the snake's appearance if safe to do so — do not try to catch or kill it.",
+      "instruction_translations": {
+        "en": "Note the snake's appearance if safe to do so — do not try to catch or kill it.",
+        "ha": "[NEEDS_REVIEW] Note the snake's appearance if safe to do so — do not try to catch or kill it.",
+        "ig": "[NEEDS_REVIEW] Note the snake's appearance if safe to do so — do not try to catch or kill it.",
+        "yo": "[NEEDS_REVIEW] Note the snake's appearance if safe to do so — do not try to catch or kill it.",
+        "pcm": "[NEEDS_REVIEW] Note the snake's appearance if safe to do so — do not try to catch or kill it."
+      },
+      "audio_path": "/audio/snake-bite/{lang}/step-5.mp3"
+    },
+    {
+      "id": 6,
+      "instruction": "Monitor breathing. If not breathing, start CPR.",
+      "instruction_translations": {
+        "en": "Monitor breathing. If not breathing, start CPR.",
+        "ha": "[NEEDS_REVIEW] Monitor breathing. If not breathing, start CPR.",
+        "ig": "[NEEDS_REVIEW] Monitor breathing. If not breathing, start CPR.",
+        "yo": "[NEEDS_REVIEW] Monitor breathing. If not breathing, start CPR.",
+        "pcm": "[NEEDS_REVIEW] Monitor breathing. If not breathing, start CPR."
+      },
+      "audio_path": "/audio/snake-bite/{lang}/step-6.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not suck the venom or cut the bite.",
+    "Do not apply a tourniquet.",
+    "Do not apply ice.",
+    "Do not give alcohol.",
+    "Do not try to catch the snake."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not suck the venom or cut the bite.",
+      "ha": "[NEEDS_REVIEW] Do not suck the venom or cut the bite.",
+      "ig": "[NEEDS_REVIEW] Do not suck the venom or cut the bite.",
+      "yo": "[NEEDS_REVIEW] Do not suck the venom or cut the bite.",
+      "pcm": "[NEEDS_REVIEW] Do not suck the venom or cut the bite."
+    },
+    "1": {
+      "en": "Do not apply a tourniquet.",
+      "ha": "[NEEDS_REVIEW] Do not apply a tourniquet.",
+      "ig": "[NEEDS_REVIEW] Do not apply a tourniquet.",
+      "yo": "[NEEDS_REVIEW] Do not apply a tourniquet.",
+      "pcm": "[NEEDS_REVIEW] Do not apply a tourniquet."
+    },
+    "2": {
+      "en": "Do not apply ice.",
+      "ha": "[NEEDS_REVIEW] Do not apply ice.",
+      "ig": "[NEEDS_REVIEW] Do not apply ice.",
+      "yo": "[NEEDS_REVIEW] Do not apply ice.",
+      "pcm": "[NEEDS_REVIEW] Do not apply ice."
+    },
+    "3": {
+      "en": "Do not give alcohol.",
+      "ha": "[NEEDS_REVIEW] Do not give alcohol.",
+      "ig": "[NEEDS_REVIEW] Do not give alcohol.",
+      "yo": "[NEEDS_REVIEW] Do not give alcohol.",
+      "pcm": "[NEEDS_REVIEW] Do not give alcohol."
+    },
+    "4": {
+      "en": "Do not try to catch the snake.",
+      "ha": "[NEEDS_REVIEW] Do not try to catch the snake.",
+      "ig": "[NEEDS_REVIEW] Do not try to catch the snake.",
+      "yo": "[NEEDS_REVIEW] Do not try to catch the snake.",
+      "pcm": "[NEEDS_REVIEW] Do not try to catch the snake."
+    }
+  },
+  "hospital_threshold": "Always required. Antivenom must be given in a hospital setting.",
+  "hospital_threshold_translations": {
+    "en": "Always required. Antivenom must be given in a hospital setting.",
+    "ha": "[NEEDS_REVIEW] Always required. Antivenom must be given in a hospital setting.",
+    "ig": "[NEEDS_REVIEW] Always required. Antivenom must be given in a hospital setting.",
+    "yo": "[NEEDS_REVIEW] Always required. Antivenom must be given in a hospital setting.",
+    "pcm": "[NEEDS_REVIEW] Always required. Antivenom must be given in a hospital setting."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-08-18T12:31:24.428Z",
+    "medical_references": [
+      "WHO First Aid",
+      "Nigerian Emergency Medicine Association Guidelines"
+    ]
+  }
+}

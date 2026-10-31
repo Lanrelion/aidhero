@@ -15,7 +15,14 @@ export function ProgressIndicator({ current, max, className }: ProgressIndicator
   return (
     <div className={cn("w-full flex flex-col items-center", className)} aria-live="polite">
       {/* Progress Bar */}
-      <div className="w-full h-1 bg-border relative">
+      <div
+        className="w-full h-1 bg-border relative"
+        role="progressbar"
+        aria-valuenow={current}
+        aria-valuemin={1}
+        aria-valuemax={max}
+        aria-label={t('rescue.stepXOfY', { step: current, total: max }) || `Step ${current} of ${max}`}
+      >
         <div 
           className="absolute top-0 left-0 h-full bg-emergency transition-all duration-300 ease-out"
           style={{ width: `${percentage}%` }}

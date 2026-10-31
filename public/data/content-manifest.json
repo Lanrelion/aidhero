@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-09-09T11:37:51.279Z",
+  "scenarios": {
+    "anaphylaxis": {
+      "version": 1
+    },
+    "angina": {
+      "version": 1
+    },
+    "asthma-attack": {
+      "version": 1
+    },
+    "broken-bone": {
+      "version": 1
+    },
+    "cardiac-arrest": {
+      "version": 1
+    },
+    "choking-adult": {
+      "version": 1
+    },
+    "choking-child": {
+      "version": 1
+    },
+    "drowning": {
+      "version": 1
+    },
+    "fainting": {
+      "version": 1
+    },
+    "food-poisoning": {
+      "version": 1
+    },
+    "generator-fumes": {
+      "version": 1
+    },
+    "head-injury": {
+      "version": 1
+    },
+    "heart-attack": {
+      "version": 1
+    },
+    "heatstroke": {
+      "version": 1
+    },
+    "minor-burn": {
+      "version": 1
+    },
+    "seizure": {
+      "version": 1
+    },
+    "severe-bleeding": {
+      "version": 1
+    },
+    "severe-burn": {
+      "version": 1
+    },
+    "snake-bite": {
+      "version": 1
+    },
+    "stroke": {
+      "version": 1
+    }
+  }
+}

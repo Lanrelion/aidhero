@@ -6,12 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint",
-    "test": "vitest"
+    "lint": "next lint",
+    "generate:manifest": "tsx scripts/generate-manifest.ts",
+    "test": "playwright test",
+    "analyze": "cross-env ANALYZE=true next build",
+    "type-check": "tsc --noEmit",
+    "generate:audio": "tsx scripts/generate-tts-audio.ts",
+    "translate:messages": "tsx scripts/translate-messages.ts",
+    "generate:all": "npm run generate:audio && npm run generate:manifest && npm run translate:messages"
   },
   "dependencies": {
     "@base-ui/react": "^1.5.0",
     "@ducanh2912/next-pwa": "^10.2.9",
+    "@google-cloud/text-to-speech": "^7.0.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "fuse.js": "^7.0.0",
@@ -28,16 +35,22 @@
     "zustand": "^5.0.3"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.11.3",
     "@axe-core/react": "^4.10.1",
+    "@next/bundle-analyzer": "^16.3.3",
+    "@playwright/test": "^1.60.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "@vitejs/plugin-react": "^4.3.4",
     "axe-core": "^4.10.3",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.4.2",
     "eslint": "^9",
     "eslint-config-next": "16.2.7",
     "tailwindcss": "^4",
+    "tsx": "^4.22.4",
     "typescript": "^5",
     "vitest": "^3.0.0"
   }

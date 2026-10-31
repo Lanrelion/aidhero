@@ -1,0 +1,4198 @@
+{
+  "last_updated": "2026-09-02T13:18:31.181Z",
+  "engine": "curated-medical-lexicon+machine-fallback",
+  "locales": {
+    "ha": {
+      "total_strings": 149,
+      "strings": {
+        "nav.home": {
+          "_source": "machine",
+          "original": "Home",
+          "translated": "Gida",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "nav.search": {
+          "_source": "machine",
+          "original": "Search",
+          "translated": "Nema",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "nav.emergency": {
+          "_source": "machine",
+          "original": "Emergency",
+          "translated": "Gaggawa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "nav.settings": {
+          "_source": "machine",
+          "original": "Settings",
+          "translated": "Saituna",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "home.title": {
+          "_source": "machine",
+          "original": "AidHero",
+          "translated": "AidHero",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "home.subtitle": {
+          "_source": "machine",
+          "original": "First Aid Guide",
+          "translated": "Jagoran Agajin Gaggawa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "home.searchPlaceholder": {
+          "_source": "machine",
+          "original": "Search for symptoms or injuries...",
+          "translated": "Nemi alamomi ko raunuka...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "home.sectionHeaders": {
+          "_source": "machine",
+          "original": "Categories",
+          "translated": "Rukuni",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "home.emergencyCall": {
+          "_source": "machine",
+          "original": "Call Emergency",
+          "translated": "Kira Gaggawa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.startGuided": {
+          "_source": "machine",
+          "original": "Start Guided Rescue",
+          "translated": "Fara Agajin Gaggawa Mai Jagora",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.quickSteps": {
+          "_source": "machine",
+          "original": "Quick Steps",
+          "translated": "Matakai Masu Sauri",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.stepXOfY": {
+          "_source": "machine",
+          "original": "Step {step} of {total}",
+          "translated": "Mataki na {step} cikin {total}",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.stepNumber": {
+          "_source": "machine",
+          "original": "STEP {number}",
+          "translated": "MATAKI NA {number}",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.next": {
+          "_source": "machine",
+          "original": "Next",
+          "translated": "Na Gaba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.nextStep": {
+          "_source": "machine",
+          "original": "Next Step",
+          "translated": "Mataki na Gaba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.back": {
+          "_source": "machine",
+          "original": "Back",
+          "translated": "Baya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.repeat": {
+          "_source": "machine",
+          "original": "Repeat",
+          "translated": "Maimaita",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.callEmergency": {
+          "_source": "machine",
+          "original": "Call Emergency",
+          "translated": "Kira Gaggawa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.doneCall": {
+          "_source": "machine",
+          "original": "Done — Call Emergency",
+          "translated": "An Gama — Kira Gaggawa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.playAudio": {
+          "_source": "machine",
+          "original": "Play in",
+          "translated": "Saurara da",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.stopAudio": {
+          "_source": "machine",
+          "original": "Stop",
+          "translated": "Tsaya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.readAll": {
+          "_source": "machine",
+          "original": "Read all steps in",
+          "translated": "Karanta duk matakan da",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.voiceMode": {
+          "_source": "machine",
+          "original": "Voice Mode",
+          "translated": "Yanayin Murya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.startVoice": {
+          "_source": "machine",
+          "original": "Voice Mode",
+          "translated": "Yanayin Murya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.skipToSteps": {
+          "_source": "machine",
+          "original": "Skip to steps",
+          "translated": "Tsallake zuwa matakai",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.exitVoiceMode": {
+          "_source": "machine",
+          "original": "Exit Voice Mode",
+          "translated": "Fita daga Yanayin Murya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.exit": {
+          "_source": "machine",
+          "original": "Exit",
+          "translated": "Fita",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.pause": {
+          "_source": "machine",
+          "original": "Pause",
+          "translated": "Dakata",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.resume": {
+          "_source": "machine",
+          "original": "Resume",
+          "translated": "Ci gaba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.voiceHint": {
+          "_source": "machine",
+          "original": "Say \"next\", \"back\", or \"repeat\"",
+          "translated": "Ce \"next\", \"back\", ko \"repeat\"",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.voiceUnavailable": {
+          "_source": "machine",
+          "original": "Voice commands unavailable",
+          "translated": "Umarnin murya baya aiki a yanzu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.severity.critical": {
+          "_source": "machine",
+          "original": "CRITICAL",
+          "translated": "MAI HATSARIN GASKE",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.severity.moderate": {
+          "_source": "machine",
+          "original": "MODERATE",
+          "translated": "MAI SAUƘI",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.severity.urgent": {
+          "_source": "machine",
+          "original": "URGENT",
+          "translated": "MAI GAGGAWA",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.signsToLookFor": {
+          "_source": "machine",
+          "original": "Signs to recognise",
+          "translated": "Alamomin da za a gane",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.doNot": {
+          "_source": "machine",
+          "original": "What NOT to do",
+          "translated": "Abin da KADA a yi",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.hospitalThreshold": {
+          "_source": "machine",
+          "original": "When to go to hospital",
+          "translated": "Lokacin tafiya asibiti",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "rescue.step1": {
+          "_source": "machine",
+          "original": "Step 1",
+          "translated": "Mataki na 1",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "search.placeholder": {
+          "_source": "machine",
+          "original": "Search...",
+          "translated": "Nema...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "search.noResults": {
+          "_source": "machine",
+          "original": "No results found for \"{query}\".",
+          "translated": "Ba a sami sakamako ba don \"{query}\".",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "search.recentSearches": {
+          "_source": "machine",
+          "original": "Recent Searches",
+          "translated": "Binciken Kwanan Nan",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "search.trySuggestions": {
+          "_source": "machine",
+          "original": "Try: heart attack, choking, bleeding",
+          "translated": "Gwada: ciwon zuciya, shaƙewa, zubar jini",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "search.allCategories": {
+          "_source": "machine",
+          "original": "All Categories",
+          "translated": "Duk Rukunoni",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "search.clearRecent": {
+          "_source": "machine",
+          "original": "Clear",
+          "translated": "Share",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "incidents.paediatric": {
+          "_source": "machine",
+          "original": "Paediatric",
+          "translated": "Na Yara",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "incidents.trauma": {
+          "_source": "machine",
+          "original": "Trauma",
+          "translated": "Rauni / Hatsari",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "incidents.environmental": {
+          "_source": "machine",
+          "original": "Environmental",
+          "translated": "Na Muhalli",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "incidents.respiratory": {
+          "_source": "machine",
+          "original": "Respiratory",
+          "translated": "Hanyar Numfashi",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "incidents.burns": {
+          "_source": "machine",
+          "original": "Burns",
+          "translated": "Kone-kone",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "incidents.allergic": {
+          "_source": "machine",
+          "original": "Allergic",
+          "translated": "Rashin Lafiya ta Rashin Dace (Allergy)",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "incidents.obstetric": {
+          "_source": "machine",
+          "original": "Obstetric",
+          "translated": "Na Masu Juna Biyu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "incidents.cardiac": {
+          "_source": "machine",
+          "original": "Cardiac",
+          "translated": "Na Zuciya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "incidents.poisoning": {
+          "_source": "machine",
+          "original": "Poisoning",
+          "translated": "Guba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "incidents.neurological": {
+          "_source": "machine",
+          "original": "Neurological",
+          "translated": "Na Ƙwaƙwalwa / Jijiyoyi",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "incidents.gastrointestinal": {
+          "_source": "machine",
+          "original": "Gastrointestinal",
+          "translated": "Na Ciki / Hanji",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "incidents.other": {
+          "_source": "machine",
+          "original": "Other",
+          "translated": "Sauran",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "emergency.callButton": {
+          "_source": "machine",
+          "original": "Call",
+          "translated": "Kira",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "emergency.stateNames": {
+          "_source": "machine",
+          "original": "State Numbers",
+          "translated": "Lambobin Jihohi",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "emergency.nationalNumbers": {
+          "_source": "machine",
+          "original": "National Emergency Numbers",
+          "translated": "Lambobin Gaggawa na Ƙasa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "emergency.showingNumbersFor": {
+          "_source": "machine",
+          "original": "Showing numbers for",
+          "translated": "Ana nuna lambobi don",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "emergency.showingNationalNumbers": {
+          "_source": "machine",
+          "original": "Showing national numbers",
+          "translated": "Ana nuna lambobin ƙasa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "emergency.services": {
+          "_source": "machine",
+          "original": "Services",
+          "translated": "Ayyuka",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "emergency.nationalServices": {
+          "_source": "machine",
+          "original": "National Services",
+          "translated": "Ayyukan Ƙasa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "emergency.changeState": {
+          "_source": "machine",
+          "original": "Change state",
+          "translated": "Canza Jiha",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "emergency.selectState": {
+          "_source": "machine",
+          "original": "Select State",
+          "translated": "Zaɓi Jiha",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "emergency.searchStates": {
+          "_source": "machine",
+          "original": "Search states...",
+          "translated": "Nemi jiha...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "emergency.noStatesFound": {
+          "_source": "machine",
+          "original": "No states found matching \"{search}\"",
+          "translated": "Babu jihar da ta dace da \"{search}\"",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "common.yes": {
+          "_source": "machine",
+          "original": "Yes",
+          "translated": "Eh",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "common.no": {
+          "_source": "machine",
+          "original": "No",
+          "translated": "A'a",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "common.none": {
+          "_source": "machine",
+          "original": "None",
+          "translated": "Babu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.183Z"
+        },
+        "common.all": {
+          "_source": "machine",
+          "original": "All",
+          "translated": "Duka",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.714Z"
+        },
+        "common.loading": {
+          "_source": "machine",
+          "original": "Loading...",
+          "translated": "Ana lodawa...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:31.886Z"
+        },
+        "common.save": {
+          "_source": "machine",
+          "original": "Save",
+          "translated": "Ajiye",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.025Z"
+        },
+        "common.cancel": {
+          "_source": "machine",
+          "original": "Cancel",
+          "translated": "Soke",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.192Z"
+        },
+        "common.back": {
+          "_source": "machine",
+          "original": "Back",
+          "translated": "Baya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.192Z"
+        },
+        "settings.language": {
+          "_source": "machine",
+          "original": "Language",
+          "translated": "Harshe",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.192Z"
+        },
+        "settings.textSize": {
+          "_source": "machine",
+          "original": "Text Size",
+          "translated": "Girmar Rubutu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.192Z"
+        },
+        "settings.contrast": {
+          "_source": "machine",
+          "original": "Contrast",
+          "translated": "Bambancin Launi",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.192Z"
+        },
+        "settings.offline": {
+          "_source": "machine",
+          "original": "Offline Mode",
+          "translated": "Yanayin Ba Tare da Intanet Ba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.192Z"
+        },
+        "settings.manage": {
+          "_source": "machine",
+          "original": "Manage",
+          "translated": "Sarrafa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.351Z"
+        },
+        "settings.contentDownloaded": {
+          "_source": "machine",
+          "original": "Content downloaded",
+          "translated": "An sauke bayanan manhaja",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.352Z"
+        },
+        "settings.audioDownloadedFor": {
+          "_source": "machine",
+          "original": "Audio downloaded for",
+          "translated": "An sauke sautin murya don",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.352Z"
+        },
+        "settings.yes": {
+          "_source": "machine",
+          "original": "Yes",
+          "translated": "Eh",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.352Z"
+        },
+        "settings.no": {
+          "_source": "machine",
+          "original": "No",
+          "translated": "A'a",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.352Z"
+        },
+        "settings.about": {
+          "_source": "machine",
+          "original": "About AidHero",
+          "translated": "Game da AidHero",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.352Z"
+        },
+        "settings.aboutAidHero": {
+          "_source": "machine",
+          "original": "About AidHero",
+          "translated": "Game da AidHero",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.352Z"
+        },
+        "settings.version": {
+          "_source": "machine",
+          "original": "Version",
+          "translated": "Sigar",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.352Z"
+        },
+        "settings.offlineFirst": {
+          "_source": "machine",
+          "original": "Offline-First",
+          "translated": "Aiki Ba Tare da Intanet Ba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.352Z"
+        },
+        "settings.medicalDisclaimer": {
+          "_source": "machine",
+          "original": "Medical Disclaimer: This application provides general first-aid guidance based on standard protocols, but it is not a substitute for professional medical advice, diagnosis, or treatment. Always call emergency services immediately in critical situations.",
+          "translated": "Gargaɗi na Likita: Wannan manhaja tana ba da jagorancin agajin gaggawa ne kawai bisa ƙa'ida, ba ta maye gurbin shawarar likita ba. Koyaushe kira lambobin gaggawa nan take.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.352Z"
+        },
+        "settings.confirmDuringRescue": {
+          "_source": "machine",
+          "original": "Changing language will restart your rescue flow. Continue?",
+          "translated": "Canza harshe zai sake farawa da aikin ceto. Ci gaba?",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.352Z"
+        },
+        "settings.general": {
+          "_source": "machine",
+          "original": "General",
+          "translated": "Gabaɗaya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.352Z"
+        },
+        "settings.accessibility": {
+          "_source": "machine",
+          "original": "Accessibility",
+          "translated": "Sauƙin Amfani",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.352Z"
+        },
+        "settings.scaleNormal": {
+          "_source": "machine",
+          "original": "Normal",
+          "translated": "Na al'ada",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.523Z"
+        },
+        "settings.scaleLarge": {
+          "_source": "machine",
+          "original": "Large",
+          "translated": "Babba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:32.678Z"
+        },
+        "settings.scaleXL": {
+          "_source": "machine",
+          "original": "Extra Large",
+          "translated": "Mai Girma",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.highContrast": {
+          "_source": "machine",
+          "original": "High Contrast",
+          "translated": "Launi Mai Haske",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.highContrastDesc": {
+          "_source": "machine",
+          "original": "Maximum legibility mode",
+          "translated": "Yanayi mafi bayyane don karantawa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.autoplayVoice": {
+          "_source": "machine",
+          "original": "Auto-play Voice",
+          "translated": "Kunnawa ta atomatik",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.autoplayVoiceDesc": {
+          "_source": "machine",
+          "original": "Read steps aloud automatically",
+          "translated": "Karanta matakai da murya ta atomatik",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.offlineVoiceModeFallback": {
+          "_source": "machine",
+          "original": "Offline Voice Mode Fallback",
+          "translated": "Zaɓin Yanayin Murya Ba Tare da Intanet Ba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.offlineVoiceModeDesc": {
+          "_source": "machine",
+          "original": "Choose how long to wait before automatically advancing to the next step when voice commands are unavailable offline.",
+          "translated": "Zaɓi lokacin da za a jira kafin wucewa zuwa mataki na gaba lokacin da umarnin murya baya aiki.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.manualAdvance": {
+          "_source": "machine",
+          "original": "Manual (Tap to advance)",
+          "translated": "Da hannu (Danna don ci gaba)",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.seconds": {
+          "_source": "machine",
+          "original": "{count} seconds",
+          "translated": "Daƙiƙa {count}",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.offlineScreen.title": {
+          "_source": "machine",
+          "original": "Download for Offline Use",
+          "translated": "Sauke don Amfani Ba Tare da Intanet Ba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.offlineScreen.appContent": {
+          "_source": "machine",
+          "original": "App content",
+          "translated": "Bayanan Manhaja",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.offlineScreen.appContentStatus": {
+          "_source": "machine",
+          "original": "Already downloaded on first visit",
+          "translated": "An riga an sauke a ziyarar farko",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.offlineScreen.englishAudio": {
+          "_source": "machine",
+          "original": "English audio",
+          "translated": "Sautin Turanci",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.offlineScreen.englishAudioStatus": {
+          "_source": "machine",
+          "original": "Downloaded automatically",
+          "translated": "An sauke ta atomatik",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.offlineScreen.download": {
+          "_source": "machine",
+          "original": "Download",
+          "translated": "Sauke",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.offlineScreen.downloading": {
+          "_source": "machine",
+          "original": "Downloading... {progress}%",
+          "translated": "Ana saukewa... {progress}%",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.offlineScreen.downloaded": {
+          "_source": "machine",
+          "original": "Downloaded",
+          "translated": "An Sauke",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.offlineScreen.storageUsed": {
+          "_source": "machine",
+          "original": "Storage used: {used}MB of estimated {total}MB total",
+          "translated": "Wurin da aka yi amfani da shi: {used}MB cikin kimanin {total}MB",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.offlineScreen.lastUpdated": {
+          "_source": "machine",
+          "original": "Last updated",
+          "translated": "Sabuntawar ƙarshe",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "settings.offlineScreen.checkUpdates": {
+          "_source": "machine",
+          "original": "Check for updates",
+          "translated": "Duba sabuntawa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "accessibility.ariaLabels": {
+          "_source": "machine",
+          "original": "Accessibility Strings",
+          "translated": "Rubutun Sauƙin Amfani",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "accessibility.emergencyCallStrip": {
+          "_source": "machine",
+          "original": "Call Emergency Numbers",
+          "translated": "Kira Lambobin Gaggawa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "accessibility.changeLanguage": {
+          "_source": "machine",
+          "original": "Change Language",
+          "translated": "Canza Harshe",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "accessibility.bottomNav": {
+          "_source": "machine",
+          "original": "Bottom Navigation",
+          "translated": "Kewayawa na Ƙasa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "accessibility.skipToMain": {
+          "_source": "machine",
+          "original": "Skip to main content",
+          "translated": "Tsallake zuwa ainihin abun ciki",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:33.181Z"
+        },
+        "accessibility.voiceSearch": {
+          "_source": "machine",
+          "original": "Voice Search",
+          "translated": "Binciken Murya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "offline.ready": {
+          "_source": "machine",
+          "original": "Ready for offline use",
+          "translated": "A shirye yake don aiki ba tare da intanet ba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "offline.limited": {
+          "_source": "machine",
+          "original": "Limited offline functionality",
+          "translated": "Iyakantaccen aiki ba tare da intanet ba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "offline.updated": {
+          "_source": "machine",
+          "original": "Content updated",
+          "translated": "An sabunta abun ciki",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "offline.active": {
+          "_source": "machine",
+          "original": "Offline Mode Active",
+          "translated": "Yanayin Aiki Ba Tare da Intanet Ba Kunnanne",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "offline.downloading": {
+          "_source": "machine",
+          "original": "Downloading Content...",
+          "translated": "Ana sauke abun ciki...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "errors.notFound": {
+          "_source": "machine",
+          "original": "Page not found",
+          "translated": "Ba a sami shafin ba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "errors.audioUnavailable": {
+          "_source": "machine",
+          "original": "Audio unavailable in offline mode",
+          "translated": "Babu sautin murya a yanayin ba tare da intanet ba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "errors.offlineLimitation": {
+          "_source": "machine",
+          "original": "This feature requires an internet connection",
+          "translated": "Wannan aikin yana buƙatar haɗin intanet",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "onboarding.slide1.title": {
+          "_source": "machine",
+          "original": "You can save a life.",
+          "translated": "Kuna iya ceton rai.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "onboarding.slide1.body": {
+          "_source": "machine",
+          "original": "AidHero shows you how.",
+          "translated": "AidHero zai nuna muku yadda ake yi.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "onboarding.slide2.title": {
+          "_source": "machine",
+          "original": "Works offline,",
+          "translated": "Yana aiki ba tare da intanet ba,",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "onboarding.slide2.body": {
+          "_source": "machine",
+          "original": "in your language.",
+          "translated": "a cikin harshenku.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "onboarding.slide3.title": {
+          "_source": "machine",
+          "original": "Choose your language",
+          "translated": "Zaɓi harshenku",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "onboarding.slide3.body": {
+          "_source": "machine",
+          "original": "+ download content",
+          "translated": "+ sauke bayanan manhaja",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "onboarding.download": {
+          "_source": "machine",
+          "original": "Download for offline use",
+          "translated": "Sauke don amfani ba tare da intanet ba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "onboarding.skipLater": {
+          "_source": "machine",
+          "original": "I'll do this later",
+          "translated": "Zan yi wannan daga baya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "onboarding.skip": {
+          "_source": "machine",
+          "original": "Skip",
+          "translated": "Tsallake",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "onboarding.back": {
+          "_source": "machine",
+          "original": "Back",
+          "translated": "Baya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "onboarding.next": {
+          "_source": "machine",
+          "original": "Next",
+          "translated": "Na Gaba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:34.190Z"
+        },
+        "onboarding.progressDots": {
+          "_source": "machine",
+          "original": "Onboarding progress",
+          "translated": "Ci gaban hawan",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:35.565Z"
+        },
+        "trust.pendingReview": {
+          "_source": "machine",
+          "original": "Pending medical review",
+          "translated": "Binciken likita yana jiran",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:36.661Z"
+        },
+        "trust.pendingWarning": {
+          "_source": "machine",
+          "original": "This information is awaiting verification by a certified medical professional. Use with caution.",
+          "translated": "Wannan bayanin yana jiran tabbaci daga ƙwararren ƙwararren likita. Yi amfani da hankali.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:37.619Z"
+        },
+        "trust.reviewed": {
+          "_source": "machine",
+          "original": "Medically Reviewed",
+          "translated": "Likitan Bita",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:38.924Z"
+        },
+        "trust.reviewedBy": {
+          "_source": "machine",
+          "original": "Reviewed by {name}",
+          "translated": "_VAR_0__ ne ya duba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:39.902Z"
+        },
+        "trust.lastReviewed": {
+          "_source": "machine",
+          "original": "Last reviewed: {date}",
+          "translated": "An sake dubawa na ƙarshe: _VAR_0__",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.198Z"
+        },
+        "metadata.title": {
+          "_source": "machine",
+          "original": "AidHero - Emergency First Aid Nigeria",
+          "translated": "AidHero - Agajin Gaggawa Na Najeriya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.198Z"
+        },
+        "metadata.description": {
+          "_source": "machine",
+          "original": "Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
+          "translated": "Jagoran agajin gaggawa na Najeriya ba tare da intanet ba. Umarnin agaji nan take a Turanci, Hausa, Igbo, Yarbanci da Pidgin.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.198Z"
+        },
+        "metadata.ogTitle": {
+          "_source": "machine",
+          "original": "AidHero - Emergency First Aid Nigeria",
+          "translated": "AidHero - Agajin Gaggawa Na Najeriya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.198Z"
+        },
+        "metadata.ogDescription": {
+          "_source": "machine",
+          "original": "You can save a life. AidHero shows you how. Offline first aid guide for Nigeria.",
+          "translated": "Kuna iya ceton rai. AidHero zai nuna muku yadda ake yi. Jagoran agaji ba tare da intanet ba a Najeriya.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.198Z"
+        }
+      }
+    },
+    "ig": {
+      "total_strings": 149,
+      "strings": {
+        "nav.home": {
+          "_source": "machine",
+          "original": "Home",
+          "translated": "Ụlọ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "nav.search": {
+          "_source": "machine",
+          "original": "Search",
+          "translated": "Chọọ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "nav.emergency": {
+          "_source": "machine",
+          "original": "Emergency",
+          "translated": "Ihe Mberede",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "nav.settings": {
+          "_source": "machine",
+          "original": "Settings",
+          "translated": "Ntọala",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "home.title": {
+          "_source": "machine",
+          "original": "AidHero",
+          "translated": "AidHero",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "home.subtitle": {
+          "_source": "machine",
+          "original": "First Aid Guide",
+          "translated": "Ntuziaka Enyemaka Mbụ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "home.searchPlaceholder": {
+          "_source": "machine",
+          "original": "Search for symptoms or injuries...",
+          "translated": "Chọọ mgbaàmà ma ọ bụ mmerụ ahụ...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "home.sectionHeaders": {
+          "_source": "machine",
+          "original": "Categories",
+          "translated": "Otu Dị Iche Iche",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "home.emergencyCall": {
+          "_source": "machine",
+          "original": "Call Emergency",
+          "translated": "Kpọọ Ndị Mberede",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.startGuided": {
+          "_source": "machine",
+          "original": "Start Guided Rescue",
+          "translated": "Malite Nnapụta Nduzi",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.quickSteps": {
+          "_source": "machine",
+          "original": "Quick Steps",
+          "translated": "Nzọụkwụ Ngwa Ngwa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.stepXOfY": {
+          "_source": "machine",
+          "original": "Step {step} of {total}",
+          "translated": "Nzọụkwụ {step} nke {total}",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.stepNumber": {
+          "_source": "machine",
+          "original": "STEP {number}",
+          "translated": "NZỌỤKWỤ {number}",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.next": {
+          "_source": "machine",
+          "original": "Next",
+          "translated": "Osote",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.nextStep": {
+          "_source": "machine",
+          "original": "Next Step",
+          "translated": "Nzọụkwụ Ọzọ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.back": {
+          "_source": "machine",
+          "original": "Back",
+          "translated": "Azu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.repeat": {
+          "_source": "machine",
+          "original": "Repeat",
+          "translated": "Meghachi",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.callEmergency": {
+          "_source": "machine",
+          "original": "Call Emergency",
+          "translated": "Kpọọ Ndị Mberede",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.doneCall": {
+          "_source": "machine",
+          "original": "Done — Call Emergency",
+          "translated": "Emela — Kpọọ Ndị Mberede",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.playAudio": {
+          "_source": "machine",
+          "original": "Play in",
+          "translated": "Kpọọ na",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.stopAudio": {
+          "_source": "machine",
+          "original": "Stop",
+          "translated": "Kwụsị",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.readAll": {
+          "_source": "machine",
+          "original": "Read all steps in",
+          "translated": "Gụọ usoro niile na",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.voiceMode": {
+          "_source": "machine",
+          "original": "Voice Mode",
+          "translated": "Ụdị Olu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.startVoice": {
+          "_source": "machine",
+          "original": "Voice Mode",
+          "translated": "Ụdị Olu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.skipToSteps": {
+          "_source": "machine",
+          "original": "Skip to steps",
+          "translated": "Gaa na nzọụkwụ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.exitVoiceMode": {
+          "_source": "machine",
+          "original": "Exit Voice Mode",
+          "translated": "Pụọ n'Ụdị Olu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.exit": {
+          "_source": "machine",
+          "original": "Exit",
+          "translated": "Pụọ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.pause": {
+          "_source": "machine",
+          "original": "Pause",
+          "translated": "Kwụsịtụ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.resume": {
+          "_source": "machine",
+          "original": "Resume",
+          "translated": "Gaa n'ihu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.voiceHint": {
+          "_source": "machine",
+          "original": "Say \"next\", \"back\", or \"repeat\"",
+          "translated": "Kwu \"next\", \"back\", ma ọ bụ \"repeat\"",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.voiceUnavailable": {
+          "_source": "machine",
+          "original": "Voice commands unavailable",
+          "translated": "Iwu olu adịghị ugbu a",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.severity.critical": {
+          "_source": "machine",
+          "original": "CRITICAL",
+          "translated": "DỊ OKWU OKWU",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.severity.moderate": {
+          "_source": "machine",
+          "original": "MODERATE",
+          "translated": "DỊ NDEKỌ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.severity.urgent": {
+          "_source": "machine",
+          "original": "URGENT",
+          "translated": "DỊ NGWA",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.signsToLookFor": {
+          "_source": "machine",
+          "original": "Signs to recognise",
+          "translated": "Ihe ịrịba ama ị ga-amata",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.doNot": {
+          "_source": "machine",
+          "original": "What NOT to do",
+          "translated": "Ihe ị NA-EKWESỊGHỊ ime",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.hospitalThreshold": {
+          "_source": "machine",
+          "original": "When to go to hospital",
+          "translated": "Mgbe ị ga-aga ụlọ ọgwụ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "rescue.step1": {
+          "_source": "machine",
+          "original": "Step 1",
+          "translated": "Nzọụkwụ 1",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "search.placeholder": {
+          "_source": "machine",
+          "original": "Search...",
+          "translated": "Chọọ...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "search.noResults": {
+          "_source": "machine",
+          "original": "No results found for \"{query}\".",
+          "translated": "Ọ nweghị ihe achọtara maka \"{query}\".",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "search.recentSearches": {
+          "_source": "machine",
+          "original": "Recent Searches",
+          "translated": "Ọchụchọ Na-adịbeghị Anya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "search.trySuggestions": {
+          "_source": "machine",
+          "original": "Try: heart attack, choking, bleeding",
+          "translated": "Nwalee: nkụchi obi, iku ume ike, ọbara ọgbụgba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "search.allCategories": {
+          "_source": "machine",
+          "original": "All Categories",
+          "translated": "Ụdị Niile",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "search.clearRecent": {
+          "_source": "machine",
+          "original": "Clear",
+          "translated": "Kpochapụ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "incidents.paediatric": {
+          "_source": "machine",
+          "original": "Paediatric",
+          "translated": "Maka Ụmụaka",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "incidents.trauma": {
+          "_source": "machine",
+          "original": "Trauma",
+          "translated": "Mmerụ Ahụ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "incidents.environmental": {
+          "_source": "machine",
+          "original": "Environmental",
+          "translated": "Nke Gburugburu Ebe Obibi",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "incidents.respiratory": {
+          "_source": "machine",
+          "original": "Respiratory",
+          "translated": "Nke Ikuku Ume",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "incidents.burns": {
+          "_source": "machine",
+          "original": "Burns",
+          "translated": "Ọkụ Ọkụ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "incidents.allergic": {
+          "_source": "machine",
+          "original": "Allergic",
+          "translated": "Ọrịa Nfụkasị Ahụ (Allergy)",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "incidents.obstetric": {
+          "_source": "machine",
+          "original": "Obstetric",
+          "translated": "Maka Ụmụ Nwanyị Dị Ime",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "incidents.cardiac": {
+          "_source": "machine",
+          "original": "Cardiac",
+          "translated": "Nke Obi",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "incidents.poisoning": {
+          "_source": "machine",
+          "original": "Poisoning",
+          "translated": "Nsị",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "incidents.neurological": {
+          "_source": "machine",
+          "original": "Neurological",
+          "translated": "Nke Ụbụrụ na Akwara",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "incidents.gastrointestinal": {
+          "_source": "machine",
+          "original": "Gastrointestinal",
+          "translated": "Nke Afọ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "incidents.other": {
+          "_source": "machine",
+          "original": "Other",
+          "translated": "Ndị Ọzọ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "emergency.callButton": {
+          "_source": "machine",
+          "original": "Call",
+          "translated": "Kpọọ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "emergency.stateNames": {
+          "_source": "machine",
+          "original": "State Numbers",
+          "translated": "Nọmba Steeti",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "emergency.nationalNumbers": {
+          "_source": "machine",
+          "original": "National Emergency Numbers",
+          "translated": "Nọmba Mberede Mba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "emergency.showingNumbersFor": {
+          "_source": "machine",
+          "original": "Showing numbers for",
+          "translated": "Na-egosi nọmba maka",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "emergency.showingNationalNumbers": {
+          "_source": "machine",
+          "original": "Showing national numbers",
+          "translated": "Na-egosi nọmba mba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "emergency.services": {
+          "_source": "machine",
+          "original": "Services",
+          "translated": "Ọrụ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "emergency.nationalServices": {
+          "_source": "machine",
+          "original": "National Services",
+          "translated": "Ọrụ Mba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "emergency.changeState": {
+          "_source": "machine",
+          "original": "Change state",
+          "translated": "Gbanwee Steeti",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "emergency.selectState": {
+          "_source": "machine",
+          "original": "Select State",
+          "translated": "Họrọ Steeti",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "emergency.searchStates": {
+          "_source": "machine",
+          "original": "Search states...",
+          "translated": "Chọọ steeti...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "emergency.noStatesFound": {
+          "_source": "machine",
+          "original": "No states found matching \"{search}\"",
+          "translated": "Ọ nweghị steeti kwekọrọ na \"{search}\"",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "common.yes": {
+          "_source": "machine",
+          "original": "Yes",
+          "translated": "Ee",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "common.no": {
+          "_source": "machine",
+          "original": "No",
+          "translated": "Mba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "common.none": {
+          "_source": "machine",
+          "original": "None",
+          "translated": "Ọ dịghị",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.199Z"
+        },
+        "common.all": {
+          "_source": "machine",
+          "original": "All",
+          "translated": "Ha niile",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:41.495Z"
+        },
+        "common.loading": {
+          "_source": "machine",
+          "original": "Loading...",
+          "translated": "Na-ebu...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:42.705Z"
+        },
+        "common.save": {
+          "_source": "machine",
+          "original": "Save",
+          "translated": "Chekwa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:43.957Z"
+        },
+        "common.cancel": {
+          "_source": "machine",
+          "original": "Cancel",
+          "translated": "Kagbuo",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.807Z"
+        },
+        "common.back": {
+          "_source": "machine",
+          "original": "Back",
+          "translated": "Azu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.807Z"
+        },
+        "settings.language": {
+          "_source": "machine",
+          "original": "Language",
+          "translated": "Asụsụ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.807Z"
+        },
+        "settings.textSize": {
+          "_source": "machine",
+          "original": "Text Size",
+          "translated": "Ogo Ederede",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.807Z"
+        },
+        "settings.contrast": {
+          "_source": "machine",
+          "original": "Contrast",
+          "translated": "Ọdịiche Agba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.807Z"
+        },
+        "settings.offline": {
+          "_source": "machine",
+          "original": "Offline Mode",
+          "translated": "Ọnọdụ Na-enweghị Ịntanetị",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.807Z"
+        },
+        "settings.manage": {
+          "_source": "machine",
+          "original": "Manage",
+          "translated": "Jikwaa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.981Z"
+        },
+        "settings.contentDownloaded": {
+          "_source": "machine",
+          "original": "Content downloaded",
+          "translated": "Ebudatara ọdịnaya ngwa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.981Z"
+        },
+        "settings.audioDownloadedFor": {
+          "_source": "machine",
+          "original": "Audio downloaded for",
+          "translated": "Ebudatara ụda olu maka",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.981Z"
+        },
+        "settings.yes": {
+          "_source": "machine",
+          "original": "Yes",
+          "translated": "Ee",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.981Z"
+        },
+        "settings.no": {
+          "_source": "machine",
+          "original": "No",
+          "translated": "Mba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.981Z"
+        },
+        "settings.about": {
+          "_source": "machine",
+          "original": "About AidHero",
+          "translated": "Gbasara AidHero",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.981Z"
+        },
+        "settings.aboutAidHero": {
+          "_source": "machine",
+          "original": "About AidHero",
+          "translated": "Gbasara AidHero",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.981Z"
+        },
+        "settings.version": {
+          "_source": "machine",
+          "original": "Version",
+          "translated": "Ụdị",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.981Z"
+        },
+        "settings.offlineFirst": {
+          "_source": "machine",
+          "original": "Offline-First",
+          "translated": "Na-arụ Ọrụ Na-enweghị Ịntanetị",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.981Z"
+        },
+        "settings.medicalDisclaimer": {
+          "_source": "machine",
+          "original": "Medical Disclaimer: This application provides general first-aid guidance based on standard protocols, but it is not a substitute for professional medical advice, diagnosis, or treatment. Always call emergency services immediately in critical situations.",
+          "translated": "Ịdọ Aka Ná Ntị Ahụike: Ngwa a na-enye ntuziaka enyemaka mbụ izugbe, ọ bụghị nnọchi maka ndụmọdụ dọkịta. Kpọọ ndị ọrụ mberede ozugbo n'ọnọdụ dị egwu.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.981Z"
+        },
+        "settings.confirmDuringRescue": {
+          "_source": "machine",
+          "original": "Changing language will restart your rescue flow. Continue?",
+          "translated": "Ịgbanwe asụsụ ga-eme ka ị malitegharịa nnapụta. Gaa n'ihu?",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.981Z"
+        },
+        "settings.general": {
+          "_source": "machine",
+          "original": "General",
+          "translated": "N'ozuzu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.981Z"
+        },
+        "settings.accessibility": {
+          "_source": "machine",
+          "original": "Accessibility",
+          "translated": "Nnweta",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:44.981Z"
+        },
+        "settings.scaleNormal": {
+          "_source": "machine",
+          "original": "Normal",
+          "translated": "Nkịtị",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:45.677Z"
+        },
+        "settings.scaleLarge": {
+          "_source": "machine",
+          "original": "Large",
+          "translated": "Nnukwu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:46.975Z"
+        },
+        "settings.scaleXL": {
+          "_source": "machine",
+          "original": "Extra Large",
+          "translated": "Oke ukwuu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.highContrast": {
+          "_source": "machine",
+          "original": "High Contrast",
+          "translated": "Ọdịiche Agba Dị Elu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.highContrastDesc": {
+          "_source": "machine",
+          "original": "Maximum legibility mode",
+          "translated": "Ọnọdụ kacha mma maka ịgụ ihe",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.autoplayVoice": {
+          "_source": "machine",
+          "original": "Auto-play Voice",
+          "translated": "Kpọọ Olu Na-akpaghị Aka",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.autoplayVoiceDesc": {
+          "_source": "machine",
+          "original": "Read steps aloud automatically",
+          "translated": "Gụọ usoro n'olu dara ụda na-akpaghị aka",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.offlineVoiceModeFallback": {
+          "_source": "machine",
+          "original": "Offline Voice Mode Fallback",
+          "translated": "Nkwado Ụdị Olu Na-enweghị Ịntanetị",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.offlineVoiceModeDesc": {
+          "_source": "machine",
+          "original": "Choose how long to wait before automatically advancing to the next step when voice commands are unavailable offline.",
+          "translated": "Họrọ oge ị ga-eche tupu ị gaa n'ihu na nzọụkwụ ọzọ mgbe iwu olu adịghị.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.manualAdvance": {
+          "_source": "machine",
+          "original": "Manual (Tap to advance)",
+          "translated": "Site n'aka (Kpatụ iji gaa n'ihu)",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.seconds": {
+          "_source": "machine",
+          "original": "{count} seconds",
+          "translated": "Sekọnd {count}",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.offlineScreen.title": {
+          "_source": "machine",
+          "original": "Download for Offline Use",
+          "translated": "Budata maka Ojiji Na-enweghị Ịntanetị",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.offlineScreen.appContent": {
+          "_source": "machine",
+          "original": "App content",
+          "translated": "Ọdịnaya Ngwa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.offlineScreen.appContentStatus": {
+          "_source": "machine",
+          "original": "Already downloaded on first visit",
+          "translated": "Ebudatara na nleta mbụ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.offlineScreen.englishAudio": {
+          "_source": "machine",
+          "original": "English audio",
+          "translated": "Ụda Bekee",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.offlineScreen.englishAudioStatus": {
+          "_source": "machine",
+          "original": "Downloaded automatically",
+          "translated": "Ebudatara na-akpaghị aka",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.offlineScreen.download": {
+          "_source": "machine",
+          "original": "Download",
+          "translated": "Budata",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.offlineScreen.downloading": {
+          "_source": "machine",
+          "original": "Downloading... {progress}%",
+          "translated": "Na-ebudata... {progress}%",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.offlineScreen.downloaded": {
+          "_source": "machine",
+          "original": "Downloaded",
+          "translated": "Ebudatara",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.offlineScreen.storageUsed": {
+          "_source": "machine",
+          "original": "Storage used: {used}MB of estimated {total}MB total",
+          "translated": "Ohere ejiri rụọ ọrụ: {used}MB n'ime ihe dịka {total}MB",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.offlineScreen.lastUpdated": {
+          "_source": "machine",
+          "original": "Last updated",
+          "translated": "Mmelite ikpeazụ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "settings.offlineScreen.checkUpdates": {
+          "_source": "machine",
+          "original": "Check for updates",
+          "translated": "Lelee mmelite",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "accessibility.ariaLabels": {
+          "_source": "machine",
+          "original": "Accessibility Strings",
+          "translated": "Okwu Nnweta",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "accessibility.emergencyCallStrip": {
+          "_source": "machine",
+          "original": "Call Emergency Numbers",
+          "translated": "Kpọọ Nọmba Mberede",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "accessibility.changeLanguage": {
+          "_source": "machine",
+          "original": "Change Language",
+          "translated": "Gbanwee Asụsụ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "accessibility.bottomNav": {
+          "_source": "machine",
+          "original": "Bottom Navigation",
+          "translated": "Nchọgharị Ala",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "accessibility.skipToMain": {
+          "_source": "machine",
+          "original": "Skip to main content",
+          "translated": "Gaa na isi ọdịnaya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:48.173Z"
+        },
+        "accessibility.voiceSearch": {
+          "_source": "machine",
+          "original": "Voice Search",
+          "translated": "Nchọ olu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "offline.ready": {
+          "_source": "machine",
+          "original": "Ready for offline use",
+          "translated": "Dị njikere maka ojiji na-enweghị ịntanetị",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "offline.limited": {
+          "_source": "machine",
+          "original": "Limited offline functionality",
+          "translated": "Ọrụ nwere oke na-enweghị ịntanetị",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "offline.updated": {
+          "_source": "machine",
+          "original": "Content updated",
+          "translated": "Emelitere ọdịnaya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "offline.active": {
+          "_source": "machine",
+          "original": "Offline Mode Active",
+          "translated": "Ọnọdụ Na-enweghị Ịntanetị Na-arụ Ọrụ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "offline.downloading": {
+          "_source": "machine",
+          "original": "Downloading Content...",
+          "translated": "Na-ebudata ọdịnaya...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "errors.notFound": {
+          "_source": "machine",
+          "original": "Page not found",
+          "translated": "Ahụghị ibe ahụ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "errors.audioUnavailable": {
+          "_source": "machine",
+          "original": "Audio unavailable in offline mode",
+          "translated": "Ụda adịghị n'ọnọdụ na-enweghị ịntanetị",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "errors.offlineLimitation": {
+          "_source": "machine",
+          "original": "This feature requires an internet connection",
+          "translated": "Njirimara a chọrọ njikọ ịntanetị",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "onboarding.slide1.title": {
+          "_source": "machine",
+          "original": "You can save a life.",
+          "translated": "Ị nwere ike ịzọpụta ndụ.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "onboarding.slide1.body": {
+          "_source": "machine",
+          "original": "AidHero shows you how.",
+          "translated": "AidHero na-egosi gị otu esi eme ya.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "onboarding.slide2.title": {
+          "_source": "machine",
+          "original": "Works offline,",
+          "translated": "Na-arụ ọrụ na-enweghị ịntanetị,",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "onboarding.slide2.body": {
+          "_source": "machine",
+          "original": "in your language.",
+          "translated": "n'asụsụ gị.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "onboarding.slide3.title": {
+          "_source": "machine",
+          "original": "Choose your language",
+          "translated": "Họrọ asụsụ gị",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "onboarding.slide3.body": {
+          "_source": "machine",
+          "original": "+ download content",
+          "translated": "+ budata ọdịnaya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "onboarding.download": {
+          "_source": "machine",
+          "original": "Download for offline use",
+          "translated": "Budata maka ojiji na-enweghị ịntanetị",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "onboarding.skipLater": {
+          "_source": "machine",
+          "original": "I'll do this later",
+          "translated": "M ga-eme nke a ma emechaa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "onboarding.skip": {
+          "_source": "machine",
+          "original": "Skip",
+          "translated": "Wụpụ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "onboarding.back": {
+          "_source": "machine",
+          "original": "Back",
+          "translated": "Azu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "onboarding.next": {
+          "_source": "machine",
+          "original": "Next",
+          "translated": "Osote",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:49.204Z"
+        },
+        "onboarding.progressDots": {
+          "_source": "machine",
+          "original": "Onboarding progress",
+          "translated": "Ọganihu ịbanye",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:50.290Z"
+        },
+        "trust.pendingReview": {
+          "_source": "machine",
+          "original": "Pending medical review",
+          "translated": "Nyocha ahụike na-echere",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:51.920Z"
+        },
+        "trust.pendingWarning": {
+          "_source": "machine",
+          "original": "This information is awaiting verification by a certified medical professional. Use with caution.",
+          "translated": "Ozi a na-eche nkwenye site n'aka ọkachamara ahụike gbaara agbazinye. Jiri nlezianya mee ihe.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:53.150Z"
+        },
+        "trust.reviewed": {
+          "_source": "machine",
+          "original": "Medically Reviewed",
+          "translated": "Nyochaa ahụike",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:53.892Z"
+        },
+        "trust.reviewedBy": {
+          "_source": "machine",
+          "original": "Reviewed by {name}",
+          "translated": "{name} nyochara ya",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:55.077Z"
+        },
+        "trust.lastReviewed": {
+          "_source": "machine",
+          "original": "Last reviewed: {date}",
+          "translated": "Nyochaa ikpeazụ: _VAR_0__",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.255Z"
+        },
+        "metadata.title": {
+          "_source": "machine",
+          "original": "AidHero - Emergency First Aid Nigeria",
+          "translated": "AidHero - Enyemaka Mbụ Mberede Na Naịjirịa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.255Z"
+        },
+        "metadata.description": {
+          "_source": "machine",
+          "original": "Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
+          "translated": "Ntuziaka enyemaka mbụ na-enweghị ịntanetị maka Naịjirịa. Ntuziaka enyemaka mbụ ozugbo n'asụsụ Bekee, Hausa, Igbo, Yoruba, na Pidgin.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.255Z"
+        },
+        "metadata.ogTitle": {
+          "_source": "machine",
+          "original": "AidHero - Emergency First Aid Nigeria",
+          "translated": "AidHero - Enyemaka Mbụ Mberede Na Naịjirịa",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.255Z"
+        },
+        "metadata.ogDescription": {
+          "_source": "machine",
+          "original": "You can save a life. AidHero shows you how. Offline first aid guide for Nigeria.",
+          "translated": "Ị nwere ike ịzọpụta ndụ. AidHero na-egosi gị otu esi eme ya. Ntuziaka enyemaka mbụ na-enweghị ịntanetị na Naịjirịa.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.255Z"
+        }
+      }
+    },
+    "yo": {
+      "total_strings": 149,
+      "strings": {
+        "nav.home": {
+          "_source": "machine",
+          "original": "Home",
+          "translated": "Ilé",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "nav.search": {
+          "_source": "machine",
+          "original": "Search",
+          "translated": "Wá",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "nav.emergency": {
+          "_source": "machine",
+          "original": "Emergency",
+          "translated": "Pàjáwìrì",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "nav.settings": {
+          "_source": "machine",
+          "original": "Settings",
+          "translated": "Ètò",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "home.title": {
+          "_source": "machine",
+          "original": "AidHero",
+          "translated": "AidHero",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "home.subtitle": {
+          "_source": "machine",
+          "original": "First Aid Guide",
+          "translated": "Itọsọna Iranlọwọ Akọkọ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "home.searchPlaceholder": {
+          "_source": "machine",
+          "original": "Search for symptoms or injuries...",
+          "translated": "Wá àwọn àmì àìsàn tàbí egbò...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "home.sectionHeaders": {
+          "_source": "machine",
+          "original": "Categories",
+          "translated": "Àwọn Ẹ̀ka",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "home.emergencyCall": {
+          "_source": "machine",
+          "original": "Call Emergency",
+          "translated": "Pe Pàjáwìrì",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.startGuided": {
+          "_source": "machine",
+          "original": "Start Guided Rescue",
+          "translated": "Bẹ̀rẹ̀ Ìgbàlà Pẹ̀lú Ìtọ́sọ́nà",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.quickSteps": {
+          "_source": "machine",
+          "original": "Quick Steps",
+          "translated": "Àwọn Ìgbésẹ̀ Kíákíá",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.stepXOfY": {
+          "_source": "machine",
+          "original": "Step {step} of {total}",
+          "translated": "Ìgbésẹ̀ {step} nínú {total}",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.stepNumber": {
+          "_source": "machine",
+          "original": "STEP {number}",
+          "translated": "ÌGBÉSẸ̀ {number}",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.next": {
+          "_source": "machine",
+          "original": "Next",
+          "translated": "Tókàn",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.nextStep": {
+          "_source": "machine",
+          "original": "Next Step",
+          "translated": "Ìgbésẹ̀ Tókàn",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.back": {
+          "_source": "machine",
+          "original": "Back",
+          "translated": "Padà",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.repeat": {
+          "_source": "machine",
+          "original": "Repeat",
+          "translated": "Tún ṣe",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.callEmergency": {
+          "_source": "machine",
+          "original": "Call Emergency",
+          "translated": "Pe Pàjáwìrì",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.doneCall": {
+          "_source": "machine",
+          "original": "Done — Call Emergency",
+          "translated": "Ti parí — Pe Pàjáwìrì",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.playAudio": {
+          "_source": "machine",
+          "original": "Play in",
+          "translated": "Gbọ́ ní",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.stopAudio": {
+          "_source": "machine",
+          "original": "Stop",
+          "translated": "Dúró",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.readAll": {
+          "_source": "machine",
+          "original": "Read all steps in",
+          "translated": "Ka gbogbo ìgbésẹ̀ ní",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.voiceMode": {
+          "_source": "machine",
+          "original": "Voice Mode",
+          "translated": "Ètò Ohùn",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.startVoice": {
+          "_source": "machine",
+          "original": "Voice Mode",
+          "translated": "Ètò Ohùn",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.skipToSteps": {
+          "_source": "machine",
+          "original": "Skip to steps",
+          "translated": "Fò lọ sí àwọn ìgbésẹ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.exitVoiceMode": {
+          "_source": "machine",
+          "original": "Exit Voice Mode",
+          "translated": "Jáde kúrò ní Ètò Ohùn",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.exit": {
+          "_source": "machine",
+          "original": "Exit",
+          "translated": "Jáde",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.pause": {
+          "_source": "machine",
+          "original": "Pause",
+          "translated": "Dánu dúró",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.resume": {
+          "_source": "machine",
+          "original": "Resume",
+          "translated": "Tẹ̀síwájú",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.voiceHint": {
+          "_source": "machine",
+          "original": "Say \"next\", \"back\", or \"repeat\"",
+          "translated": "Sọ \"next\", \"back\", tàbí \"repeat\"",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.voiceUnavailable": {
+          "_source": "machine",
+          "original": "Voice commands unavailable",
+          "translated": "Àwọn àṣẹ ohùn kò sí níbẹ̀ báyìí",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.severity.critical": {
+          "_source": "machine",
+          "original": "CRITICAL",
+          "translated": "PÀTÀKÌ GAN-AN",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.severity.moderate": {
+          "_source": "machine",
+          "original": "MODERATE",
+          "translated": "DÁWỌ̀RỌ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.severity.urgent": {
+          "_source": "machine",
+          "original": "URGENT",
+          "translated": "KÍÁKÍÁ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.signsToLookFor": {
+          "_source": "machine",
+          "original": "Signs to recognise",
+          "translated": "Àwọn àmì láti mọ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.doNot": {
+          "_source": "machine",
+          "original": "What NOT to do",
+          "translated": "Ohun tí KÒ GBỌ́DỌ̀ ṣe",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.hospitalThreshold": {
+          "_source": "machine",
+          "original": "When to go to hospital",
+          "translated": "Ìgbà láti lọ sí ilé ìwòsàn",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "rescue.step1": {
+          "_source": "machine",
+          "original": "Step 1",
+          "translated": "Ìgbésẹ̀ 1",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "search.placeholder": {
+          "_source": "machine",
+          "original": "Search...",
+          "translated": "Wá...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "search.noResults": {
+          "_source": "machine",
+          "original": "No results found for \"{query}\".",
+          "translated": "Kò sí àbájáde tí a rí fún \"{query}\".",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "search.recentSearches": {
+          "_source": "machine",
+          "original": "Recent Searches",
+          "translated": "Àwọn Ìwádìí Àìpẹ́",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "search.trySuggestions": {
+          "_source": "machine",
+          "original": "Try: heart attack, choking, bleeding",
+          "translated": "Gbìyànjú: àrùn ọkàn, gbé nǹkan mì, ẹ̀jẹ̀ ríru",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "search.allCategories": {
+          "_source": "machine",
+          "original": "All Categories",
+          "translated": "Gbogbo Àwọn Ẹ̀ka",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "search.clearRecent": {
+          "_source": "machine",
+          "original": "Clear",
+          "translated": "Pa rẹ́",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "incidents.paediatric": {
+          "_source": "machine",
+          "original": "Paediatric",
+          "translated": "Fún Ọmọdé",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "incidents.trauma": {
+          "_source": "machine",
+          "original": "Trauma",
+          "translated": "Ìpalára / Egbò",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "incidents.environmental": {
+          "_source": "machine",
+          "original": "Environmental",
+          "translated": "Nípa Àyíká",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "incidents.respiratory": {
+          "_source": "machine",
+          "original": "Respiratory",
+          "translated": "Ètò Ìmí",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "incidents.burns": {
+          "_source": "machine",
+          "original": "Burns",
+          "translated": "Iná Jíjó",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "incidents.allergic": {
+          "_source": "machine",
+          "original": "Allergic",
+          "translated": "Àìfararọ (Allergy)",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "incidents.obstetric": {
+          "_source": "machine",
+          "original": "Obstetric",
+          "translated": "Fún Aboyún",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "incidents.cardiac": {
+          "_source": "machine",
+          "original": "Cardiac",
+          "translated": "Nípa Ọkàn",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "incidents.poisoning": {
+          "_source": "machine",
+          "original": "Poisoning",
+          "translated": "Oró / Márawò",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "incidents.neurological": {
+          "_source": "machine",
+          "original": "Neurological",
+          "translated": "Nípa Ọpọlọ àti Iṣan",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "incidents.gastrointestinal": {
+          "_source": "machine",
+          "original": "Gastrointestinal",
+          "translated": "Nípa Inú",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "incidents.other": {
+          "_source": "machine",
+          "original": "Other",
+          "translated": "Àwọn Ìyókù",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "emergency.callButton": {
+          "_source": "machine",
+          "original": "Call",
+          "translated": "Pe",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "emergency.stateNames": {
+          "_source": "machine",
+          "original": "State Numbers",
+          "translated": "Àwọn Nọ́mbà Ìpínlẹ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "emergency.nationalNumbers": {
+          "_source": "machine",
+          "original": "National Emergency Numbers",
+          "translated": "Àwọn Nọ́mbà Pàjáwìrì Orílẹ̀-Èdè",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "emergency.showingNumbersFor": {
+          "_source": "machine",
+          "original": "Showing numbers for",
+          "translated": "Ń fi àwọn nọ́mbà hàn fún",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "emergency.showingNationalNumbers": {
+          "_source": "machine",
+          "original": "Showing national numbers",
+          "translated": "Ń fi àwọn nọ́mbà orílẹ̀-èdè hàn",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "emergency.services": {
+          "_source": "machine",
+          "original": "Services",
+          "translated": "Àwọn Iṣẹ́",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "emergency.nationalServices": {
+          "_source": "machine",
+          "original": "National Services",
+          "translated": "Àwọn Iṣẹ́ Orílẹ̀-Èdè",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "emergency.changeState": {
+          "_source": "machine",
+          "original": "Change state",
+          "translated": "Yí Ìpínlẹ̀ Padà",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "emergency.selectState": {
+          "_source": "machine",
+          "original": "Select State",
+          "translated": "Yan Ìpínlẹ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "emergency.searchStates": {
+          "_source": "machine",
+          "original": "Search states...",
+          "translated": "Wá ìpínlẹ̀...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "emergency.noStatesFound": {
+          "_source": "machine",
+          "original": "No states found matching \"{search}\"",
+          "translated": "Kò sí ìpínlẹ̀ tó bá \"{search}\" mu",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "common.yes": {
+          "_source": "machine",
+          "original": "Yes",
+          "translated": "Bẹ́ẹ̀ni",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "common.no": {
+          "_source": "machine",
+          "original": "No",
+          "translated": "Bẹ́ẹ̀kọ́",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "common.none": {
+          "_source": "machine",
+          "original": "None",
+          "translated": "Kò sí",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.256Z"
+        },
+        "common.all": {
+          "_source": "machine",
+          "original": "All",
+          "translated": "Gbogbo",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.397Z"
+        },
+        "common.loading": {
+          "_source": "machine",
+          "original": "Loading...",
+          "translated": "Nkojọpọ...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.575Z"
+        },
+        "common.save": {
+          "_source": "machine",
+          "original": "Save",
+          "translated": "Fipamọ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.768Z"
+        },
+        "common.cancel": {
+          "_source": "machine",
+          "original": "Cancel",
+          "translated": "Fagilee",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.932Z"
+        },
+        "common.back": {
+          "_source": "machine",
+          "original": "Back",
+          "translated": "Padà",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.932Z"
+        },
+        "settings.language": {
+          "_source": "machine",
+          "original": "Language",
+          "translated": "Èdè",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.932Z"
+        },
+        "settings.textSize": {
+          "_source": "machine",
+          "original": "Text Size",
+          "translated": "Ìwọ̀n Ọ̀rọ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.932Z"
+        },
+        "settings.contrast": {
+          "_source": "machine",
+          "original": "Contrast",
+          "translated": "Ìyàtọ̀ Àwọ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.932Z"
+        },
+        "settings.offline": {
+          "_source": "machine",
+          "original": "Offline Mode",
+          "translated": "Ètò Láìsí Íńtánẹ́ẹ̀tì",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:56.932Z"
+        },
+        "settings.manage": {
+          "_source": "machine",
+          "original": "Manage",
+          "translated": "Ṣakoso awọn",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:57.710Z"
+        },
+        "settings.contentDownloaded": {
+          "_source": "machine",
+          "original": "Content downloaded",
+          "translated": "A ti gba àkóónú sílẹ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:57.710Z"
+        },
+        "settings.audioDownloadedFor": {
+          "_source": "machine",
+          "original": "Audio downloaded for",
+          "translated": "A ti gba ohùn sílẹ̀ fún",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:57.710Z"
+        },
+        "settings.yes": {
+          "_source": "machine",
+          "original": "Yes",
+          "translated": "Bẹ́ẹ̀ni",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:57.710Z"
+        },
+        "settings.no": {
+          "_source": "machine",
+          "original": "No",
+          "translated": "Bẹ́ẹ̀kọ́",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:57.710Z"
+        },
+        "settings.about": {
+          "_source": "machine",
+          "original": "About AidHero",
+          "translated": "Nípa AidHero",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:57.710Z"
+        },
+        "settings.aboutAidHero": {
+          "_source": "machine",
+          "original": "About AidHero",
+          "translated": "Nípa AidHero",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:57.710Z"
+        },
+        "settings.version": {
+          "_source": "machine",
+          "original": "Version",
+          "translated": "Àtẹ̀jáde",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:57.710Z"
+        },
+        "settings.offlineFirst": {
+          "_source": "machine",
+          "original": "Offline-First",
+          "translated": "Ń ṣiṣẹ́ láìsí Íńtánẹ́ẹ̀tì",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:57.710Z"
+        },
+        "settings.medicalDisclaimer": {
+          "_source": "machine",
+          "original": "Medical Disclaimer: This application provides general first-aid guidance based on standard protocols, but it is not a substitute for professional medical advice, diagnosis, or treatment. Always call emergency services immediately in critical situations.",
+          "translated": "Ìkìlọ̀ Ìṣègùn: Ètò ìṣiṣẹ́ yìí ń pèsè ìtọ́sọ́nà ìrànlọ́wọ́ àkọ́kọ́ lásán, kìí ṣe dípò ìmọ̀ràn dókítà. Máa pe àwọn iṣẹ́ pàjáwìrì lẹ́sẹ̀kẹsẹ̀ ní àwọn ipò tó le koko.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:57.710Z"
+        },
+        "settings.confirmDuringRescue": {
+          "_source": "machine",
+          "original": "Changing language will restart your rescue flow. Continue?",
+          "translated": "Yíyí èdè padà yóò tún ètò ìgbàlà bẹ̀rẹ̀. Ṣé kí a tẹ̀síwájú?",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:57.710Z"
+        },
+        "settings.general": {
+          "_source": "machine",
+          "original": "General",
+          "translated": "Gbogbogbò",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:57.710Z"
+        },
+        "settings.accessibility": {
+          "_source": "machine",
+          "original": "Accessibility",
+          "translated": "Ìrọ̀rùn Ìlò",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:57.710Z"
+        },
+        "settings.scaleNormal": {
+          "_source": "machine",
+          "original": "Normal",
+          "translated": "Deede",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:57.961Z"
+        },
+        "settings.scaleLarge": {
+          "_source": "machine",
+          "original": "Large",
+          "translated": "Tobi",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.126Z"
+        },
+        "settings.scaleXL": {
+          "_source": "machine",
+          "original": "Extra Large",
+          "translated": "Afikun Tobi",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.highContrast": {
+          "_source": "machine",
+          "original": "High Contrast",
+          "translated": "Àwọ̀ Tó Hàn Gbangba",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.highContrastDesc": {
+          "_source": "machine",
+          "original": "Maximum legibility mode",
+          "translated": "Ètò kíkà tó rọrùn jùlọ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.autoplayVoice": {
+          "_source": "machine",
+          "original": "Auto-play Voice",
+          "translated": "Kíkà Ohùn Lẹ́sẹ̀kẹsẹ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.autoplayVoiceDesc": {
+          "_source": "machine",
+          "original": "Read steps aloud automatically",
+          "translated": "Ka àwọn ìgbésẹ̀ jáde ní ohùn fúnra rẹ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.offlineVoiceModeFallback": {
+          "_source": "machine",
+          "original": "Offline Voice Mode Fallback",
+          "translated": "Ètò Àfikún Ohùn Láìsí Íńtánẹ́ẹ̀tì",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.offlineVoiceModeDesc": {
+          "_source": "machine",
+          "original": "Choose how long to wait before automatically advancing to the next step when voice commands are unavailable offline.",
+          "translated": "Yan iye àkókò láti dúró kí o tó tẹ̀síwájú sí ìgbésẹ̀ tókàn nígbà tí àṣẹ ohùn kò bá ṣiṣẹ́.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.manualAdvance": {
+          "_source": "machine",
+          "original": "Manual (Tap to advance)",
+          "translated": "Pẹ̀lú ọwọ́ (Fọwọ́ kàn án láti tẹ̀síwájú)",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.seconds": {
+          "_source": "machine",
+          "original": "{count} seconds",
+          "translated": "Àáyá {count}",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.offlineScreen.title": {
+          "_source": "machine",
+          "original": "Download for Offline Use",
+          "translated": "Gba sílẹ̀ fún Ìlò Láìsí Íńtánẹ́ẹ̀tì",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.offlineScreen.appContent": {
+          "_source": "machine",
+          "original": "App content",
+          "translated": "Àkóónú Ètò",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.offlineScreen.appContentStatus": {
+          "_source": "machine",
+          "original": "Already downloaded on first visit",
+          "translated": "A ti gbà á sílẹ̀ ní ìbẹ̀wò àkọ́kọ́",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.offlineScreen.englishAudio": {
+          "_source": "machine",
+          "original": "English audio",
+          "translated": "Ohùn Gẹ̀ẹ́sì",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.offlineScreen.englishAudioStatus": {
+          "_source": "machine",
+          "original": "Downloaded automatically",
+          "translated": "Gbígbà sílẹ̀ fúnra rẹ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.offlineScreen.download": {
+          "_source": "machine",
+          "original": "Download",
+          "translated": "Gba sílẹ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.offlineScreen.downloading": {
+          "_source": "machine",
+          "original": "Downloading... {progress}%",
+          "translated": "Ń gba sílẹ̀... {progress}%",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.offlineScreen.downloaded": {
+          "_source": "machine",
+          "original": "Downloaded",
+          "translated": "Ti gbà sílẹ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.offlineScreen.storageUsed": {
+          "_source": "machine",
+          "original": "Storage used: {used}MB of estimated {total}MB total",
+          "translated": "Ààyè tí a lò: {used}MB nínú nǹkan bí {total}MB lápapọ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.offlineScreen.lastUpdated": {
+          "_source": "machine",
+          "original": "Last updated",
+          "translated": "Àtúnṣe ìkẹyìn",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "settings.offlineScreen.checkUpdates": {
+          "_source": "machine",
+          "original": "Check for updates",
+          "translated": "Ṣàyẹ̀wò àwọn àtúnṣe",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "accessibility.ariaLabels": {
+          "_source": "machine",
+          "original": "Accessibility Strings",
+          "translated": "Àwọn Ọ̀rọ̀ Ìrọ̀rùn Ìlò",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "accessibility.emergencyCallStrip": {
+          "_source": "machine",
+          "original": "Call Emergency Numbers",
+          "translated": "Pe Àwọn Nọ́mbà Pàjáwìrì",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "accessibility.changeLanguage": {
+          "_source": "machine",
+          "original": "Change Language",
+          "translated": "Yí Èdè Padà",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "accessibility.bottomNav": {
+          "_source": "machine",
+          "original": "Bottom Navigation",
+          "translated": "Ìtọ́sọ́nà Ìsàlẹ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "accessibility.skipToMain": {
+          "_source": "machine",
+          "original": "Skip to main content",
+          "translated": "Fò lọ sí orí àkóónú gangan",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:58.545Z"
+        },
+        "accessibility.voiceSearch": {
+          "_source": "machine",
+          "original": "Voice Search",
+          "translated": "Wiwa ohun",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "offline.ready": {
+          "_source": "machine",
+          "original": "Ready for offline use",
+          "translated": "Ó ti ṣetán fún ìlò láìsí íńtánẹ́ẹ̀tì",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "offline.limited": {
+          "_source": "machine",
+          "original": "Limited offline functionality",
+          "translated": "Iṣẹ́ díẹ̀ ló wà láìsí íńtánẹ́ẹ̀tì",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "offline.updated": {
+          "_source": "machine",
+          "original": "Content updated",
+          "translated": "Àkóónú ti di títúnṣe",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "offline.active": {
+          "_source": "machine",
+          "original": "Offline Mode Active",
+          "translated": "Ètò Láìsí Íńtánẹ́ẹ̀tì Ń Ṣiṣẹ́",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "offline.downloading": {
+          "_source": "machine",
+          "original": "Downloading Content...",
+          "translated": "Ń gba àkóónú sílẹ̀...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "errors.notFound": {
+          "_source": "machine",
+          "original": "Page not found",
+          "translated": "A kò rí ojú ewé náà",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "errors.audioUnavailable": {
+          "_source": "machine",
+          "original": "Audio unavailable in offline mode",
+          "translated": "Ohùn kò sí ní ètò láìsí íńtánẹ́ẹ̀tì",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "errors.offlineLimitation": {
+          "_source": "machine",
+          "original": "This feature requires an internet connection",
+          "translated": "Ètò yìí nílò ìsopọ̀ íńtánẹ́ẹ̀tì",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "onboarding.slide1.title": {
+          "_source": "machine",
+          "original": "You can save a life.",
+          "translated": "O lè gba ẹ̀mí là.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "onboarding.slide1.body": {
+          "_source": "machine",
+          "original": "AidHero shows you how.",
+          "translated": "AidHero yóò fi bí a ṣe ń ṣe é hàn ọ́.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "onboarding.slide2.title": {
+          "_source": "machine",
+          "original": "Works offline,",
+          "translated": "Ń ṣiṣẹ́ láìsí íńtánẹ́ẹ̀tì,",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "onboarding.slide2.body": {
+          "_source": "machine",
+          "original": "in your language.",
+          "translated": "ní èdè rẹ.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "onboarding.slide3.title": {
+          "_source": "machine",
+          "original": "Choose your language",
+          "translated": "Yan èdè rẹ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "onboarding.slide3.body": {
+          "_source": "machine",
+          "original": "+ download content",
+          "translated": "+ gba àkóónú sílẹ̀",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "onboarding.download": {
+          "_source": "machine",
+          "original": "Download for offline use",
+          "translated": "Gba sílẹ̀ fún ìlò láìsí íńtánẹ́ẹ̀tì",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "onboarding.skipLater": {
+          "_source": "machine",
+          "original": "I'll do this later",
+          "translated": "N ó ṣe èyí nígbà mìíràn",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "onboarding.skip": {
+          "_source": "machine",
+          "original": "Skip",
+          "translated": "Fò kọjá",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "onboarding.back": {
+          "_source": "machine",
+          "original": "Back",
+          "translated": "Padà",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "onboarding.next": {
+          "_source": "machine",
+          "original": "Next",
+          "translated": "Tókàn",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:18:59.975Z"
+        },
+        "onboarding.progressDots": {
+          "_source": "machine",
+          "original": "Onboarding progress",
+          "translated": "Ilọsiwaju onboarding",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:01.137Z"
+        },
+        "trust.pendingReview": {
+          "_source": "machine",
+          "original": "Pending medical review",
+          "translated": "Ni isunmọtosi ni egbogi awotẹlẹ",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:02.215Z"
+        },
+        "trust.pendingWarning": {
+          "_source": "machine",
+          "original": "This information is awaiting verification by a certified medical professional. Use with caution.",
+          "translated": "Alaye yii n duro de ijẹrisi nipasẹ alamọdaju iṣoogun ti a fọwọsi. Lo pẹlu iṣọra.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:03.626Z"
+        },
+        "trust.reviewed": {
+          "_source": "machine",
+          "original": "Medically Reviewed",
+          "translated": "Atunwo iṣoogun",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:04.568Z"
+        },
+        "trust.reviewedBy": {
+          "_source": "machine",
+          "original": "Reviewed by {name}",
+          "translated": "Atunwo nipasẹ {name}",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:06.076Z"
+        },
+        "trust.lastReviewed": {
+          "_source": "machine",
+          "original": "Last reviewed: {date}",
+          "translated": "Atunyẹwo kẹhin: _VAR_0__",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.267Z"
+        },
+        "metadata.title": {
+          "_source": "machine",
+          "original": "AidHero - Emergency First Aid Nigeria",
+          "translated": "AidHero - Ìrànwọ́ Pàjáwìrì Ní Nàìjíríà",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.267Z"
+        },
+        "metadata.description": {
+          "_source": "machine",
+          "original": "Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
+          "translated": "Itọsọna iranlọwọ akọkọ laisi intanẹẹti fun orilẹ-ede Naijiria. Awọn itọnisọna ni ede Gẹẹsi, Hausa, Igbo, Yoruba ati Pidgin.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.267Z"
+        },
+        "metadata.ogTitle": {
+          "_source": "machine",
+          "original": "AidHero - Emergency First Aid Nigeria",
+          "translated": "AidHero - Ìrànwọ́ Pàjáwìrì Ní Nàìjíríà",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.267Z"
+        },
+        "metadata.ogDescription": {
+          "_source": "machine",
+          "original": "You can save a life. AidHero shows you how. Offline first aid guide for Nigeria.",
+          "translated": "O lè gba ẹ̀mí là. AidHero yóò fi bí a ṣe ń ṣe é hàn ọ́. Itọsọna iranlọwọ akọkọ laisi intanẹẹti ni Naijiria.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.267Z"
+        }
+      }
+    },
+    "pcm": {
+      "total_strings": 149,
+      "strings": {
+        "nav.home": {
+          "_source": "machine",
+          "original": "Home",
+          "translated": "Home",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "nav.search": {
+          "_source": "machine",
+          "original": "Search",
+          "translated": "Find",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "nav.emergency": {
+          "_source": "machine",
+          "original": "Emergency",
+          "translated": "Emergency",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "nav.settings": {
+          "_source": "machine",
+          "original": "Settings",
+          "translated": "Settings",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "home.title": {
+          "_source": "machine",
+          "original": "AidHero",
+          "translated": "AidHero",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "home.subtitle": {
+          "_source": "machine",
+          "original": "First Aid Guide",
+          "translated": "First Aid Guide",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "home.searchPlaceholder": {
+          "_source": "machine",
+          "original": "Search for symptoms or injuries...",
+          "translated": "Find symptoms or wound...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "home.sectionHeaders": {
+          "_source": "machine",
+          "original": "Categories",
+          "translated": "Categories",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "home.emergencyCall": {
+          "_source": "machine",
+          "original": "Call Emergency",
+          "translated": "Call Emergency",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.startGuided": {
+          "_source": "machine",
+          "original": "Start Guided Rescue",
+          "translated": "Start Step-by-Step Rescue",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.quickSteps": {
+          "_source": "machine",
+          "original": "Quick Steps",
+          "translated": "Sharp Steps",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.stepXOfY": {
+          "_source": "machine",
+          "original": "Step {step} of {total}",
+          "translated": "Step {step} out of {total}",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.stepNumber": {
+          "_source": "machine",
+          "original": "STEP {number}",
+          "translated": "STEP {number}",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.next": {
+          "_source": "machine",
+          "original": "Next",
+          "translated": "Next",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.nextStep": {
+          "_source": "machine",
+          "original": "Next Step",
+          "translated": "Next Step",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.back": {
+          "_source": "machine",
+          "original": "Back",
+          "translated": "Back",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.repeat": {
+          "_source": "machine",
+          "original": "Repeat",
+          "translated": "Talk am again",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.callEmergency": {
+          "_source": "machine",
+          "original": "Call Emergency",
+          "translated": "Call Emergency",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.doneCall": {
+          "_source": "machine",
+          "original": "Done — Call Emergency",
+          "translated": "I Don Finish — Call Emergency",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.playAudio": {
+          "_source": "machine",
+          "original": "Play in",
+          "translated": "Play for",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.stopAudio": {
+          "_source": "machine",
+          "original": "Stop",
+          "translated": "Stop",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.readAll": {
+          "_source": "machine",
+          "original": "Read all steps in",
+          "translated": "Read all steps for",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.voiceMode": {
+          "_source": "machine",
+          "original": "Voice Mode",
+          "translated": "Voice Mode",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.startVoice": {
+          "_source": "machine",
+          "original": "Voice Mode",
+          "translated": "Voice Mode",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.skipToSteps": {
+          "_source": "machine",
+          "original": "Skip to steps",
+          "translated": "Jump go steps",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.exitVoiceMode": {
+          "_source": "machine",
+          "original": "Exit Voice Mode",
+          "translated": "Comot Voice Mode",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.exit": {
+          "_source": "machine",
+          "original": "Exit",
+          "translated": "Comot",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.pause": {
+          "_source": "machine",
+          "original": "Pause",
+          "translated": "Pause",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.resume": {
+          "_source": "machine",
+          "original": "Resume",
+          "translated": "Continue",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.voiceHint": {
+          "_source": "machine",
+          "original": "Say \"next\", \"back\", or \"repeat\"",
+          "translated": "Talk \"next\", \"back\", or \"repeat\"",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.voiceUnavailable": {
+          "_source": "machine",
+          "original": "Voice commands unavailable",
+          "translated": "Voice command no dey work now",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.severity.critical": {
+          "_source": "machine",
+          "original": "CRITICAL",
+          "translated": "DEY SERIOUS WELL WELL",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.severity.moderate": {
+          "_source": "machine",
+          "original": "MODERATE",
+          "translated": "DEY NORMAL",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.severity.urgent": {
+          "_source": "machine",
+          "original": "URGENT",
+          "translated": "DEY URGENT",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.signsToLookFor": {
+          "_source": "machine",
+          "original": "Signs to recognise",
+          "translated": "Signs to look for",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.doNot": {
+          "_source": "machine",
+          "original": "What NOT to do",
+          "translated": "Wetin you NO MUST do",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.hospitalThreshold": {
+          "_source": "machine",
+          "original": "When to go to hospital",
+          "translated": "When to carry person go hospital",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "rescue.step1": {
+          "_source": "machine",
+          "original": "Step 1",
+          "translated": "Step 1",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "search.placeholder": {
+          "_source": "machine",
+          "original": "Search...",
+          "translated": "Find...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "search.noResults": {
+          "_source": "machine",
+          "original": "No results found for \"{query}\".",
+          "translated": "Nothing dey for wetin you find: \"{query}\".",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "search.recentSearches": {
+          "_source": "machine",
+          "original": "Recent Searches",
+          "translated": "Things you find recently",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "search.trySuggestions": {
+          "_source": "machine",
+          "original": "Try: heart attack, choking, bleeding",
+          "translated": "Try: heart attack, choking, bleeding",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "search.allCategories": {
+          "_source": "machine",
+          "original": "All Categories",
+          "translated": "All Categories",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "search.clearRecent": {
+          "_source": "machine",
+          "original": "Clear",
+          "translated": "Clear am",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "incidents.paediatric": {
+          "_source": "machine",
+          "original": "Paediatric",
+          "translated": "Children Matter",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "incidents.trauma": {
+          "_source": "machine",
+          "original": "Trauma",
+          "translated": "Wound & Injury",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "incidents.environmental": {
+          "_source": "machine",
+          "original": "Environmental",
+          "translated": "Environment Issue",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "incidents.respiratory": {
+          "_source": "machine",
+          "original": "Respiratory",
+          "translated": "Breathing Problem",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "incidents.burns": {
+          "_source": "machine",
+          "original": "Burns",
+          "translated": "Fire Burn",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "incidents.allergic": {
+          "_source": "machine",
+          "original": "Allergic",
+          "translated": "Allergy Issue",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "incidents.obstetric": {
+          "_source": "machine",
+          "original": "Obstetric",
+          "translated": "Belle / Pregnancy Matter",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "incidents.cardiac": {
+          "_source": "machine",
+          "original": "Cardiac",
+          "translated": "Heart Problem",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "incidents.poisoning": {
+          "_source": "machine",
+          "original": "Poisoning",
+          "translated": "Poison Matter",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "incidents.neurological": {
+          "_source": "machine",
+          "original": "Neurological",
+          "translated": "Brain & Nerve Problem",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "incidents.gastrointestinal": {
+          "_source": "machine",
+          "original": "Gastrointestinal",
+          "translated": "Belle Pain & Stomach",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "incidents.other": {
+          "_source": "machine",
+          "original": "Other",
+          "translated": "Other Matters",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "emergency.callButton": {
+          "_source": "machine",
+          "original": "Call",
+          "translated": "Call",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "emergency.stateNames": {
+          "_source": "machine",
+          "original": "State Numbers",
+          "translated": "State Phone Numbers",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "emergency.nationalNumbers": {
+          "_source": "machine",
+          "original": "National Emergency Numbers",
+          "translated": "National Emergency Numbers",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "emergency.showingNumbersFor": {
+          "_source": "machine",
+          "original": "Showing numbers for",
+          "translated": "De show numbers for",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "emergency.showingNationalNumbers": {
+          "_source": "machine",
+          "original": "Showing national numbers",
+          "translated": "De show national numbers",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "emergency.services": {
+          "_source": "machine",
+          "original": "Services",
+          "translated": "Services",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "emergency.nationalServices": {
+          "_source": "machine",
+          "original": "National Services",
+          "translated": "National Services",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "emergency.changeState": {
+          "_source": "machine",
+          "original": "Change state",
+          "translated": "Change State",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "emergency.selectState": {
+          "_source": "machine",
+          "original": "Select State",
+          "translated": "Pick State",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "emergency.searchStates": {
+          "_source": "machine",
+          "original": "Search states...",
+          "translated": "Find state...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "emergency.noStatesFound": {
+          "_source": "machine",
+          "original": "No states found matching \"{search}\"",
+          "translated": "No state match wetin you type \"{search}\"",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "common.yes": {
+          "_source": "machine",
+          "original": "Yes",
+          "translated": "Yes",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "common.no": {
+          "_source": "machine",
+          "original": "No",
+          "translated": "No",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "common.none": {
+          "_source": "machine",
+          "original": "None",
+          "translated": "Nothing",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "common.all": {
+          "_source": "machine",
+          "original": "All",
+          "translated": "All",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "common.loading": {
+          "_source": "machine",
+          "original": "Loading...",
+          "translated": "Loading...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "common.save": {
+          "_source": "machine",
+          "original": "Save",
+          "translated": "Save",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "common.cancel": {
+          "_source": "machine",
+          "original": "Cancel",
+          "translated": "Cancel",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "common.back": {
+          "_source": "machine",
+          "original": "Back",
+          "translated": "Back",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.language": {
+          "_source": "machine",
+          "original": "Language",
+          "translated": "Language",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.textSize": {
+          "_source": "machine",
+          "original": "Text Size",
+          "translated": "How Text Big Reach",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.contrast": {
+          "_source": "machine",
+          "original": "Contrast",
+          "translated": "Color Brightness",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.offline": {
+          "_source": "machine",
+          "original": "Offline Mode",
+          "translated": "No-Internet Mode",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.manage": {
+          "_source": "machine",
+          "original": "Manage",
+          "translated": "Manage",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.contentDownloaded": {
+          "_source": "machine",
+          "original": "Content downloaded",
+          "translated": "App matter don download",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.audioDownloadedFor": {
+          "_source": "machine",
+          "original": "Audio downloaded for",
+          "translated": "Voice don download for",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.yes": {
+          "_source": "machine",
+          "original": "Yes",
+          "translated": "Yes",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.no": {
+          "_source": "machine",
+          "original": "No",
+          "translated": "No",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.about": {
+          "_source": "machine",
+          "original": "About AidHero",
+          "translated": "About AidHero",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.aboutAidHero": {
+          "_source": "machine",
+          "original": "About AidHero",
+          "translated": "About AidHero",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.version": {
+          "_source": "machine",
+          "original": "Version",
+          "translated": "Version",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.offlineFirst": {
+          "_source": "machine",
+          "original": "Offline-First",
+          "translated": "E Dey Work Without Internet",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.medicalDisclaimer": {
+          "_source": "machine",
+          "original": "Medical Disclaimer: This application provides general first-aid guidance based on standard protocols, but it is not a substitute for professional medical advice, diagnosis, or treatment. Always call emergency services immediately in critical situations.",
+          "translated": "Medical Warning: Dis app dey give normal first aid guidance, e no be doctor advice. Always call emergency people sharp sharp for serious matter.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.confirmDuringRescue": {
+          "_source": "machine",
+          "original": "Changing language will restart your rescue flow. Continue?",
+          "translated": "If you change language e go restart your rescue flow. You wan continue?",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.general": {
+          "_source": "machine",
+          "original": "General",
+          "translated": "General",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.accessibility": {
+          "_source": "machine",
+          "original": "Accessibility",
+          "translated": "Easy to Use",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.scaleNormal": {
+          "_source": "machine",
+          "original": "Normal",
+          "translated": "Normal",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.scaleLarge": {
+          "_source": "machine",
+          "original": "Large",
+          "translated": "Large",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.scaleXL": {
+          "_source": "machine",
+          "original": "Extra Large",
+          "translated": "Extra Large",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.highContrast": {
+          "_source": "machine",
+          "original": "High Contrast",
+          "translated": "High Contrast Screen",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.highContrastDesc": {
+          "_source": "machine",
+          "original": "Maximum legibility mode",
+          "translated": "Make words clear well well",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.autoplayVoice": {
+          "_source": "machine",
+          "original": "Auto-play Voice",
+          "translated": "Play Voice Automatic",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.autoplayVoiceDesc": {
+          "_source": "machine",
+          "original": "Read steps aloud automatically",
+          "translated": "Read steps loud loud by itself",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.offlineVoiceModeFallback": {
+          "_source": "machine",
+          "original": "Offline Voice Mode Fallback",
+          "translated": "Voice Mode When Internet No Dey",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.offlineVoiceModeDesc": {
+          "_source": "machine",
+          "original": "Choose how long to wait before automatically advancing to the next step when voice commands are unavailable offline.",
+          "translated": "Pick how many seconds to wait before e go go next step when voice command no dey work.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.manualAdvance": {
+          "_source": "machine",
+          "original": "Manual (Tap to advance)",
+          "translated": "Manual (Tap with hand to go next)",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.seconds": {
+          "_source": "machine",
+          "original": "{count} seconds",
+          "translated": "{count} seconds",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.offlineScreen.title": {
+          "_source": "machine",
+          "original": "Download for Offline Use",
+          "translated": "Download for Use Without Internet",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.offlineScreen.appContent": {
+          "_source": "machine",
+          "original": "App content",
+          "translated": "App content",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.offlineScreen.appContentStatus": {
+          "_source": "machine",
+          "original": "Already downloaded on first visit",
+          "translated": "E don download already on first visit",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.offlineScreen.englishAudio": {
+          "_source": "machine",
+          "original": "English audio",
+          "translated": "English voice",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.offlineScreen.englishAudioStatus": {
+          "_source": "machine",
+          "original": "Downloaded automatically",
+          "translated": "E download by itself",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.offlineScreen.download": {
+          "_source": "machine",
+          "original": "Download",
+          "translated": "Download",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.offlineScreen.downloading": {
+          "_source": "machine",
+          "original": "Downloading... {progress}%",
+          "translated": "E de download... {progress}%",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.offlineScreen.downloaded": {
+          "_source": "machine",
+          "original": "Downloaded",
+          "translated": "Don Download",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.offlineScreen.storageUsed": {
+          "_source": "machine",
+          "original": "Storage used: {used}MB of estimated {total}MB total",
+          "translated": "Space wey e use: {used}MB out of {total}MB total",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.offlineScreen.lastUpdated": {
+          "_source": "machine",
+          "original": "Last updated",
+          "translated": "Last time wey we update am",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "settings.offlineScreen.checkUpdates": {
+          "_source": "machine",
+          "original": "Check for updates",
+          "translated": "Check if update dey",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "accessibility.ariaLabels": {
+          "_source": "machine",
+          "original": "Accessibility Strings",
+          "translated": "Accessibility Words",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "accessibility.emergencyCallStrip": {
+          "_source": "machine",
+          "original": "Call Emergency Numbers",
+          "translated": "Call Emergency Numbers",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "accessibility.changeLanguage": {
+          "_source": "machine",
+          "original": "Change Language",
+          "translated": "Change Language",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "accessibility.bottomNav": {
+          "_source": "machine",
+          "original": "Bottom Navigation",
+          "translated": "Bottom Navigation",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "accessibility.skipToMain": {
+          "_source": "machine",
+          "original": "Skip to main content",
+          "translated": "Jump go main content",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "accessibility.voiceSearch": {
+          "_source": "machine",
+          "original": "Voice Search",
+          "translated": "Voice Search",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "offline.ready": {
+          "_source": "machine",
+          "original": "Ready for offline use",
+          "translated": "E don ready for use without internet",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "offline.limited": {
+          "_source": "machine",
+          "original": "Limited offline functionality",
+          "translated": "Some things no go work without internet",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "offline.updated": {
+          "_source": "machine",
+          "original": "Content updated",
+          "translated": "Content don update",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "offline.active": {
+          "_source": "machine",
+          "original": "Offline Mode Active",
+          "translated": "No-Internet Mode Dey Active",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "offline.downloading": {
+          "_source": "machine",
+          "original": "Downloading Content...",
+          "translated": "De download content...",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "errors.notFound": {
+          "_source": "machine",
+          "original": "Page not found",
+          "translated": "We no see this page",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "errors.audioUnavailable": {
+          "_source": "machine",
+          "original": "Audio unavailable in offline mode",
+          "translated": "Voice no dey when internet no dey",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "errors.offlineLimitation": {
+          "_source": "machine",
+          "original": "This feature requires an internet connection",
+          "translated": "You need internet for this one",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "onboarding.slide1.title": {
+          "_source": "machine",
+          "original": "You can save a life.",
+          "translated": "You fit save person life.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "onboarding.slide1.body": {
+          "_source": "machine",
+          "original": "AidHero shows you how.",
+          "translated": "AidHero go show you how.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "onboarding.slide2.title": {
+          "_source": "machine",
+          "original": "Works offline,",
+          "translated": "E dey work without internet,",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "onboarding.slide2.body": {
+          "_source": "machine",
+          "original": "in your language.",
+          "translated": "for your own language.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "onboarding.slide3.title": {
+          "_source": "machine",
+          "original": "Choose your language",
+          "translated": "Pick your language",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "onboarding.slide3.body": {
+          "_source": "machine",
+          "original": "+ download content",
+          "translated": "+ download content",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "onboarding.download": {
+          "_source": "machine",
+          "original": "Download for offline use",
+          "translated": "Download for use without internet",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "onboarding.skipLater": {
+          "_source": "machine",
+          "original": "I'll do this later",
+          "translated": "I go do am later",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "onboarding.skip": {
+          "_source": "machine",
+          "original": "Skip",
+          "translated": "Skip",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "onboarding.back": {
+          "_source": "machine",
+          "original": "Back",
+          "translated": "Back",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "onboarding.next": {
+          "_source": "machine",
+          "original": "Next",
+          "translated": "Next",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "onboarding.progressDots": {
+          "_source": "machine",
+          "original": "Onboarding progress",
+          "translated": "Onboarding progress",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "trust.pendingReview": {
+          "_source": "machine",
+          "original": "Pending medical review",
+          "translated": "Pending medical review",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "trust.pendingWarning": {
+          "_source": "machine",
+          "original": "This information is awaiting verification by a certified medical professional. Use with caution.",
+          "translated": "This information is awaiting verification by a certified medical professional. Use with caution.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "trust.reviewed": {
+          "_source": "machine",
+          "original": "Medically Reviewed",
+          "translated": "Medically Reviewed",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.268Z"
+        },
+        "trust.reviewedBy": {
+          "_source": "machine",
+          "original": "Reviewed by {name}",
+          "translated": "Reviewed by {name}",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.269Z"
+        },
+        "trust.lastReviewed": {
+          "_source": "machine",
+          "original": "Last reviewed: {date}",
+          "translated": "Last reviewed: {date}",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.269Z"
+        },
+        "metadata.title": {
+          "_source": "machine",
+          "original": "AidHero - Emergency First Aid Nigeria",
+          "translated": "AidHero - Emergency First Aid Nigeria",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.269Z"
+        },
+        "metadata.description": {
+          "_source": "machine",
+          "original": "Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
+          "translated": "First aid guide wey dey work without internet for Nigeria. Sharp instructions in English, Hausa, Igbo, Yoruba and Pidgin.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.269Z"
+        },
+        "metadata.ogTitle": {
+          "_source": "machine",
+          "original": "AidHero - Emergency First Aid Nigeria",
+          "translated": "AidHero - Emergency First Aid Nigeria",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.269Z"
+        },
+        "metadata.ogDescription": {
+          "_source": "machine",
+          "original": "You can save a life. AidHero shows you how. Offline first aid guide for Nigeria.",
+          "translated": "You fit save person life. AidHero go show you how. Offline first aid guide for Nigeria.",
+          "status": "needs_review",
+          "timestamp": "2026-09-02T13:19:07.269Z"
+        }
+      }
+    }
+  }
+}

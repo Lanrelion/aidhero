@@ -1,0 +1,187 @@
+{
+  "id": "drowning",
+  "slug": "drowning",
+  "content_version": 1,
+  "content_version_date": "2026-08-18T12:31:24.429Z",
+  "category": "respiratory",
+  "title": "Drowning",
+  "title_translations": {
+    "en": "Drowning",
+    "ha": "[NEEDS_REVIEW] Drowning",
+    "ig": "[NEEDS_REVIEW] Drowning",
+    "yo": "[NEEDS_REVIEW] Drowning",
+    "pcm": "[NEEDS_REVIEW] Drowning"
+  },
+  "aliases": [
+    "drowning",
+    "drown",
+    "fall inside water",
+    "person dey sink",
+    "underwater",
+    "near-drowning"
+  ],
+  "severity": "critical",
+  "immediate_warning": "Remove the person from water safely. Do not put yourself at risk. Call 112 immediately.",
+  "immediate_warning_translations": {
+    "en": "Remove the person from water safely. Do not put yourself at risk. Call 112 immediately.",
+    "ha": "[NEEDS_REVIEW] Remove the person from water safely. Do not put yourself at risk. Call 112 immediately.",
+    "ig": "[NEEDS_REVIEW] Remove the person from water safely. Do not put yourself at risk. Call 112 immediately.",
+    "yo": "[NEEDS_REVIEW] Remove the person from water safely. Do not put yourself at risk. Call 112 immediately.",
+    "pcm": "[NEEDS_REVIEW] Remove the person from water safely. Do not put yourself at risk. Call 112 immediately."
+  },
+  "description": "Drowning can cause death within minutes due to lack of oxygen. Immediate rescue breathing and CPR are critical.",
+  "description_translations": {
+    "en": "Drowning can cause death within minutes due to lack of oxygen. Immediate rescue breathing and CPR are critical.",
+    "ha": "[NEEDS_REVIEW] Drowning can cause death within minutes due to lack of oxygen. Immediate rescue breathing and CPR are critical.",
+    "ig": "[NEEDS_REVIEW] Drowning can cause death within minutes due to lack of oxygen. Immediate rescue breathing and CPR are critical.",
+    "yo": "[NEEDS_REVIEW] Drowning can cause death within minutes due to lack of oxygen. Immediate rescue breathing and CPR are critical.",
+    "pcm": "[NEEDS_REVIEW] Drowning can cause death within minutes due to lack of oxygen. Immediate rescue breathing and CPR are critical."
+  },
+  "signs": [
+    "Unresponsive or confused after water rescue",
+    "Coughing or vomiting water",
+    "Bluish skin",
+    "Not breathing"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Unresponsive or confused after water rescue",
+      "ha": "[NEEDS_REVIEW] Unresponsive or confused after water rescue",
+      "ig": "[NEEDS_REVIEW] Unresponsive or confused after water rescue",
+      "yo": "[NEEDS_REVIEW] Unresponsive or confused after water rescue",
+      "pcm": "[NEEDS_REVIEW] Unresponsive or confused after water rescue"
+    },
+    "1": {
+      "en": "Coughing or vomiting water",
+      "ha": "[NEEDS_REVIEW] Coughing or vomiting water",
+      "ig": "[NEEDS_REVIEW] Coughing or vomiting water",
+      "yo": "[NEEDS_REVIEW] Coughing or vomiting water",
+      "pcm": "[NEEDS_REVIEW] Coughing or vomiting water"
+    },
+    "2": {
+      "en": "Bluish skin",
+      "ha": "[NEEDS_REVIEW] Bluish skin",
+      "ig": "[NEEDS_REVIEW] Bluish skin",
+      "yo": "[NEEDS_REVIEW] Bluish skin",
+      "pcm": "[NEEDS_REVIEW] Bluish skin"
+    },
+    "3": {
+      "en": "Not breathing",
+      "ha": "[NEEDS_REVIEW] Not breathing",
+      "ig": "[NEEDS_REVIEW] Not breathing",
+      "yo": "[NEEDS_REVIEW] Not breathing",
+      "pcm": "[NEEDS_REVIEW] Not breathing"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Get the person out of water safely — use a rope, branch, or float. Do not jump in unless trained.",
+      "instruction_translations": {
+        "en": "Get the person out of water safely — use a rope, branch, or float. Do not jump in unless trained.",
+        "ha": "[NEEDS_REVIEW] Get the person out of water safely — use a rope, branch, or float. Do not jump in unless trained.",
+        "ig": "[NEEDS_REVIEW] Get the person out of water safely — use a rope, branch, or float. Do not jump in unless trained.",
+        "yo": "[NEEDS_REVIEW] Get the person out of water safely — use a rope, branch, or float. Do not jump in unless trained.",
+        "pcm": "[NEEDS_REVIEW] Get the person out of water safely — use a rope, branch, or float. Do not jump in unless trained."
+      },
+      "audio_path": "/audio/drowning/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Call 112 immediately.",
+      "instruction_translations": {
+        "en": "Call 112 immediately.",
+        "ha": "[NEEDS_REVIEW] Call 112 immediately.",
+        "ig": "[NEEDS_REVIEW] Call 112 immediately.",
+        "yo": "[NEEDS_REVIEW] Call 112 immediately.",
+        "pcm": "[NEEDS_REVIEW] Call 112 immediately."
+      },
+      "audio_path": "/audio/drowning/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "Lay the person on their back on a flat surface.",
+      "instruction_translations": {
+        "en": "Lay the person on their back on a flat surface.",
+        "ha": "[NEEDS_REVIEW] Lay the person on their back on a flat surface.",
+        "ig": "[NEEDS_REVIEW] Lay the person on their back on a flat surface.",
+        "yo": "[NEEDS_REVIEW] Lay the person on their back on a flat surface.",
+        "pcm": "[NEEDS_REVIEW] Lay the person on their back on a flat surface."
+      },
+      "audio_path": "/audio/drowning/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Check for breathing. If not breathing, give 5 rescue breaths immediately.",
+      "instruction_translations": {
+        "en": "Check for breathing. If not breathing, give 5 rescue breaths immediately.",
+        "ha": "[NEEDS_REVIEW] Check for breathing. If not breathing, give 5 rescue breaths immediately.",
+        "ig": "[NEEDS_REVIEW] Check for breathing. If not breathing, give 5 rescue breaths immediately.",
+        "yo": "[NEEDS_REVIEW] Check for breathing. If not breathing, give 5 rescue breaths immediately.",
+        "pcm": "[NEEDS_REVIEW] Check for breathing. If not breathing, give 5 rescue breaths immediately."
+      },
+      "audio_path": "/audio/drowning/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "Begin CPR: 30 chest compressions followed by 2 rescue breaths. Continue until help arrives.",
+      "instruction_translations": {
+        "en": "Begin CPR: 30 chest compressions followed by 2 rescue breaths. Continue until help arrives.",
+        "ha": "[NEEDS_REVIEW] Begin CPR: 30 chest compressions followed by 2 rescue breaths. Continue until help arrives.",
+        "ig": "[NEEDS_REVIEW] Begin CPR: 30 chest compressions followed by 2 rescue breaths. Continue until help arrives.",
+        "yo": "[NEEDS_REVIEW] Begin CPR: 30 chest compressions followed by 2 rescue breaths. Continue until help arrives.",
+        "pcm": "[NEEDS_REVIEW] Begin CPR: 30 chest compressions followed by 2 rescue breaths. Continue until help arrives."
+      },
+      "audio_path": "/audio/drowning/{lang}/step-5.mp3"
+    },
+    {
+      "id": 6,
+      "instruction": "If they regain consciousness, place in recovery position on their side.",
+      "instruction_translations": {
+        "en": "If they regain consciousness, place in recovery position on their side.",
+        "ha": "[NEEDS_REVIEW] If they regain consciousness, place in recovery position on their side.",
+        "ig": "[NEEDS_REVIEW] If they regain consciousness, place in recovery position on their side.",
+        "yo": "[NEEDS_REVIEW] If they regain consciousness, place in recovery position on their side.",
+        "pcm": "[NEEDS_REVIEW] If they regain consciousness, place in recovery position on their side."
+      },
+      "audio_path": "/audio/drowning/{lang}/step-6.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not leave the person alone.",
+    "Do not give food or water immediately after rescue."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not leave the person alone.",
+      "ha": "[NEEDS_REVIEW] Do not leave the person alone.",
+      "ig": "[NEEDS_REVIEW] Do not leave the person alone.",
+      "yo": "[NEEDS_REVIEW] Do not leave the person alone.",
+      "pcm": "[NEEDS_REVIEW] Do not leave the person alone."
+    },
+    "1": {
+      "en": "Do not give food or water immediately after rescue.",
+      "ha": "[NEEDS_REVIEW] Do not give food or water immediately after rescue.",
+      "ig": "[NEEDS_REVIEW] Do not give food or water immediately after rescue.",
+      "yo": "[NEEDS_REVIEW] Do not give food or water immediately after rescue.",
+      "pcm": "[NEEDS_REVIEW] Do not give food or water immediately after rescue."
+    }
+  },
+  "hospital_threshold": "Always go to hospital — even if the person seems recovered. Secondary drowning can occur hours later.",
+  "hospital_threshold_translations": {
+    "en": "Always go to hospital — even if the person seems recovered. Secondary drowning can occur hours later.",
+    "ha": "[NEEDS_REVIEW] Always go to hospital — even if the person seems recovered. Secondary drowning can occur hours later.",
+    "ig": "[NEEDS_REVIEW] Always go to hospital — even if the person seems recovered. Secondary drowning can occur hours later.",
+    "yo": "[NEEDS_REVIEW] Always go to hospital — even if the person seems recovered. Secondary drowning can occur hours later.",
+    "pcm": "[NEEDS_REVIEW] Always go to hospital — even if the person seems recovered. Secondary drowning can occur hours later."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-08-18T12:31:24.428Z",
+    "medical_references": [
+      "WHO First Aid",
+      "Nigerian Emergency Medicine Association Guidelines"
+    ]
+  }
+}

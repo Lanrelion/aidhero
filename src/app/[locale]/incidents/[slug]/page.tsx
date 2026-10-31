@@ -6,6 +6,18 @@ import { getScenario } from '@/lib/data/scenarios';
 import { TrustSignal } from '@/components/emergency/TrustSignal';
 import { EmergencyCallButton } from '@/components/emergency/EmergencyCallButton';
 import { cn } from '@/lib/utils';
+import { locales } from '@/i18n/config';
+import { scenarios } from '@/lib/data/scenarios';
+
+export function generateStaticParams() {
+  const params: { locale: string; slug: string }[] = [];
+  locales.forEach(locale => {
+    scenarios.forEach(scenario => {
+      params.push({ locale, slug: scenario.slug });
+    });
+  });
+  return params;
+}
 
 export default async function IncidentDetailPage({ 
   params 
@@ -43,7 +55,7 @@ export default async function IncidentDetailPage({
       <header className="sticky top-0 z-30 bg-surface/95 backdrop-blur supports-[backdrop-filter]:bg-surface/80 border-b border-border">
         <div className="flex items-center h-14 px-4 gap-3">
           <Link 
-            href={`/${locale}/categories/${scenario.category}`}
+            href={`/${locale}?category=${scenario.category}`}
             className="w-10 h-10 flex items-center justify-center -ml-2 rounded-full hover:bg-card active:bg-card-active transition-colors text-text-primary"
             aria-label={t('rescue.back') || "Back"}
           >
@@ -60,7 +72,7 @@ export default async function IncidentDetailPage({
         {t(`rescue.severity.${scenario.severity}`) || scenario.severity}
       </div>
 
-      <main className="flex-1 p-4 pb-24 max-w-2xl mx-auto w-full flex flex-col gap-6">
+      <div className="flex-1 p-4 pb-24 max-w-2xl mx-auto w-full flex flex-col gap-6">
         
         {/* Title */}
         <h1 className="text-h1 font-display font-bold text-text-primary leading-tight">
@@ -167,7 +179,7 @@ export default async function IncidentDetailPage({
             />
           </section>
         )}
-      </main>
+      </div>
 
       {/* Persistent Sticky Emergency Button */}
       <EmergencyCallButton />

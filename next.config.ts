@@ -1,7 +1,28 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from 'next-intl/plugin';
+import withPWAInit from '@ducanh2912/next-pwa';
+import createBundleAnalyzer from '@next/bundle-analyzer';
+
+const withBundleAnalyzer = createBundleAnalyzer({
+  enabled: process.env.ANALYZE === 'true',
+});
 
 const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
+
+const withPWA = withPWAInit({
+  dest: 'public',
+  cacheOnFrontEndNav: true,
+  aggressiveFrontEndNavCaching: true,
+  reloadOnOnline: true,
+  disable: process.env.NODE_ENV === 'development',
+  // When offline navigation fails, serve the cached offline page
+  fallbacks: {
+    document: '/offline',
+  },
+  workboxOptions: {
+    disableDevLogs: true,
+  },
+});
 
 const nextConfig: NextConfig = {
   // Enable static export compatibility (no backend)
@@ -9,11 +30,6 @@ const nextConfig: NextConfig = {
 
   // Strict mode for catching issues early
   reactStrictMode: true,
-
-  // Fix workspace root detection warning (multiple lockfiles in parent dirs)
-  turbopack: {
-    root: __dirname,
-  },
 
   // Optimise images (will use Next.js built-in optimisation)
   images: {
@@ -27,4 +43,4 @@ const nextConfig: NextConfig = {
   // For now: plain Next.js config for dev startup
 };
 
-export default withNextIntl(nextConfig);
+export default withBundleAnalyzer(withPWA(withNextIntl(nextConfig)));

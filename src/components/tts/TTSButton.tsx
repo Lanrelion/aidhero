@@ -4,6 +4,7 @@ import { Play, Square } from 'lucide-react';
 import { useTranslations, useLocale } from 'next-intl';
 import { cn } from '@/lib/utils';
 import { useTTS } from '@/hooks/useTTS';
+import { useLanguageStore } from '@/store/useLanguageStore';
 import { Locale } from '@/types/index';
 
 interface TTSButtonProps {
@@ -24,13 +25,15 @@ const LANGUAGE_NAMES: Record<Locale, string> = {
 
 export function TTSButton({ scenarioId, stepId, text, size = 'lg', className }: TTSButtonProps) {
   const t = useTranslations();
-  const locale = useLocale() as Locale;
+  const routeLocale = useLocale() as Locale;
+  const { language } = useLanguageStore();
+  const currentLang = (language && language !== 'en') ? language : (routeLocale || language);
   const { toggle, isSpeaking } = useTTS();
   
-  const langName = LANGUAGE_NAMES[locale] || 'Language';
+  const langName = LANGUAGE_NAMES[currentLang] || 'Language';
 
   const handleClick = () => {
-    toggle(scenarioId, stepId, text, locale);
+    toggle(scenarioId, stepId, text, currentLang);
   };
 
   return (

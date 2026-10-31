@@ -1,0 +1,184 @@
+{
+  "id": "minor-burn",
+  "slug": "minor-burn",
+  "content_version": 1,
+  "content_version_date": "2026-08-18T12:31:24.429Z",
+  "category": "burns",
+  "title": "Minor Burn",
+  "title_translations": {
+    "en": "Minor Burn",
+    "ha": "[NEEDS_REVIEW] Minor Burn",
+    "ig": "[NEEDS_REVIEW] Minor Burn",
+    "yo": "[NEEDS_REVIEW] Minor Burn",
+    "pcm": "[NEEDS_REVIEW] Minor Burn"
+  },
+  "aliases": [
+    "burn",
+    "small burn",
+    "hot water burn",
+    "kerosene burn",
+    "fire burn small",
+    "first degree burn",
+    "boil water wound"
+  ],
+  "severity": "moderate",
+  "immediate_warning": "Cool the burn immediately with cool running water for at least 10 minutes.",
+  "immediate_warning_translations": {
+    "en": "Cool the burn immediately with cool running water for at least 10 minutes.",
+    "ha": "[NEEDS_REVIEW] Cool the burn immediately with cool running water for at least 10 minutes.",
+    "ig": "[NEEDS_REVIEW] Cool the burn immediately with cool running water for at least 10 minutes.",
+    "yo": "[NEEDS_REVIEW] Cool the burn immediately with cool running water for at least 10 minutes.",
+    "pcm": "[NEEDS_REVIEW] Cool the burn immediately with cool running water for at least 10 minutes."
+  },
+  "description": "A minor burn affects only the outer layer of skin. It causes redness, pain, and sometimes blisters but heals without surgery.",
+  "description_translations": {
+    "en": "A minor burn affects only the outer layer of skin. It causes redness, pain, and sometimes blisters but heals without surgery.",
+    "ha": "[NEEDS_REVIEW] A minor burn affects only the outer layer of skin. It causes redness, pain, and sometimes blisters but heals without surgery.",
+    "ig": "[NEEDS_REVIEW] A minor burn affects only the outer layer of skin. It causes redness, pain, and sometimes blisters but heals without surgery.",
+    "yo": "[NEEDS_REVIEW] A minor burn affects only the outer layer of skin. It causes redness, pain, and sometimes blisters but heals without surgery.",
+    "pcm": "[NEEDS_REVIEW] A minor burn affects only the outer layer of skin. It causes redness, pain, and sometimes blisters but heals without surgery."
+  },
+  "signs": [
+    "Red or pink skin",
+    "Pain",
+    "Swelling",
+    "Small blisters"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Red or pink skin",
+      "ha": "[NEEDS_REVIEW] Red or pink skin",
+      "ig": "[NEEDS_REVIEW] Red or pink skin",
+      "yo": "[NEEDS_REVIEW] Red or pink skin",
+      "pcm": "[NEEDS_REVIEW] Red or pink skin"
+    },
+    "1": {
+      "en": "Pain",
+      "ha": "[NEEDS_REVIEW] Pain",
+      "ig": "[NEEDS_REVIEW] Pain",
+      "yo": "[NEEDS_REVIEW] Pain",
+      "pcm": "[NEEDS_REVIEW] Pain"
+    },
+    "2": {
+      "en": "Swelling",
+      "ha": "[NEEDS_REVIEW] Swelling",
+      "ig": "[NEEDS_REVIEW] Swelling",
+      "yo": "[NEEDS_REVIEW] Swelling",
+      "pcm": "[NEEDS_REVIEW] Swelling"
+    },
+    "3": {
+      "en": "Small blisters",
+      "ha": "[NEEDS_REVIEW] Small blisters",
+      "ig": "[NEEDS_REVIEW] Small blisters",
+      "yo": "[NEEDS_REVIEW] Small blisters",
+      "pcm": "[NEEDS_REVIEW] Small blisters"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Immediately hold the burned area under cool (not cold) running water for 10–20 minutes.",
+      "instruction_translations": {
+        "en": "Immediately hold the burned area under cool (not cold) running water for 10–20 minutes.",
+        "ha": "[NEEDS_REVIEW] Immediately hold the burned area under cool (not cold) running water for 10–20 minutes.",
+        "ig": "[NEEDS_REVIEW] Immediately hold the burned area under cool (not cold) running water for 10–20 minutes.",
+        "yo": "[NEEDS_REVIEW] Immediately hold the burned area under cool (not cold) running water for 10–20 minutes.",
+        "pcm": "[NEEDS_REVIEW] Immediately hold the burned area under cool (not cold) running water for 10–20 minutes."
+      },
+      "audio_path": "/audio/minor-burn/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Remove jewellery or tight items near the burn before swelling starts.",
+      "instruction_translations": {
+        "en": "Remove jewellery or tight items near the burn before swelling starts.",
+        "ha": "[NEEDS_REVIEW] Remove jewellery or tight items near the burn before swelling starts.",
+        "ig": "[NEEDS_REVIEW] Remove jewellery or tight items near the burn before swelling starts.",
+        "yo": "[NEEDS_REVIEW] Remove jewellery or tight items near the burn before swelling starts.",
+        "pcm": "[NEEDS_REVIEW] Remove jewellery or tight items near the burn before swelling starts."
+      },
+      "audio_path": "/audio/minor-burn/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "Do not break any blisters — they protect against infection.",
+      "instruction_translations": {
+        "en": "Do not break any blisters — they protect against infection.",
+        "ha": "[NEEDS_REVIEW] Do not break any blisters — they protect against infection.",
+        "ig": "[NEEDS_REVIEW] Do not break any blisters — they protect against infection.",
+        "yo": "[NEEDS_REVIEW] Do not break any blisters — they protect against infection.",
+        "pcm": "[NEEDS_REVIEW] Do not break any blisters — they protect against infection."
+      },
+      "audio_path": "/audio/minor-burn/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Cover loosely with a clean, non-fluffy bandage or cloth.",
+      "instruction_translations": {
+        "en": "Cover loosely with a clean, non-fluffy bandage or cloth.",
+        "ha": "[NEEDS_REVIEW] Cover loosely with a clean, non-fluffy bandage or cloth.",
+        "ig": "[NEEDS_REVIEW] Cover loosely with a clean, non-fluffy bandage or cloth.",
+        "yo": "[NEEDS_REVIEW] Cover loosely with a clean, non-fluffy bandage or cloth.",
+        "pcm": "[NEEDS_REVIEW] Cover loosely with a clean, non-fluffy bandage or cloth."
+      },
+      "audio_path": "/audio/minor-burn/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "Give paracetamol or ibuprofen if available to reduce pain.",
+      "instruction_translations": {
+        "en": "Give paracetamol or ibuprofen if available to reduce pain.",
+        "ha": "[NEEDS_REVIEW] Give paracetamol or ibuprofen if available to reduce pain.",
+        "ig": "[NEEDS_REVIEW] Give paracetamol or ibuprofen if available to reduce pain.",
+        "yo": "[NEEDS_REVIEW] Give paracetamol or ibuprofen if available to reduce pain.",
+        "pcm": "[NEEDS_REVIEW] Give paracetamol or ibuprofen if available to reduce pain."
+      },
+      "audio_path": "/audio/minor-burn/{lang}/step-5.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not apply toothpaste, oil, egg white, or any home remedy.",
+    "Do not use ice or ice water — it can worsen the burn.",
+    "Do not burst blisters."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not apply toothpaste, oil, egg white, or any home remedy.",
+      "ha": "[NEEDS_REVIEW] Do not apply toothpaste, oil, egg white, or any home remedy.",
+      "ig": "[NEEDS_REVIEW] Do not apply toothpaste, oil, egg white, or any home remedy.",
+      "yo": "[NEEDS_REVIEW] Do not apply toothpaste, oil, egg white, or any home remedy.",
+      "pcm": "[NEEDS_REVIEW] Do not apply toothpaste, oil, egg white, or any home remedy."
+    },
+    "1": {
+      "en": "Do not use ice or ice water — it can worsen the burn.",
+      "ha": "[NEEDS_REVIEW] Do not use ice or ice water — it can worsen the burn.",
+      "ig": "[NEEDS_REVIEW] Do not use ice or ice water — it can worsen the burn.",
+      "yo": "[NEEDS_REVIEW] Do not use ice or ice water — it can worsen the burn.",
+      "pcm": "[NEEDS_REVIEW] Do not use ice or ice water — it can worsen the burn."
+    },
+    "2": {
+      "en": "Do not burst blisters.",
+      "ha": "[NEEDS_REVIEW] Do not burst blisters.",
+      "ig": "[NEEDS_REVIEW] Do not burst blisters.",
+      "yo": "[NEEDS_REVIEW] Do not burst blisters.",
+      "pcm": "[NEEDS_REVIEW] Do not burst blisters."
+    }
+  },
+  "hospital_threshold": "Go to hospital if the burn is on the face, hands, genitals, or larger than 3cm.",
+  "hospital_threshold_translations": {
+    "en": "Go to hospital if the burn is on the face, hands, genitals, or larger than 3cm.",
+    "ha": "[NEEDS_REVIEW] Go to hospital if the burn is on the face, hands, genitals, or larger than 3cm.",
+    "ig": "[NEEDS_REVIEW] Go to hospital if the burn is on the face, hands, genitals, or larger than 3cm.",
+    "yo": "[NEEDS_REVIEW] Go to hospital if the burn is on the face, hands, genitals, or larger than 3cm.",
+    "pcm": "[NEEDS_REVIEW] Go to hospital if the burn is on the face, hands, genitals, or larger than 3cm."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-08-18T12:31:24.428Z",
+    "medical_references": [
+      "WHO First Aid",
+      "Nigerian Emergency Medicine Association Guidelines"
+    ]
+  }
+}

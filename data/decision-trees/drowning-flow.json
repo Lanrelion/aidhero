@@ -1,0 +1,92 @@
+{
+  "id": "drowning-flow",
+  "incident_id": "drowning",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Is the person out of the water?",
+      "translations": {
+        "en": "Is the person out of the water?",
+        "ha": "[NEEDS_REVIEW] Is the person out of the water?",
+        "ig": "[NEEDS_REVIEW] Is the person out of the water?",
+        "yo": "[NEEDS_REVIEW] Is the person out of the water?",
+        "pcm": "[NEEDS_REVIEW] Is the person out of the water?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "q2"
+        },
+        {
+          "label": "No — still in water",
+          "translations": {
+            "en": "No — still in water",
+            "ha": "[NEEDS_REVIEW] No — still in water",
+            "ig": "[NEEDS_REVIEW] No — still in water",
+            "yo": "[NEEDS_REVIEW] No — still in water",
+            "pcm": "[NEEDS_REVIEW] No — still in water"
+          },
+          "next_node_id": "rescue-first"
+        }
+      ]
+    },
+    "q2": {
+      "type": "question",
+      "text": "Are they breathing?",
+      "translations": {
+        "en": "Are they breathing?",
+        "ha": "[NEEDS_REVIEW] Are they breathing?",
+        "ig": "[NEEDS_REVIEW] Are they breathing?",
+        "yo": "[NEEDS_REVIEW] Are they breathing?",
+        "pcm": "[NEEDS_REVIEW] Are they breathing?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "recovery-steps"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "cpr-steps"
+        }
+      ]
+    },
+    "rescue-first": {
+      "type": "instruction",
+      "steps_reference": "drowning",
+      "variant": "rescue"
+    },
+    "cpr-steps": {
+      "type": "instruction",
+      "steps_reference": "drowning",
+      "variant": "cpr"
+    },
+    "recovery-steps": {
+      "type": "instruction",
+      "steps_reference": "drowning",
+      "variant": "recovery"
+    }
+  }
+}

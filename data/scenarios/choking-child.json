@@ -1,0 +1,174 @@
+{
+  "id": "choking-child",
+  "slug": "choking-child",
+  "content_version": 1,
+  "content_version_date": "2026-08-18T12:31:24.429Z",
+  "category": "paediatric",
+  "title": "Choking Child (1–8 years)",
+  "title_translations": {
+    "en": "Choking Child (1–8 years)",
+    "ha": "[NEEDS_REVIEW] Choking Child (1–8 years)",
+    "ig": "[NEEDS_REVIEW] Choking Child (1–8 years)",
+    "yo": "[NEEDS_REVIEW] Choking Child (1–8 years)",
+    "pcm": "[NEEDS_REVIEW] Choking Child (1–8 years)"
+  },
+  "aliases": [
+    "child choking",
+    "pikin choke",
+    "baby choke",
+    "child cannot breathe",
+    "pikin no fit breathe"
+  ],
+  "severity": "critical",
+  "immediate_warning": "Act immediately. If the child cannot breathe, cough, or cry, begin back blows now.",
+  "immediate_warning_translations": {
+    "en": "Act immediately. If the child cannot breathe, cough, or cry, begin back blows now.",
+    "ha": "[NEEDS_REVIEW] Act immediately. If the child cannot breathe, cough, or cry, begin back blows now.",
+    "ig": "[NEEDS_REVIEW] Act immediately. If the child cannot breathe, cough, or cry, begin back blows now.",
+    "yo": "[NEEDS_REVIEW] Act immediately. If the child cannot breathe, cough, or cry, begin back blows now.",
+    "pcm": "[NEEDS_REVIEW] Act immediately. If the child cannot breathe, cough, or cry, begin back blows now."
+  },
+  "description": "Choking in children is a life-threatening emergency. A blocked airway can cause brain damage within minutes.",
+  "description_translations": {
+    "en": "Choking in children is a life-threatening emergency. A blocked airway can cause brain damage within minutes.",
+    "ha": "[NEEDS_REVIEW] Choking in children is a life-threatening emergency. A blocked airway can cause brain damage within minutes.",
+    "ig": "[NEEDS_REVIEW] Choking in children is a life-threatening emergency. A blocked airway can cause brain damage within minutes.",
+    "yo": "[NEEDS_REVIEW] Choking in children is a life-threatening emergency. A blocked airway can cause brain damage within minutes.",
+    "pcm": "[NEEDS_REVIEW] Choking in children is a life-threatening emergency. A blocked airway can cause brain damage within minutes."
+  },
+  "signs": [
+    "Cannot breathe or speak",
+    "High-pitched noise when inhaling",
+    "Bluish lips or skin",
+    "Clutching throat"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Cannot breathe or speak",
+      "ha": "[NEEDS_REVIEW] Cannot breathe or speak",
+      "ig": "[NEEDS_REVIEW] Cannot breathe or speak",
+      "yo": "[NEEDS_REVIEW] Cannot breathe or speak",
+      "pcm": "[NEEDS_REVIEW] Cannot breathe or speak"
+    },
+    "1": {
+      "en": "High-pitched noise when inhaling",
+      "ha": "[NEEDS_REVIEW] High-pitched noise when inhaling",
+      "ig": "[NEEDS_REVIEW] High-pitched noise when inhaling",
+      "yo": "[NEEDS_REVIEW] High-pitched noise when inhaling",
+      "pcm": "[NEEDS_REVIEW] High-pitched noise when inhaling"
+    },
+    "2": {
+      "en": "Bluish lips or skin",
+      "ha": "[NEEDS_REVIEW] Bluish lips or skin",
+      "ig": "[NEEDS_REVIEW] Bluish lips or skin",
+      "yo": "[NEEDS_REVIEW] Bluish lips or skin",
+      "pcm": "[NEEDS_REVIEW] Bluish lips or skin"
+    },
+    "3": {
+      "en": "Clutching throat",
+      "ha": "[NEEDS_REVIEW] Clutching throat",
+      "ig": "[NEEDS_REVIEW] Clutching throat",
+      "yo": "[NEEDS_REVIEW] Clutching throat",
+      "pcm": "[NEEDS_REVIEW] Clutching throat"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Encourage the child to cough — if they can cough forcefully, let them.",
+      "instruction_translations": {
+        "en": "Encourage the child to cough — if they can cough forcefully, let them.",
+        "ha": "[NEEDS_REVIEW] Encourage the child to cough — if they can cough forcefully, let them.",
+        "ig": "[NEEDS_REVIEW] Encourage the child to cough — if they can cough forcefully, let them.",
+        "yo": "[NEEDS_REVIEW] Encourage the child to cough — if they can cough forcefully, let them.",
+        "pcm": "[NEEDS_REVIEW] Encourage the child to cough — if they can cough forcefully, let them."
+      },
+      "audio_path": "/audio/choking-child/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Lean the child forward and give 5 firm back blows between the shoulder blades with the heel of your hand.",
+      "instruction_translations": {
+        "en": "Lean the child forward and give 5 firm back blows between the shoulder blades with the heel of your hand.",
+        "ha": "[NEEDS_REVIEW] Lean the child forward and give 5 firm back blows between the shoulder blades with the heel of your hand.",
+        "ig": "[NEEDS_REVIEW] Lean the child forward and give 5 firm back blows between the shoulder blades with the heel of your hand.",
+        "yo": "[NEEDS_REVIEW] Lean the child forward and give 5 firm back blows between the shoulder blades with the heel of your hand.",
+        "pcm": "[NEEDS_REVIEW] Lean the child forward and give 5 firm back blows between the shoulder blades with the heel of your hand."
+      },
+      "audio_path": "/audio/choking-child/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "If back blows fail: give 5 abdominal thrusts — kneel behind the child, make a fist above the navel, thrust inward and upward.",
+      "instruction_translations": {
+        "en": "If back blows fail: give 5 abdominal thrusts — kneel behind the child, make a fist above the navel, thrust inward and upward.",
+        "ha": "[NEEDS_REVIEW] If back blows fail: give 5 abdominal thrusts — kneel behind the child, make a fist above the navel, thrust inward and upward.",
+        "ig": "[NEEDS_REVIEW] If back blows fail: give 5 abdominal thrusts — kneel behind the child, make a fist above the navel, thrust inward and upward.",
+        "yo": "[NEEDS_REVIEW] If back blows fail: give 5 abdominal thrusts — kneel behind the child, make a fist above the navel, thrust inward and upward.",
+        "pcm": "[NEEDS_REVIEW] If back blows fail: give 5 abdominal thrusts — kneel behind the child, make a fist above the navel, thrust inward and upward."
+      },
+      "audio_path": "/audio/choking-child/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Alternate 5 back blows and 5 abdominal thrusts.",
+      "instruction_translations": {
+        "en": "Alternate 5 back blows and 5 abdominal thrusts.",
+        "ha": "[NEEDS_REVIEW] Alternate 5 back blows and 5 abdominal thrusts.",
+        "ig": "[NEEDS_REVIEW] Alternate 5 back blows and 5 abdominal thrusts.",
+        "yo": "[NEEDS_REVIEW] Alternate 5 back blows and 5 abdominal thrusts.",
+        "pcm": "[NEEDS_REVIEW] Alternate 5 back blows and 5 abdominal thrusts."
+      },
+      "audio_path": "/audio/choking-child/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "If the child loses consciousness, call 112 and begin CPR immediately.",
+      "instruction_translations": {
+        "en": "If the child loses consciousness, call 112 and begin CPR immediately.",
+        "ha": "[NEEDS_REVIEW] If the child loses consciousness, call 112 and begin CPR immediately.",
+        "ig": "[NEEDS_REVIEW] If the child loses consciousness, call 112 and begin CPR immediately.",
+        "yo": "[NEEDS_REVIEW] If the child loses consciousness, call 112 and begin CPR immediately.",
+        "pcm": "[NEEDS_REVIEW] If the child loses consciousness, call 112 and begin CPR immediately."
+      },
+      "audio_path": "/audio/choking-child/{lang}/step-5.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not do a blind finger sweep of the mouth.",
+    "Do not use adult-force abdominal thrusts on infants."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not do a blind finger sweep of the mouth.",
+      "ha": "[NEEDS_REVIEW] Do not do a blind finger sweep of the mouth.",
+      "ig": "[NEEDS_REVIEW] Do not do a blind finger sweep of the mouth.",
+      "yo": "[NEEDS_REVIEW] Do not do a blind finger sweep of the mouth.",
+      "pcm": "[NEEDS_REVIEW] Do not do a blind finger sweep of the mouth."
+    },
+    "1": {
+      "en": "Do not use adult-force abdominal thrusts on infants.",
+      "ha": "[NEEDS_REVIEW] Do not use adult-force abdominal thrusts on infants.",
+      "ig": "[NEEDS_REVIEW] Do not use adult-force abdominal thrusts on infants.",
+      "yo": "[NEEDS_REVIEW] Do not use adult-force abdominal thrusts on infants.",
+      "pcm": "[NEEDS_REVIEW] Do not use adult-force abdominal thrusts on infants."
+    }
+  },
+  "hospital_threshold": "Always go to hospital after a choking episode, even if resolved.",
+  "hospital_threshold_translations": {
+    "en": "Always go to hospital after a choking episode, even if resolved.",
+    "ha": "[NEEDS_REVIEW] Always go to hospital after a choking episode, even if resolved.",
+    "ig": "[NEEDS_REVIEW] Always go to hospital after a choking episode, even if resolved.",
+    "yo": "[NEEDS_REVIEW] Always go to hospital after a choking episode, even if resolved.",
+    "pcm": "[NEEDS_REVIEW] Always go to hospital after a choking episode, even if resolved."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-08-18T12:31:24.428Z",
+    "medical_references": [
+      "WHO First Aid",
+      "Nigerian Emergency Medicine Association Guidelines"
+    ]
+  }
+}

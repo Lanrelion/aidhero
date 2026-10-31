@@ -1,115 +1,195 @@
 {
-    "nav": {
-        "home": "Home",
-        "search": "Search",
-        "emergency": "Emergency",
-        "settings": "Settings"
+  "nav": {
+    "home": "Home",
+    "search": "Search",
+    "emergency": "Emergency",
+    "settings": "Settings"
+  },
+  "home": {
+    "title": "AidHero",
+    "subtitle": "First Aid Guide",
+    "searchPlaceholder": "Search for symptoms or injuries...",
+    "sectionHeaders": "Categories",
+    "emergencyCall": "Call Emergency",
+    "voiceSearchPrompt": "Listening... say the emergency",
+    "voiceSearchHint": "e.g. \"Heart Attack\", \"Burns\", \"Bleeding\""
+  },
+  "rescue": {
+    "startGuided": "Start Guided Rescue",
+    "quickSteps": "Quick Steps",
+    "stepXOfY": "Step {step} of {total}",
+    "stepNumber": "STEP {number}",
+    "next": "Next",
+    "nextStep": "Next Step",
+    "back": "Back",
+    "repeat": "Repeat",
+    "callEmergency": "Call Emergency",
+    "doneCall": "Done — Call Emergency",
+    "playAudio": "Play in",
+    "stopAudio": "Stop",
+    "readAll": "Read all steps in",
+    "voiceMode": "Voice Mode",
+    "startVoice": "Voice Mode",
+    "skipToSteps": "Skip to steps",
+    "exitVoiceMode": "Exit Voice Mode",
+    "exit": "Exit",
+    "pause": "Pause",
+    "resume": "Resume",
+    "voiceHint": "Say \"next\", \"back\", or \"repeat\"",
+    "voiceUnavailable": "Voice commands unavailable",
+    "severity": {
+      "critical": "CRITICAL",
+      "moderate": "MODERATE",
+      "urgent": "URGENT"
     },
-    "home": {
-        "title": "AidHero",
-        "subtitle": "First Aid Guide",
-        "searchPlaceholder": "Search for symptoms or injuries...",
-        "sectionHeaders": "Categories",
-        "emergencyCall": "Call Emergency"
-    },
-    "rescue": {
-        "startGuided": "Start Guided Rescue",
-        "quickSteps": "Quick Steps",
-        "stepXOfY": "Step {step} of {total}",
-        "stepNumber": "STEP {number}",
-        "next": "Next",
-        "nextStep": "Next Step",
-        "back": "Back",
-        "repeat": "Repeat",
-        "callEmergency": "Call Emergency",
-        "doneCall": "Done — Call Emergency",
-        "playAudio": "Play in",
-        "stopAudio": "Stop",
-        "readAll": "Read all steps in",
-        "voiceMode": "Voice Mode",
-        "startVoice": "Voice Mode",
-        "skipToSteps": "Skip to steps",
-        "exitVoiceMode": "Exit Voice Mode",
-        "exit": "Exit",
-        "pause": "Pause",
-        "resume": "Resume",
-        "voiceHint": "Say \"next\", \"back\", or \"repeat\"",
-        "voiceUnavailable": "Voice commands unavailable",
-        "severity": {
-            "critical": "CRITICAL",
-            "moderate": "MODERATE",
-            "urgent": "URGENT"
-        },
-        "signsToLookFor": "Signs to recognise",
-        "doNot": "What NOT to do",
-        "hospitalThreshold": "When to go to hospital",
-        "step1": "Step 1"
-    },
-    "search": {
-        "placeholder": "Search...",
-        "noResults": "No results found for \"{query}\".",
-        "recentSearches": "Recent Searches",
-        "trySuggestions": "Try: heart attack, choking, bleeding",
-        "allCategories": "All Categories",
-        "clearRecent": "Clear"
-    },
-    "incidents": {
-        "paediatric": "Paediatric",
-        "trauma": "Trauma",
-        "environmental": "Environmental",
-        "respiratory": "Respiratory",
-        "burns": "Burns",
-        "allergic": "Allergic",
-        "obstetric": "Obstetric",
-        "cardiac": "Cardiac",
-        "poisoning": "Poisoning",
-        "neurological": "Neurological",
-        "gastrointestinal": "Gastrointestinal",
-        "other": "Other"
-    },
-    "emergency": {
-        "callButton": "Call",
-        "stateNames": "State Numbers",
-        "nationalNumbers": "National Emergency Numbers"
-    },
-    "settings": {
-        "language": "Language",
-        "textSize": "Text Size",
-        "contrast": "Contrast",
-        "offline": "Offline Mode",
-        "about": "About AidHero",
-        "confirmDuringRescue": "Changing language will restart your rescue flow. Continue?"
-    },
-    "accessibility": {
-        "ariaLabels": "Accessibility Strings",
-        "emergencyCallStrip": "Call Emergency Numbers",
-        "changeLanguage": "Change Language",
-        "bottomNav": "Bottom Navigation"
-    },
-    "offline": {
-        "ready": "Ready for offline use",
-        "limited": "Limited offline functionality",
-        "updated": "Content updated",
-        "active": "Offline Mode Active",
-        "downloading": "Downloading Content..."
-    },
-    "errors": {
-        "notFound": "Page not found",
-        "audioUnavailable": "Audio unavailable in offline mode",
-        "offlineLimitation": "This feature requires an internet connection"
-    },
-    "onboarding": {
-        "slide1Title": "Welcome to AidHero",
-        "slide1Desc": "Your offline-first emergency companion.",
-        "slide2Title": "Always Available",
-        "slide2Desc": "Access life-saving guides even without internet.",
-        "slide3Title": "Voice Guided",
-        "slide3Desc": "Hands-free audio instructions during emergencies."
-    },
-    "metadata": {
-        "title": "AidHero - Emergency First Aid Nigeria",
-        "description": "Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
-        "ogTitle": "AidHero - Emergency First Aid Nigeria",
-        "ogDescription": "You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
+    "signsToLookFor": "Signs to recognise",
+    "doNot": "What NOT to do",
+    "hospitalThreshold": "When to go to hospital",
+    "step1": "Step 1"
+  },
+  "search": {
+    "placeholder": "Search...",
+    "noResults": "No results found for \"{query}\".",
+    "recentSearches": "Recent Searches",
+    "trySuggestions": "Try: heart attack, choking, bleeding",
+    "allCategories": "All Categories",
+    "clearRecent": "Clear"
+  },
+  "incidents": {
+    "paediatric": "Paediatric",
+    "trauma": "Trauma",
+    "environmental": "Environmental",
+    "respiratory": "Respiratory",
+    "burns": "Burns",
+    "allergic": "Allergic",
+    "obstetric": "Obstetric",
+    "cardiac": "Cardiac",
+    "poisoning": "Poisoning",
+    "neurological": "Neurological",
+    "gastrointestinal": "Gastrointestinal",
+    "other": "Other"
+  },
+  "emergency": {
+    "callButton": "Call",
+    "stateNames": "State Numbers",
+    "nationalNumbers": "National Emergency Numbers",
+    "showingNumbersFor": "Showing numbers for",
+    "showingNationalNumbers": "Showing national numbers",
+    "services": "Services",
+    "nationalServices": "National Services",
+    "changeState": "Change state",
+    "selectState": "Select State",
+    "searchStates": "Search states...",
+    "noStatesFound": "No states found matching \"{search}\""
+  },
+  "common": {
+    "yes": "Yes",
+    "no": "No",
+    "none": "None",
+    "all": "All",
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "back": "Back"
+  },
+  "settings": {
+    "language": "Language",
+    "textSize": "Text Size",
+    "contrast": "Contrast",
+    "offline": "Offline Mode",
+    "manage": "Manage",
+    "contentDownloaded": "Content downloaded",
+    "audioDownloadedFor": "Audio downloaded for",
+    "yes": "Yes",
+    "no": "No",
+    "about": "About AidHero",
+    "aboutAidHero": "About AidHero",
+    "version": "Version",
+    "offlineFirst": "Offline-First",
+    "medicalDisclaimer": "Medical Disclaimer: This application provides general first-aid guidance based on standard protocols, but it is not a substitute for professional medical advice, diagnosis, or treatment. Always call emergency services immediately in critical situations.",
+    "confirmDuringRescue": "Changing language will restart your rescue flow. Continue?",
+    "general": "General",
+    "accessibility": "Accessibility",
+    "scaleNormal": "Normal",
+    "scaleLarge": "Large",
+    "scaleXL": "Extra Large",
+    "highContrast": "High Contrast",
+    "highContrastDesc": "Maximum legibility mode",
+    "autoplayVoice": "Auto-play Voice",
+    "autoplayVoiceDesc": "Read steps aloud automatically",
+    "offlineVoiceModeFallback": "Offline Voice Mode Fallback",
+    "offlineVoiceModeDesc": "Choose how long to wait before automatically advancing to the next step when voice commands are unavailable offline.",
+    "manualAdvance": "Manual (Tap to advance)",
+    "seconds": "{count} seconds",
+    "offlineScreen": {
+      "title": "Download for Offline Use",
+      "appContent": "App content",
+      "appContentStatus": "Already downloaded on first visit",
+      "englishAudio": "English audio",
+      "englishAudioStatus": "Downloaded automatically",
+      "download": "Download",
+      "downloading": "Downloading... {progress}%",
+      "downloaded": "Downloaded",
+      "storageUsed": "Storage used: {used}MB of estimated {total}MB total",
+      "lastUpdated": "Last updated",
+      "checkUpdates": "Check for updates"
     }
+  },
+  "accessibility": {
+    "ariaLabels": "Accessibility Strings",
+    "emergencyCallStrip": "Call Emergency Numbers",
+    "changeLanguage": "Change Language",
+    "bottomNav": "Bottom Navigation",
+    "skipToMain": "Skip to main content",
+    "voiceSearch": "Voice Search"
+  },
+  "offline": {
+    "ready": "Ready for offline use",
+    "limited": "Limited offline functionality",
+    "updated": "Content updated",
+    "active": "Offline Mode Active",
+    "downloading": "Downloading Content..."
+  },
+  "errors": {
+    "notFound": "Page not found",
+    "audioUnavailable": "Audio unavailable in offline mode",
+    "offlineLimitation": "This feature requires an internet connection"
+  },
+  "onboarding": {
+    "slide1": {
+      "title": "You can save a life.",
+      "body": "AidHero shows you how."
+    },
+    "slide2": {
+      "title": "Works offline,",
+      "body": "in your language."
+    },
+    "slide3": {
+      "title": "Choose your language",
+      "body": "+ download content"
+    },
+    "download": "Download for offline use",
+    "skipLater": "I'll do this later",
+    "skip": "Skip",
+    "back": "Back",
+    "next": "Next",
+    "progressDots": "Onboarding progress"
+  },
+  "trust": {
+    "pendingReview": "Pending medical review",
+    "pendingWarning": "This information is awaiting verification by a certified medical professional. Use with caution.",
+    "reviewed": "Medically Reviewed",
+    "reviewedBy": "Reviewed by {name}",
+    "lastReviewed": "Last reviewed: {date}"
+  },
+  "metadata": {
+    "title": "AidHero - Emergency First Aid Nigeria",
+    "description": "Offline-first emergency first aid guide for Nigeria. Instant, guided first aid instructions in English, Hausa, Igbo, Yoruba, and Pidgin. Works without internet.",
+    "ogTitle": "AidHero - Emergency First Aid Nigeria",
+    "ogDescription": "You can save a life. AidHero shows you how. Offline first aid guide for Nigeria."
+  },
+  "voiceMode": {
+    "sayCommand": "Say: next, back, repeat",
+    "offlineHint": "Voice commands need internet — use buttons or auto-advance"
+  }
 }

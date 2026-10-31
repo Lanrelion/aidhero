@@ -1,5 +1,5 @@
 import createMiddleware from 'next-intl/middleware';
-import { locales, defaultLocale } from '../i18n/config';
+import { locales, defaultLocale } from './i18n/config';
 import type { NextRequest } from 'next/server';
 
 const handleI18nRouting = createMiddleware({

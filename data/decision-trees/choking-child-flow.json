@@ -1,0 +1,63 @@
+{
+  "id": "choking-child-flow",
+  "incident_id": "choking-child",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Can the child cough, cry, or breathe?",
+      "translations": {
+        "en": "Can the child cough, cry, or breathe?",
+        "ha": "[NEEDS_REVIEW] Can the child cough, cry, or breathe?",
+        "ig": "[NEEDS_REVIEW] Can the child cough, cry, or breathe?",
+        "yo": "[NEEDS_REVIEW] Can the child cough, cry, or breathe?",
+        "pcm": "[NEEDS_REVIEW] Can the child cough, cry, or breathe?"
+      },
+      "options": [
+        {
+          "label": "Yes — weakly",
+          "translations": {
+            "en": "Yes — weakly",
+            "ha": "[NEEDS_REVIEW] Yes — weakly",
+            "ig": "[NEEDS_REVIEW] Yes — weakly",
+            "yo": "[NEEDS_REVIEW] Yes — weakly",
+            "pcm": "[NEEDS_REVIEW] Yes — weakly"
+          },
+          "next_node_id": "back-blows"
+        },
+        {
+          "label": "No — completely blocked",
+          "translations": {
+            "en": "No — completely blocked",
+            "ha": "[NEEDS_REVIEW] No — completely blocked",
+            "ig": "[NEEDS_REVIEW] No — completely blocked",
+            "yo": "[NEEDS_REVIEW] No — completely blocked",
+            "pcm": "[NEEDS_REVIEW] No — completely blocked"
+          },
+          "next_node_id": "back-blows"
+        },
+        {
+          "label": "Yes — strongly coughing",
+          "translations": {
+            "en": "Yes — strongly coughing",
+            "ha": "[NEEDS_REVIEW] Yes — strongly coughing",
+            "ig": "[NEEDS_REVIEW] Yes — strongly coughing",
+            "yo": "[NEEDS_REVIEW] Yes — strongly coughing",
+            "pcm": "[NEEDS_REVIEW] Yes — strongly coughing"
+          },
+          "next_node_id": "encourage-cough"
+        }
+      ]
+    },
+    "back-blows": {
+      "type": "instruction",
+      "steps_reference": "choking-child",
+      "variant": "back-blows"
+    },
+    "encourage-cough": {
+      "type": "instruction",
+      "steps_reference": "choking-child",
+      "variant": "cough"
+    }
+  }
+}

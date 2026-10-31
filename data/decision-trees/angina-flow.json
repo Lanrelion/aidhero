@@ -1,0 +1,87 @@
+{
+  "id": "angina-flow",
+  "incident_id": "angina",
+  "root_node_id": "q1",
+  "nodes": {
+    "q1": {
+      "type": "question",
+      "text": "Is this chest pain new or different from before?",
+      "translations": {
+        "en": "Is this chest pain new or different from before?",
+        "ha": "[NEEDS_REVIEW] Is this chest pain new or different from before?",
+        "ig": "[NEEDS_REVIEW] Is this chest pain new or different from before?",
+        "yo": "[NEEDS_REVIEW] Is this chest pain new or different from before?",
+        "pcm": "[NEEDS_REVIEW] Is this chest pain new or different from before?"
+      },
+      "options": [
+        {
+          "label": "Yes — new pain",
+          "translations": {
+            "en": "Yes — new pain",
+            "ha": "[NEEDS_REVIEW] Yes — new pain",
+            "ig": "[NEEDS_REVIEW] Yes — new pain",
+            "yo": "[NEEDS_REVIEW] Yes — new pain",
+            "pcm": "[NEEDS_REVIEW] Yes — new pain"
+          },
+          "next_node_id": "q2"
+        },
+        {
+          "label": "No — same as usual angina",
+          "translations": {
+            "en": "No — same as usual angina",
+            "ha": "[NEEDS_REVIEW] No — same as usual angina",
+            "ig": "[NEEDS_REVIEW] No — same as usual angina",
+            "yo": "[NEEDS_REVIEW] No — same as usual angina",
+            "pcm": "[NEEDS_REVIEW] No — same as usual angina"
+          },
+          "next_node_id": "standard-steps"
+        }
+      ]
+    },
+    "q2": {
+      "type": "question",
+      "text": "Has it lasted more than 15 minutes?",
+      "translations": {
+        "en": "Has it lasted more than 15 minutes?",
+        "ha": "[NEEDS_REVIEW] Has it lasted more than 15 minutes?",
+        "ig": "[NEEDS_REVIEW] Has it lasted more than 15 minutes?",
+        "yo": "[NEEDS_REVIEW] Has it lasted more than 15 minutes?",
+        "pcm": "[NEEDS_REVIEW] Has it lasted more than 15 minutes?"
+      },
+      "options": [
+        {
+          "label": "Yes",
+          "translations": {
+            "en": "Yes",
+            "ha": "[NEEDS_REVIEW] Yes",
+            "ig": "[NEEDS_REVIEW] Yes",
+            "yo": "[NEEDS_REVIEW] Yes",
+            "pcm": "[NEEDS_REVIEW] Yes"
+          },
+          "next_node_id": "emergency-steps"
+        },
+        {
+          "label": "No",
+          "translations": {
+            "en": "No",
+            "ha": "[NEEDS_REVIEW] No",
+            "ig": "[NEEDS_REVIEW] No",
+            "yo": "[NEEDS_REVIEW] No",
+            "pcm": "[NEEDS_REVIEW] No"
+          },
+          "next_node_id": "standard-steps"
+        }
+      ]
+    },
+    "emergency-steps": {
+      "type": "instruction",
+      "steps_reference": "angina",
+      "variant": "emergency"
+    },
+    "standard-steps": {
+      "type": "instruction",
+      "steps_reference": "angina",
+      "variant": "standard"
+    }
+  }
+}

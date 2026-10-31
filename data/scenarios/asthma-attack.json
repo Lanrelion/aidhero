@@ -1,0 +1,185 @@
+{
+  "id": "asthma-attack",
+  "slug": "asthma-attack",
+  "content_version": 1,
+  "content_version_date": "2026-08-18T12:31:24.429Z",
+  "category": "respiratory",
+  "title": "Asthma Attack",
+  "title_translations": {
+    "en": "Asthma Attack",
+    "ha": "[NEEDS_REVIEW] Asthma Attack",
+    "ig": "[NEEDS_REVIEW] Asthma Attack",
+    "yo": "[NEEDS_REVIEW] Asthma Attack",
+    "pcm": "[NEEDS_REVIEW] Asthma Attack"
+  },
+  "aliases": [
+    "asthma",
+    "cannot breathe",
+    "wheezing",
+    "breathing difficulty",
+    "inhaler",
+    "asma",
+    "no fit breathe",
+    "person dey wheeze"
+  ],
+  "severity": "urgent",
+  "immediate_warning": "If the person cannot speak, lips are blue, or reliever inhaler is not helping after 10 minutes — call 112.",
+  "immediate_warning_translations": {
+    "en": "If the person cannot speak, lips are blue, or reliever inhaler is not helping after 10 minutes — call 112.",
+    "ha": "[NEEDS_REVIEW] If the person cannot speak, lips are blue, or reliever inhaler is not helping after 10 minutes — call 112.",
+    "ig": "[NEEDS_REVIEW] If the person cannot speak, lips are blue, or reliever inhaler is not helping after 10 minutes — call 112.",
+    "yo": "[NEEDS_REVIEW] If the person cannot speak, lips are blue, or reliever inhaler is not helping after 10 minutes — call 112.",
+    "pcm": "[NEEDS_REVIEW] If the person cannot speak, lips are blue, or reliever inhaler is not helping after 10 minutes — call 112."
+  },
+  "description": "An asthma attack causes the airways to narrow, making breathing very difficult. Most attacks can be managed with the correct inhaler.",
+  "description_translations": {
+    "en": "An asthma attack causes the airways to narrow, making breathing very difficult. Most attacks can be managed with the correct inhaler.",
+    "ha": "[NEEDS_REVIEW] An asthma attack causes the airways to narrow, making breathing very difficult. Most attacks can be managed with the correct inhaler.",
+    "ig": "[NEEDS_REVIEW] An asthma attack causes the airways to narrow, making breathing very difficult. Most attacks can be managed with the correct inhaler.",
+    "yo": "[NEEDS_REVIEW] An asthma attack causes the airways to narrow, making breathing very difficult. Most attacks can be managed with the correct inhaler.",
+    "pcm": "[NEEDS_REVIEW] An asthma attack causes the airways to narrow, making breathing very difficult. Most attacks can be managed with the correct inhaler."
+  },
+  "signs": [
+    "Wheezing",
+    "Shortness of breath",
+    "Chest tightness",
+    "Coughing",
+    "Difficulty speaking in full sentences"
+  ],
+  "signs_translations": {
+    "0": {
+      "en": "Wheezing",
+      "ha": "[NEEDS_REVIEW] Wheezing",
+      "ig": "[NEEDS_REVIEW] Wheezing",
+      "yo": "[NEEDS_REVIEW] Wheezing",
+      "pcm": "[NEEDS_REVIEW] Wheezing"
+    },
+    "1": {
+      "en": "Shortness of breath",
+      "ha": "[NEEDS_REVIEW] Shortness of breath",
+      "ig": "[NEEDS_REVIEW] Shortness of breath",
+      "yo": "[NEEDS_REVIEW] Shortness of breath",
+      "pcm": "[NEEDS_REVIEW] Shortness of breath"
+    },
+    "2": {
+      "en": "Chest tightness",
+      "ha": "[NEEDS_REVIEW] Chest tightness",
+      "ig": "[NEEDS_REVIEW] Chest tightness",
+      "yo": "[NEEDS_REVIEW] Chest tightness",
+      "pcm": "[NEEDS_REVIEW] Chest tightness"
+    },
+    "3": {
+      "en": "Coughing",
+      "ha": "[NEEDS_REVIEW] Coughing",
+      "ig": "[NEEDS_REVIEW] Coughing",
+      "yo": "[NEEDS_REVIEW] Coughing",
+      "pcm": "[NEEDS_REVIEW] Coughing"
+    },
+    "4": {
+      "en": "Difficulty speaking in full sentences",
+      "ha": "[NEEDS_REVIEW] Difficulty speaking in full sentences",
+      "ig": "[NEEDS_REVIEW] Difficulty speaking in full sentences",
+      "yo": "[NEEDS_REVIEW] Difficulty speaking in full sentences",
+      "pcm": "[NEEDS_REVIEW] Difficulty speaking in full sentences"
+    }
+  },
+  "steps": [
+    {
+      "id": 1,
+      "instruction": "Keep the person calm and help them sit upright. Do not let them lie down.",
+      "instruction_translations": {
+        "en": "Keep the person calm and help them sit upright. Do not let them lie down.",
+        "ha": "[NEEDS_REVIEW] Keep the person calm and help them sit upright. Do not let them lie down.",
+        "ig": "[NEEDS_REVIEW] Keep the person calm and help them sit upright. Do not let them lie down.",
+        "yo": "[NEEDS_REVIEW] Keep the person calm and help them sit upright. Do not let them lie down.",
+        "pcm": "[NEEDS_REVIEW] Keep the person calm and help them sit upright. Do not let them lie down."
+      },
+      "audio_path": "/audio/asthma-attack/{lang}/step-1.mp3"
+    },
+    {
+      "id": 2,
+      "instruction": "Help them use their reliever inhaler (usually blue). Give 1 puff every 30–60 seconds, up to 10 puffs.",
+      "instruction_translations": {
+        "en": "Help them use their reliever inhaler (usually blue). Give 1 puff every 30–60 seconds, up to 10 puffs.",
+        "ha": "[NEEDS_REVIEW] Help them use their reliever inhaler (usually blue). Give 1 puff every 30–60 seconds, up to 10 puffs.",
+        "ig": "[NEEDS_REVIEW] Help them use their reliever inhaler (usually blue). Give 1 puff every 30–60 seconds, up to 10 puffs.",
+        "yo": "[NEEDS_REVIEW] Help them use their reliever inhaler (usually blue). Give 1 puff every 30–60 seconds, up to 10 puffs.",
+        "pcm": "[NEEDS_REVIEW] Help them use their reliever inhaler (usually blue). Give 1 puff every 30–60 seconds, up to 10 puffs."
+      },
+      "audio_path": "/audio/asthma-attack/{lang}/step-2.mp3"
+    },
+    {
+      "id": 3,
+      "instruction": "If they do not have their inhaler, call 112 immediately.",
+      "instruction_translations": {
+        "en": "If they do not have their inhaler, call 112 immediately.",
+        "ha": "[NEEDS_REVIEW] If they do not have their inhaler, call 112 immediately.",
+        "ig": "[NEEDS_REVIEW] If they do not have their inhaler, call 112 immediately.",
+        "yo": "[NEEDS_REVIEW] If they do not have their inhaler, call 112 immediately.",
+        "pcm": "[NEEDS_REVIEW] If they do not have their inhaler, call 112 immediately."
+      },
+      "audio_path": "/audio/asthma-attack/{lang}/step-3.mp3"
+    },
+    {
+      "id": 4,
+      "instruction": "Stay with them. If they are not better after 15 minutes, call 112.",
+      "instruction_translations": {
+        "en": "Stay with them. If they are not better after 15 minutes, call 112.",
+        "ha": "[NEEDS_REVIEW] Stay with them. If they are not better after 15 minutes, call 112.",
+        "ig": "[NEEDS_REVIEW] Stay with them. If they are not better after 15 minutes, call 112.",
+        "yo": "[NEEDS_REVIEW] Stay with them. If they are not better after 15 minutes, call 112.",
+        "pcm": "[NEEDS_REVIEW] Stay with them. If they are not better after 15 minutes, call 112."
+      },
+      "audio_path": "/audio/asthma-attack/{lang}/step-4.mp3"
+    },
+    {
+      "id": 5,
+      "instruction": "If they become unconscious and stop breathing, begin CPR.",
+      "instruction_translations": {
+        "en": "If they become unconscious and stop breathing, begin CPR.",
+        "ha": "[NEEDS_REVIEW] If they become unconscious and stop breathing, begin CPR.",
+        "ig": "[NEEDS_REVIEW] If they become unconscious and stop breathing, begin CPR.",
+        "yo": "[NEEDS_REVIEW] If they become unconscious and stop breathing, begin CPR.",
+        "pcm": "[NEEDS_REVIEW] If they become unconscious and stop breathing, begin CPR."
+      },
+      "audio_path": "/audio/asthma-attack/{lang}/step-5.mp3"
+    }
+  ],
+  "do_not": [
+    "Do not give the person water or food during an attack.",
+    "Do not leave them alone."
+  ],
+  "do_not_translations": {
+    "0": {
+      "en": "Do not give the person water or food during an attack.",
+      "ha": "[NEEDS_REVIEW] Do not give the person water or food during an attack.",
+      "ig": "[NEEDS_REVIEW] Do not give the person water or food during an attack.",
+      "yo": "[NEEDS_REVIEW] Do not give the person water or food during an attack.",
+      "pcm": "[NEEDS_REVIEW] Do not give the person water or food during an attack."
+    },
+    "1": {
+      "en": "Do not leave them alone.",
+      "ha": "[NEEDS_REVIEW] Do not leave them alone.",
+      "ig": "[NEEDS_REVIEW] Do not leave them alone.",
+      "yo": "[NEEDS_REVIEW] Do not leave them alone.",
+      "pcm": "[NEEDS_REVIEW] Do not leave them alone."
+    }
+  },
+  "hospital_threshold": "Go to hospital if the attack does not fully resolve or is unusually severe.",
+  "hospital_threshold_translations": {
+    "en": "Go to hospital if the attack does not fully resolve or is unusually severe.",
+    "ha": "[NEEDS_REVIEW] Go to hospital if the attack does not fully resolve or is unusually severe.",
+    "ig": "[NEEDS_REVIEW] Go to hospital if the attack does not fully resolve or is unusually severe.",
+    "yo": "[NEEDS_REVIEW] Go to hospital if the attack does not fully resolve or is unusually severe.",
+    "pcm": "[NEEDS_REVIEW] Go to hospital if the attack does not fully resolve or is unusually severe."
+  },
+  "trust_signals": {
+    "medical_reviewer": "[PENDING — Nigerian emergency medicine doctor required]",
+    "reviewer_institution": "Pending",
+    "last_medically_reviewed": "2026-08-18T12:31:24.428Z",
+    "medical_references": [
+      "WHO First Aid",
+      "Nigerian Emergency Medicine Association Guidelines"
+    ]
+  }
+}
