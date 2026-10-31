@@ -39,5 +39,7 @@
         }
       ]
     }
-  ]
+  ],
+  "framework": "nextjs",
+  "buildCommand": "next build --webpack"
 }
