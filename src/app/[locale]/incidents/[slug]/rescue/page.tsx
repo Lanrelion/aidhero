@@ -8,6 +8,7 @@ import { ChevronLeft, Phone, ArrowRight } from 'lucide-react';
 
 import { useRescueStore } from '@/store/useRescueStore';
 import { getDecisionTree } from '@/lib/data/decisionTrees';
+import { getScenario } from '@/lib/data/scenarios';
 import { ProgressIndicator } from '@/components/rescue/ProgressIndicator';
 import { getPrimaryEmergencyNumber } from '@/lib/data/emergencyNumbers';
 import { Locale } from '@/types';
@@ -57,7 +58,8 @@ export default function RescuePage({ params }: RescuePageProps) {
       setIsLoadingSteps(true);
       // Wait a tiny bit so the user sees the transition, then redirect
       setTimeout(() => {
-        router.push(`/${locale}/incidents/${slug}/steps?variant=${currentNode.variant}`);
+        const targetSlug = getScenario(currentNode.steps_reference)?.slug ?? slug;
+        router.push(`/${locale}/incidents/${targetSlug}/steps?variant=${currentNode.variant}`);
       }, 200);
     }
   }
@@ -127,7 +129,7 @@ export default function RescuePage({ params }: RescuePageProps) {
         )}
       </div>
 
-      <div className="fixed bottom-6 right-6 z-40">
+      <div className="fixed bottom-[calc(var(--spacing-bottom-nav)+1.5rem)] right-6 z-40">
         <a 
           href={`tel:${getPrimaryEmergencyNumber(null)}`} // Store context could be wired later
           className="flex items-center justify-center w-16 h-16 bg-emergency text-white rounded-full shadow-emergency active:scale-95 transition-transform"

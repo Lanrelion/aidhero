@@ -116,7 +116,7 @@ export default async function RootLayout({
       className={cn("h-full", "antialiased", syne.variable, dmSans.variable, syneMono.variable, "font-sans", geist.variable)}
     >
       {/* DESIGN.md Â§10 ARIA landmarks */}
-            <body suppressHydrationWarning className="min-h-[100dvh] flex flex-col bg-[--color-surface] text-[--color-text-primary] font-body pb-16">
+            <body suppressHydrationWarning className="min-h-[100dvh] flex flex-col bg-[--color-surface] text-[--color-text-primary] font-body pb-bottom-nav">
         <a 
           href="#main-content" 
           className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-surface focus:text-action focus:font-bold focus:shadow-float rounded-md"

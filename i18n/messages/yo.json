@@ -190,6 +190,9 @@
   },
   "voiceMode": {
     "sayCommand": "Sọ: tẹsiwaju, pada sẹhin, tun sọ",
+    "waiting": "Dúró kí ìgbésẹ̀ náà parí kí o tó sọ̀rọ̀.",
+    "unavailable": "Àṣẹ ohùn kò ṣiṣẹ́. Lo àwọn bọ́tìnì.",
+    "serviceUnavailable": "A kò lè sopọ̀ mọ́ iṣẹ́ ohùn. Gbìyànjú aṣàwákiri mìíràn tàbí lo àwọn bọ́tìnì.",
     "offlineHint": "Àṣẹ ohùn nílò íńtánẹ́ẹ̀tì — lo àwọn bọ́tìnì tàbí kí ó tẹ̀síwájú fúnrarẹ̀"
   }
 }

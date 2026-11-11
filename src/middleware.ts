@@ -1,6 +1,7 @@
 import createMiddleware from 'next-intl/middleware';
 import { locales, defaultLocale } from './i18n/config';
 import type { NextRequest } from 'next/server';
+import { NextResponse } from 'next/server';
 
 const handleI18nRouting = createMiddleware({
   locales,
@@ -9,6 +10,11 @@ const handleI18nRouting = createMiddleware({
 });
 
 export default function middleware(req: NextRequest) {
+  // Workbox precaches the standalone fallback outside the locale routes.
+  if (req.nextUrl.pathname === '/offline') {
+    return NextResponse.next();
+  }
+
   // Sync the preferred-language IDB value via the aidhero-lang cookie
   const cookieLocale = req.cookies.get('aidhero-lang')?.value;
   

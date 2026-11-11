@@ -13,7 +13,17 @@ import { StepCard } from '@/components/rescue/StepCard';
 import { TTSProvider } from '@/components/tts/TTSProvider';
 import { ReadAllButton } from '@/components/tts/ReadAllButton';
 import dynamic from 'next/dynamic';
+import Link from 'next/link';
 import { Locale } from '@/types';
+import { TrustSignal } from '@/components/emergency/TrustSignal';
+import { EmergencyCallButton } from '@/components/emergency/EmergencyCallButton';
+
+// These branches have no reviewed instructions matching the person's condition.
+const pendingInstructionVariants = new Set([
+  'cardiac-arrest:recovery',
+  'drowning:recovery',
+  'choking-child:cough',
+]);
 
 const VoiceMode = dynamic(() => import('@/components/rescue/VoiceMode').then(mod => mod.VoiceMode), {
   ssr: false,
@@ -96,6 +106,24 @@ export default function StepsPage({ params }: StepsPageProps) {
   // Don't render until mounted to avoid hydration mismatch with useSearchParams
   if (!mounted) return null;
 
+  if (pendingInstructionVariants.has(`${slug}:${variant}`)) {
+    return (
+      <div className="flex flex-col gap-6 p-4 pb-28 max-w-md mx-auto">
+        <div role="status">
+          <TrustSignal />
+        </div>
+        <Link
+          href={`/${locale}/incidents/${slug}`}
+          aria-label={t('rescue.back')}
+          className="flex items-center justify-center h-16 rounded-xl border border-border font-bold text-text-primary"
+        >
+          {t('rescue.back')}
+        </Link>
+        <EmergencyCallButton />
+      </div>
+    );
+  }
+
   return (
     <TTSProvider>
       {/* VoiceMode full-screen overlay */}
@@ -109,7 +137,7 @@ export default function StepsPage({ params }: StepsPageProps) {
           }}
         />
       )}
-      <div className="flex flex-col min-h-screen bg-background overflow-hidden pb-28">
+      <div className="flex flex-col min-h-screen bg-background overflow-hidden pb-48">
       {/* Header */}
       <header className="sticky top-0 z-30 bg-surface/95 backdrop-blur supports-[backdrop-filter]:bg-surface/80">
         {/* Progress Bar (Thin red line at very top) */}
@@ -153,10 +181,10 @@ export default function StepsPage({ params }: StepsPageProps) {
       </div>
 
       {/* Bottom Sticky Action Area */}
-      <div className="fixed bottom-0 left-0 right-0 p-4 bg-background border-t border-border z-40 max-w-md mx-auto">
+      <div className="fixed bottom-bottom-nav left-0 right-0 p-4 bg-background border-t border-border z-40 max-w-md mx-auto">
         <button
           onClick={handleNext}
-          className="w-full min-h-[72px] rounded-2xl bg-authority text-white font-bold text-[22px] flex items-center justify-center gap-2 shadow-card hover:bg-authority/90 active:scale-[0.98] transition-transform"
+          className="w-full h-[72px] min-h-[72px] rounded-2xl bg-authority text-white font-bold text-[22px] flex items-center justify-center gap-2 shadow-card hover:bg-authority/90 active:scale-[0.98] transition-transform"
         >
           {isLastStep ? (
             <>
@@ -172,10 +200,10 @@ export default function StepsPage({ params }: StepsPageProps) {
         </button>
       </div>
 
-      <div className="fixed bottom-28 left-4 z-40">
+      <div className="fixed bottom-[calc(var(--spacing-bottom-nav)+7rem)] left-4 z-40">
         <a 
           href={`tel:${primaryNumber}`}
-          className="flex items-center justify-center gap-2 h-12 px-5 bg-card border border-border text-emergency rounded-full shadow-sm active:scale-95 transition-transform font-bold"
+          className="flex items-center justify-center gap-2 h-16 px-5 bg-card border border-border text-emergency rounded-full shadow-sm active:scale-95 transition-transform font-bold"
           aria-label={t('emergency.callButton') || "Call"}
         >
           <Phone className="w-5 h-5 fill-emergency/20" />
@@ -184,7 +212,7 @@ export default function StepsPage({ params }: StepsPageProps) {
       </div>
 
       {/* Voice Mode FAB (Bottom Right) */}
-      <div className="fixed bottom-28 right-4 z-40">
+      <div className="fixed bottom-[calc(var(--spacing-bottom-nav)+7rem)] right-4 z-40">
         <button 
           onClick={handleVoiceMode}
           className="flex items-center justify-center w-16 h-16 bg-emergency text-white rounded-full shadow-emergency active:scale-95 transition-transform"

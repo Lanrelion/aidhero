@@ -190,6 +190,9 @@
   },
   "voiceMode": {
     "sayCommand": "Say: carry go, back, repeat am",
+    "waiting": "Wait make di step finish before you talk.",
+    "unavailable": "Voice command no dey available. Use di buttons.",
+    "serviceUnavailable": "We no fit connect to voice service. Try another browser or use di buttons.",
     "offlineHint": "Voice command need internet — use buttons or make e move by itself"
   }
 }

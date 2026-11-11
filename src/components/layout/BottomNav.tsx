@@ -34,7 +34,7 @@ export function BottomNav() {
     <nav 
       role="navigation" 
       aria-label={t('accessibility.bottomNav') || 'Bottom Navigation'}
-      className="fixed bottom-0 left-0 right-0 h-16 bg-surface border-t border-border flex items-center z-40 safe-area-bottom shadow-card"
+      className="fixed bottom-0 left-0 right-0 h-bottom-nav pb-[env(safe-area-inset-bottom,0px)] bg-surface border-t border-border flex items-center z-40 shadow-card"
     >
       {navItems.map((item) => {
         const active = isActive(item.path);

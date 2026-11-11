@@ -190,6 +190,9 @@
   },
   "voiceMode": {
     "sayCommand": "Fada: gaba, koma baya, sake yi",
+    "waiting": "Jira matakin ya ƙare kafin ka yi magana.",
+    "unavailable": "Ba a iya amfani da umarnin murya. Yi amfani da maɓallan.",
+    "serviceUnavailable": "An kasa haɗawa da sabis na murya. Gwada wani burauza ko yi amfani da maɓallan.",
     "offlineHint": "Umarnin murya yana bukatar intanet — yi amfani da maballan ko ci gaba da kansa"
   }
 }

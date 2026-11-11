@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState, useCallback } from 'react';
+import React, { useEffect, useRef, useState, useCallback, useEffectEvent } from 'react';
 import { X, Pause, Play, SkipBack, SkipForward, SkipBack as PrevIcon, Repeat, MicOff } from 'lucide-react';
 import { useTranslations, useLocale } from 'next-intl';
 import { TTSManager } from '@/lib/tts/TTSManager';
@@ -81,12 +81,12 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
   const { language } = useLanguageStore();
   const currentLang = (language && language !== 'en') ? language : (routeLocale || language);
   const { currentStepIndex, advanceStep, jumpToStep } = useRescueStore();
-  const { detectedState } = useOfflineStore();
+  const { detectedState, isOnline } = useOfflineStore();
   const primaryNumber = getPrimaryEmergencyNumber(detectedState);
 
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
-  const [voiceCommandsAvailable, setVoiceCommandsAvailable] = useState(false);
+  const [voiceCommandStatus, setVoiceCommandStatus] = useState<'available' | 'unavailable' | 'network'>('unavailable');
   const [isListening, setIsListening] = useState(false);
 
   // Auto-advance Timer State
@@ -257,7 +257,8 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
 
   // ─── Restart loop from a new index ───
   const restartFrom = useCallback((newIdx: number) => {
-    sessionRef.current++;
+    const session = ++sessionRef.current;
+    loopIndexRef.current = newIdx;
     if (advanceResolverRef.current) {
       advanceResolverRef.current(false);
     }
@@ -265,7 +266,7 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
     TTSManager.stop();
     stopListeningRef.current?.();
     setTimeout(() => {
-      if (activeRef.current && !pausedRef.current) {
+      if (activeRef.current && !pausedRef.current && sessionRef.current === session) {
         runLoop(safeIndex(newIdx));
       }
     }, 80);
@@ -274,11 +275,12 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
   // ─── Mount: Start Loop ───
   useEffect(() => {
     activeRef.current = true;
-    setTimeout(() => {
+    const startTimer = setTimeout(() => {
       runLoop(currentStepIndex);
     }, 0);
 
     return () => {
+      clearTimeout(startTimer);
       activeRef.current = false;
       sessionRef.current++;
       if (advanceResolverRef.current) {
@@ -290,143 +292,169 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // ─── Single isolated SpeechRecognition effect (100% Client-Side Guarded) ───
+  const handleVoiceCommand = useEffectEvent((cmd: CommandType) => {
+    const index = loopIndexRef.current;
+    if (cmd === 'next' && index < steps.length - 1) {
+      if (advanceResolverRef.current) {
+        advanceResolverRef.current(true);
+      } else {
+        jumpToStep(index + 1);
+        restartFrom(index + 1);
+      }
+    } else if (cmd === 'back' && index > 0) {
+      jumpToStep(index - 1);
+      restartFrom(index - 1);
+    } else if (cmd === 'restart') {
+      jumpToStep(0);
+      restartFrom(0);
+    } else if (cmd === 'repeat') {
+      restartFrom(index);
+    } else if (cmd === 'emergency') {
+      window.location.href = `tel:${primaryNumber}`;
+    }
+  });
+
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-
-    console.log('SR: checking support');
-
     const SpeechRecognitionAPI =
       (window as any).SpeechRecognition || (window as any).webkitSpeechRecognition;
-
-    const isOnline = typeof navigator !== 'undefined' && navigator.onLine;
-
-    if (!SpeechRecognitionAPI || !isOnline) {
-      console.log('SR: unavailable (supported:', !!SpeechRecognitionAPI, 'online:', isOnline, ')');
-      setVoiceCommandsAvailable(false);
+    if (!SpeechRecognitionAPI) {
+      console.warn('[Voice Mode] Speech recognition API unavailable');
       return;
     }
 
-    console.log('SR: initialising');
     let recognition: any = null;
-    let isRunning = false;
+    let retryTimer: ReturnType<typeof setTimeout> | undefined;
+    let unavailable = false;
+    let retriedNetworkError = false;
+    let useLocalRecognition = false;
+    let listeningGeneration = 0;
 
-    try {
-      recognition = new SpeechRecognitionAPI();
-      recognition.lang = 'en-US'; // Rule 13: en-US required for Chrome SR
-      recognition.continuous = false;
-      recognition.interimResults = false;
-      recognition.maxAlternatives = 3;
+    // Check during narration so the first command can use an installed speech pack.
+    const localRecognitionCheck = typeof SpeechRecognitionAPI.available === 'function'
+      ? Promise.resolve()
+        .then(() => SpeechRecognitionAPI.available({ langs: ['en-US'], processLocally: true }))
+        .then(status => { useLocalRecognition = status === 'available'; }, () => {})
+      : undefined;
 
-      recognition.onstart = () => {
-        isRunning = true;
-        setIsListening(true);
-        console.log('SR: started');
-      };
+    const canListen = () =>
+      !unavailable && shouldListenRef.current && activeRef.current &&
+      !isSpeakingRef.current && !pausedRef.current && navigator.onLine;
 
-      recognition.onresult = (event: any) => {
-        // Do not process commands if TTS is currently speaking
-        if (isSpeakingRef.current) return;
-
-        const results = event.results;
-        if (!results || results.length === 0) return;
-
-        const transcript = results[results.length - 1][0]?.transcript || '';
-        console.log(`SR: result received: ${transcript}`);
-
-        const cmd = matchCommand(transcript);
-        if (!cmd) return;
-
-        console.log(`SR: matched command: ${cmd}`);
-
-        if (cmd === 'next') {
-          if (advanceResolverRef.current) {
-            advanceResolverRef.current(true);
-          } else if (loopIndexRef.current < steps.length - 1) {
-            const nextIdx = loopIndexRef.current + 1;
-            jumpToStep(nextIdx);
-            restartFrom(nextIdx);
-          }
-        } else if (cmd === 'back' && loopIndexRef.current > 0) {
-          const prevIdx = loopIndexRef.current - 1;
-          jumpToStep(prevIdx);
-          restartFrom(prevIdx);
-        } else if (cmd === 'restart') {
-          jumpToStep(0);
-          restartFrom(0);
-        } else if (cmd === 'repeat') {
-          restartFrom(loopIndexRef.current);
-        } else if (cmd === 'emergency') {
-          window.location.href = `tel:${primaryNumber}`;
-        }
-      };
-
-      recognition.onerror = (e: any) => {
-        isRunning = false;
-        setIsListening(false);
-        console.warn('SR: error', e.error);
-        if (e.error === 'not-allowed' || e.error === 'service-not-allowed') {
-          setVoiceCommandsAvailable(false);
-          startListeningRef.current = null;
-        }
-      };
-
-      recognition.onend = () => {
-        isRunning = false;
-        if (shouldListenRef.current && activeRef.current && !isSpeakingRef.current && !pausedRef.current) {
-          setTimeout(() => {
-            if (shouldListenRef.current && activeRef.current && !isSpeakingRef.current && !pausedRef.current) {
-              try {
-                recognition.start();
-              } catch {}
-            }
-          }, 200);
-        } else {
-          setIsListening(false);
-        }
-      };
-
-      setVoiceCommandsAvailable(true);
-
-      const startListening = () => {
-        if (!activeRef.current || isSpeakingRef.current || isRunning || !recognition) return;
-        shouldListenRef.current = true;
-        try {
-          recognition.start();
-        } catch (e: any) {
-          console.warn('SR: start error', e);
-        }
-      };
-
-      const stopListening = () => {
-        shouldListenRef.current = false;
-        isRunning = false;
-        setIsListening(false);
-        if (recognition) {
-          try {
-            recognition.abort();
-          } catch {}
-        }
-      };
-
-      startListeningRef.current = startListening;
-      stopListeningRef.current = stopListening;
-
-    } catch (err) {
-      console.error('SR: failed to initialise', err);
-      setVoiceCommandsAvailable(false);
-    }
-
-    return () => {
-      startListeningRef.current = null;
-      stopListeningRef.current = null;
-      if (recognition) {
-        try {
-          recognition.abort();
-        } catch {}
+    const stopListening = () => {
+      listeningGeneration++;
+      shouldListenRef.current = false;
+      clearTimeout(retryTimer);
+      const current = recognition;
+      recognition = null;
+      setIsListening(false);
+      if (current) {
+        try { current.abort(); } catch {}
       }
     };
-  }, [steps.length, primaryNumber, jumpToStep, restartFrom]);
+
+    const markUnavailable = (reason: 'unavailable' | 'network' = 'unavailable') => {
+      unavailable = true;
+      stopListening();
+      setVoiceCommandStatus(reason);
+    };
+
+    const startListening = () => {
+      if (!canListen() || recognition) return;
+
+      const listeningLocally = useLocalRecognition;
+      try {
+        // WebKit can stop returning results when a recognizer is reused after playback.
+        const current = new SpeechRecognitionAPI();
+        recognition = current;
+        const session = sessionRef.current;
+        const generation = listeningGeneration;
+        let retryDelay = 200;
+        let waitForLocalCheck = false;
+        const isCurrent = () => recognition === current && sessionRef.current === session;
+        current.lang = 'en-US';
+        current.continuous = false;
+        current.interimResults = false;
+        current.maxAlternatives = 3;
+        if (listeningLocally) current.processLocally = true;
+
+        current.onstart = () => {
+          if (isCurrent() && canListen()) setIsListening(true);
+        };
+        current.onspeechend = () => {
+          if (!isCurrent() || !canListen()) return;
+          setIsListening(false);
+          // Request the final transcript from the captured audio immediately.
+          try { current.stop(); } catch {}
+        };
+        current.onresult = (event: any) => {
+          if (!isCurrent() || !canListen()) return;
+          const result = event.results[event.resultIndex ?? 0];
+          if (!result?.isFinal) return;
+          for (let index = 0; index < result.length; index++) {
+            const command = matchCommand(result[index].transcript);
+            if (command && (index === 0 || command !== 'emergency')) {
+              handleVoiceCommand(command);
+              break;
+            }
+          }
+        };
+        current.onerror = (event: { error: string }) => {
+          if (!isCurrent()) return;
+          setIsListening(false);
+          if (listeningLocally && (event.error === 'network' || event.error === 'language-not-supported')) {
+            useLocalRecognition = false;
+            return;
+          }
+          if (event.error === 'network' && !retriedNetworkError) {
+            retriedNetworkError = true;
+            retryDelay = 1000;
+            waitForLocalCheck = !useLocalRecognition;
+            return;
+          }
+          if (event.error !== 'no-speech' && event.error !== 'aborted') {
+            console.warn('[Voice Mode] Speech recognition failed:', event.error);
+            markUnavailable(event.error === 'network' ? 'network' : 'unavailable');
+          }
+        };
+        current.onend = () => {
+          if (!isCurrent()) return;
+          recognition = null;
+          setIsListening(false);
+          if (canListen()) {
+            retryTimer = setTimeout(async () => {
+              if (waitForLocalCheck) await localRecognitionCheck;
+              if (sessionRef.current !== session || listeningGeneration !== generation || !canListen()) return;
+              startListening();
+            }, retryDelay);
+          }
+        };
+        current.start();
+      } catch (error) {
+        if (listeningLocally && error instanceof DOMException && error.name === 'NotSupportedError') {
+          useLocalRecognition = false;
+          recognition = null;
+          startListening();
+          return;
+        }
+        console.warn('[Voice Mode] Could not start speech recognition:', error);
+        markUnavailable();
+      }
+    };
+
+    setVoiceCommandStatus('available');
+    startListeningRef.current = () => {
+      retriedNetworkError = false;
+      shouldListenRef.current = true;
+      startListening();
+    };
+    stopListeningRef.current = stopListening;
+
+    return () => {
+      stopListening();
+      startListeningRef.current = null;
+      stopListeningRef.current = null;
+    };
+  }, []);
 
   // ─── User Controls ───
   const handlePauseResume = (e?: React.MouseEvent) => {
@@ -446,12 +474,6 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
       TTSManager.stop();
       stopListeningRef.current?.();
     }
-  };
-
-  const handleRestart = (e?: React.MouseEvent) => {
-    e?.stopPropagation();
-    jumpToStep(0);
-    restartFrom(0);
   };
 
   const handleNext = (e?: React.MouseEvent) => {
@@ -511,26 +533,27 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
   return (
     <div
       onClick={handleOverlayClick}
-      className="fixed inset-0 z-50 flex flex-col items-center p-6 pb-8 justify-between"
+      className="fixed inset-0 z-50 flex h-dvh flex-col items-center gap-4 px-6 pt-[max(1rem,env(safe-area-inset-top))] pb-[max(1rem,env(safe-area-inset-bottom))]"
       style={{ backgroundColor: 'rgba(26, 26, 46, 0.98)' }}
       role="dialog"
       aria-modal="true"
+      aria-label={t('rescue.voiceMode')}
     >
       {/* Top Bar */}
-      <div className="w-full flex justify-between items-start mt-4">
+      <div className="w-full shrink-0 flex justify-between items-start">
         {displayIndex > 0 ? (
           <button
-            onClick={handleRestart}
-            className="flex items-center justify-center gap-2 h-12 px-5 rounded-full bg-white/10 text-white hover:bg-white/20 active:scale-95 transition-all font-medium"
+            onClick={handlePrev}
+            className="flex items-center justify-center gap-2 h-16 px-5 rounded-full bg-white/10 text-white hover:bg-white/20 active:scale-95 transition-all font-medium"
           >
             <SkipBack className="w-4 h-4" />
-            {t('rescue.step1') || 'Step 1'}
+            {t('rescue.back')}
           </button>
         ) : <div className="w-24" />}
 
         <button
           onClick={handleClose}
-          className="flex items-center justify-center w-12 h-12 rounded-full bg-white/10 text-white hover:bg-white/20 active:scale-95 transition-all"
+          className="flex items-center justify-center w-16 h-16 rounded-full bg-white/10 text-white hover:bg-white/20 active:scale-95 transition-all"
           aria-label={t('rescue.exit') || 'Exit'}
         >
           <X className="w-6 h-6" />
@@ -538,7 +561,8 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
       </div>
 
       {/* Main Content Area */}
-      <div className="flex flex-col items-center w-full max-w-sm flex-1 justify-center -mt-8 gap-8">
+      <div className="w-full max-w-sm min-h-0 flex-1 overflow-y-auto overscroll-contain">
+        <div className="flex min-h-full flex-col items-center justify-center gap-8">
         
         {/* Instruction Text & Word Highlight */}
         <div aria-live="assertive" aria-atomic="true" className="text-center w-full">
@@ -599,20 +623,19 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
         {/* Voice Status & Visual Indicators */}
         <div className="flex flex-col items-center justify-center gap-3">
           <WaveformVisualizer isActive={isSpeaking || isListening} />
-          {voiceCommandsAvailable ? (
-            <p className="text-white/60 text-[16px] font-ui text-center">
-              {t('voiceMode.sayCommand')}
-            </p>
-          ) : (
-            <p className="text-white/60 text-[16px] font-ui text-center">
-              {t('voiceMode.offlineHint')}
-            </p>
-          )}
+          <p role="status" className="text-white/70 text-[16px] font-ui text-center">
+            {t(!isOnline ? 'voiceMode.offlineHint'
+              : voiceCommandStatus === 'network' ? 'voiceMode.serviceUnavailable'
+              : voiceCommandStatus === 'unavailable' ? 'voiceMode.unavailable'
+              : isListening ? 'voiceMode.sayCommand'
+              : 'voiceMode.waiting')}
+          </p>
+        </div>
         </div>
       </div>
 
       {/* Primary Bottom Controls */}
-      <div className="w-full max-w-sm flex flex-col gap-3 pb-safe z-10">
+      <div className="w-full max-w-sm shrink-0 flex flex-col gap-3">
         {/* Next Step */}
         <button
           onClick={handleNext}

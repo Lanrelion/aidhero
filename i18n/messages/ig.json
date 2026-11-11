@@ -190,6 +190,9 @@
   },
   "voiceMode": {
     "sayCommand": "Kwu: gaa n'ihu, laghachi azụ, megharịa",
+    "waiting": "Chere ka nzọụkwụ ahụ gwụ tupu i kwuo okwu.",
+    "unavailable": "Iwu olu adịghị. Jiri bọtịnụ.",
+    "serviceUnavailable": "Enweghị ike ijikọ na ọrụ olu. Nwalee ihe nchọgharị ọzọ ma ọ bụ jiri bọtịnụ.",
     "offlineHint": "Iwu olu chọrọ ịntanetị — jiri bọtịnụ ma ọ bụ gaa n'ihu n'onwe ya"
   }
 }

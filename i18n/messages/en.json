@@ -190,6 +190,9 @@
   },
   "voiceMode": {
     "sayCommand": "Say: next, back, repeat",
+    "waiting": "Wait for the step to finish before speaking.",
+    "unavailable": "Voice commands are unavailable. Use the buttons.",
+    "serviceUnavailable": "Could not connect to the speech service. Try another browser or use the buttons.",
     "offlineHint": "Voice commands need internet — use buttons or auto-advance"
   }
 }

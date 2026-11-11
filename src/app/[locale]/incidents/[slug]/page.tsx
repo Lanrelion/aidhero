@@ -72,7 +72,7 @@ export default async function IncidentDetailPage({
         {t(`rescue.severity.${scenario.severity}`) || scenario.severity}
       </div>
 
-      <div className="flex-1 p-4 pb-24 max-w-2xl mx-auto w-full flex flex-col gap-6">
+      <div className="flex-1 p-4 pb-28 max-w-2xl mx-auto w-full flex flex-col gap-6">
         
         {/* Title */}
         <h1 className="text-h1 font-display font-bold text-text-primary leading-tight">
