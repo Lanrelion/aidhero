@@ -2,16 +2,18 @@
 
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { Play, Square } from 'lucide-react';
-import { useTranslations, useLocale } from 'next-intl';
+import { useTranslations } from 'next-intl';
 import { TTSManager } from '@/lib/tts/TTSManager';
+import { getStepNarration } from '@/lib/tts/stepNarration';
+import { useTTS } from '@/hooks/useTTS';
 import { useRescueStore } from '@/store/useRescueStore';
-import { useLanguageStore } from '@/store/useLanguageStore';
 import { Locale } from '@/types/index';
 import type { Step } from '@/types/scenario';
 
 interface ReadAllButtonProps {
   scenarioId: string;
   steps: Step[];
+  requestedLocale: Locale;
 }
 
 const LANGUAGE_NAMES: Record<Locale, string> = {
@@ -22,41 +24,42 @@ const LANGUAGE_NAMES: Record<Locale, string> = {
   pcm: 'Pidgin'
 };
 
-export function ReadAllButton({ scenarioId, steps }: ReadAllButtonProps) {
+export function ReadAllButton({ scenarioId, steps, requestedLocale }: ReadAllButtonProps) {
   const t = useTranslations();
-  const routeLocale = useLocale() as Locale;
-  const { language } = useLanguageStore();
-  const currentLang = (language && language !== 'en') ? language : (routeLocale || language);
   const { currentStepIndex, advanceStep } = useRescueStore();
+  const { speak } = useTTS();
   
   const [isReadingAll, setIsReadingAll] = useState(false);
   
-  // Ref mirrors state so the async loop can check it without stale closures
-  const isReadingAllRef = useRef(false);
+  const sessionRef = useRef(0);
 
-  const langName = LANGUAGE_NAMES[currentLang] || 'Language';
+  const remainingLocales = new Set(steps.slice(currentStepIndex).map(step => getStepNarration(step, requestedLocale).locale));
+  const firstLocale = remainingLocales.values().next().value ?? requestedLocale;
+  const playLabel = remainingLocales.size > 1
+    ? t('rescue.readAllMixed')
+    : `${t('rescue.readAll')} ${LANGUAGE_NAMES[firstLocale]}`;
 
-  const startReadingFrom = useCallback(async (startIndex: number) => {
+  const startReadingFrom = useCallback(async (startIndex: number, session: number) => {
     let idx = startIndex;
 
-    while (isReadingAllRef.current && idx < steps.length) {
+    while (sessionRef.current === session && idx < steps.length) {
       const step = steps[idx];
       if (!step) break;
 
-      const text = step.instruction_translations?.[currentLang] || step.instruction;
+      const { text, locale } = getStepNarration(step, requestedLocale);
 
-      // Await the speak() promise — resolves only when speech fully ends
-      await TTSManager.speak(scenarioId, step.id, text, currentLang);
-
-      // If user stopped in the meantime, bail out
-      if (!isReadingAllRef.current) break;
+      const playback = speak(scenarioId, step.id, text, locale);
+      const version = TTSManager.version;
+      const result = await playback;
+      if (result !== 'finished' || sessionRef.current !== session) break;
 
       if (idx < steps.length - 1) {
         // 500ms breathing room between steps
         await new Promise<void>(r => setTimeout(r, 500));
 
         // Still running after the pause?
-        if (!isReadingAllRef.current) break;
+        if (sessionRef.current !== session || TTSManager.version !== version ||
+            useRescueStore.getState().currentStepIndex !== idx) break;
 
         advanceStep();
         idx++;
@@ -66,29 +69,26 @@ export function ReadAllButton({ scenarioId, steps }: ReadAllButtonProps) {
       }
     }
 
-    // Always clean up
-    isReadingAllRef.current = false;
-    setIsReadingAll(false);
-  }, [scenarioId, steps, currentLang, advanceStep]);
+    if (sessionRef.current === session) setIsReadingAll(false);
+  }, [scenarioId, steps, requestedLocale, advanceStep, speak]);
 
   // Clean up on unmount
   useEffect(() => {
     return () => {
-      isReadingAllRef.current = false;
+      sessionRef.current++;
     };
   }, []);
 
   const handleToggle = () => {
-    if (isReadingAllRef.current) {
+    const session = ++sessionRef.current;
+    if (isReadingAll) {
       // Stop
-      isReadingAllRef.current = false;
       setIsReadingAll(false);
       TTSManager.stop();
     } else {
       // Start from current step
-      isReadingAllRef.current = true;
       setIsReadingAll(true);
-      startReadingFrom(currentStepIndex);
+      void startReadingFrom(currentStepIndex, session);
     }
   };
 
@@ -96,7 +96,7 @@ export function ReadAllButton({ scenarioId, steps }: ReadAllButtonProps) {
     <button 
       onClick={handleToggle}
       className="flex items-center justify-center gap-3 w-full min-h-[56px] rounded-2xl bg-action text-white font-bold text-body-lg shadow-action active:scale-[0.98] transition-transform mb-6"
-      aria-label={isReadingAll ? "Stop reading all" : `Read all steps in ${langName}`}
+      aria-label={isReadingAll ? "Stop reading all" : playLabel}
     >
       {isReadingAll ? (
         <>
@@ -106,7 +106,7 @@ export function ReadAllButton({ scenarioId, steps }: ReadAllButtonProps) {
       ) : (
         <>
           <Play className="w-5 h-5 fill-current" />
-          {t('rescue.readAll') || "Read all steps in"} {langName}
+          {playLabel}
         </>
       )}
     </button>

@@ -15,6 +15,9 @@
     "voiceSearchHint": "example \"Heart Attack\", \"Fire Burn\", \"Bleeding\""
   },
   "rescue": {
+    "stepEnglishFallback": "Dis step no dey for di language wey you choose. AidHero go show and read am for English.",
+    "readAllMixed": "Read all di steps (use English where e dey needed)",
+    "playbackUnavailable": "Audio no play. Read wetin dey for screen.",
     "startGuided": "Start Step-by-Step Rescue",
     "quickSteps": "Sharp Steps",
     "stepXOfY": "Step {step} out of {total}",
@@ -93,6 +96,8 @@
     "back": "Back"
   },
   "settings": {
+    "recordedNarrationAvailability": "Some steps get recording. Di other steps need voice wey match di language for your device.",
+    "noDeviceVoice": "No voice for device",
     "language": "Language",
     "textSize": "How Text Big Reach",
     "contrast": "Color Brightness",

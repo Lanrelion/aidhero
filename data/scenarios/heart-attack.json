@@ -1,8 +1,8 @@
 {
   "id": "heart-attack",
   "slug": "heart-attack",
-  "content_version": 1,
-  "content_version_date": "2026-06-05T16:34:44.547Z",
+  "content_version": 2,
+  "content_version_date": "2026-11-17T00:20:24.589Z",
   "category": "cardiac",
   "title": "Heart Attack",
   "title_translations": {
@@ -81,7 +81,7 @@
       "instruction": "Call emergency services or take them to the nearest hospital immediately.",
       "instruction_translations": {
         "en": "Call emergency services or take them to the nearest hospital immediately.",
-        "ha": "[NEEDS_REVIEW] Call emergency services or take them to the nearest hospital immediately.",
+        "ha": "Kira ayyukan gaggawa ko kai su asibiti mafi kusa nan da nan.",
         "ig": "[NEEDS_REVIEW] Call emergency services or take them to the nearest hospital immediately.",
         "yo": "[NEEDS_REVIEW] Call emergency services or take them to the nearest hospital immediately.",
         "pcm": "[NEEDS_REVIEW] Call emergency services or take them to the nearest hospital immediately."
@@ -93,7 +93,7 @@
       "instruction": "Have the person sit down, rest, and try to keep calm.",
       "instruction_translations": {
         "en": "Have the person sit down, rest, and try to keep calm.",
-        "ha": "[NEEDS_REVIEW] Have the person sit down, rest, and try to keep calm.",
+        "ha": "Sa mutumin ya zauna, ya huta, kuma ya yi ƙoƙarin kwantar da hankalinsa.",
         "ig": "[NEEDS_REVIEW] Have the person sit down, rest, and try to keep calm.",
         "yo": "[NEEDS_REVIEW] Have the person sit down, rest, and try to keep calm.",
         "pcm": "[NEEDS_REVIEW] Have the person sit down, rest, and try to keep calm."
@@ -105,7 +105,7 @@
       "instruction": "Loosen any tight clothing.",
       "instruction_translations": {
         "en": "Loosen any tight clothing.",
-        "ha": "[NEEDS_REVIEW] Loosen any tight clothing.",
+        "ha": "Sassauta duk wani sutura mai matse jiki.",
         "ig": "[NEEDS_REVIEW] Loosen any tight clothing.",
         "yo": "[NEEDS_REVIEW] Loosen any tight clothing.",
         "pcm": "[NEEDS_REVIEW] Loosen any tight clothing."
@@ -117,7 +117,7 @@
       "instruction": "Ask if they take any chest pain medication, such as nitroglycerin, and help them take it.",
       "instruction_translations": {
         "en": "Ask if they take any chest pain medication, such as nitroglycerin, and help them take it.",
-        "ha": "[NEEDS_REVIEW] Ask if they take any chest pain medication, such as nitroglycerin, and help them take it.",
+        "ha": "Tambaya ko suna shan wani maganin ciwon ƙirji, kamar nitroglycerin, sannan a taimaka musu su sha.",
         "ig": "[NEEDS_REVIEW] Ask if they take any chest pain medication, such as nitroglycerin, and help them take it.",
         "yo": "[NEEDS_REVIEW] Ask if they take any chest pain medication, such as nitroglycerin, and help them take it.",
         "pcm": "[NEEDS_REVIEW] Ask if they take any chest pain medication, such as nitroglycerin, and help them take it."
@@ -129,7 +129,7 @@
       "instruction": "If the person becomes unconscious and unresponsive, begin CPR.",
       "instruction_translations": {
         "en": "If the person becomes unconscious and unresponsive, begin CPR.",
-        "ha": "[NEEDS_REVIEW] If the person becomes unconscious and unresponsive, begin CPR.",
+        "ha": "Idan mutumin ya suma kuma bai amsa ba, fara CPR.",
         "ig": "[NEEDS_REVIEW] If the person becomes unconscious and unresponsive, begin CPR.",
         "yo": "[NEEDS_REVIEW] If the person becomes unconscious and unresponsive, begin CPR.",
         "pcm": "[NEEDS_REVIEW] If the person becomes unconscious and unresponsive, begin CPR."

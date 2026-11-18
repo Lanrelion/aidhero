@@ -1,6 +1,6 @@
 "use client";
 
-import { use, useEffect, useState } from 'react';
+import { use, useEffect, useMemo, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { ChevronLeft, Phone, Mic, Check } from 'lucide-react';
@@ -8,11 +8,15 @@ import { ChevronLeft, Phone, Mic, Check } from 'lucide-react';
 import { useRescueStore } from '@/store/useRescueStore';
 import { useOfflineStore } from '@/store/useOfflineStore';
 import { getScenario } from '@/lib/data/scenarios';
+import { getLocalizedRescueSteps } from '@/lib/data/rescueStepTranslations';
 import { getPrimaryEmergencyNumber } from '@/lib/data/emergencyNumbers';
 import { StepCard } from '@/components/rescue/StepCard';
+import { VoiceMode } from '@/components/rescue/VoiceMode';
 import { TTSProvider } from '@/components/tts/TTSProvider';
+import { TTSManager, type PlaybackResult } from '@/lib/tts/TTSManager';
+import { getStepNarration } from '@/lib/tts/stepNarration';
+import { useLanguageStore } from '@/store/useLanguageStore';
 import { ReadAllButton } from '@/components/tts/ReadAllButton';
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { Locale } from '@/types';
 import { TrustSignal } from '@/components/emergency/TrustSignal';
@@ -23,11 +27,8 @@ const pendingInstructionVariants = new Set([
   'cardiac-arrest:recovery',
   'drowning:recovery',
   'choking-child:cough',
+  'heart-attack:unconscious',
 ]);
-
-const VoiceMode = dynamic(() => import('@/components/rescue/VoiceMode').then(mod => mod.VoiceMode), {
-  ssr: false,
-});
 
 interface StepsPageProps {
   params: Promise<{ locale: Locale; slug: string }>;
@@ -41,11 +42,13 @@ export default function StepsPage({ params }: StepsPageProps) {
   
   const variant = searchParams.get('variant');
   const scenario = getScenario(slug);
+  const localizedSteps = useMemo(() => scenario ? getLocalizedRescueSteps(scenario) : [], [scenario]);
   
   const { currentStepIndex, activeScenario, advanceStep, setVoiceMode, startRescue } = useRescueStore();
   const { detectedState } = useOfflineStore();
   const [mounted, setMounted] = useState(false);
-  const [voiceModeOpen, setVoiceModeOpen] = useState(false);
+  const [voicePlayback, setVoicePlayback] = useState<Promise<PlaybackResult> | null>(null);
+  const language = useLanguageStore(state => state.language);
 
   useEffect(() => {
     setMounted(true);
@@ -63,7 +66,7 @@ export default function StepsPage({ params }: StepsPageProps) {
   }
 
   // Fallback variant logic: if step has variant property (not currently in schema) we filter, else all
-  let stepsToRender = scenario.steps;
+  let stepsToRender = localizedSteps;
   if (variant && stepsToRender.some(s => (s as any).variant === variant)) {
     stepsToRender = stepsToRender.filter(s => (s as any).variant === variant);
   }
@@ -80,6 +83,8 @@ export default function StepsPage({ params }: StepsPageProps) {
   const effectiveStepIndex = activeScenario === slug ? currentStepIndex : 0;
   const safeStepIndex = Math.min(Math.max(0, effectiveStepIndex), stepsToRender.length - 1);
   const currentStep = stepsToRender[safeStepIndex];
+  const requestedLocale = language && language !== 'en' ? language : locale;
+  const narration = getStepNarration(currentStep, requestedLocale);
   const isLastStep = safeStepIndex === stepsToRender.length - 1;
   const progressPercentage = ((safeStepIndex + 1) / stepsToRender.length) * 100;
   
@@ -100,7 +105,7 @@ export default function StepsPage({ params }: StepsPageProps) {
 
   const handleVoiceMode = () => {
     setVoiceMode(true);
-    setVoiceModeOpen(true);
+    setVoicePlayback(TTSManager.speak(scenario.id, currentStep.id, narration.text, narration.locale));
   };
 
   // Don't render until mounted to avoid hydration mismatch with useSearchParams
@@ -127,12 +132,14 @@ export default function StepsPage({ params }: StepsPageProps) {
   return (
     <TTSProvider>
       {/* VoiceMode full-screen overlay */}
-      {voiceModeOpen && (
+      {voicePlayback && (
         <VoiceMode
           scenarioId={scenario.id}
           steps={stepsToRender}
+          requestedLocale={requestedLocale}
+          initialPlayback={voicePlayback}
           onClose={() => {
-            setVoiceModeOpen(false);
+            setVoicePlayback(null);
             setVoiceMode(false);
           }}
         />
@@ -166,7 +173,10 @@ export default function StepsPage({ params }: StepsPageProps) {
       </header>
 
       <div className="flex-1 flex flex-col px-4 pt-6 max-w-md mx-auto w-full relative">
-        <ReadAllButton scenarioId={scenario.id} steps={stepsToRender} />
+        {narration.locale !== requestedLocale && (
+          <p role="status" className="mb-4 text-text-secondary">{t('rescue.stepEnglishFallback')}</p>
+        )}
+        <ReadAllButton scenarioId={scenario.id} steps={stepsToRender} requestedLocale={requestedLocale} />
         <div 
           key={currentStep.id} 
           className="motion-safe:animate-in motion-safe:slide-in-from-right duration-300 ease-out fill-mode-both w-full"
@@ -175,7 +185,7 @@ export default function StepsPage({ params }: StepsPageProps) {
             scenarioId={scenario.id}
             step={currentStep} 
             stepNumber={safeStepIndex + 1} 
-            locale={locale} 
+            narration={narration}
           />
         </div>
       </div>

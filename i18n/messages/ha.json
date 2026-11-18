@@ -15,6 +15,9 @@
     "voiceSearchHint": "misali \"Ciwon Zuciya\", \"Kone\", \"Zubar Jini\""
   },
   "rescue": {
+    "stepEnglishFallback": "Babu fassarar wannan matakin a harshen da ka zaɓa. AidHero zai nuna shi kuma ya karanta shi da Turanci.",
+    "readAllMixed": "Karanta duk matakai (da Turanci idan ya zama dole)",
+    "playbackUnavailable": "Sauti bai kunna ba. Karanta umarnin da ke kan allo.",
     "startGuided": "Fara Agajin Gaggawa Mai Jagora",
     "quickSteps": "Matakai Masu Sauri",
     "stepXOfY": "Mataki na {step} cikin {total}",
@@ -93,6 +96,8 @@
     "back": "Baya"
   },
   "settings": {
+    "recordedNarrationAvailability": "Akwai rikodin murya don wasu matakai. Sauran matakan suna buƙatar muryar da ta dace a na’urarka.",
+    "noDeviceVoice": "Babu murya a na’urar",
     "language": "Harshe",
     "textSize": "Girmar Rubutu",
     "contrast": "Bambancin Launi",

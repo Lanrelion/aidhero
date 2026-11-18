@@ -1,13 +1,13 @@
 import { Locale } from '@/types';
-import { getAudioPath } from './audioPath';
+import { getRecordedNarrationPath } from './audioPath';
 
-type Language = Locale;
+export type PlaybackResult = 'finished' | 'stopped' | 'unavailable';
 
 export const VOICE_LANG_MAP: Record<Locale, string[]> = {
   ha: ['ha-NG', 'ha'],
   yo: ['yo-NG', 'yo'],
   ig: ['ig-NG', 'ig'],
-  pcm: ['en-NG', 'en-GB', 'en-US', 'en'],
+  pcm: ['pcm-NG', 'pcm'],
   en: ['en-NG', 'en-GB', 'en-US', 'en'],
 };
 
@@ -27,7 +27,11 @@ export function findBestVoice(lang: Locale): { voice: SpeechSynthesisVoice | nul
     return { voice: null, voiceLang: VOICE_LANG_MAP[lang]?.[0] || 'en-NG' };
   }
 
-  const voices = window.speechSynthesis.getVoices();
+  const availableVoices = window.speechSynthesis.getVoices().filter(voice => lang === 'en' || voice.localService);
+  const localEnglishVoices = lang === 'en'
+    ? availableVoices.filter(voice => voice.localService && /^en(?:[-_]|$)/i.test(voice.lang))
+    : [];
+  const voices = localEnglishVoices.length ? localEnglishVoices : availableVoices;
   const preferredLangs = VOICE_LANG_MAP[lang] || ['en-NG'];
 
   // 1. Try exact match in preference order
@@ -45,14 +49,14 @@ export function findBestVoice(lang: Locale): { voice: SpeechSynthesisVoice | nul
   // 2. Try prefix match (e.g., 'ha-' or 'yo-')
   for (const code of preferredLangs) {
     const baseCode = code.split('-')[0].toLowerCase();
-    const prefix = voices.find((v) => v.lang.toLowerCase().startsWith(baseCode));
+    const prefix = voices.find((v) => v.lang.toLowerCase().split(/[-_]/)[0] === baseCode);
     if (prefix) {
       return { voice: prefix, voiceLang: prefix.lang };
     }
   }
 
   // 3. Fallback to primary lang code string
-  return { voice: null, voiceLang: preferredLangs[0] };
+  return { voice: null, voiceLang: lang === 'en' ? 'en-US' : preferredLangs[0] };
 }
 
 /**
@@ -69,26 +73,13 @@ export function checkVoiceAvailability(): Record<Locale, VoiceAvailability> {
     return result as Record<Locale, VoiceAvailability>;
   }
 
-  const voices = window.speechSynthesis.getVoices();
-
   for (const l of locales) {
-    const preferredLangs = VOICE_LANG_MAP[l];
-    let matchedVoice: SpeechSynthesisVoice | undefined;
-
-    for (const code of preferredLangs) {
-      const normalizedCode = code.toLowerCase().replace('_', '-');
-      matchedVoice = voices.find((v) => {
-        const vLang = v.lang.toLowerCase().replace('_', '-');
-        return vLang === normalizedCode || (l !== 'pcm' && vLang.startsWith(code.split('-')[0].toLowerCase()));
-      });
-      if (matchedVoice) break;
-    }
-
+    const { voice, voiceLang } = findBestVoice(l);
     result[l] = {
       locale: l,
-      supported: !!matchedVoice,
-      voiceName: matchedVoice?.name,
-      langCode: matchedVoice?.lang || preferredLangs[0],
+      supported: Boolean(voice),
+      voiceName: voice?.name,
+      langCode: voiceLang,
     };
   }
 
@@ -96,168 +87,118 @@ export function checkVoiceAvailability(): Record<Locale, VoiceAvailability> {
 }
 
 class TTSManagerClass {
-  private currentAudio: HTMLAudioElement | null = null;
+  private audio: HTMLAudioElement | null = null;
+  private cancelPlayback: (() => void) | null = null;
+  private playbackVersion = 0;
   private _isSpeaking = false;
 
-  // Event callbacks
-  public onEnd?: () => void;
   public onStateChange?: (isSpeaking: boolean) => void;
   public onWordBoundary?: (charIndex: number) => void;
 
   private setSpeakingState(state: boolean) {
     this._isSpeaking = state;
-    if (this.onStateChange) {
-      this.onStateChange(state);
-    }
-    if (!state && this.onWordBoundary) {
-      // Reset word boundary on stop
-      this.onWordBoundary(-1);
-    }
+    this.onStateChange?.(state);
+    if (!state) this.onWordBoundary?.(-1);
   }
 
   get speaking(): boolean {
     return this._isSpeaking;
   }
 
-  async speak(
-    scenarioId: string,
-    stepId: number,
-    text: string,
-    lang: Language
-  ): Promise<void> {
-    console.log(`[TTSManager] lang=${lang}, scenario=${scenarioId}, step=${stepId}`);
-    await this.stop();
-    if (this.onWordBoundary) this.onWordBoundary(0);
-
-    if (lang === 'en') {
-      console.log('[TTSManager] English — using Web Speech');
-      return this.webSpeechSpeak(text, 'en-NG');
-    }
-
-    const audioPath = getAudioPath(scenarioId, lang, stepId);
-    console.log(`[TTSManager] Attempting: ${audioPath}`);
-
-    // Test if file is reachable before attempting play
-    try {
-      const testFetch = await fetch(audioPath, { method: 'HEAD' });
-      console.log(`[TTSManager] HEAD ${audioPath} → ${testFetch.status}`);
-    } catch (fetchErr) {
-      console.error(`[TTSManager] HEAD fetch failed:`, fetchErr);
-    }
-
-    return this.playStaticAudio(audioPath, text, lang);
+  get version(): number {
+    return this.playbackVersion;
   }
 
-  private playStaticAudio(audioPath: string, fallbackText: string, lang: Language): Promise<void> {
-    return new Promise((resolve) => {
-      const audio = new Audio(audioPath);
-      this.currentAudio = audio;
+  speak(scenarioId: string, stepId: number, text: string, lang: Locale, highlightWords = true): Promise<PlaybackResult> {
+    this.stop();
+    this.onWordBoundary?.(0);
 
-      audio.oncanplaythrough = () => console.log(`[TTSManager] canplaythrough fired`);
+    // Start playback in the caller's tap handler so mobile browsers accept it.
+    const recording = getRecordedNarrationPath(scenarioId, lang, stepId, text);
+    return recording ? this.playStaticAudio(recording, text, lang) : this.webSpeechSpeak(text, lang, highlightWords);
+  }
 
-      audio.onended = () => {
-        console.log('[TTSManager] ended');
+  private playStaticAudio(path: string, text: string, lang: Locale): Promise<PlaybackResult> {
+    return new Promise(resolve => {
+      // WebKit grants playback permission per media element. Reuse it between steps.
+      const audio = this.audio ??= new Audio();
+      const finish = (result: PlaybackResult) => {
+        if (this.cancelPlayback !== cancel) return;
+        this.cancelPlayback = null;
+        audio.onended = null;
+        audio.onerror = null;
+        if (result !== 'finished') audio.pause();
+        if (result === 'unavailable') {
+          resolve(this.webSpeechSpeak(text, lang));
+          return;
+        }
         this.setSpeakingState(false);
-        if (this.onEnd) this.onEnd();
-        resolve();
+        resolve(result);
       };
-
-      audio.onerror = async (e) => {
-        console.error('[TTSManager] onerror fired:', e, audio.error?.message, audio.error?.code);
-        // File missing or corrupt — fall back to Web Speech API
-        this.currentAudio = null;
-        await this.webSpeechSpeak(fallbackText, lang);
-        resolve();
-      };
-
-      // Attempt to play immediately
+      const cancel = () => finish('stopped');
+      this.cancelPlayback = cancel;
+      audio.onended = () => finish('finished');
+      audio.onerror = () => finish('unavailable');
+      audio.src = path;
       this.setSpeakingState(true);
-      audio.load();
-      audio.play().catch(async (e) => {
-        console.error('[TTSManager] play() rejected:', e.message);
-        // play() rejected (autoplay policy, missing file, etc.)
-        this.currentAudio = null;
-        await this.webSpeechSpeak(fallbackText, lang);
-        resolve();
-      });
+      void audio.play().catch(() => finish('unavailable'));
     });
   }
 
-  private currentUtterance: SpeechSynthesisUtterance | null = null;
+  private webSpeechSpeak(text: string, lang: Locale, highlightWords = true): Promise<PlaybackResult> {
+    const synthesis = window.speechSynthesis;
+    if (!synthesis || typeof SpeechSynthesisUtterance === 'undefined') {
+      this.setSpeakingState(false);
+      return Promise.resolve('unavailable');
+    }
 
-  public webSpeechSpeak(text: string, lang: Language | string): Promise<void> {
-    return new Promise((resolve) => {
-      if (typeof window === 'undefined' || !('speechSynthesis' in window)) {
-        console.warn('[TTSManager] Web Speech API not supported in this browser');
-        return resolve();
-      }
-
-      const localeKey = (
-        typeof lang === 'string' && ['en', 'ha', 'ig', 'yo', 'pcm'].includes(lang)
-          ? lang
-          : 'en'
-      ) as Locale;
-
-      const { voice, voiceLang } = findBestVoice(localeKey);
-
-      console.log(`[TTSManager] Speaking in "${localeKey}". Selected voice:`, {
-        targetLocale: localeKey,
-        selectedVoice: voice ? `${voice.name} (${voice.lang})` : 'Browser Default',
-        utteranceLang: voice ? voice.lang : voiceLang,
-      });
-
+    const { voice, voiceLang } = findBestVoice(lang);
+    if (lang !== 'en' && !voice) {
+      this.setSpeakingState(false);
+      return Promise.resolve('unavailable');
+    }
+    return new Promise(resolve => {
       const utterance = new SpeechSynthesisUtterance(text);
-      this.currentUtterance = utterance; // Prevent garbage collection bug
       utterance.lang = voiceLang;
-      if (voice) {
-        utterance.voice = voice;
+      if (voice) utterance.voice = voice;
+
+      const finish = (result: PlaybackResult) => {
+        if (this.cancelPlayback !== cancel) return;
+        this.cancelPlayback = null;
+        clearTimeout(startTimeout);
+        utterance.onstart = null;
+        utterance.onboundary = null;
+        utterance.onend = null;
+        utterance.onerror = null;
+        if (result !== 'finished') synthesis.cancel();
+        this.setSpeakingState(false);
+        resolve(result);
+      };
+      const cancel = () => finish('stopped');
+      const startTimeout = setTimeout(() => finish('unavailable'), 5000);
+      this.cancelPlayback = cancel;
+
+      utterance.onstart = () => clearTimeout(startTimeout);
+      utterance.onboundary = event => {
+        if (highlightWords && this.cancelPlayback === cancel && event.name === 'word') {
+          this.onWordBoundary?.(event.charIndex);
+        }
+      };
+      utterance.onend = () => finish('finished');
+      utterance.onerror = () => finish('unavailable');
+
+      this.setSpeakingState(true);
+      try {
+        synthesis.speak(utterance);
+      } catch {
+        finish('unavailable');
       }
-
-      utterance.onstart = () => {
-        this.setSpeakingState(true);
-      };
-
-      utterance.onboundary = (e) => {
-        if (e.name === 'word' && this.onWordBoundary) {
-          this.onWordBoundary(e.charIndex);
-        }
-      };
-
-      utterance.onend = () => {
-        this.setSpeakingState(false);
-        if (this.onEnd) this.onEnd();
-        resolve();
-      };
-
-      utterance.onerror = (e) => {
-        // Ignore "interrupted" errors which happen on explicit cancel
-        if (e.error !== 'interrupted' && e.error !== 'canceled') {
-          console.error('[TTSManager] Speech synthesis error', e);
-        }
-        this.setSpeakingState(false);
-        resolve(); // resolve anyway to avoid hanging promises
-      };
-
-      window.speechSynthesis.speak(utterance);
     });
   }
 
-  async stop(): Promise<void> {
-    // Stop static audio
-    if (this.currentAudio) {
-      this.currentAudio.pause();
-      this.currentAudio.currentTime = 0;
-      this.currentAudio = null;
-    }
-
-    // Stop web speech
-    if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-      if (window.speechSynthesis.speaking || window.speechSynthesis.pending) {
-        window.speechSynthesis.cancel();
-      }
-    }
-
-    this.setSpeakingState(false);
+  stop(): void {
+    this.playbackVersion++;
+    this.cancelPlayback?.();
   }
 }
 

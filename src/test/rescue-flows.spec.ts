@@ -66,7 +66,7 @@ test('all incident answer paths navigate to steps on mobile', async ({ page }) =
       await expect(page).toHaveURL(new RegExp(`/en/incidents/${targetSlug}/steps\\?variant=`));
       await expect(page.getByText('Flow not found', { exact: false })).toHaveCount(0);
       await expect(page.getByText('No steps available.', { exact: true })).toHaveCount(0);
-      const pendingBranches = ['cardiac-arrest:recovery', 'drowning:recovery', 'choking-child:cough'];
+      const pendingBranches = ['cardiac-arrest:recovery', 'drowning:recovery', 'choking-child:cough', 'heart-attack:unconscious'];
       if (pendingBranches.includes(`${scenario.slug}:${destination.variant}`)) {
         await expect(page.getByRole('status').getByText('Pending medical review', { exact: true })).toBeVisible();
         await expect(page.locator('main h3')).toHaveCount(0);

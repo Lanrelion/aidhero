@@ -42,7 +42,7 @@ export function LanguageSheet({ open, onOpenChange }: LanguageSheetProps) {
     
     // Swap locale prefix in current path
     const newPath = pathname.replace(`/${currentLocale}`, `/${lang}`);
-    router.push(newPath);
+    router.push(`${newPath}${window.location.search}${window.location.hash}`);
   };
 
   return (

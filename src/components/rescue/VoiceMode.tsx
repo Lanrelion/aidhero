@@ -2,11 +2,11 @@
 
 import React, { useEffect, useRef, useState, useCallback, useEffectEvent } from 'react';
 import { X, Pause, Play, SkipBack, SkipForward, SkipBack as PrevIcon, Repeat, MicOff } from 'lucide-react';
-import { useTranslations, useLocale } from 'next-intl';
-import { TTSManager } from '@/lib/tts/TTSManager';
+import { useTranslations } from 'next-intl';
+import { TTSManager, type PlaybackResult } from '@/lib/tts/TTSManager';
+import { getStepNarration } from '@/lib/tts/stepNarration';
 import { useRescueStore } from '@/store/useRescueStore';
 import { useOfflineStore } from '@/store/useOfflineStore';
-import { useLanguageStore } from '@/store/useLanguageStore';
 import { getPrimaryEmergencyNumber } from '@/lib/data/emergencyNumbers';
 import { WordHighlight } from '@/components/tts/WordHighlight';
 import { WaveformVisualizer } from '@/components/rescue/WaveformVisualizer';
@@ -17,6 +17,8 @@ import type { Locale } from '@/types';
 interface VoiceModeProps {
   scenarioId: string;
   steps: Step[];
+  requestedLocale: Locale;
+  initialPlayback: Promise<PlaybackResult>;
   onClose: () => void;
 }
 
@@ -75,16 +77,16 @@ function matchCommand(transcript: string): CommandType | null {
   return null;
 }
 
-export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
+export function VoiceMode({
+  scenarioId, steps, requestedLocale, initialPlayback, onClose,
+}: VoiceModeProps) {
   const t = useTranslations();
-  const routeLocale = useLocale() as Locale;
-  const { language } = useLanguageStore();
-  const currentLang = (language && language !== 'en') ? language : (routeLocale || language);
   const { currentStepIndex, advanceStep, jumpToStep } = useRescueStore();
   const { detectedState, isOnline } = useOfflineStore();
   const primaryNumber = getPrimaryEmergencyNumber(detectedState);
 
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [audioUnavailable, setAudioUnavailable] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const [voiceCommandStatus, setVoiceCommandStatus] = useState<'available' | 'unavailable' | 'network'>('unavailable');
   const [isListening, setIsListening] = useState(false);
@@ -129,7 +131,7 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
   }, []);
 
   // ─── waitForAdvance Promise (Awaits Voice Command, UI Next, or Step Duration Countdown) ───
-  const waitForAdvance = useCallback((mySession: number): Promise<boolean> => {
+  const waitForAdvance = useCallback((mySession: number, allowAutoAdvance: boolean): Promise<boolean> => {
     return new Promise<boolean>((resolve) => {
       let timerId: ReturnType<typeof setInterval> | null = null;
       let micTimerId: ReturnType<typeof setTimeout> | null = null;
@@ -178,7 +180,7 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
       }
 
       // 2. Countdown Timer based on user's preference (e.g. 15s / 30s / 60s)
-      if (stepDurationPref !== 'manual') {
+      if (allowAutoAdvance && stepDurationPref !== 'manual') {
         let remaining = typeof stepDurationPref === 'number' ? stepDurationPref : 30;
         setTimeRemaining(remaining);
         setIsTimerActive(true);
@@ -201,7 +203,7 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
   }, [stepDurationPref]);
 
   // ─── Core Loop (TTS -> Mutual Exclusion (600ms) -> waitForAdvance -> Advance) ───
-  const runLoop = useCallback(async (fromIndex: number) => {
+  const runLoop = useCallback(async (fromIndex: number, firstPlayback?: Promise<PlaybackResult>) => {
     const mySession = ++sessionRef.current; // Claim this session counter
     let idx = safeIndex(fromIndex);
     loopIndexRef.current = idx;
@@ -212,23 +214,25 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
       const step = steps[idx];
       if (!step) break;
 
-      const text = step.instruction_translations?.[currentLang] || step.instruction;
+      const { text, locale } = getStepNarration(step, requestedLocale);
 
       // 1. Mutual exclusion: Close mic BEFORE TTS starts
       stopListeningRef.current?.();
       clearAutoAdvanceTimer();
 
       setIsSpeaking(true);
+      setAudioUnavailable(false);
       isSpeakingRef.current = true;
 
       // Play step audio / synthesis
-      await TTSManager.speak(scenarioId, step.id, text, currentLang);
-
-      setIsSpeaking(false);
-      isSpeakingRef.current = false;
+      const result = await (firstPlayback ?? TTSManager.speak(scenarioId, step.id, text, locale));
+      firstPlayback = undefined;
 
       // Check session validity after async speak
       if (!activeRef.current || sessionRef.current !== mySession || pausedRef.current) return;
+      setIsSpeaking(false);
+      isSpeakingRef.current = false;
+      setAudioUnavailable(result === 'unavailable');
 
       if (idx >= steps.length - 1) {
         // Last step reached: keep mic listening for restart/repeat/emergency, but do not auto-advance
@@ -243,7 +247,7 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
       }
 
       // 2. Wait for user action (voice command, Next button) OR user's configured duration timer
-      const advanced = await waitForAdvance(mySession);
+      const advanced = await waitForAdvance(mySession, result === 'finished');
       if (!advanced || sessionRef.current !== mySession || !activeRef.current || pausedRef.current) {
         return; // Session invalidated or cancelled
       }
@@ -253,11 +257,11 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
       idx += 1;
       loopIndexRef.current = idx;
     }
-  }, [scenarioId, steps, currentLang, advanceStep, clearAutoAdvanceTimer, waitForAdvance]);
+  }, [scenarioId, steps, requestedLocale, advanceStep, clearAutoAdvanceTimer, waitForAdvance]);
 
   // ─── Restart loop from a new index ───
   const restartFrom = useCallback((newIdx: number) => {
-    const session = ++sessionRef.current;
+    ++sessionRef.current;
     loopIndexRef.current = newIdx;
     if (advanceResolverRef.current) {
       advanceResolverRef.current(false);
@@ -265,18 +269,18 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
     clearAutoAdvanceTimer();
     TTSManager.stop();
     stopListeningRef.current?.();
-    setTimeout(() => {
-      if (activeRef.current && !pausedRef.current && sessionRef.current === session) {
-        runLoop(safeIndex(newIdx));
-      }
-    }, 80);
+    if (activeRef.current && !pausedRef.current) runLoop(safeIndex(newIdx));
   }, [runLoop, clearAutoAdvanceTimer]);
 
   // ─── Mount: Start Loop ───
   useEffect(() => {
     activeRef.current = true;
+    const mountSession = sessionRef.current;
+    let started = false;
     const startTimer = setTimeout(() => {
-      runLoop(currentStepIndex);
+      if (sessionRef.current !== mountSession) return;
+      started = true;
+      runLoop(currentStepIndex, initialPlayback);
     }, 0);
 
     return () => {
@@ -287,7 +291,7 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
         advanceResolverRef.current(false);
       }
       clearAutoAdvanceTimer();
-      TTSManager.stop();
+      if (started) TTSManager.stop();
       stopListeningRef.current?.();
     };
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
@@ -472,6 +476,8 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
       }
       clearAutoAdvanceTimer();
       TTSManager.stop();
+      setIsSpeaking(false);
+      isSpeakingRef.current = false;
       stopListeningRef.current?.();
     }
   };
@@ -521,7 +527,7 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
   const displayIndex = safeIndex(currentStepIndex);
   const currentStep = steps[displayIndex];
   if (!currentStep) return null;
-  const instruction = currentStep.instruction_translations?.[currentLang] || currentStep.instruction;
+  const narration = getStepNarration(currentStep, requestedLocale);
 
   // SVG ring progress calculations
   const timerMax = typeof stepDurationPref === 'number' ? stepDurationPref : 30;
@@ -566,12 +572,15 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
         
         {/* Instruction Text & Word Highlight */}
         <div aria-live="assertive" aria-atomic="true" className="text-center w-full">
+          {narration.locale !== requestedLocale && (
+            <p className="mb-2 text-white/80">{t('rescue.stepEnglishFallback')}</p>
+          )}
           <p className="text-white/60 text-sm font-semibold uppercase tracking-widest mb-4">
             {t('rescue.stepXOfY', { step: displayIndex + 1, total: steps.length }) ||
               `Step ${displayIndex + 1} of ${steps.length}`}
           </p>
-          <div className="text-white font-bold text-[28px] leading-tight min-h-[120px] flex items-center justify-center">
-            <WordHighlight text={instruction} />
+          <div lang={narration.locale} className="text-white font-bold text-[28px] leading-tight min-h-[120px] flex items-center justify-center">
+            <WordHighlight text={narration.text} />
           </div>
         </div>
 
@@ -623,6 +632,9 @@ export function VoiceMode({ scenarioId, steps, onClose }: VoiceModeProps) {
         {/* Voice Status & Visual Indicators */}
         <div className="flex flex-col items-center justify-center gap-3">
           <WaveformVisualizer isActive={isSpeaking || isListening} />
+          {audioUnavailable && (
+            <p role="status" className="text-white/70 text-center">{t('rescue.playbackUnavailable')}</p>
+          )}
           <p role="status" className="text-white/70 text-[16px] font-ui text-center">
             {t(!isOnline ? 'voiceMode.offlineHint'
               : voiceCommandStatus === 'network' ? 'voiceMode.serviceUnavailable'

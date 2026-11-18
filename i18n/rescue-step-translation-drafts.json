@@ -1,0 +1,2180 @@
+{
+  "status": "machine_translation_draft",
+  "scope": "Rescue step instructions. Compare each translation with its English source before approving it for the app.",
+  "provider": "Spitch",
+  "locales": {
+    "en": "English source",
+    "ha": "Hausa",
+    "ig": "Igbo",
+    "yo": "Yoruba",
+    "pcm": "Nigerian Pidgin"
+  },
+  "scenarios": [
+    {
+      "slug": "anaphylaxis",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Call 112 immediately.",
+          "translations": {
+            "ha": {
+              "text": "Kira 112 nan da nan."
+            },
+            "ig": {
+              "text": "Kpọọ 112 ozugbo."
+            },
+            "yo": {
+              "text": "Pé 112 lẹ́sẹ̀kẹsẹ̀."
+            },
+            "pcm": {
+              "text": "Abeg call 112 sharp sharp."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "If the person has an adrenaline (epinephrine) auto-injector (EpiPen), use it on the outer thigh immediately.",
+          "translations": {
+            "ha": {
+              "text": "Idan mutumin yana da na'urar allurar adrenaline (epinephrine) mai aiki da kanta (EpiPen), yi amfani da ita a wajen cinyarsa nan da nan."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na onye ahụ nwere ngwaọrụ ntụtụ adrenaline (epinephrine) akpaghị aka (EpiPen), jiri ya tụọ ya n'apata ụkwụ mpụta ozugbo."
+            },
+            "yo": {
+              "text": "Tí ẹni náà bá ní abẹ́rẹ́ adrenaline (epinephrine) aládásílẹ̀ (EpiPen), lò ó sì ìta ìtàn lẹ́sẹ̀kẹsẹ̀."
+            },
+            "pcm": {
+              "text": "If di person get adrenaline (epinephrine) auto-injector (EpiPen), use am for di outside part of dia thigh immediately."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "Lay the person flat with their legs elevated. If breathing is difficult, let them sit up slightly.",
+          "translations": {
+            "ha": {
+              "text": "Kwantar da mutumin ya kwanta a kwance tare da ɗaga ƙafafunsa. Idan numfashi yana da wahala, a bar shi ya ɗan zauna a ɗage."
+            },
+            "ig": {
+              "text": "Dina onye ahụ ala ma bulie ụkwụ ya elu. Ọ bụrụ na iku ume siri ike, hapụ ya ka ọ nọdụ ntakịrị."
+            },
+            "yo": {
+              "text": "Jẹ́ kí ẹni náà dùbúlẹ̀ pélébé pẹ̀lú ẹsẹ̀ rẹ tí a gbé sókè. Bí mímí bá ń sọ̀rọ̀, jẹ́ kí ó jókòó díẹ̀."
+            },
+            "pcm": {
+              "text": "Make the person lie flat and raise their legs. If breathing hard, make dem sit up small."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Remove or avoid the trigger allergen if still present (e.g. remove a bee stinger).",
+          "translations": {
+            "ha": {
+              "text": "Cire ko guji abin da ke haifar da rashin lafiyan idan har yana nan (misali, cire ƙugin zuma)."
+            },
+            "ig": {
+              "text": "Wepụ ma ọ bụ zere ihe na-akpata nfụkasị ahụ ma ọ bụrụ na ọ ka dị (dịka ọmụmaatụ, wepụ ọdụ aesụ)."
+            },
+            "yo": {
+              "text": "Yọ tàbí yàgò fún nkan tí ó fa àléjì náà tí ó bá ṣi wá (fún àpẹẹrẹ, yọ abẹ́rẹ́ oyin kan)."
+            },
+            "pcm": {
+              "text": "Comot or avoid the allergen wey trigger am if e still dey there (for example, comot bee sting)."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "If unconscious and not breathing, begin CPR immediately.",
+          "translations": {
+            "ha": {
+              "text": "Idan ba shi da hayyaci kuma baya numfashi, fara CPR nan da nan."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na onye ahụ amaghị onwe ya ma anaghị eku ume, bido CPR ozugbo."
+            },
+            "yo": {
+              "text": "Tí ẹni náà bá dákú àti pé kò ń mí, bẹ̀rẹ̀ CPR lẹ́sẹ̀kẹsẹ̀."
+            },
+            "pcm": {
+              "text": "If dem no dey conscious and no dey breathe, start CPR immediately."
+            }
+          }
+        },
+        {
+          "id": 6,
+          "en": "If a second EpiPen is available and no improvement in 5 minutes, use it.",
+          "translations": {
+            "ha": {
+              "text": "Idan akwai EpiPen na biyu kuma babu sauƙi bayan minti 5, yi amfani da shi."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na EpiPen nke abụọ dị ma enweghị mmezi n'ime nkeji 5, jiri ya."
+            },
+            "yo": {
+              "text": "Bí EpiPen kejì bá wa tí kò sì sí imuniròsí lẹ́yìn ìṣẹ́jú márùn-ún, lò ó.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "pcm": {
+              "text": "If second EpiPen dey and no improvement after 5 minutes, use am."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "angina",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Help the person sit or lie down in a comfortable position.",
+          "translations": {
+            "ha": {
+              "text": "Taimaka wa mutumin ya zauna ko ya kwanta a wuri mai daɗi."
+            },
+            "ig": {
+              "text": "Nyere onye ahụ aka ịnọdụ ala ma ọ bụ dinara n’ọnọdụ dị ya mma."
+            },
+            "yo": {
+              "text": "Ràn ẹni náà lọ́wọ́ láti jókòó tàbí dùbúlẹ̀ ní ipò tó rọrùn."
+            },
+            "pcm": {
+              "text": "Help the person siddon or lie down for comfortable position."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Loosen any tight clothing around the neck and chest.",
+          "translations": {
+            "ha": {
+              "text": "Sake duk wani matsattsen sutura a wuyan da ƙirji."
+            },
+            "ig": {
+              "text": "Tọpụ uwe ọ bụla siri ike n’olu na n’obi."
+            },
+            "yo": {
+              "text": "Tú aṣọ tí ó mú ní àyíká ọrùn àti àyà wọn sílẹ̀."
+            },
+            "pcm": {
+              "text": "Comot any tight cloth wey dey around your neck and chest."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "If the person has prescribed nitroglycerin, help them take it.",
+          "translations": {
+            "ha": {
+              "text": "Idan an rubuta wa mutumin nitroglycerin, taimaka masa ya sha."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na edepụtara nitroglycerin maka onye ahụ, nyere ha aka ịṅụ ya."
+            },
+            "yo": {
+              "text": "Tí wọ́n bá ti fún ẹni náà ní nitroglycerin, ràn wọ́n lọ́wọ́ láti mú un."
+            },
+            "pcm": {
+              "text": "If person get nitroglycerin wey doctor prescribe, help dem take am."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Keep them calm and still. Do not let them walk around.",
+          "translations": {
+            "ha": {
+              "text": "Ka sa shi ya kwantar da hankali kuma ya zauna ba tare da motsi ba. Kada ka bar shi ya yi yawo."
+            },
+            "ig": {
+              "text": "Mee ka ha nọrọ jụụ ma ghara imegharị. Ekwela ka ha gagharịa gburugburu."
+            },
+            "yo": {
+              "text": "Jẹ́ kí wọ́n balẹ̀ kí wọ́n sì dúró ṣinṣin. Má jẹ́ kí wọ́n máa rìn káàkiri."
+            },
+            "pcm": {
+              "text": "Make dem stay calm and siddon still. No let dem waka around."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "If pain does not improve within 15 minutes, call emergency services immediately.",
+          "translations": {
+            "ha": {
+              "text": "Idan ciwon bai sauƙaƙa cikin minti 15 ba, kira ayyukan gaggawa nan da nan."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na mgbu adịghị akwụsị n’ime nkeji iri na ise, kpọọ ndị ọrụ mberede ozugbo.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "yo": {
+              "text": "Tí ìrora kò bá dínkù láàrin ìṣẹ́jú 15, pé àwọn iṣẹ́ pàjáwìrì lẹ́sẹ̀kẹsẹ̀."
+            },
+            "pcm": {
+              "text": "If pain no better within 15 minutes, call emergency services sharp sharp."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "asthma-attack",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Keep the person calm and help them sit upright. Do not let them lie down.",
+          "translations": {
+            "ha": {
+              "text": "Ka kwantar wa mutumin hankali kuma ka taimaka masa ya zauna a tsaye. Kada ka bar shi ya kwanta."
+            },
+            "ig": {
+              "text": "Mee ka onye ahụ dị jụụ ma nyere ya aka ịnọdụ ala kwụ ọtọ. Ekwela ka ọ dina ala."
+            },
+            "yo": {
+              "text": "Jẹ́ kí ẹni náà balẹ̀, kí ó sì rán an lọ́wọ́ láti jókòó sókè. Má jẹ́ kí ó dùbúlẹ̀."
+            },
+            "pcm": {
+              "text": "Make the person calm and help am siddon upright. No let am lie down."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Help them use their reliever inhaler (usually blue). Give 1 puff every 30–60 seconds, up to 10 puffs.",
+          "translations": {
+            "ha": {
+              "text": "Taimaka musu su yi amfani da inhaler ɗinsu na sauƙaƙa numfashi (yawanci mai launin shuɗi). A ba su feshi 1 duk bayan daƙiƙa 30–60, har zuwa feshi 10."
+            },
+            "ig": {
+              "text": "Nyere ya aka iji inhaler enyemaka ya (nke na-adịkarị acha anụnụ anụnụ). Nye otu puff kwa sekọnd 30–60, ruo puff 10.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "yo": {
+              "text": "Ràn wọ́n lọ́wọ́ láti lo afẹ́fẹ́ ìrànlọ́wọ́ wọn (tí ó sábà máa ń jẹ́ aláwọ̀ búlúù). Fún wọn ní fífẹ̀ kan ní gbogbo ìṣẹ́jú àáyá 30–60, títí dé fífẹ̀ mẹ́wàá.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "pcm": {
+              "text": "Help dem use dia reliever inhaler (normally blue). Give 1 puff every 30–60 seconds, reach 10 puffs."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "If they do not have their inhaler, call 112 immediately.",
+          "translations": {
+            "ha": {
+              "text": "Idan ba su da inhaler nasu, kira 112 nan da nan."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na ha enweghị inhaler ha, kpọọ 112 ozugbo."
+            },
+            "yo": {
+              "text": "Tí wọn kò bá ní afẹ́fẹ́ ìrànlọ́wọ́ wọn, pé 112 lẹ́sẹ̀kẹsẹ̀."
+            },
+            "pcm": {
+              "text": "If dem no get dia inhaler, call 112 immediately."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Stay with them. If they are not better after 15 minutes, call 112.",
+          "translations": {
+            "ha": {
+              "text": "Ka zauna tare da shi. Idan bai ji sauƙi ba bayan minti 15, kira 112."
+            },
+            "ig": {
+              "text": "Nọnyere ha. Ọ bụrụ na ahụ erughị ha ala mgbe nkeji iri na ise gachara, kpọọ 112.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "yo": {
+              "text": "Dúró pẹ̀lú wọn. Bí wọn kò bá yá lẹ́yìn ìṣẹ́jú 15, pé 112."
+            },
+            "pcm": {
+              "text": "Stay with dem. If dem no better after 15 minutes, call 112."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "If they become unconscious and stop breathing, begin CPR.",
+          "translations": {
+            "ha": {
+              "text": "Idan sun suma kuma suka daina numfashi, fara CPR."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na ọ maghị onwe ya ma kwụsị iku ume, bido CPR."
+            },
+            "yo": {
+              "text": "Tí wọ́n bá dákú, tí wọ́n sì dá mímí dúró, bẹ̀rẹ̀ CPR."
+            },
+            "pcm": {
+              "text": "If dem lose consciousness and stop to breathe, start CPR."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "broken-bone",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Keep the person still and calm. Do not attempt to move them if a spine injury is possible.",
+          "translations": {
+            "ha": {
+              "text": "Ka sa mutum ya zauna lafiya ba tare da motsi ba. Kada ka yi ƙoƙarin motsa shi idan akwai yiwuwar raunin kashin baya."
+            },
+            "ig": {
+              "text": "Mee ka onye ahụ nọrọ jụụ ma ghara imegharị. Anwala ibugharị ha ma ọ bụrụ na o nwere ike ịbụ mmerụ ọkpụkpụ azụ."
+            },
+            "yo": {
+              "text": "Jẹ́ kí ẹni náà dúró jẹ́ẹ́, kí ó sì balẹ̀. Má ṣe gbìyànjú láti gbé e tí ó bá ṣeé ṣe kí opa-ìfín rẹ fara pa."
+            },
+            "pcm": {
+              "text": "Make the person no move and make dem calm. No try move dem if e fit be say dem spine don injure."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Immobilise the injured limb in the position you find it — use a splint made from stiff material (wood, rolled newspaper) padded with cloth.",
+          "translations": {
+            "ha": {
+              "text": "Ka tsayar da gaɓar da ta ji rauni a matsayin da ka same ta — yi amfani da tsintsiya mai ƙarfi (itace, jarida da aka naɗe) wadda aka shimfiɗa da zane."
+            },
+            "ig": {
+              "text": "Mee ka akụkụ ahụ merụrụ ahụ ghara imegharị n’ọnọdụ i hụrụ ya — jiri splint e ji ihe siri ike mee (osisi, akwụkwọ akụkọ a tụgharịrị) nke e ji akwa kpuchie."
+            },
+            "yo": {
+              "text": "Dá ẹsẹ ọwọ tàbi ẹsẹ ti o farapa duro ni ipo ti o ti ri i — lo ohun ìtìlẹ́yìn ti a ṣe pẹlu ohun elo líle (igi, ìwé ìròyìn tí a yí ká) tí a fi aṣọ rọ̀."
+            },
+            "pcm": {
+              "text": "Hold the injured hand or leg for the position wey you see am—use splint wey strong material like wood or rolled newspaper, and wrap cloth around am."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "If bone is through skin, cover with a clean cloth. Do not push it back.",
+          "translations": {
+            "ha": {
+              "text": "Idan ƙashi ya fito ta fata, rufe shi da zane mai tsafta. Kada ka mayar da shi ciki."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na ọkpụkpụ apụtala n’akpụkpọ ahụ, jiri akwa dị ọcha kpuchie ya. Etyghachila ya n’ime."
+            },
+            "yo": {
+              "text": "Bí egungun bá já síta nípasẹ̀ awọ ara, fi aṣọ mímọ́ bò ó. Má ṣe tì í padà sínú."
+            },
+            "pcm": {
+              "text": "If bone come out through skin, cover am with clean cloth. No push am go back."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Apply an ice pack wrapped in cloth to reduce swelling. Do not apply ice directly to skin.",
+          "translations": {
+            "ha": {
+              "text": "Ka sanya kankara da aka naɗe cikin zane don rage kumburi. Kada a sa kankara kai tsaye a fata."
+            },
+            "ig": {
+              "text": "Tinye akpa ice e ji akwa kechie n’ebe ahụ merụrụ iji belata ọzịza. Etinyela ice kpọmkwem n’akpụkpọ ahụ."
+            },
+            "yo": {
+              "text": "Fi àpò yìnyín tí a fi aṣọ dì sí i láti dín wíwù kù. Má ṣe fi yìnyín kan awọ ara tààrà."
+            },
+            "pcm": {
+              "text": "Put ice pack wey cloth wrap around am to reduce swelling. No put ice directly for skin."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "Elevate the injured limb if possible to reduce swelling.",
+          "translations": {
+            "ha": {
+              "text": "Ka ɗaga gaɓar da ta ji rauni idan zai yiwu domin rage kumburi."
+            },
+            "ig": {
+              "text": "Welie akụkụ ahụ merụrụ ahụ ma ọ bụrụ na o kwere omume iji belata ọzịza."
+            },
+            "yo": {
+              "text": "Gbé ẹ̀yà ara tí ó farapa sókè bí ó bá ṣeé ṣe láti dín wíwù kù."
+            },
+            "pcm": {
+              "text": "Raise the injured hand or leg if e possible, make swelling reduce."
+            }
+          }
+        },
+        {
+          "id": 6,
+          "en": "Transport to hospital carefully, keeping the limb still.",
+          "translations": {
+            "ha": {
+              "text": "Ka kai shi asibiti a hankali, kana tabbatar da cewa gaɓar ba ta motsi."
+            },
+            "ig": {
+              "text": "Kpachara anya buru onye ahụ gaa ụlọ ọgwụ, ka akụkụ ahụ ahụ ghara imegharị."
+            },
+            "yo": {
+              "text": "Gbé lọ sí ilé ìwòsàn pẹ̀lú ìṣọ́ra, kí ẹ̀yà ara náà má bàa lọ."
+            },
+            "pcm": {
+              "text": "Carry dem go hospital carefully, make the injured hand or leg no move."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "cardiac-arrest",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Call emergency services immediately (112 or 767).",
+          "translations": {
+            "ha": {
+              "text": "Kira ayyukan gaggawa nan da nan (112 ko 767)."
+            },
+            "ig": {
+              "text": "Kpọọ ndị ọrụ mberede ozugbo (112 ma ọ bụ 767)."
+            },
+            "yo": {
+              "text": "Pe awọn iṣẹ pajawiri lẹsẹkẹsẹ (112 tabi 767)."
+            },
+            "pcm": {
+              "text": "Abeg, call emergency services sharp sharp (112 or 767)."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Check for responsiveness — tap shoulder, shout \"Are you okay?\"",
+          "translations": {
+            "ha": {
+              "text": "Duba ko yana amsawa — taɓa kafadarsa, ka ce da ƙarfi, \"Kana lafiya?\""
+            },
+            "ig": {
+              "text": "Lelee ma onye ahụ na-aza — kụọ ya n’ubu, tie mkpu, “Ị dị mma?”"
+            },
+            "yo": {
+              "text": "Ṣàyẹ̀wò bóyá ẹni náà ń fèsì — fọwọ́ kan èjìká rẹ̀, kí ó sì ké pé, “Ṣé ó wà dáadáa?”"
+            },
+            "pcm": {
+              "text": "Check if the person dey respond — tap their shoulder, shout, \"You dey okay?\""
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "Begin chest compressions: place heel of hand on centre of chest, push down hard and fast — 100–120 per minute.",
+          "translations": {
+            "ha": {
+              "text": "Fara matsa kirji: sanya tafin hannunka a tsakiyar ƙirji, ka matsa ƙasa da ƙarfi da sauri — sau 100–120 a minti ɗaya."
+            },
+            "ig": {
+              "text": "Malite ịpị obi: tinye ikiri aka gị n’etiti obi, pịa ya ike na ngwa ngwa — ugboro 100–120 kwa nkeji."
+            },
+            "yo": {
+              "text": "Béré ìfọwọ́fà àyà: fi àtẹ́lẹwọ́ rẹ̀ sí àárín àyà, tẹ̀ mọ́lẹ̀ gidigidi àti kíákíá — ìgbà 100–120 nínú ìṣẹ́jú kan."
+            },
+            "pcm": {
+              "text": "Start chest compressions: put the heel of your hand for the middle of their chest, press am down hard and fast — 100–120 times per minute."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "After 30 compressions, give 2 rescue breaths (tilt head back, lift chin, seal mouth, blow in).",
+          "translations": {
+            "ha": {
+              "text": "Bayan matsawa sau 30, ba da numfashin ceto 2 (mayar da kai baya, ɗaga haɓa, rufe baki da naka, ka hura iska)."
+            },
+            "ig": {
+              "text": "Mgbe ịpịchara obi ugboro 30, nye ume mgbapụta 2 (tugharia isi azụ, bulie agba, mechie ọnụ, fụọ ume n’ime)."
+            },
+            "yo": {
+              "text": "Lẹ́yìn ìdáfíta 30, fún un ní ẹ̀mí ìrànlọ́wọ́ méjì (fẹ́ orí rẹ̀ sẹ́yìn, gbé  agbọn rẹ̀ sókè, di ẹnu mọ́ ẹnu rẹ̀, kí ó sì fẹ́ ẹ̀mí sínú rẹ̀).",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "pcm": {
+              "text": "After 30 compressions, give 2 rescue breaths (bend their head back, lift their chin, cover their mouth with your mouth, blow air inside)."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "Continue 30:2 cycle until emergency services arrive or person recovers.",
+          "translations": {
+            "ha": {
+              "text": "Ci gaba da zagayen 30:2 har ayyukan gaggawa su iso ko mutumin ya farfaɗo."
+            },
+            "ig": {
+              "text": "Gaa n’ihu na usoro 30:2 ruo mgbe ndị ọrụ mberede rutere ma ọ bụ onye ahụ agbakee."
+            },
+            "yo": {
+              "text": "Tẹ̀síwájú pẹ̀lú ìyípo 30:2 títí àwọn iṣẹ́ pàjáwìrì yóò fi dé tàbí ẹni náà yóò fi padà láradá."
+            },
+            "pcm": {
+              "text": "Continue the 30:2 cycle until emergency services reach there or the person recover."
+            }
+          }
+        },
+        {
+          "id": 6,
+          "en": "Use an AED if available — turn it on and follow the voice instructions.",
+          "translations": {
+            "ha": {
+              "text": "Yi amfani da AED idan akwai — kunna shi kuma bi umarnin murya."
+            },
+            "ig": {
+              "text": "Jiri AED ma ọ bụrụ na ọ dị — gbanye ya ma soro ntuziaka olu."
+            },
+            "yo": {
+              "text": "Lo AED bí ó bá wá — tán an, kí o sì tẹ̀lé àwọn ìtọ́nisọ́nà ọ̀hún."
+            },
+            "pcm": {
+              "text": "Use AED if e dey available — switch am on and follow the voice instructions."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "choking-adult",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Ask the person 'Are you choking?' If they cannot answer or cough, act immediately.",
+          "translations": {
+            "ha": {
+              "text": "Tambayi mutumin, “Kana shaƙewa?” Idan ba zai iya amsawa ko tari ba, ɗauki mataki nan da nan."
+            },
+            "ig": {
+              "text": "Jụọ onye ahụ, “Ị na-ata ahụhụ n’ihi nri jidere gị n’akpịrị?” Ọ bụrụ na ha enweghị ike ịza ma ọ bụ ụkwara, mee ngwa ngwa."
+            },
+            "yo": {
+              "text": "Béèrè lọ́wọ́ ẹni náà pé, “Ṣé o ń hó nǹkan?\" Tí wọn kò bá lè dáhùn tàbí kó, ṣe ohun kan lẹ́sẹ̀kẹsẹ̀."
+            },
+            "pcm": {
+              "text": "Ask the person, “You dey choke?” If dem no fit answer or cough, act sharp sharp."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Give 5 back blows. Stand behind them, bend them forward, and hit them firmly between the shoulder blades.",
+          "translations": {
+            "ha": {
+              "text": "Yi masa bugun baya sau 5. Tsaya a bayansa, ka lanƙwasa shi gaba, sannan ka buga masa da ƙarfi tsakanin ƙashin kafadunsa."
+            },
+            "ig": {
+              "text": "Kụọ ha ihe ugboro 5 n’azụ. Guzoro n’azụ ha, hulata ha n’ihu, ma kụọ ha ike n’etiti ọkpụkpụ ubu."
+            },
+            "yo": {
+              "text": "Lu ẹ̀yìn wọn ní ìgbà márùn-ún. Dúró lẹ́yìn wọ́n síwájú, kí ó sì lù wọ́n dáadáa láàárín egungun èjìká.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "pcm": {
+              "text": "Give dem 5 blows for back. Stand behind dem, bend dem forward, and hit dem well well between their shoulder blades."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "If the blockage doesn't clear, give 5 abdominal thrusts (Heimlich maneuver).",
+          "translations": {
+            "ha": {
+              "text": "Idan abin da ya toshe bai fita ba, yi masa matsin ciki sau 5 (Heimlich maneuver)."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na ihe jidere akpịrị ahụ apụghị ịpụ, mee mkpali afọ ugboro 5 (Heimlich maneuver)."
+            },
+            "yo": {
+              "text": "Tí ohun tó dì wọ́n kò bá jà, ṣe ìfẹ́sẹ́mú inú ìgbà márùn-ún (lànà Heimlich).",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "pcm": {
+              "text": "If the blockage no clear, give dem 5 abdominal thrusts (Heimlich maneuver)."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Alternate between 5 back blows and 5 abdominal thrusts until the blockage is dislodged.",
+          "translations": {
+            "ha": {
+              "text": "Riƙa musanya tsakanin bugun baya sau 5 da matsin ciki sau 5 har sai abin da ya toshe ya fita."
+            },
+            "ig": {
+              "text": "Na-atụgharị n’etiti ịkụ azụ ugboro 5 na mkpali afọ ugboro 5 ruo mgbe ihe ahụ jidere akpịrị apụta."
+            },
+            "yo": {
+              "text": "Máa yí padà láàárín lílu eyín ìgbà márùn-ún àti ìfẹ̀sọ̀mù inú ìgbà márùn-ún títí ohun tó di wọn yóò fi já.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "pcm": {
+              "text": "Dey alternate between 5 back blows and 5 abdominal thrusts until the blockage comot."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "If the person becomes unconscious, lower them to the ground and begin CPR.",
+          "translations": {
+            "ha": {
+              "text": "Idan mutumin ya suma, kwantar da shi a ƙasa sannan ka fara CPR."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na onye ahụ amaghịzi onwe ya, dọba ya n’ala ma malite CPR."
+            },
+            "yo": {
+              "text": "Tí ẹni náà bá dákú, sọ wọ́n sílẹ̀ lórí ilẹ̀, kí ó sì bẹ̀rẹ̀ CPR."
+            },
+            "pcm": {
+              "text": "If the person lose consciousness, lay dem for ground and start CPR."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "choking-child",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Encourage the child to cough — if they can cough forcefully, let them.",
+          "translations": {
+            "ha": {
+              "text": "Ƙarfafa yaron ya yi tari — idan zai iya yin tari da ƙarfi, bari ya yi."
+            },
+            "ig": {
+              "text": "Gbaa nwa ahụ ume ka ọ kwụ ụkwara — ọ bụrụ na ọ nwere ike ịkwara ike, hapụ ya ka ọ kwụọ ụkwara."
+            },
+            "yo": {
+              "text": "Gba ọmọ náà níyànjú láti kọ́ — bí wọ́n bá lè kọ́ gidigidi, jẹ́ kí wọ́n ṣe bẹ́ẹ̀."
+            },
+            "pcm": {
+              "text": "Encourage di pikin make e cough — if e fit cough well-well, make e cough."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Lean the child forward and give 5 firm back blows between the shoulder blades with the heel of your hand.",
+          "translations": {
+            "ha": {
+              "text": "Tanƙwasa yaron gaba sannan ka yi masa bugun baya masu ƙarfi sau 5 a tsakanin ƙasusuwan kafada da tafin hannunka."
+            },
+            "ig": {
+              "text": "Kpọọ nwa ahụ ihu n’ala ma kụọ ya azụ ugboro 5 n’etiti ubu ya site n’ikiri aka gị."
+            },
+            "yo": {
+              "text": "Jẹ́ kí ọmọ náà tẹ̀ síwájú, kí ó sì fún un ní ìfọwọ́gbẹ̀ ẹ̀yìn tó lágbára márùn-ún láàárín àwọn èjìká pẹ̀lú atẹ́lẹsẹ̀ ọ̀wọ́ rẹ̀.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "pcm": {
+              "text": "Bend di pikin forward and give am 5 firm blows for back, between di shoulder blades, with di heel of your hand."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "If back blows fail: give 5 abdominal thrusts — kneel behind the child, make a fist above the navel, thrust inward and upward.",
+          "translations": {
+            "ha": {
+              "text": "Idan bugun baya bai yi tasiri ba: yi masa matsa ciki sau 5 — durƙusa a bayan yaron, ka haɗa hannu ka yi dunƙule sama da cibiya, sannan ka matsa ciki da sama."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na ịkụ azụ adịghị arụ ọrụ: nye ya nrụgide afọ ugboro 5 — gbuo ikpere n’azụ nwa ahụ, mee aka gị ọkpọ n’elu otubo, pịakwaa n’ime na n’elu."
+            },
+            "yo": {
+              "text": "Bí ìfọwọ́gbẹ̀ ẹ̀yìn kò bá ṣiṣẹ́: ṣe í sórí ikùn márùn-ún — kúnlẹ̀ lẹ́yìn ọmọ náà, di ọwọ́ rẹ̀ pọ̀ sí ìkúnkú lókè ìdòdò, kí ó sì tẹ̀ wọ inú àti sókè.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "pcm": {
+              "text": "If di back blows no work: give 5 abdominal thrusts — kneel behind di pikin, make fist above di navel, push am inward and upward."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Alternate 5 back blows and 5 abdominal thrusts.",
+          "translations": {
+            "ha": {
+              "text": "A rika sauya bugun baya sau 5 da matsa ciki sau 5."
+            },
+            "ig": {
+              "text": "Gbanwee n’etiti ịkụ azụ ugboro 5 na nrụgide afọ ugboro 5."
+            },
+            "yo": {
+              "text": "Yí ìfọwọ́gbẹ̀ ẹ̀yìn márùn-ún àti i sórí ikùn márùn-ún pa dà.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "pcm": {
+              "text": "Alternate 5 back blows and 5 abdominal thrusts.",
+              "reviewFlags": [
+                "matches_english_source"
+              ]
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "If the child loses consciousness, call 112 and begin CPR immediately.",
+          "translations": {
+            "ha": {
+              "text": "Idan yaron ya rasa hayyacinsa, kira 112 kuma a fara CPR nan da nan."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na nwa ahụ amaghị onwe ya, kpọọ 112 ma malite CPR ozugbo."
+            },
+            "yo": {
+              "text": "Bí ọmọ náà bá pàdánù ìmọ̀lára, pé 112 kí ó sì bẹ̀rẹ̀ CPR lẹ́sẹ̀kẹsẹ̀."
+            },
+            "pcm": {
+              "text": "If di pikin lose consciousness, call 112 and start CPR immediately."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "drowning",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Get the person out of water safely — use a rope, branch, or float. Do not jump in unless trained.",
+          "translations": {
+            "ha": {
+              "text": "Ceto mutumin daga ruwa lafiya — yi amfani da igiya, reshe, ko abin iyo. Kada ka shiga ruwa sai idan an horar da kai."
+            },
+            "ig": {
+              "text": "Wepụ onye ahụ n’ime mmiri n’enweghị nsogbu — jiri eriri, alaka, ma ọ bụ ihe na-ese n’elu mmiri. Awụlila n’ime mmiri ma ọ bụrụ na a zụbeghị gị."
+            },
+            "yo": {
+              "text": "Mú ẹni náà jáde nínú omi láìséwu — lo okùn, ẹ̀ka igi, tàbí ohun tó lè fò lé omi. Má ṣe wọ inú omi àfi tí ó bá ti gba ìdánilẹ́kọ̀ọ́."
+            },
+            "pcm": {
+              "text": "Comot the person from water safely — use rope, branch, or floater. No jump enter unless you don train."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Call 112 immediately.",
+          "translations": {
+            "ha": {
+              "text": "Kira 112 nan da nan."
+            },
+            "ig": {
+              "text": "Kpọọ 112 ozugbo."
+            },
+            "yo": {
+              "text": "Pé 112 lẹ́sẹ̀kẹsẹ̀."
+            },
+            "pcm": {
+              "text": "Call 112 sharp sharp."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "Lay the person on their back on a flat surface.",
+          "translations": {
+            "ha": {
+              "text": "Kwantar da mutumin a bayansa a kan wuri mai faɗi."
+            },
+            "ig": {
+              "text": "Dina onye ahụ n’azụ ya n’elu ala dị larịị."
+            },
+            "yo": {
+              "text": "Gbé ẹni náà dùbúlẹ̀ lórí ẹ̀yìn wọn lórí ilẹ̀ tí ó tẹ́ẹ̀rẹ."
+            },
+            "pcm": {
+              "text": "Lay the person for back on flat surface."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Check for breathing. If not breathing, give 5 rescue breaths immediately.",
+          "translations": {
+            "ha": {
+              "text": "Duba ko yana numfashi. Idan baya numfashi, ba shi numfashin ceto sau 5 nan da nan."
+            },
+            "ig": {
+              "text": "Lelee ma ọ na-eku ume. Ọ bụrụ na ọ naghị eku ume, nye ume mgbapụta 5 ozugbo."
+            },
+            "yo": {
+              "text": "Ṣàyẹ̀wò bóyá wọ́n ń mí. Tí wọn kò bá ń mí, fún wọn ní ìmí ìgbàlà márùn-ún lẹ́sẹ̀kẹsẹ̀.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "pcm": {
+              "text": "Check if the person dey breathe. If e no dey breathe, give am 5 rescue breaths sharp sharp."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "Begin CPR: 30 chest compressions followed by 2 rescue breaths. Continue until help arrives.",
+          "translations": {
+            "ha": {
+              "text": "Fara CPR: matse kirji sau 30 sannan a ba shi numfashin ceto sau 2. Ci gaba har taimako ya iso."
+            },
+            "ig": {
+              "text": "Malite CPR: pịa obi ugboro 30, soro ya nye ume mgbapụta 2. Gaa n’ihu ruo mgbe enyemaka bịarutere."
+            },
+            "yo": {
+              "text": "Béré CPR: tẹ àyà ní ìgbà ọgbọ̀n, lẹ́yìn náà fún ìmí ìgbàlà méjì. Tẹ̀síwájú títí ìrànlọ́wọ́ yóò fi dé.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "pcm": {
+              "text": "Start CPR: do 30 chest compressions, then 2 rescue breaths. Continue till help reach."
+            }
+          }
+        },
+        {
+          "id": 6,
+          "en": "If they regain consciousness, place in recovery position on their side.",
+          "translations": {
+            "ha": {
+              "text": "Idan ya farfaɗo, sanya shi a matsayin farfaɗowa a gefensa."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na ọ mata onwe ya ọzọ, tinye ya n’ọnọdụ mgbake n’akụkụ ya."
+            },
+            "yo": {
+              "text": "Tí wọ́n bá padà mọ́, fi wọ́n sí ipò ìmúpadàbọ̀ ní ẹ̀gbẹ́ wọn."
+            },
+            "pcm": {
+              "text": "If the person wake up, put am for recovery position for side."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "fainting",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Lay the person flat on the ground on their back.",
+          "translations": {
+            "ha": {
+              "text": "Kwantar da mutumin a fili a ƙasa, a kwance a bayansa."
+            },
+            "ig": {
+              "text": "Dinaa onye ahụ n'ala n'azụ ya."
+            },
+            "yo": {
+              "text": "Jẹ́ kí ẹni náà dùbúlẹ̀ pélébé  lórí ilẹ̀ ní ẹ̀yìn wọn."
+            },
+            "pcm": {
+              "text": "Make the person lie flat for ground, face up."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Raise their legs about 30cm (12 inches) to improve blood flow to the brain.",
+          "translations": {
+            "ha": {
+              "text": "Ɗaga ƙafafunsu kimanin cm 30 (inci 12) domin inganta kwararar jini zuwa kwakwalwa."
+            },
+            "ig": {
+              "text": "Welie ụkwụ ya ihe dịka sentimita 30 (inch 12) iji meziwanye mgbasa ọbara gaa n'ụbụrụ."
+            },
+            "yo": {
+              "text": "Gbé ẹsẹ̀ wọn sókè ní nǹkan bí 30 cm (wọn 12) láti mú kí ẹ̀jẹ̀ máa lọ sí ọpọlọ dáadáa."
+            },
+            "pcm": {
+              "text": "Raise their legs about 30cm (12 inches) so blood fit flow go their brain well."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "Loosen any tight clothing around the neck and chest.",
+          "translations": {
+            "ha": {
+              "text": "Sassauta duk wata matsattsiyar sutura a kusa da wuya da ƙirji."
+            },
+            "ig": {
+              "text": "Tọpụ uwe ọ bụla siri ike n'olu na n'obi."
+            },
+            "yo": {
+              "text": "Tú aṣọ tó lé ní àgbègbè ọrùn àti àyà wọn sílẹ̀."
+            },
+            "pcm": {
+              "text": "Loosen any tight cloth wey dey around their neck and chest."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Check for breathing. If not breathing, begin CPR and call 112.",
+          "translations": {
+            "ha": {
+              "text": "Duba ko suna numfashi. Idan ba sa numfashi, fara CPR kuma kira 112."
+            },
+            "ig": {
+              "text": "Lelee ma ọ na-eku ume. Ọ bụrụ na ọ naghị eku ume, bido CPR ma kpọọ 112."
+            },
+            "yo": {
+              "text": "Ṣàyẹ̀wò bóyá wọ́n ń mí. Tí wọn kò bá ń mí, bẹ̀rẹ̀ CPR, kí o sì pe 112."
+            },
+            "pcm": {
+              "text": "Check if them dey breathe. If them no dey breathe, start CPR and call 112."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "When they recover, have them sit up slowly. Do not let them stand immediately.",
+          "translations": {
+            "ha": {
+              "text": "Idan sun farfaɗo, sa su zauna a hankali. Kada su tsaya tsaye nan da nan."
+            },
+            "ig": {
+              "text": "Mgbe ọ tetara, mee ka ọ nọdụ ala nwayọọ nwayọọ. Ekwela ka o guzoro ozugbo."
+            },
+            "yo": {
+              "text": "Nígbà tí wọ́n bá padà sí ipò, jẹ́ kí wọ́n jókòó sókè díẹ̀díẹ̀. Má jẹ́ kí wọ́n dúró lẹ́sẹ̀kẹsẹ̀."
+            },
+            "pcm": {
+              "text": "When them don recover, make them sit up small small. No let them stand up immediately."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "food-poisoning",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Have the person rest and drink plenty of fluids — water, oral rehydration salts (ORS), or weak tea.",
+          "translations": {
+            "ha": {
+              "text": "A sa mutumin ya huta kuma ya sha ruwa mai yawa — ruwa, gishirin sake cika ruwan jiki (ORS), ko shayi mara ƙarfi."
+            },
+            "ig": {
+              "text": "Mee ka onye ahụ zuru ike ma ṅụọ ọtụtụ mmiri — mmiri nkịtị, nnu rehydration nke ọnụ (ORS), ma ọ bụ tii dị mfe."
+            },
+            "yo": {
+              "text": "Jẹ́ kí ẹni náà sinmi, kí ó sì mu omi púpọ̀ — omi, iyọ̀ ìmúpadàbọ̀ omi ẹnu (ORS), tàbí tíì ti kó lágbára."
+            },
+            "pcm": {
+              "text": "Make the person rest and drink plenty fluid — water, ORS, or light tea."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Give ORS sachets mixed in clean water to replace lost fluids and electrolytes.",
+          "translations": {
+            "ha": {
+              "text": "A ba shi fakitin ORS da aka gauraya da ruwa mai tsabta domin maye gurbin ruwan jiki da sinadaran gishiri da suka ɓace."
+            },
+            "ig": {
+              "text": "Nye sachet ORS a gwakọtara na mmiri dị ọcha iji dochie mmiri na electrolyte furu efu."
+            },
+            "yo": {
+              "text": "Fún un ní àwọn àpò ORS tí a pò mọ́ omi mímọ́ láti rọ́pò omi àti àwọn èròjà amúnáṣiṣẹ́ ara tí ó sọnù."
+            },
+            "pcm": {
+              "text": "Give ORS sachet wey dem mix with clean water to replace body fluid and electrolytes wey don loss."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "Avoid solid food until vomiting stops. Then start with bland food like plain rice or bread.",
+          "translations": {
+            "ha": {
+              "text": "A guji abinci mai ƙarfi har sai amai ya daina. Sannan a fara da abinci mara nauyi kamar farar shinkafa ko burodi."
+            },
+            "ig": {
+              "text": "Zere nri siri ike ruo mgbe ịgbọ agbọ kwụsịrị. Mgbe ahụ, malite na nri dị mfe dịka osikapa ọcha ma ọ bụ achịcha."
+            },
+            "yo": {
+              "text": "Yẹra fún oúnjẹ líle títí tí ìgbàgbogbo yóò fi dákẹ́. Lẹ́yìn náà, bẹ̀rẹ̀ pẹ̀lú oúnjẹ rọrùn bí ìrẹsì pẹ̀lẹ́ tàbí búrẹ́dì."
+            },
+            "pcm": {
+              "text": "No give solid food until the vomiting stop. Then start with simple food like plain rice or bread."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Monitor for signs of severe dehydration: very dry mouth, sunken eyes, little or no urine.",
+          "translations": {
+            "ha": {
+              "text": "A lura da alamun bushewar jiki mai tsanani: baki mai matuƙar bushewa, idanu masu nutsewa, ƙarancin fitsari ko rashin fitsari."
+            },
+            "ig": {
+              "text": "Lelee ihe ịrịba ama nke akpịrị ịkpọ nkụ siri ike: ọnụ kpọrọ nkụ nke ukwuu, anya mikpuru emikpu, mmamịrị ntakịrị ma ọ bụ enweghị ya."
+            },
+            "yo": {
+              "text": "Ṣọ́rara fún àwọn àmì ìgbọ́ omi tó le: ẹnu gbígbẹ gan-an, ojú rí, ìtọ̀ kékeré tàbí àìsí ìtọ̀."
+            },
+            "pcm": {
+              "text": "Watch for signs of serious dehydration: mouth wey dry well well, eye wey sink, little or no urine."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "Seek hospital care if symptoms worsen after 24 hours or severe dehydration occurs.",
+          "translations": {
+            "ha": {
+              "text": "A nemi kulawar asibiti idan alamun sun ƙara tsananta bayan awanni 24 ko kuma bushewar jiki mai tsanani ta faru."
+            },
+            "ig": {
+              "text": "Gaa ụlọ ọgwụ ma ọ bụrụ na mgbaàmà ka njọ ka awa 24 gachara ma ọ bụ ọ bụrụ na akpịrị ịkpọ nkụ siri ike emee."
+            },
+            "yo": {
+              "text": "Wá ìtọ́jú ilé ìwòsàn bí àwọn àmì náà bá burú sí i lẹ́yìn wákàtí 24 tàbí bí ìgbó omi tó lè bá ṣẹlẹ̀."
+            },
+            "pcm": {
+              "text": "Go hospital if symptoms worse after 24 hours or if serious dehydration happen."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "generator-fumes",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Move the person to fresh air IMMEDIATELY — outdoors or open all windows and doors.",
+          "translations": {
+            "ha": {
+              "text": "Kai mutumin zuwa iska mai kyau NAN DA NAN — waje ko a buɗe dukkan tagogi da ƙofofi."
+            },
+            "ig": {
+              "text": "Kpọpụ onye ahụ ozugbo gaa n’ebe ikuku dị ọhụrụ — n’èzí ma ọ bụ meghee windo na ọnụ ụzọ niile."
+            },
+            "yo": {
+              "text": "Gbé ẹni náà sí afẹ́fẹ́ tútù LÉSÉKÉSÉ — síta tàbí sí gbogbo fèrèsé àti ilẹ̀kùn."
+            },
+            "pcm": {
+              "text": "Carry the person go where fresh air dey IMMEDIATELY — outside or open all windows and doors."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Call 112 or take to the nearest hospital at once.",
+          "translations": {
+            "ha": {
+              "text": "Kira 112 ko a kai shi asibiti mafi kusa nan take."
+            },
+            "ig": {
+              "text": "Kpọọ 112 ma ọ bụ kpọga ya n’ụlọ ọgwụ kacha nso ozugbo."
+            },
+            "yo": {
+              "text": "Pé 112 tàbí mú un lọ sí ilé ìwòsàn tó súnmọ́ jùlọ lẹ́sẹ̀kẹsẹ̀."
+            },
+            "pcm": {
+              "text": "Call 112 or carry the person go nearest hospital sharp sharp."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "Turn off the generator if it is safe to do so.",
+          "translations": {
+            "ha": {
+              "text": "Kashe janaretan idan yin hakan ba shi da haɗari."
+            },
+            "ig": {
+              "text": "Gbanyụọ jenereta ahụ ma ọ bụrụ na ọ dị mma ime otú ahụ."
+            },
+            "yo": {
+              "text": "Pa ẹ̀rọ amúnáwá náà bí ó bá jẹ́ ààbò láti ṣe bẹ́ẹ̀."
+            },
+            "pcm": {
+              "text": "Off the generator if e safe to do am."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "If unconscious, check for breathing. If not breathing, start CPR.",
+          "translations": {
+            "ha": {
+              "text": "Idan bai san komai ba, duba ko yana numfashi. Idan baya numfashi, fara CPR."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na onye ahụ amaghị onwe ya, lelee ma ọ na-eku ume. Ọ bụrụ na ọ naghị eku ume, malite CPR."
+            },
+            "yo": {
+              "text": "Bí ẹni náà kò bá ń, ṣàyẹ̀wò bóyá ó ń mí. Bí kò bá ń mí, bẹ̀rẹ̀ CPR."
+            },
+            "pcm": {
+              "text": "If the person no dey conscious, check if e dey breathe. If e no dey breathe, start CPR."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "Place a conscious person in the recovery position on their side.",
+          "translations": {
+            "ha": {
+              "text": "Sanya mutumin da yake cikin hayyacinsa a matsayin murmurewa a gefe."
+            },
+            "ig": {
+              "text": "Debe onye maara onwe ya n’ọnọdụ mgbake, n’akụkụ ya."
+            },
+            "yo": {
+              "text": "Fi ẹni tí ó wà lójú sí ipò ìmúbọ̀sípò ní ẹ̀gbẹ́ rẹ̀."
+            },
+            "pcm": {
+              "text": "Put person wey dey conscious for recovery position for their side."
+            }
+          }
+        },
+        {
+          "id": 6,
+          "en": "Keep the person warm and still until help arrives.",
+          "translations": {
+            "ha": {
+              "text": "Ka sa mutumin ya kasance da dumi kuma kada ya motsa har sai taimako ya iso."
+            },
+            "ig": {
+              "text": "Mee ka onye ahụ kpoo ọkụ ma ghara ịkwagharị ruo mgbe enyemaka ruru."
+            },
+            "yo": {
+              "text": "Jẹ́ kí ẹni náà móoru, kí ó sì dúró jẹẹ́ títí ìrànlọ́wọ́ yóò fi dé."
+            },
+            "pcm": {
+              "text": "Keep the person warm and make e no move until help arrive."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "head-injury",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Call 112 if unconscious, vomiting, confused, or if there is clear fluid from nose/ears.",
+          "translations": {
+            "ha": {
+              "text": "Kira 112 idan ba ya cikin hayyaci, yana amai, ya rikice, ko kuma akwai ruwa mai tsabta da ke fita daga hanci ko kunnuwa."
+            },
+            "ig": {
+              "text": "Kpọọ 112 ma ọ bụrụ na onye ahụ amaghị onwe ya, na-agbọ agbọ, na-enwe mgbagwoju anya, ma ọ bụ ọ bụrụ na mmiri doro anya na-esi n’imi ma ọ bụ ntị apụta."
+            },
+            "yo": {
+              "text": "Pe 112 tí ẹni náà kò bá n, ń fẹ́ ẹ̀gbọ́n, dàrú, tàbí tí omi tútù bá ń jáde láti imú tàbí etí."
+            },
+            "pcm": {
+              "text": "Call 112 if person no dey conscious, dey vomit, dey confused, or if clear fluid dey come out from nose or ear."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Keep the person still. Do not move them if a neck injury is possible.",
+          "translations": {
+            "ha": {
+              "text": "Ka bar mutumin a kwance ba tare da motsa shi ba. Kada ka motsa shi idan akwai yiwuwar raunin wuya."
+            },
+            "ig": {
+              "text": "Mee ka onye ahụ ghara imegharị ahụ. Emegharịla ya ma ọ bụrụ na enwere ike na olu ya merụrụ ahụ."
+            },
+            "yo": {
+              "text": "Jẹ́ kí ẹni náà dúró jẹ́ẹ́. Má ṣe gbé e tàbí rò ó bí ìfarapa ọrùn bá ṣeé ṣe."
+            },
+            "pcm": {
+              "text": "Make the person stay still. No move am if e fit be say neck injury dey."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "Apply gentle pressure to any scalp wound with a clean cloth to stop bleeding.",
+          "translations": {
+            "ha": {
+              "text": "Danna raunin fatar kai a hankali da kyalle mai tsabta domin tsayar da zubar jini."
+            },
+            "ig": {
+              "text": "Jiri akwa dị ọcha pịa ọnya ọ bụla dị n’isi nwayọọ iji kwụsị ọbara ọgbụgba."
+            },
+            "yo": {
+              "text": "Fi aṣọ mímọ́ tẹ ọgbẹ́ kankan ní awọ́ orí díẹ̀díẹ̀ láti dá ẹ̀jẹ̀ dúró."
+            },
+            "pcm": {
+              "text": "Use clean cloth press any wound for scalp gently to stop bleeding."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Do not remove any object embedded in the head.",
+          "translations": {
+            "ha": {
+              "text": "Kada ka cire wani abu da ya makale a kai."
+            },
+            "ig": {
+              "text": "Ewepụla ihe ọ bụla rapaara n’isi."
+            },
+            "yo": {
+              "text": "Má ṣe yọ ohun kankan tí ó wọ̀ sínú orí náà."
+            },
+            "pcm": {
+              "text": "No remove any object wey stick inside the head."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "Monitor consciousness — speak to them regularly and check their responses.",
+          "translations": {
+            "ha": {
+              "text": "Ka lura da hayyacinsa — ka riƙa yi masa magana akai-akai kuma ka duba yadda yake amsawa."
+            },
+            "ig": {
+              "text": "Lelee ma onye ahụ ka na-amata ihe — gwa ya okwu mgbe niile ma lelee nzaghachi ya."
+            },
+            "yo": {
+              "text": "Ṣàyẹ̀wò bóyá ẹni náà ṣì mọ̀n — bá a sọ̀rọ̀ déédéé, kí ó sì wo bí ó ṣe ń dáhùn."
+            },
+            "pcm": {
+              "text": "Monitor whether the person dey conscious — talk to am regularly and check how e dey respond."
+            }
+          }
+        },
+        {
+          "id": 6,
+          "en": "If unconscious but breathing, place in recovery position on their side.",
+          "translations": {
+            "ha": {
+              "text": "Idan ba ya cikin hayyaci amma yana numfashi, ka kwantar da shi a gefensa a matsayin yanayin farfaɗowa."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na onye ahụ amaghị onwe ya ma ka na-eku ume, dinaa ya n’akụkụ ya n’ọnọdụ mgbake."
+            },
+            "yo": {
+              "text": "Bí ẹni náà kò bá ń mín ṣùgbọ́n ó ń mí, fi sí ipò ìgbàlà ní ẹ̀gbẹ́ rẹ̀."
+            },
+            "pcm": {
+              "text": "If person no dey conscious but e still dey breathe, put am for recovery position for im side."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "heart-attack",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Call emergency services or take them to the nearest hospital immediately.",
+          "translations": {
+            "ha": {
+              "text": "Kira ayyukan gaggawa ko kai su asibiti mafi kusa nan da nan."
+            },
+            "ig": {
+              "text": "Kpọọ ọrụ mberede ma ọ bụ kpọga ha ụlọ ọgwụ kacha nso ozugbo."
+            },
+            "yo": {
+              "text": "Pé àwọn iṣẹ́ pàjáwìrì tàbí mú wọn lọ sí ilé ìwòsàn tó sún mọ́ jù lọ lẹ́sẹ̀kẹsẹ̀."
+            },
+            "pcm": {
+              "text": "Call emergency services or carry dem go nearest hospital sharp sharp."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Have the person sit down, rest, and try to keep calm.",
+          "translations": {
+            "ha": {
+              "text": "Sa mutumin ya zauna, ya huta, kuma ya yi ƙoƙarin kwantar da hankalinsa."
+            },
+            "ig": {
+              "text": "Mee ka onye ahụ nọdụ ala, zuru ike, ma gbalịa ka ọ nọrọ jụụ."
+            },
+            "yo": {
+              "text": "Jẹ́ kí ẹni náà jókòó, sinmi, kí ó sì gbìyànjú láti fara balẹ̀."
+            },
+            "pcm": {
+              "text": "Make the person siddon, rest, and try make dem calm down."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "Loosen any tight clothing.",
+          "translations": {
+            "ha": {
+              "text": "Sassauta duk wani sutura mai matse jiki."
+            },
+            "ig": {
+              "text": "Tọpụ uwe ọ bụla siri ike."
+            },
+            "yo": {
+              "text": "Tú aṣọ tó mú dín wọn kúrò."
+            },
+            "pcm": {
+              "text": "Loose any cloth wey tight."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Ask if they take any chest pain medication, such as nitroglycerin, and help them take it.",
+          "translations": {
+            "ha": {
+              "text": "Tambaya ko suna shan wani maganin ciwon ƙirji, kamar nitroglycerin, sannan a taimaka musu su sha."
+            },
+            "ig": {
+              "text": "Jụọ ma ha na-aṅụ ọgwụ mgbu obi ọ bụla, dịka nitroglycerin, ma nyere ha aka ịṅụ ya."
+            },
+            "yo": {
+              "text": "Béèrè bóyá wọ́n máa ń lo oògùn ìrora àyà, bíi nitroglycerin, kí ó sì ràn wọ́n lọ́wọ́ láti lò ó."
+            },
+            "pcm": {
+              "text": "Ask if dem dey take any chest pain medicine, like nitroglycerin, and help dem take am."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "If the person becomes unconscious and unresponsive, begin CPR.",
+          "translations": {
+            "ha": {
+              "text": "Idan mutumin ya suma kuma bai amsa ba, fara CPR."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na onye ahụ amaghị onwe ya ma ọ naghị aza, bido CPR."
+            },
+            "yo": {
+              "text": "Tí ẹni náà bá dákú tí kò sì fèsì, bẹ̀rẹ̀ CPR."
+            },
+            "pcm": {
+              "text": "If the person no dey conscious and no dey respond, start CPR."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "heatstroke",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Call 112 immediately.",
+          "translations": {
+            "ha": {
+              "text": "Kira 112 nan da nan."
+            },
+            "ig": {
+              "text": "Kpọọ 112 ozugbo."
+            },
+            "yo": {
+              "text": "Pe 112 lẹsẹkẹsẹ."
+            },
+            "pcm": {
+              "text": "Call 112 sharp sharp."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Move the person to a cool, shaded area immediately.",
+          "translations": {
+            "ha": {
+              "text": "Kai mutum wurin da yake da sanyi da inuwa nan da nan."
+            },
+            "ig": {
+              "text": "Bugharịa onye ahụ ozugbo n’ebe dị jụụ ma nwee ndò."
+            },
+            "yo": {
+              "text": "Gbé ẹni náà lọ sí ibi tí ó tutù, tí ó sì ní òjìji lẹ́sẹ̀kẹsẹ̀."
+            },
+            "pcm": {
+              "text": "Move the person go cool place wey shade dey immediately."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "Remove excess clothing.",
+          "translations": {
+            "ha": {
+              "text": "Cire ƙarin tufafi."
+            },
+            "ig": {
+              "text": "Yipụ uwe ndị karịrị akarị."
+            },
+            "yo": {
+              "text": "Yọ aṣọ tí ó pọ̀ jù lọ."
+            },
+            "pcm": {
+              "text": "Remove extra clothes."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Cool them rapidly: apply cool water to skin, fan vigorously, or use wet towels on neck, armpits, and groin.",
+          "translations": {
+            "ha": {
+              "text": "Sanya shi ya huce da sauri: shafa ruwa mai sanyi a fata, hura masa iska sosai, ko amfani da tawul masu jike a wuya, hammata, da makwanci."
+            },
+            "ig": {
+              "text": "Mee ka ahụ ha jụọ oyi ngwa ngwa: tee mmiri dị jụụ n’akpụkpọ ahụ, fee ha ike, ma ọ bụ tinye akwa mmiri n’olu, n’okpuru akpa aka, na n’ukwu ukwu."
+            },
+            "yo": {
+              "text": "Mú un tutù ní kíákíá: fi omi tútù sí awọ ara, féfé sí i gidigidi, tàbí lo aṣọ tí ó rọ̀ pẹ̀lú omi lórí ọ̀run, abẹ́ apá, àti àárín ìtàn."
+            },
+            "pcm": {
+              "text": "Cool dem quickly: put cool water for skin, fan dem well well, or use wet towel for neck, armpit, and groin."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "If conscious and able to swallow, give cool water to drink slowly.",
+          "translations": {
+            "ha": {
+              "text": "Idan yana cikin hayyacinsa kuma zai iya haɗiye, ba shi ruwa mai sanyi ya sha a hankali."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na ha maara onwe ha ma nwee ike ilo, nye ha mmiri dị jụụ ka ha ṅụọ nwayọọ nwayọọ."
+            },
+            "yo": {
+              "text": "Bí ẹni náà bá wá lójú òun tí ó sì lè gbé mì, fún un ní omi tútù kí ó máa mu díẹ̀díẹ̀."
+            },
+            "pcm": {
+              "text": "If dem dey conscious and fit swallow, give dem cool water make dem drink am small small."
+            }
+          }
+        },
+        {
+          "id": 6,
+          "en": "Do not give paracetamol or aspirin — they do not help in heatstroke.",
+          "translations": {
+            "ha": {
+              "text": "Kada a ba shi paracetamol ko aspirin — ba sa taimakawa wajen bugun zafi."
+            },
+            "ig": {
+              "text": "Enyela paracetamol ma ọ bụ aspirin — ha anaghị enyere aka n’ọrịa ọkụ ọkụ."
+            },
+            "yo": {
+              "text": "Má ṣe fún un ní paracetamol tàbí aspirin — wọn kò ní ìrànlọ́wọ́ nínú ìgbóná ara tó le."
+            },
+            "pcm": {
+              "text": "No give dem paracetamol or aspirin — e no dey help for heatstroke."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "minor-burn",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Immediately hold the burned area under cool (not cold) running water for 10–20 minutes.",
+          "translations": {
+            "ha": {
+              "text": "Nan da nan a riƙe wurin da ya ƙone ƙarƙashin ruwan sanyi mai gudana (ba ruwan kankara ba) na tsawon minti 10–20."
+            },
+            "ig": {
+              "text": "Ozugbo tinye ebe ahụ gbara ọkụ n'okpuru mmiri na-agba agba dị jụụ (ọ bụghị nke oyi) ruo nkeji 10–20."
+            },
+            "yo": {
+              "text": "Lẹsẹkẹsẹ fi ibi ti o jona sábẹ́ omi tútù (kì í ṣe omi òtútù gan-an) ti n ṣàn fún ìṣẹ́jú 10–20."
+            },
+            "pcm": {
+              "text": "Sharp sharp, put the burnt area under cool (no be cold) running water for 10–20 minutes."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Remove jewellery or tight items near the burn before swelling starts.",
+          "translations": {
+            "ha": {
+              "text": "A cire kayan ado ko abubuwa masu matsewa kusa da wurin ƙonewar kafin kumburi ya fara."
+            },
+            "ig": {
+              "text": "Wepụ ọla ma ọ bụ ihe siri ike dị nso n'ebe ọkụ ahụ gbara tupu ọzịza amalite."
+            },
+            "yo": {
+              "text": "Yọ àwọn ohun ọ̀ṣọ́ tàbí àwọn nǹkan tó mú ṣinṣin tó wà nítòsí ibi tí ó jóná kúrò kí ìwúwò tó bẹ̀rẹ̀."
+            },
+            "pcm": {
+              "text": "Remove jewellery or tight things near the burn before swelling start."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "Do not break any blisters — they protect against infection.",
+          "translations": {
+            "ha": {
+              "text": "Kada a fasa kowace ƙurji — suna karewa daga kamuwa da cuta."
+            },
+            "ig": {
+              "text": "Agbajila afụ ọ bụla — ha na-echebe megide ọrịa."
+            },
+            "yo": {
+              "text": "Má ṣe fọ́ àwọn rọ̀rọ̀ omi kankan — wọ́n ń dáàbò bo ibi náà kúrò lọ́wọ́ akoran."
+            },
+            "pcm": {
+              "text": "No burst any blister — dem dey protect against infection."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Cover loosely with a clean, non-fluffy bandage or cloth.",
+          "translations": {
+            "ha": {
+              "text": "A rufe a hankali da bandeji mai tsabta wanda ba ya zubar da ulu ko kyalle."
+            },
+            "ig": {
+              "text": "Jiri bandeeji ma ọ bụ akwa dị ọcha na-enweghị ajị kpuchie ya nwayọọ."
+            },
+            "yo": {
+              "text": "Bó o lọ́wọ́lọ́wọ́ pẹ̀lú báńdínéjì tàbí aṣọ mímọ́ tí kò ní irun."
+            },
+            "pcm": {
+              "text": "Cover am loosely with clean bandage or cloth wey no get fluff."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "Give paracetamol or ibuprofen if available to reduce pain.",
+          "translations": {
+            "ha": {
+              "text": "A ba da paracetamol ko ibuprofen idan suna nan domin rage zafi."
+            },
+            "ig": {
+              "text": "Nye paracetamol ma ọ bụ ibuprofen ma ọ bụrụ na ha dị iji belata mgbu."
+            },
+            "yo": {
+              "text": "Fún un ní paracetamol tàbí ibuprofen bí ó bá wá láti dín ìrora kù."
+            },
+            "pcm": {
+              "text": "Give paracetamol or ibuprofen if e dey available to reduce pain."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "seizure",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Ease the person to the floor and clear the area of hard or sharp objects.",
+          "translations": {
+            "ha": {
+              "text": "A kwantar da mutumin a ƙasa a hankali sannan a kawar da abubuwa masu wuya ko kaifi daga wajen."
+            },
+            "ig": {
+              "text": "Jiri nwayọọ dọpụta onye ahụ n’ala ma wepụ ihe siri ike ma ọ bụ ihe nkọ n’ebe ahụ."
+            },
+            "yo": {
+              "text": "Rora gbé ẹni náà sílẹ̀ ilẹ̀, kí o sì yọ àwọn ohun líle tàbí mímú kúrò ní àgbègbè náà."
+            },
+            "pcm": {
+              "text": "Gently put the person for floor and comot any hard or sharp object around dem."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Place something soft and flat, like a folded jacket, under their head.",
+          "translations": {
+            "ha": {
+              "text": "A sa wani abu mai laushi da faɗi, kamar jaket da aka nannaɗe, ƙarƙashin kansa."
+            },
+            "ig": {
+              "text": "Tinye ihe dị nro ma dị larịị, dịka jaket a pịakọrọ apịakọ, n’okpuru isi ha."
+            },
+            "yo": {
+              "text": "Fi ohun rírọ tí ó tẹ́ẹ́rẹ́, bíi jakẹ́ẹ̀tì tí a pọ̀, sí abẹ́ orí wọn."
+            },
+            "pcm": {
+              "text": "Put something soft and flat, like folded jacket, under their head."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "Turn them gently onto one side. This helps keep the airway clear.",
+          "translations": {
+            "ha": {
+              "text": "A juya shi a hankali zuwa gefe ɗaya. Hakan yana taimakawa wajen buɗe hanyar numfashi."
+            },
+            "ig": {
+              "text": "Jiri nwayọọ tụgharịa ha n’otu akụkụ. Nke a na-enyere aka ime ka ụzọ ikuku dị ọcha."
+            },
+            "yo": {
+              "text": "Rora yí wọn sí ẹ̀gbẹ́ kan. Èyí máa ń jẹ́ kí ọ̀nà mími wọn sí sílẹ̀."
+            },
+            "pcm": {
+              "text": "Gently turn dem lie for one side. This go help make their airway clear."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Time the seizure. If it lasts longer than 5 minutes, call emergency services.",
+          "translations": {
+            "ha": {
+              "text": "A auna lokacin farfadiyar. Idan ta wuce minti 5, a kira ma’aikatan gaggawa."
+            },
+            "ig": {
+              "text": "Gụọ oge ọdịdọ ahụ. Ọ bụrụ na ọ gafee nkeji 5, kpọọ ndị ọrụ mberede."
+            },
+            "yo": {
+              "text": "Ka àkókò igbọnwọ náà. Tí ó bá ju ìṣẹ́jú márùn-ún lọ, pé àwọn iṣẹ́ pàjáwìrì.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "pcm": {
+              "text": "Check the time wey seizure start. If e last pass 5 minutes, call emergency services."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "Stay with them until the seizure ends and they are fully awake and aware.",
+          "translations": {
+            "ha": {
+              "text": "A zauna tare da shi har farfadiyar ta ƙare kuma ya farka sosai ya kuma san halin da yake ciki."
+            },
+            "ig": {
+              "text": "Nọrọnyere ha ruo mgbe ọdịdọ ahụ kwụsịrị ma ha tetaa nke ọma ma mara ihe."
+            },
+            "yo": {
+              "text": "Dúró pẹ̀lú wọn títí ìgbọ̀nwọ́ náà yóò fi dópin, tí wọn yóò sì fi jí pátápátá, tí wọ́n mọ ohun tó ń ṣẹlẹ̀."
+            },
+            "pcm": {
+              "text": "Stay with dem till the seizure stop and dem wake up well and know wetin dey happen."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "severe-bleeding",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Find the source of the bleeding and apply direct, firm pressure to the wound with a clean cloth or your hands.",
+          "translations": {
+            "ha": {
+              "text": "Nemo tushen zubar jinin kuma ka matsa kai tsaye da ƙarfi a kan raunin da kyalle mai tsabta ko hannuwanka."
+            },
+            "ig": {
+              "text": "Chọpụta ebe ọbara na-esi apụta ma jiri akwa dị ọcha ma ọ bụ aka gị tinye nrụgide siri ike ozugbo n'ọnya ahụ."
+            },
+            "yo": {
+              "text": "Wá ibi tí ẹ̀jẹ̀ ti ń jáde, kí ó sì tẹ ọgbẹ́ náà mọ́lẹ̀ gidigidi pẹ̀lú aṣọ mímọ́ tàbí ọwọ́ rẹ."
+            },
+            "pcm": {
+              "text": "Find where di bleeding dey come from and press di wound well well with clean cloth or your hand."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "If the bleeding is on an arm or leg, elevate the limb above the heart if possible.",
+          "translations": {
+            "ha": {
+              "text": "Idan zubar jinin yana a hannu ko ƙafa, ɗaga gaɓar sama da zuciya idan zai yiwu."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na ọbara na-apụta n'aka ma ọ bụ n'ụkwụ, welie akụkụ ahụ karịa obi ma ọ bụrụ na o kwere omume."
+            },
+            "yo": {
+              "text": "Tí ẹ̀jẹ̀ náà bá ń jáde lára apá tàbí ẹsẹ̀, gbé ẹsẹ̀ tàbí apá náà ga ju ọkàn lọ bí ó bá ṣeé ṣe."
+            },
+            "pcm": {
+              "text": "If di bleeding dey for arm or leg, raise di limb pass di heart if e possible."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "Do not remove the cloth. If blood soaks through, put another cloth on top and keep pressing.",
+          "translations": {
+            "ha": {
+              "text": "Kada ka cire kyallen. Idan jini ya jika kyallen, sanya wani kyalle a samansa kuma ka ci gaba da matsawa."
+            },
+            "ig": {
+              "text": "Ewepụla akwa ahụ. Ọ bụrụ na ọbara asaa ya, tinye akwa ọzọ n'elu ya ma nọgide na-apị."
+            },
+            "yo": {
+              "text": "Má ṣe yọ aṣọ náà kúrò. Tí ẹ̀jẹ̀ bá wọ aṣọ náà, fi aṣọ míì lé e lórí, kí o sì máa tẹ̀ síwájú."
+            },
+            "pcm": {
+              "text": "No comot di cloth. If blood soak am, put another cloth on top and continue to press."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Keep pressure continuous for at least 10 minutes without checking the wound.",
+          "translations": {
+            "ha": {
+              "text": "Ci gaba da matsawa na aƙalla minti 10 ba tare da duba raunin ba."
+            },
+            "ig": {
+              "text": "Nọgide na-etinye nrụgide opekata mpe nkeji iri na-enweghị ilele ọnya ahụ.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "yo": {
+              "text": "Máa tẹ̀ mọ́lẹ̀ fún ọ kéré tán ìṣẹ́jú mẹ́wàá láì ṣàyẹ̀wò ọgbẹ́ náà.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "pcm": {
+              "text": "Keep dey press am for at least 10 minutes without checking di wound."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "If the bleeding does not stop with direct pressure, apply a tourniquet 2 to 3 inches above the wound.",
+          "translations": {
+            "ha": {
+              "text": "Idan zubar jinin bai tsaya da matsawa kai tsaye ba, sanya igiyar dakatar da jini inci 2 zuwa 3 sama da raunin."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na ọbara akwụsịghị site n'itinye nrụgide ozugbo, tinye eriri nkwụsị ọbara n'elu ọnya ahụ ihe dị ka sentimita ise ruo asaa.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "yo": {
+              "text": "Tí ẹ̀jẹ̀ kò bá dá dúró pẹ̀lú títẹ̀ tààrà, fi ìdènà ẹ̀jẹ̀ (tourniquet) sí insì méjì sí mẹ́ta lókè ọgbẹ́ náà.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "pcm": {
+              "text": "If di bleeding no stop with direct pressure, tie tourniquet 2 to 3 inches above di wound."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "severe-burn",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Call 112 immediately.",
+          "translations": {
+            "ha": {
+              "text": "Kira 112 nan da nan."
+            },
+            "ig": {
+              "text": "Kpọọ 112 ozugbo."
+            },
+            "yo": {
+              "text": "Pe 112 lẹ́sẹ̀kẹsẹ̀."
+            },
+            "pcm": {
+              "text": "Call 112 sharp sharp."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Remove the person from the source of heat. Stop any flames by rolling them on the ground.",
+          "translations": {
+            "ha": {
+              "text": "Cire mutumin daga tushen zafi. Kashe duk wata wuta ta hanyar mirgina shi a ƙasa."
+            },
+            "ig": {
+              "text": "Wepụ onye ahụ n’ebe okpomọkụ si. Kwụsị ọkụ ọ bụla site n’ịtụgharị ya n’ala."
+            },
+            "yo": {
+              "text": "Yọ ẹni náà kúrò níbi ooru ti ń ṣẹlẹ̀. Dá iná kankan dúró nípa yíyí ẹni náà lórí ilẹ̀."
+            },
+            "pcm": {
+              "text": "Comot the person from where heat dey come from. Stop any fire by rolling dem for ground."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "Cool the burn with cool running water for at least 20 minutes.",
+          "translations": {
+            "ha": {
+              "text": "Sanya wurin ƙonewar ƙarƙashin ruwan sanyi mai gudana na aƙalla minti 20."
+            },
+            "ig": {
+              "text": "Jiri mmiri dị jụụ na-agba agba mee ka ebe ọkụ gbara dị jụụ ma ọ dịkarịa ala nkeji iri abụọ.",
+              "reviewFlags": [
+                "digits_differ_from_source"
+              ]
+            },
+            "yo": {
+              "text": "Fi omi tútù tí ń ṣàn tutù ibi ìgbẹ́ náà fún ọ kéré tán iṣẹ́jú 20."
+            },
+            "pcm": {
+              "text": "Cool the burn with cool running water for at least 20 minutes.",
+              "reviewFlags": [
+                "matches_english_source"
+              ]
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Do NOT remove clothing stuck to the burn — cut around it carefully.",
+          "translations": {
+            "ha": {
+              "text": "Kada a cire tufafin da suka manne da wurin ƙonewar — yanke kewaye da su a hankali."
+            },
+            "ig": {
+              "text": "Ewepụla uwe rapaara n’ebe ọkụ gbara — jiri nlezianya gbutuo gburugburu ya."
+            },
+            "yo": {
+              "text": "MÁ ṣe yọ aṣọ tí ó lè mọ ibi ìgbẹ́ náà — gé yí i ká pẹ̀lú ìṣọ́ra."
+            },
+            "pcm": {
+              "text": "No comot cloth wey stick to the burn — cut around am carefully."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "Cover loosely with a clean sheet, cling wrap, or a sterile dressing.",
+          "translations": {
+            "ha": {
+              "text": "Rufe a hankali da tsabtatacciyar shimfiɗa, leda mai manne, ko bandeji mara ƙwayoyin cuta."
+            },
+            "ig": {
+              "text": "Jiri akwa dị ọcha, cling wrap, ma ọ bụ bandeeji sterile kpuchie ya nwayọọ."
+            },
+            "yo": {
+              "text": "Bó o lọ́wọ́lọ́wọ́ pẹ̀lú aṣọ ìbora mímọ́, ṣiṣu cling wrap, tàbí ìbora ọgbẹ́ tí kò ní kòkòrò."
+            },
+            "pcm": {
+              "text": "Cover am loosely with clean sheet, cling wrap, or sterile dressing."
+            }
+          }
+        },
+        {
+          "id": 6,
+          "en": "Keep the person warm to prevent shock. Elevate burned limbs if possible.",
+          "translations": {
+            "ha": {
+              "text": "A sa mutumin ya kasance da dumi don hana shiga gigita. Ɗaga gaɓoɓin da suka ƙone idan zai yiwu."
+            },
+            "ig": {
+              "text": "Mee ka onye ahụ dị ọkụ iji gbochie ọkpọ. Welie aka ma ọ bụ ụkwụ ndị ọkụ gbara ma ọ bụrụ na o kwere mee."
+            },
+            "yo": {
+              "text": "Jẹ́ kí ẹni náà móoru láti dènà ìpayà. Gbé àwọn ẹsẹ̀ tàbí owó tí ó jóná sókè bí ó bá ṣeé ṣe."
+            },
+            "pcm": {
+              "text": "Keep the person warm make shock no happen. Raise burnt arms or legs if e possible."
+            }
+          }
+        },
+        {
+          "id": 7,
+          "en": "Monitor breathing and consciousness until help arrives.",
+          "translations": {
+            "ha": {
+              "text": "Kula da numfashi da hankalinsa har sai taimako ya iso."
+            },
+            "ig": {
+              "text": "Lelee iku ume na mmata ruo mgbe enyemaka rutere."
+            },
+            "yo": {
+              "text": "Sọ ìmí àti ìmòye ẹni náà títí ìrànlọ́wọ́ yóò fi dé."
+            },
+            "pcm": {
+              "text": "Watch their breathing and whether dem dey conscious until help come."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "snake-bite",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Keep the person calm and still. Movement spreads venom faster through the body.",
+          "translations": {
+            "ha": {
+              "text": "A kwantar da mutum kuma a sa shi ya tsaya cak. Motsi yana sa dafin ya yadu cikin jiki da sauri."
+            },
+            "ig": {
+              "text": "Mee ka onye ahụ nọrọ jụụ ma ghara imegharị ahụ. Mmegharị na-eme ka nsi gbasaa ngwa ngwa n’ahụ."
+            },
+            "yo": {
+              "text": "Jẹ́ kí ẹni náà balẹ̀, kí ó sì dúró jẹ́ẹ́. Ìbẹ̀rẹ̀ lè mú kí májèlé tàn kánkán nínú ara."
+            },
+            "pcm": {
+              "text": "Make the person stay calm and no move. Movement fit make venom spread faster for body."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Transport to the nearest hospital immediately — antivenom is the only effective treatment.",
+          "translations": {
+            "ha": {
+              "text": "A kai shi asibiti mafi kusa nan da nan — maganin dafin maciji ne kawai magani mai tasiri."
+            },
+            "ig": {
+              "text": "Buga ya n’ụlọ ọgwụ kacha nso ozugbo — ọgwụ mgbochi nsi agwọ bụ naanị ọgwụgwọ dị irè."
+            },
+            "yo": {
+              "text": "Gbé e lọ sí ilé ìwòsàn tó súnmọ́ jù lọ lẹ́sẹ̀kẹsẹ̀ — oògùn apakòkòrò májèlé nìkan ni ìtọ́jú tó dáwọ́."
+            },
+            "pcm": {
+              "text": "Carry am go nearest hospital sharp sharp — antivenom na the only treatment wey dey work."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "Remove jewellery and tight clothing near the bite before swelling starts.",
+          "translations": {
+            "ha": {
+              "text": "Cire kayan ado da matsattsun tufafi kusa da wurin cizon kafin kumburi ya fara."
+            },
+            "ig": {
+              "text": "Wepụ ọla na uwe siri ike dị nso ebe atara ya tupu ọzịza amalite."
+            },
+            "yo": {
+              "text": "Yọ àwọn ohun ọ̀ṣọ́ àti aṣọ tó fẹ́ṣe múlẹ̀ nítòsí ibi tí ejò ti ṣàn án kí ìwúwọ́ tó bẹ̀rẹ̀.."
+            },
+            "pcm": {
+              "text": "Remove jewellery and tight cloth near where snake bite before swelling start."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Keep the bitten limb at or below heart level.",
+          "translations": {
+            "ha": {
+              "text": "A riƙe ɓangaren jikin da aka cije a matakin zuciya ko ƙasa da shi."
+            },
+            "ig": {
+              "text": "Debe akụkụ ahụ atara ata n’ogo obi ma ọ bụ n’okpuru ya."
+            },
+            "yo": {
+              "text": "Jẹ́ kí ẹ̀ṣẹ̀ tàbí owó tí ejò sàn wà ní ìpele ọkàn tàbí ní ìsàlẹ̀ rẹ̀."
+            },
+            "pcm": {
+              "text": "Keep the part wey snake bite for heart level or below am."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "Note the snake's appearance if safe to do so — do not try to catch or kill it.",
+          "translations": {
+            "ha": {
+              "text": "A lura da kamannin macijin idan yana da lafiya a yi haka — kada a yi ƙoƙarin kama ko kashe shi."
+            },
+            "ig": {
+              "text": "Rịba ama ọdịdị agwọ ahụ ma ọ bụrụ na ọ dị mma ime otú ahụ — anwala ijide ma ọ bụ igbu ya."
+            },
+            "yo": {
+              "text": "Ṣàkíyèsí bí ejò náà ṣe rí bí ó bá jẹ́ ààbò láti ṣe bẹ́ẹ̀ — má ṣe gbìyànjú láti mú un tàbí pa á."
+            },
+            "pcm": {
+              "text": "If e safe, note how the snake look — no try catch or kill am."
+            }
+          }
+        },
+        {
+          "id": 6,
+          "en": "Monitor breathing. If not breathing, start CPR.",
+          "translations": {
+            "ha": {
+              "text": "A duba numfashi. Idan baya numfashi, a fara CPR."
+            },
+            "ig": {
+              "text": "Lelee iku ume. Ọ bụrụ na ọ naghị eku ume, malite CPR."
+            },
+            "yo": {
+              "text": "Sọ ìmí ẹni náà. Bí kò bá ń mí, bẹ̀rẹ̀ CPR."
+            },
+            "pcm": {
+              "text": "Check breathing. If the person no dey breathe, start CPR."
+            }
+          }
+        }
+      ]
+    },
+    {
+      "slug": "stroke",
+      "content_version": 1,
+      "steps": [
+        {
+          "id": 1,
+          "en": "Use the FAST test: Face (ask them to smile), Arms (ask them to raise both arms), Speech (ask them to repeat a simple phrase), Time (call emergency services).",
+          "translations": {
+            "ha": {
+              "text": "Yi amfani da gwajin FAST: Fuska (ka ce su yi murmushi), Hannuwa (ka ce su ɗaga hannaye biyu), Magana (ka ce su maimaita wata jimla mai sauƙi), Lokaci (ka kira ayyukan gaggawa)."
+            },
+            "ig": {
+              "text": "Jiri ule FAST: Ihu (gwa ha ka ha mụmụ ọnụ ọchị), Aka (gwa ha ka ha welie aka abụọ), Okwu (gwa ha ka ha kwughachi ahịrịokwu dị mfe), Oge (kpọọ ndị ọrụ mberede)."
+            },
+            "yo": {
+              "text": "Lo ìdánwò FAST: Ojú (béèrè lọ́wọ́ wọn láti rẹ́rìn), Apá (béèrè lọ́wọ́ wọn láti gbé apá méjèèjì sókè), Ọ̀rọ̀ (béèrè lọ́wọ́ wọn láti tún gbólóhùn rọrùn kan sọ), Àkókò (pẹ́ àwọn iṣẹ́ pàjáwìrì)."
+            },
+            "pcm": {
+              "text": "Use FAST test: Face (tell dem make dem smile), Arms (tell dem make dem raise both arms), Speech (tell dem make dem repeat one simple sentence), Time (call emergency services)."
+            }
+          }
+        },
+        {
+          "id": 2,
+          "en": "Call emergency services immediately or take them to the nearest major hospital.",
+          "translations": {
+            "ha": {
+              "text": "Kira ayyukan gaggawa nan da nan ko ka kai su asibiti mafi kusa mai girma."
+            },
+            "ig": {
+              "text": "Kpọọ ndị ọrụ mberede ozugbo ma ọ bụ kpọga ha n'ụlọ ọgwụ ukwu kacha nso."
+            },
+            "yo": {
+              "text": "Pé àwọn iṣẹ́ pàjáwìrì lẹ́sẹ̀kẹsẹ̀ tàbí mú wọn lọ sí ilé-ìwòsàn ńlá tó súnmọ́ jùlọ"
+            },
+            "pcm": {
+              "text": "Call emergency services sharp sharp or carry dem go nearest big hospital."
+            }
+          }
+        },
+        {
+          "id": 3,
+          "en": "Note the exact time when symptoms first started.",
+          "translations": {
+            "ha": {
+              "text": "Lura da ainihin lokacin da alamun suka fara."
+            },
+            "ig": {
+              "text": "Detuo oge kpọmkwem mgbaàmà ahụ malitere."
+            },
+            "yo": {
+              "text": "Ṣe akiyesi akoko gangan ti awọn aami aisan bẹrẹ akọkọ."
+            },
+            "pcm": {
+              "text": "Note the exact time wey the symptoms first start."
+            }
+          }
+        },
+        {
+          "id": 4,
+          "en": "Keep the person calm and comfortable. Do not give them anything to eat or drink.",
+          "translations": {
+            "ha": {
+              "text": "Ka sa mutumin ya kasance cikin natsuwa da kwanciyar hankali. Kada ka ba su wani abu su ci ko su sha."
+            },
+            "ig": {
+              "text": "Mee ka onye ahụ dajụọ ma nwee ntụsara ahụ. Enyela ha ihe ọ bụla ha ga-eri ma ọ bụ ṅụọ."
+            },
+            "yo": {
+              "text": "Jẹ́ kí ẹni náà wà ní ìdákẹ́dì àti ní ìtùnú. Má fún wọn ní ohunkóhun láti jẹ́ tàbí mu."
+            },
+            "pcm": {
+              "text": "Keep the person calm and comfortable. No give dem anything to chop or drink."
+            }
+          }
+        },
+        {
+          "id": 5,
+          "en": "If they become unconscious, place them in the recovery position.",
+          "translations": {
+            "ha": {
+              "text": "Idan suka suma, ka kwantar da su a matsayin farfaɗowa."
+            },
+            "ig": {
+              "text": "Ọ bụrụ na ha amaghịzi onwe ha, tinye ha n'ọnọdụ mgbake."
+            },
+            "yo": {
+              "text": "Tí wọ́n bá pàdánù ìmọ̀lára, gbé wọn sí ipò ìmúláradá."
+            },
+            "pcm": {
+              "text": "If dem lose consciousness, put dem for recovery position."
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

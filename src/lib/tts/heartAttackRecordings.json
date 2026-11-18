@@ -1,0 +1,30 @@
+{
+  "ha": {
+    "1": "Kira ayyukan gaggawa ko kai su asibiti mafi kusa nan da nan.",
+    "2": "Sa mutumin ya zauna, ya huta, kuma ya yi ƙoƙarin kwantar da hankalinsa.",
+    "3": "Sassauta duk wani sutura mai matse jiki.",
+    "4": "Tambaya ko suna shan wani maganin ciwon ƙirji, kamar nitroglycerin, sannan a taimaka musu su sha.",
+    "5": "Idan mutumin ya suma kuma bai amsa ba, fara CPR."
+  },
+  "ig": {
+    "1": "Kpọọ ọrụ mberede ma ọ bụ kpọga ha ụlọ ọgwụ kacha nso ozugbo.",
+    "2": "Mee ka onye ahụ nọdụ ala, zuru ike, ma gbalịa ka ọ nọrọ jụụ.",
+    "3": "Tọpụ uwe ọ bụla siri ike.",
+    "4": "Jụọ ma ha na-aṅụ ọgwụ mgbu obi ọ bụla, dịka nitroglycerin, ma nyere ha aka ịṅụ ya.",
+    "5": "Ọ bụrụ na onye ahụ amaghị onwe ya ma ọ naghị aza, bido CPR."
+  },
+  "yo": {
+    "1": "Pé àwọn iṣẹ́ pàjáwìrì tàbí mú wọn lọ sí ilé ìwòsàn tó sún mọ́ jù lọ lẹ́sẹ̀kẹsẹ̀.",
+    "2": "Jẹ́ kí ẹni náà jókòó, sinmi, kí ó sì gbìyànjú láti fara balẹ̀.",
+    "3": "Tú aṣọ tó mú dín wọn kúrò.",
+    "4": "Béèrè bóyá wọ́n máa ń lo oògùn ìrora àyà, bíi nitroglycerin, kí ó sì ràn wọ́n lọ́wọ́ láti lò ó.",
+    "5": "Tí ẹni náà bá dákú tí kò sì fèsì, bẹ̀rẹ̀ CPR."
+  },
+  "pcm": {
+    "1": "Call emergency services or carry dem go nearest hospital sharp sharp.",
+    "2": "Make the person siddon, rest, and try make dem calm down.",
+    "3": "Loose any cloth wey tight.",
+    "4": "Ask if dem dey take any chest pain medicine, like nitroglycerin, and help dem take am.",
+    "5": "If the person no dey conscious and no dey respond, start CPR."
+  }
+}

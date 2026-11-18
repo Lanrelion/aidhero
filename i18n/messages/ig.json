@@ -15,6 +15,9 @@
     "voiceSearchHint": "dịka \"Nkụchi Obi\", \"Ọkụ\", \"Ọbara\""
   },
   "rescue": {
+    "stepEnglishFallback": "Enweghị ntụgharị nzọụkwụ a n’asụsụ ị họọrọ. AidHero ga-egosi ma gụọ ya n’asụsụ Bekee.",
+    "readAllMixed": "Gụọ nzọụkwụ niile (Bekee mgbe ọ dị mkpa)",
+    "playbackUnavailable": "Ụda akpọghị. Gụọ ntuziaka dị na ihuenyo.",
     "startGuided": "Malite Nnapụta Nduzi",
     "quickSteps": "Nzọụkwụ Ngwa Ngwa",
     "stepXOfY": "Nzọụkwụ {step} nke {total}",
@@ -93,6 +96,8 @@
     "back": "Azu"
   },
   "settings": {
+    "recordedNarrationAvailability": "Ụfọdụ nzọụkwụ nwere ụda e dekọrọ. Ndị ọzọ chọrọ olu dabara adaba na ngwaọrụ gị.",
+    "noDeviceVoice": "Enweghị olu na ngwaọrụ",
     "language": "Asụsụ",
     "textSize": "Ogo Ederede",
     "contrast": "Ọdịiche Agba",

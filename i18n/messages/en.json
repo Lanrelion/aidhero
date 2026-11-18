@@ -15,6 +15,8 @@
     "voiceSearchHint": "e.g. \"Heart Attack\", \"Burns\", \"Bleeding\""
   },
   "rescue": {
+    "stepEnglishFallback": "This step is available in English. There’s no text for it in the selected language.",
+    "readAllMixed": "Read all steps (English where needed)",
     "startGuided": "Start Guided Rescue",
     "quickSteps": "Quick Steps",
     "stepXOfY": "Step {step} of {total}",
@@ -26,6 +28,7 @@
     "callEmergency": "Call Emergency",
     "doneCall": "Done — Call Emergency",
     "playAudio": "Play in",
+    "playbackUnavailable": "Audio couldn't play. Read the instructions on screen.",
     "stopAudio": "Stop",
     "readAll": "Read all steps in",
     "voiceMode": "Voice Mode",
@@ -93,6 +96,8 @@
     "back": "Back"
   },
   "settings": {
+    "recordedNarrationAvailability": "Recordings are available for some steps. Other steps need a matching voice on your device.",
+    "noDeviceVoice": "No device voice",
     "language": "Language",
     "textSize": "Text Size",
     "contrast": "Contrast",

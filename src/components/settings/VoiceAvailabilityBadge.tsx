@@ -1,7 +1,8 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import { Volume2, VolumeX, CheckCircle, Radio } from 'lucide-react';
+import { Volume2, CheckCircle } from 'lucide-react';
+import { useTranslations } from 'next-intl';
 import { checkVoiceAvailability, VoiceAvailability } from '@/lib/tts/TTSManager';
 import { Locale } from '@/types';
 
@@ -14,6 +15,7 @@ const LANGUAGES: { code: Locale; label: string; native: string }[] = [
 ];
 
 export function VoiceAvailabilityBadge() {
+  const t = useTranslations('settings');
   const [availability, setAvailability] = useState<Record<Locale, VoiceAvailability> | null>(null);
 
   useEffect(() => {
@@ -44,7 +46,7 @@ export function VoiceAvailabilityBadge() {
       </div>
 
       <p className="text-xs text-text-secondary ml-8">
-        Detects live speech synthesis voices in your browser. Languages without browser voice automatically use pre-recorded audio.
+        {t('recordedNarrationAvailability')}
       </p>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-1 ml-0 sm:ml-8" role="list" aria-label="TTS Voice Availability by Language">
@@ -66,9 +68,9 @@ export function VoiceAvailabilityBadge() {
                 <span className="text-sm font-bold text-text-primary">
                   {lang.native} <span className="text-xs font-normal text-text-secondary">({lang.label})</span>
                 </span>
-                <span className="text-[11px] text-text-secondary truncate max-w-[140px]">
-                  {isSupported ? (status?.voiceName || 'Browser Voice') : 'Pre-recorded MP3'}
-                </span>
+                {status?.voiceName && (
+                  <span className="text-[11px] text-text-secondary truncate max-w-[140px]">{status.voiceName}</span>
+                )}
               </div>
 
               <div className="flex items-center gap-1.5 shrink-0">
@@ -79,8 +81,7 @@ export function VoiceAvailabilityBadge() {
                   </span>
                 ) : (
                   <span className="inline-flex items-center gap-1 text-xs font-semibold text-text-secondary bg-slate-100 px-2 py-1 rounded-md">
-                    <Radio className="w-3.5 h-3.5 text-slate-400" aria-hidden="true" />
-                    Offline Audio
+                    {t('noDeviceVoice')}
                   </span>
                 )}
               </div>

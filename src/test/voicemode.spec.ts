@@ -1,4 +1,7 @@
 import { test, expect } from '@playwright/test';
+import { openRescueSteps } from './helpers/open-rescue-steps';
+
+test.use({ hasTouch: true });
 
 test('Voice Mode Back goes back one step and Exit stops offline playback on a short screen', async ({ page, context }) => {
   await page.setViewportSize({ width: 375, height: 480 });
@@ -23,11 +26,8 @@ test('Voice Mode Back goes back one step and Exit stops offline playback on a sh
     });
   });
 
-  await page.goto('/en/onboarding');
-  await page.getByRole('button', { name: 'Skip', exact: true }).click();
-  await expect(page).toHaveURL(/\/en$/);
-  await page.goto('/en/incidents/anaphylaxis/steps');
-  await page.getByRole('button', { name: 'Voice Mode', exact: true }).click();
+  await openRescueSteps(page, 'anaphylaxis');
+  await page.getByRole('button', { name: 'Voice Mode', exact: true }).tap();
 
   const dialog = page.getByRole('dialog');
   const next = dialog.getByRole('button', { name: 'Next Step', exact: true });
@@ -133,11 +133,14 @@ test('Voice Mode handles spoken Next, Repeat and Back after playback', async ({ 
     });
   });
 
-  await page.goto('/en/onboarding');
-  await page.getByRole('button', { name: 'Skip', exact: true }).click();
-  await expect(page).toHaveURL(/\/en$/);
-  await page.goto('/en/incidents/heart-attack/steps');
-  await page.getByRole('button', { name: 'Voice Mode', exact: true }).click();
+  await openRescueSteps(page);
+  const voiceButton = page.getByRole('button', { name: 'Voice Mode', exact: true });
+  await expect(voiceButton).toBeVisible();
+  const firstUtterance = await voiceButton.evaluate(button => {
+    (button as HTMLButtonElement).click();
+    return document.documentElement.dataset.voiceUtterances;
+  });
+  expect(firstUtterance).toBe('1');
 
   const dialog = page.getByRole('dialog', { name: 'Voice Mode' });
   const hint = dialog.getByRole('status');
@@ -172,29 +175,12 @@ test('Voice Mode handles spoken Next, Repeat and Back after playback', async ({ 
 test('Voice Mode does not race steps and respects user countdown / Next button', async ({ page, context }) => {
   await context.grantPermissions(['microphone']);
 
-  await page.goto('/en');
-  await page.waitForLoadState('load');
-  await page.waitForTimeout(500);
-
-  const skipBtn = page.locator('button:has-text("Skip")').first();
-  if (await skipBtn.isVisible()) {
-    await skipBtn.click();
-    await page.waitForTimeout(500);
-  }
-
-  await page.goto('/en/incidents/heart-attack/steps');
-  await page.waitForLoadState('load');
-  await page.waitForTimeout(1000);
-
-  if (await skipBtn.isVisible()) {
-    await skipBtn.click();
-    await page.waitForTimeout(500);
-  }
+  await openRescueSteps(page);
 
   // Open Voice Mode via FAB
   const voiceModeFab = page.locator('button[aria-label*="Voice Mode"], button[aria-label*="voiceMode"]').first();
   await expect(voiceModeFab).toBeVisible();
-  await voiceModeFab.click();
+  await voiceModeFab.tap();
 
   const dialog = page.locator('[role="dialog"]');
   await expect(dialog).toBeVisible();

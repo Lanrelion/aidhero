@@ -15,6 +15,9 @@
     "voiceSearchHint": "bíi \"Ìkọlù Ọkàn\", \"Iná Jóni\", \"Ẹ̀jẹ̀ Dídà\""
   },
   "rescue": {
+    "stepEnglishFallback": "Ìtumọ̀ ìgbésẹ̀ yìí kò sí ní èdè tí o yàn. AidHero yóò fi í hàn, yóò sì kà á ní èdè Gẹ̀ẹ́sì.",
+    "readAllMixed": "Ka gbogbo ìgbésẹ̀ (Gẹ̀ẹ́sì níbi tí ó bá yẹ)",
+    "playbackUnavailable": "Ohùn kò dún. Ka àwọn ìtọ́nisọ́nà tó wà lójú iboju.",
     "startGuided": "Bẹ̀rẹ̀ Ìgbàlà Pẹ̀lú Ìtọ́sọ́nà",
     "quickSteps": "Àwọn Ìgbésẹ̀ Kíákíá",
     "stepXOfY": "Ìgbésẹ̀ {step} nínú {total}",
@@ -93,6 +96,8 @@
     "back": "Padà"
   },
   "settings": {
+    "recordedNarrationAvailability": "Àwọn ìgbésẹ̀ kan ní ohùn tí a gbasilẹ. Àwọn yòókù nílò ohùn tó bá èdè náà mu lórí ẹ̀rọ rẹ.",
+    "noDeviceVoice": "Kò sí ohùn lórí ẹ̀rọ",
     "language": "Èdè",
     "textSize": "Ìwọ̀n Ọ̀rọ̀",
     "contrast": "Ìyàtọ̀ Àwọ̀",
